@@ -74,3 +74,7 @@ Die Startkarten werden beim ersten Start aus `src/db/favorites.ts` in SQLite imp
 npx expo install <paket>   # Pakete in zur Expo-Version passender Version installieren
 npx tsc --noEmit           # TypeScript prüfen
 ```
+
+## Datenschutzerklärung veröffentlichen
+
+Der GitHub-Actions-Workflow veröffentlicht `docs/privacy.html` auf GitHub Pages. Dafür muss im Repository das Secret `PAGES_TOKEN` mit einem Token gesetzt sein, das Pages für dieses Repository verwalten darf (z. B. ein Fine-grained Personal Access Token mit Pages-Schreibzugriff).
