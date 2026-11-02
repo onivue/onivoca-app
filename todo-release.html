@@ -80,6 +80,11 @@
         font-size: 14px;
         line-height: 1.5;
       }
+      .notice-success {
+        color: #214f39;
+        background: #e5f4e8;
+        border-left-color: #3b8c5a;
+      }
       .notice strong { white-space: nowrap; }
       .phase { border-bottom: 1px solid var(--line); }
       .phase summary {
@@ -157,18 +162,22 @@
         </div>
       </header>
 
-      <aside class="notice">
-        <strong>Aktueller Blocker</strong>
-        <span>Die Datenschutzseite liefert derzeit 404. Erst Pages aktivieren, auf <code>main</code> pushen und den erfolgreichen Deploy prüfen.</span>
+      <aside class="notice notice-success">
+        <strong>GitHub Pages online</strong>
+        <span>Die Datenschutzerklärung ist erreichbar. Als Nächstes die URL in App Store Connect eintragen.</span>
       </aside>
 
       <section aria-label="Release-Phasen">
         <details class="phase" open>
           <summary><span class="step">01</span><span class="phase-title">Rechte und Freigaben</span><span class="count"></span><span class="chevron" aria-hidden="true">›</span></summary>
           <div class="tasks">
-            <label class="task"><input type="checkbox" data-task="name-rights" /><span>Verfügbarkeit und Rechte an «Onivoca» sowie <code>com.onivoca.app</code> in Apple Developer prüfen. Öffentliche CH-Suche: kein Treffer (2.11.2026).</span></label>
-            <label class="task"><input type="checkbox" data-task="word-rights" /><span>Kommerzielle Rechte an KI-Karten, Übersetzungen und Beispielen klären. Anbieter unbekannt: andernfalls belegbar lizenzierte Inhalte einsetzen.</span></label>
-            <label class="task"><input type="checkbox" data-task="asset-rights" /><span>Rechte an Schrift, Marke, finalem App-Icon und Store-Grafiken bestätigen.</span></label>
+            <label class="task"><input type="checkbox" data-task="name-availability" checked /><span>Verfügbarkeit von «Onivoca» und <code>com.onivoca.app</code> laut Betreiber bestätigt. Die öffentliche CH-Suche ergab am 2.11.2026 keinen Treffer.</span></label>
+            <label class="task"><input type="checkbox" data-task="brand-rights" /><span>Markenrechte an «Onivoca» separat prüfen; die Verfügbarkeit allein bestätigt keine Markenrechte.</span></label>
+            <label class="task"><input type="checkbox" data-task="word-audit" checked /><span>Inhalt geprüft: 523 kurze Englisch-Deutsch-Wort-/Gloss-Paare; Beispiele werden lokal aus einer Codevorlage erzeugt. Keine längeren Beispieltexte oder externe Datenquelle im App-Code gefunden.</span></label>
+            <label class="task"><input type="checkbox" data-task="word-rights" /><span>KI-Anbieter und damalige Nutzungsbedingungen sind unbekannt. Kommerzielle Nutzung erst bestätigen oder Karten durch nachweislich eigene/freigegebene Inhalte ersetzen. Keine Rechtsfreigabe angenommen.</span></label>
+            <label class="task"><input type="checkbox" data-task="font-rights" checked /><span>Space Grotesk ist unter SIL OFL 1.1 lizenziert; Copyright und vollständiger Lizenztext sind offline in der App unter «Drittanbieter-Lizenzen» verfügbar.</span></label>
+            <label class="task"><input type="checkbox" data-task="icon-rights" /><span>Icon aus dem bereitgestellten Motiv erstellt; kommerzielle Rechte am Ursprungsbild vor Veröffentlichung bestätigen.</span></label>
+            <label class="task"><input type="checkbox" data-task="store-art-rights" /><span>Rechte an Store-Screenshots und weiteren Grafiken nach deren Erstellung bestätigen.</span></label>
             <label class="task"><input type="checkbox" data-task="privacy-legal" /><span>Datenschutzerklärung nach Schweizer DSG prüfen lassen und klären, ob eine postalische Kontaktadresse erforderlich ist. Wohnadresse bis dahin nicht veröffentlichen.</span></label>
           </div>
         </details>
@@ -178,10 +187,10 @@
           <div class="tasks">
             <label class="task"><input type="checkbox" data-task="policy-source" checked /><span>Einzige Policy-Quelle liegt in <code>docs/privacy.html</code>; die App verlinkt darauf.</span></label>
             <label class="task"><input type="checkbox" data-task="pages-workflow" checked /><span>GitHub-Actions-Workflow für Deploys bei Pushes auf <code>main</code> ist angelegt.</span></label>
-            <label class="task"><input type="checkbox" data-task="pages-setting" /><span>Repository → Settings → Pages: GitHub Actions als Quelle auswählen.</span></label>
-            <label class="task"><input type="checkbox" data-task="push-main" /><span>Änderungen nach <code>main</code> pushen und den Pages-Workflow erfolgreich durchlaufen lassen.</span></label>
+            <label class="task"><input type="checkbox" data-task="pages-setting" checked /><span>Repository → Settings → Pages: GitHub Actions als Quelle auswählen.</span></label>
+            <label class="task"><input type="checkbox" data-task="push-main" checked /><span>Änderungen nach <code>main</code> pushen und den Pages-Workflow erfolgreich durchlaufen lassen.</span></label>
             <div class="task task-linked">
-              <label class="task-label"><input type="checkbox" data-task="verify-policy" /><span>Prüfen, dass die Datenschutzseite keinen 404 liefert. Bei privatem Repository Pages-Verfügbarkeit und GitHub-Plan prüfen.</span></label>
+              <label class="task-label"><input type="checkbox" data-task="verify-policy" checked /><span>Öffentliche Datenschutzseite auf Erreichbarkeit geprüft.</span></label>
               <a class="task-url" href="https://onivue.github.io/onivoca-app/privacy.html">Datenschutzseite öffnen</a>
             </div>
             <label class="task"><input type="checkbox" data-task="support-url" /><span>Öffentliche Support-URL festlegen; Kontaktadresse: <a href="mailto:onivue@gmail.com">onivue@gmail.com</a>.</span></label>
@@ -201,7 +210,7 @@
         <details class="phase">
           <summary><span class="step">04</span><span class="phase-title">App und Store-Material</span><span class="count"></span><span class="chevron" aria-hidden="true">›</span></summary>
           <div class="tasks">
-            <label class="task"><input type="checkbox" data-task="final-icon" /><span>Vorläufiges <code>assets/icon.png</code> durch das finale App-Icon ersetzen.</span></label>
+            <label class="task"><input type="checkbox" data-task="final-icon" checked /><span><code>assets/icon.png</code> durch das finale App-Icon ersetzt.</span></label>
             <label class="task"><input type="checkbox" data-task="screenshots" /><span>Echte iPhone-Screenshots und vollständige Store-Metadaten erstellen.</span></label>
           </div>
         </details>

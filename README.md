@@ -2,11 +2,11 @@
 
 Englisch-Lernapp (Fokus iOS) mit Karteikarten. Gebaut mit Expo, Expo Router, TypeScript und Lucide-Icons.
 
-- KI-generierte vorinstallierte Lernkarten mit deutschen Übersetzungen und Beispielen
+- KI-generierte vorinstallierte Lernkarten mit deutschen Kurzglossen; Beispiele werden lokal aus einer Vorlage erzeugt
 - Karte antippen: umdrehen. Lautsprecher-Symbol: Aussprache anhören
 - Entspanntes Lernen ohne Termine: Punkte pro Karte, Übersicht "gelernt / offen", Lernstand wird auf dem Gerät gespeichert
 - Detailseite pro Wort mit Verlauf (wie oft vorgekommen, Nochmal / Gut / Einfach)
-- Native Tab-Leiste (Liquid Glass ab iOS 26), Schrift Space Grotesk, flache Pastellfarben
+- Native Tab-Leiste (Liquid Glass ab iOS 26), Schrift Space Grotesk (SIL OFL 1.1; Lizenz in der App unter «Drittanbieter-Lizenzen»), flache Pastellfarben
 
 ## Starten
 
@@ -34,7 +34,7 @@ src/
     PressableScale.tsx Button mit Feder-Animation
     ProgressBar.tsx    Animierter Balken
     Screen.tsx         Seitenrahmen mit Titel
-    Text.tsx           Text mit App-Schrift (statt Text aus react-native)
+    Text.tsx           Text-Wrapper mit passendem Space-Grotesk-Schnitt
     StatusPill.tsx     Etikett Neu / Am Lernen / Gelernt
   data/cards.ts        Typen und Kategorien der Karten
   db/database.ts       SQLite: Tabellen anlegen, Karten laden

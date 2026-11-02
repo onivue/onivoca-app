@@ -48,6 +48,16 @@ export default function RootLayout() {
             headerTintColor: colors.text,
           }}
         />
+        <Stack.Screen
+          name="licenses"
+          options={{
+            headerShown: true,
+            title: "",
+            headerTransparent: true,
+            headerShadowVisible: false,
+            headerTintColor: colors.text,
+          }}
+        />
       </Stack>
       </ProgressProvider>
     </CardsProvider>

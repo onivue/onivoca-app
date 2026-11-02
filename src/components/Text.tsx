@@ -1,6 +1,5 @@
 import { Text as RNText, StyleSheet, TextProps } from "react-native";
 
-// Benutzerdefinierte Schriften kennen kein fontWeight; jede Stärke ist eine eigene Schrift.
 function fontFor(weight: unknown) {
   switch (String(weight)) {
     case "800":
@@ -16,7 +15,6 @@ function fontFor(weight: unknown) {
   }
 }
 
-// Text mit der App-Schrift. Überall statt `Text` aus react-native verwenden.
 export function Text({ style, ...props }: TextProps) {
   const { fontWeight } = StyleSheet.flatten(style) ?? {};
   return <RNText {...props} style={[{ fontFamily: fontFor(fontWeight) }, style, { fontWeight: undefined }]} />;

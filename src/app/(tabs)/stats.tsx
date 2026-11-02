@@ -48,6 +48,11 @@ export default function StatsScreen() {
           <Text style={styles.privacyText}>Datenschutzerklärung</Text>
         </PressableScale>
       </Link>
+      <Link href="/licenses" asChild>
+        <PressableScale style={styles.privacy} accessibilityRole="link">
+          <Text style={styles.privacyText}>Drittanbieter-Lizenzen</Text>
+        </PressableScale>
+      </Link>
     </Screen>
   );
 }
