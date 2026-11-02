@@ -1,24 +1,57 @@
-# App-Store-Release Schweiz
+# iOS-Release Schweiz
 
-## Vor dem Einreichen
+## 1. Rechte und Freigaben
 
-- [ ] Betreiberangaben liefern und in `src/app/privacy.tsx` einsetzen: verantwortliche Person/Firma, Postanschrift und Kontakt-E-Mail. Datenschutztext für das Schweizer DSG prüfen lassen; dieser Entwurf ist keine Rechtsberatung.
-- [ ] Datenschutzerklärung unter einer dauerhaft öffentlich erreichbaren HTTPS-Adresse veröffentlichen und diese URL in App Store Connect als Datenschutzrichtlinie eintragen. Der In-App-Eintrag ist bereits im Tab «Fortschritt» vorhanden.
-- [ ] Support-URL und erreichbare Support-Kontaktadresse für App Store Connect festlegen.
-- [ ] Rechte und Nutzungsbedingungen des vorinstallierten Wortschatzes prüfen. Die Projektunterlagen nennen Google Translate als Quelle für Favoriten; klären, ob Übersetzungen und Beispiele kommerziell in der App weiterverwendet werden dürfen. Belege für erforderliche Lizenzen aufbewahren.
-- [ ] Prüfen, ob App-Name «Onivoca» und Bundle-ID `com.onivoca.app` verfügbar sind und dem Rechteinhaber gehören. Die Bundle-ID nach dem ersten Store-Build nicht mehr ändern.
-- [ ] In App Store Connect einen App-Eintrag anlegen und Schweizer Storefront, Name, Untertitel, Beschreibung, Keywords, Kategorie, Copyright und Preis/Verfügbarkeit festlegen. Deutsche Store-Metadaten und weitere Sprachen bei Bedarf separat pflegen.
-- [ ] App-Datenschutzangaben in App Store Connect anhand des finalen Builds und aller eingebundenen SDKs beantworten. Aktuell ist im App-Code kein Entwickler-Backend, Analytics- oder Werbedienst erkennbar; bei zusätzlichen SDKs erneut prüfen.
-- [ ] Altersfreigabe-Fragen wahrheitsgemäss beantworten und entscheiden, ob die App für Kinder beworben oder der Kids-Kategorie zugeordnet wird.
-- [ ] App-Icon, Screenshots der echten App auf unterstützten iPhone-Grössen sowie vollständige, nicht platzhalterhafte Store-Metadaten bereitstellen.
-- [ ] Vorhandensein und korrekte Deklaration der Rechte am App-Inhalt, an Schrift/Marke und an allen Store-Grafiken bestätigen.
-- [ ] Export-Compliance/Encryption-Fragen in App Store Connect für den tatsächlich ausgelieferten Build beantworten. Keine Annahme oder Verschlüsselungs-Ausnahme ungeprüft setzen.
-- [ ] Vollständigen iOS-Produktionsbuild mit `npx eas-cli@latest build --platform ios --profile production` erstellen. Dafür Expo-Konto, Apple Developer Program und gültige Signatur einrichten; Zugangsdaten nicht ins Repository schreiben.
-- [ ] Build zuerst über TestFlight auf echten Geräten prüfen: Neuinstallation, Offline-Nutzung, Karten/Lernen, Sprachausgabe, Fortschritt, Zurücksetzen, VoiceOver und unterstützte iOS-Versionen.
-- [ ] App-Review-Notizen mit Hinweisen zu Offline-Funktion, lokalem Lernstand und fehlendem Login ergänzen; die App enthält keine Demo-Zugangsdaten.
-- [ ] Nach erfolgreicher Prüfung über App Store Connect oder `npx eas-cli@latest submit --platform ios` einreichen und die Freigabe für die Schweiz veröffentlichen.
+- [ ] App-Name «Onivoca» und Bundle-ID `com.onivoca.app` in Apple Developer prüfen; Rechte bestätigen. Die öffentliche CH-Suche ergab am 2. November 2026 keinen Treffer.
+- [ ] Rechte an KI-generierten Karten, Übersetzungen und Beispielen klären. Der Anbieter ist unbekannt; andernfalls Inhalte mit belegbarer Herkunft verwenden.
+- [ ] Rechte an Schrift, Marke, finalem App-Icon und Store-Grafiken bestätigen.
+- [ ] Datenschutzerklärung nach Schweizer DSG prüfen lassen. Klären, ob eine postalische Kontaktadresse nötig ist; bis dahin keine Wohnadresse veröffentlichen.
 
-## Vor jedem Update
+## 2. Öffentliche Kontaktseiten
 
-- [ ] Version erhöhen und neuen Build über das EAS-Profil `production` erstellen; die Buildnummer wird automatisch remote erhöht.
-- [ ] Datenschutzrichtlinie, Datenschutzangaben in App Store Connect, Berechtigungen und SDK-Verhalten gegen die konkrete Release-Version abgleichen.
+- [x] Zentrale Datenschutzerklärung unter `docs/privacy.html` erstellt; die App verlinkt auf dieselbe Seite.
+- [ ] GitHub Pages einmalig in den Repository-Einstellungen als Quelle für GitHub Actions aktivieren und Deploy prüfen.
+- [ ] Veröffentlichte URL in App Store Connect eintragen: `https://onivue.github.io/onivoca-app/privacy.html`.
+- [ ] Support-URL festlegen; Kontakt: `onivue@gmail.com`.
+
+## 3. App Store Connect einrichten
+
+- [ ] App-Eintrag für die Schweiz anlegen und Metadaten pflegen.
+- [ ] Altersfreigabe wahrheitsgemäss ausfüllen; Kinder-Kategorie bewusst entscheiden.
+- [ ] Datenschutzrichtlinien- und Support-URL eintragen.
+
+## 4. App und Store-Material vorbereiten
+
+- [ ] Vorläufiges `assets/icon.png` durch das finale App-Icon ersetzen.
+- [ ] Echte iPhone-Screenshots und vollständige Store-Metadaten erstellen.
+
+## 5. Produktionsbuild und TestFlight
+
+- [ ] Apple-Signierung interaktiv in EAS einrichten. EAS-Projekt ist verknüpft; Zugangsdaten nicht im Repository speichern.
+- [ ] Export-Compliance für den finalen Build prüfen. EAS meldet, dass `ios.infoPlist.ITSAppUsesNonExemptEncryption` noch fehlt.
+- [ ] Produktionsbuild erstellen: `npx eas-cli@latest build --platform ios --profile production`.
+- [ ] Build auf echten Geräten testen: Neuinstallation, Offline-Nutzung, Lernen, Sprachausgabe, Fortschritt, Zurücksetzen, VoiceOver und unterstützte iOS-Versionen.
+- [ ] Datenschutzangaben in App Store Connect anhand des finalen Builds und aller SDKs beantworten.
+
+## 6. Einreichen und veröffentlichen
+
+- [ ] Review-Notizen zu Offline-Nutzung, lokalem Lernstand und fehlendem Login ergänzen.
+- [ ] Nach erfolgreichem Test über App Store Connect oder `npx eas-cli@latest submit --platform ios` einreichen.
+- [ ] Freigabe und Verfügbarkeit für die Schweiz bestätigen.
+
+## Metadaten-Entwurf
+
+- Name: Onivoca
+- Untertitel: Englisch lernen mit Karten
+- Sprache/Storefront: Deutsch / Schweiz
+- Kategorie: Bildung
+- Preis: kostenlos zum Start
+- Zielgruppe: allgemeines Publikum; nicht gezielt für Kinder
+- Beschreibung: Lerne englische Wörter und Wendungen mit Karten, Beispielen und iOS-Sprachausgabe. Bewerte Karten und verfolge deinen lokal gespeicherten Lernfortschritt – ohne Konto.
+- Keywords: Englisch, Vokabeln, Karteikarten, Wortschatz, Deutsch, Lernen, Sprachausgabe
+- Copyright erst eintragen, wenn die Rechteinhaberschaft bestätigt ist.
+
+## Updates
+
+- [ ] Version erhöhen und mit dem EAS-Profil `production` neu bauen; Buildnummer wird remote erhöht.
+- [ ] Datenschutz, Berechtigungen und SDK-Verhalten für die Release-Version abgleichen.

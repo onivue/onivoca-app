@@ -2,7 +2,7 @@
 
 Englisch-Lernapp (Fokus iOS) mit Karteikarten. Gebaut mit Expo, Expo Router, TypeScript und Lucide-Icons.
 
-- Favoriten-Wortschatz aus Google Translate, dedupliziert und mit Übersetzungen sowie Beispielen
+- KI-generierte vorinstallierte Lernkarten mit deutschen Übersetzungen und Beispielen
 - Karte antippen: umdrehen. Lautsprecher-Symbol: Aussprache anhören
 - Entspanntes Lernen ohne Termine: Punkte pro Karte, Übersicht "gelernt / offen", Lernstand wird auf dem Gerät gespeichert
 - Detailseite pro Wort mit Verlauf (wie oft vorgekommen, Nochmal / Gut / Einfach)
