@@ -77,4 +77,4 @@ npx tsc --noEmit           # TypeScript prüfen
 
 ## Datenschutzerklärung veröffentlichen
 
-Der GitHub-Actions-Workflow veröffentlicht `docs/privacy.html` auf GitHub Pages. Dafür muss im Repository das Secret `PAGES_TOKEN` mit einem Token gesetzt sein, das Pages für dieses Repository verwalten darf (z. B. ein Fine-grained Personal Access Token mit Pages-Schreibzugriff).
+Der GitHub-Actions-Workflow veröffentlicht `docs/privacy.html` auf GitHub Pages. Vor dem ersten Deployment muss GitHub Pages unter **Settings > Pages** für das Repository aktiviert und **GitHub Actions** als Build- und Deploymentquelle ausgewählt werden. Danach benötigt der Workflow kein zusätzliches Token-Secret.
