@@ -1,11 +1,15 @@
-import { useLocalSearchParams } from "expo-router";
-import { Lightbulb, Volume2 } from "lucide-react-native";
+import { useLocalSearchParams, useRouter } from "expo-router";
+import { Volume2 } from "lucide-react-native";
 import { Pressable, StyleSheet, View } from "react-native";
+import { ExampleList } from "../../components/ExampleList";
 import { ProgressBar } from "../../components/ProgressBar";
+import { RelationList } from "../../components/RelationList";
 import { Screen } from "../../components/Screen";
 import { StatusPill } from "../../components/StatusPill";
 import { Text } from "../../components/Text";
-import { CATEGORIES } from "../../data/cards";
+import { UsageBlock } from "../../components/UsageBlock";
+import { WordMeta } from "../../components/WordMeta";
+import { CLUSTER_LABELS, TOPICS } from "../../data/cards";
 import { speak } from "../../lib/speak";
 import { getStatus, MASTERED_SCORE, timesSeen } from "../../lib/srs";
 import { useCards } from "../../state/cards";
@@ -17,47 +21,73 @@ import { RATING_ORDER, RATINGS } from "../../theme/ratings";
 export default function WordDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const { progress } = useProgress();
+  const router = useRouter();
 
   const cards = useCards();
 
   const card = cards.find((c) => c.id === id);
   if (!card) return null;
 
-  const category = CATEGORIES[card.category];
+  const category = TOPICS[card.topics[0] ?? "daily"];
   const p = progress[card.id];
+  const clusterMates = cards.filter((c) => c.id !== card.id && c.clusters.some((cl) => card.clusters.includes(cl)));
 
   return (
-    <Screen title={card.front}>
+    <Screen title={card.lemma}>
       <View style={[styles.hero, { backgroundColor: category.color }]}>
         <View style={styles.heroTexts}>
-          {card.phonetic.length > 0 && (
-            <Text style={styles.phonetic}>{card.phonetic}</Text>
-          )}
-          <Text style={[styles.translation, { color: category.accent }]}>{card.back}</Text>
+          {card.ipa && <Text style={styles.phonetic}>{card.ipa}</Text>}
+          <Text style={[styles.translation, { color: category.accent }]}>{card.de}</Text>
+          {card.deAlt && card.deAlt.length > 0 && <Text style={styles.phonetic}>{card.deAlt.join(" · ")}</Text>}
+          <WordMeta level={card.level} pos={card.pos} register={card.register} />
         </View>
-        <Pressable style={styles.speakButton} onPress={() => speak(card.front)} hitSlop={10}>
+        <Pressable style={styles.speakButton} onPress={() => speak(card.lemma)} hitSlop={10}>
           <Volume2 color={colors.text} size={26} />
         </Pressable>
       </View>
 
-      <View style={styles.card}>
-        <Text style={styles.cardTitle}>Beispiele</Text>
-        {card.examples.map((example) => (
-          <Pressable key={example.en} style={styles.example} onPress={() => speak(example.en)}>
-            <View style={styles.exampleTexts}>
-              <Text style={styles.exampleEn}>{example.en}</Text>
-              <Text style={styles.exampleDe}>{example.de}</Text>
-            </View>
-            <Volume2 color={category.accent} size={20} />
-          </Pressable>
-        ))}
-        {card.note && (
-          <View style={[styles.note, { backgroundColor: category.color }]}>
-            <Lightbulb color={colors.text} size={18} />
-            <Text style={styles.noteText}>{card.note}</Text>
+      {card.definitionEn && (
+        <View style={styles.card}>
+          <Text style={styles.cardTitle}>Bedeutung</Text>
+          <Text style={styles.definition}>{card.definitionEn}</Text>
+        </View>
+      )}
+
+      {card.examples.length > 0 && (
+        <View style={styles.card}>
+          <Text style={styles.cardTitle}>Beispiele</Text>
+          <ExampleList examples={card.examples} accent={category.accent} />
+        </View>
+      )}
+
+      {(card.usage || card.mnemonic) && (
+        <View style={styles.card}>
+          <Text style={styles.cardTitle}>Verwendung</Text>
+          <UsageBlock usage={card.usage} mnemonic={card.mnemonic} color={category.color} accent={category.accent} />
+        </View>
+      )}
+
+      {card.relations.length > 0 && (
+        <View style={styles.card}>
+          <Text style={styles.cardTitle}>Wortnetz</Text>
+          <RelationList relations={card.relations} accent={category.accent} interactive />
+        </View>
+      )}
+
+      {clusterMates.length > 0 && (
+        <View style={styles.card}>
+          <Text style={styles.cardTitle}>
+            Lerngruppe: {card.clusters.map((c) => CLUSTER_LABELS[c] ?? c).join(", ")}
+          </Text>
+          <View style={styles.chips}>
+            {clusterMates.map((mate) => (
+              <Pressable key={mate.id} style={styles.chip} onPress={() => router.push(`/word/${mate.id}`)}>
+                <Text style={styles.chipText}>{mate.lemma}</Text>
+              </Pressable>
+            ))}
           </View>
-        )}
-      </View>
+        </View>
+      )}
 
       <View style={styles.card}>
         <View style={styles.statusRow}>
@@ -118,12 +148,10 @@ const styles = StyleSheet.create({
   },
   card: { backgroundColor: colors.card, borderRadius: 20, padding: 20, gap: 12 },
   cardTitle: { fontSize: 13, fontWeight: "600", color: colors.muted, textTransform: "uppercase" },
-  example: { flexDirection: "row", alignItems: "center", gap: 10 },
-  exampleTexts: { flex: 1, gap: 2 },
-  exampleEn: { fontSize: 16, fontWeight: "600", color: colors.text },
-  exampleDe: { fontSize: 14, color: colors.muted },
-  note: { flexDirection: "row", gap: 10, borderRadius: 14, padding: 12 },
-  noteText: { flex: 1, fontSize: 14, color: colors.text },
+  definition: { fontSize: 16, fontStyle: "italic", color: colors.text },
+  chips: { flexDirection: "row", flexWrap: "wrap", gap: 6 },
+  chip: { backgroundColor: colors.background, borderRadius: 14, paddingHorizontal: 12, paddingVertical: 6 },
+  chipText: { fontSize: 14, color: colors.text },
   statusRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" },
   seen: { fontSize: 15, color: colors.text },
   counts: { flexDirection: "row", gap: 10 },

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Onivoca",
+    "name": "onivoca",
     "slug": "onivoca",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,16 +9,19 @@
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.onivoca.app",
+      "bundleIdentifier": "ch.onivoca.app",
       "buildNumber": "1",
       "privacyManifests": {
         "NSPrivacyTracking": false,
         "NSPrivacyTrackingDomains": [],
         "NSPrivacyCollectedDataTypes": []
+      },
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
-      "package": "com.onivoca.app",
+      "package": "ch.onivoca.app",
       "adaptiveIcon": {
         "backgroundColor": "#000000",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -44,7 +47,8 @@
         }
       ],
       "expo-sqlite",
-      "expo-font"
+      "expo-font",
+      "expo-asset"
     ],
     "extra": {
       "router": {

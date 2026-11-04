@@ -1,12 +1,12 @@
 import { useRouter } from "expo-router";
 import { Check, ChevronRight, Search, SlidersHorizontal, Volume2, X } from "lucide-react-native";
 import { memo, useDeferredValue, useMemo, useState } from "react";
-import { Animated, Easing, Modal, Pressable, StyleSheet, TextInput, View } from "react-native";
+import { Animated, Easing, Modal, Pressable, ScrollView, StyleSheet, TextInput, View } from "react-native";
 import { Screen } from "../../components/Screen";
 import { RowsSkeleton } from "../../components/Skeleton";
 import { StatusPill } from "../../components/StatusPill";
 import { Text } from "../../components/Text";
-import { CATEGORIES, CardData } from "../../data/cards";
+import { CLUSTER_LABELS, LEVELS, Level, TOPICS, TopicId, WordEntry, isPhraseEntry } from "../../data/cards";
 import { speak } from "../../lib/speak";
 import { Status, getStatus } from "../../lib/srs";
 import { useCards } from "../../state/cards";
@@ -16,6 +16,28 @@ import { colors } from "../../theme/colors";
 type Filter = "word" | "phrase";
 type SortMode = "asc" | "desc";
 type StatusFilter = Status | "all";
+type Option<T extends string> = { id: T | "all"; label: string };
+
+// Auswahl als Chips; "all" hebt den Filter auf.
+function ChipGroup<T extends string>({
+  options,
+  value,
+  onChange,
+}: {
+  options: Option<T>[];
+  value: T | "all";
+  onChange: (id: T | "all") => void;
+}) {
+  return (
+    <View style={styles.optionChips}>
+      {options.map(({ id, label }) => (
+        <Pressable key={id} style={[styles.chip, value === id && styles.chipActive]} onPress={() => onChange(id)}>
+          <Text style={[styles.chipText, value === id && styles.chipTextActive]}>{label}</Text>
+        </Pressable>
+      ))}
+    </View>
+  );
+}
 const SORTS: { id: SortMode; label: string }[] = [
   { id: "asc", label: "A–Z" },
   { id: "desc", label: "Z–A" },
@@ -32,17 +54,22 @@ const FILTERS: { id: Filter; label: string }[] = [
 ];
 
 // Memoisiert, damit unveränderte Zeilen beim Filtern nicht neu rendern.
-const WordRow = memo(function WordRow({ card, status }: { card: CardData; status: Status }) {
+const WordRow = memo(function WordRow({ card, status }: { card: WordEntry; status: Status }) {
   const router = useRouter();
   return (
     <Pressable style={styles.row} onPress={() => router.push(`/word/${card.id}`)}>
-      <View style={[styles.dot, { backgroundColor: CATEGORIES[card.category].color }]} />
+      <View style={[styles.dot, { backgroundColor: TOPICS[card.topics[0] ?? "daily"].color }]} />
       <View style={styles.texts}>
-        <Text style={styles.front}>{card.front}</Text>
-        <Text style={styles.back}>{card.back}</Text>
+        <Text style={styles.front}>{card.lemma}</Text>
+        <Text style={styles.back}>{card.de}</Text>
       </View>
+      {card.level && (
+        <View style={styles.levelBadge}>
+          <Text style={styles.levelText}>{card.level}</Text>
+        </View>
+      )}
       <StatusPill status={status} />
-      <Pressable onPress={() => speak(card.front)} hitSlop={10}>
+      <Pressable onPress={() => speak(card.lemma)} hitSlop={10}>
         <Volume2 color={colors.muted} size={20} />
       </Pressable>
       <ChevronRight color={colors.border} size={20} />
@@ -58,6 +85,9 @@ export default function WordsScreen() {
   const [filter, setFilter] = useState<Filter>("word");
   const [sortMode, setSortMode] = useState<SortMode>("asc");
   const [statusFilter, setStatusFilter] = useState<StatusFilter>("all");
+  const [levelFilter, setLevelFilter] = useState<Level | "all">("all");
+  const [topicFilter, setTopicFilter] = useState<TopicId | "all">("all");
+  const [clusterFilter, setClusterFilter] = useState<string>("all");
   const [sheetOpen, setSheetOpen] = useState(false);
   const [sheetAnim] = useState(() => new Animated.Value(0));
 
@@ -79,25 +109,44 @@ export default function WordsScreen() {
       useNativeDriver: true,
     }).start(() => setSheetOpen(false));
   };
-  const activeCount = (statusFilter !== "all" ? 1 : 0) + (sortMode !== "asc" ? 1 : 0);
+  const activeCount =
+    [statusFilter, levelFilter, topicFilter, clusterFilter].filter((f) => f !== "all").length +
+    (sortMode !== "asc" ? 1 : 0);
+
+  const levelOptions: Option<Level>[] = [{ id: "all", label: "Alle" }, ...LEVELS.map((l) => ({ id: l, label: l }))];
+  const topicOptions: Option<TopicId>[] = [
+    { id: "all", label: "Alle" },
+    ...(Object.keys(TOPICS) as TopicId[]).map((t) => ({ id: t, label: TOPICS[t].label })),
+  ];
+  const clusterOptions: Option<string>[] = useMemo(() => {
+    const ids = [...new Set(allCards.flatMap((c) => c.clusters))];
+    return [{ id: "all", label: "Alle" }, ...ids.map((id) => ({ id, label: CLUSTER_LABELS[id] ?? id }))];
+  }, [allCards]);
 
   const criteria = useMemo(
-    () => ({ query, filter, sortMode, statusFilter }),
-    [query, filter, sortMode, statusFilter],
+    () => ({ query, filter, sortMode, statusFilter, levelFilter, topicFilter, clusterFilter }),
+    [query, filter, sortMode, statusFilter, levelFilter, topicFilter, clusterFilter],
   );
   // Die schwere Liste rendert im Hintergrund; bis dahin zeigt die UI Skeleton-Zeilen.
   const deferred = useDeferredValue(criteria);
   const pending = deferred !== criteria;
 
-  // Sucht in Englisch und Deutsch, Groß-/Kleinschreibung egal.
+  // Sucht in Englisch und Deutsch sowie in Alternativen, Definition und Wortverbindungen.
   const cards = useMemo(() => {
     const search = deferred.query.trim().toLowerCase();
+    const matches = (c: WordEntry) =>
+      [c.lemma, c.de, ...(c.deAlt ?? []), c.definitionEn ?? "", ...(c.usage?.collocations ?? [])].some((text) =>
+        text.toLowerCase().includes(search),
+      );
     const result = allCards
-      .filter((c) => (c.category === "phrasen") === (deferred.filter === "phrase"))
-      .filter((c) => c.front.toLowerCase().includes(search) || c.back.toLowerCase().includes(search))
+      .filter((c) => isPhraseEntry(c) === (deferred.filter === "phrase"))
+      .filter(matches)
+      .filter((c) => deferred.levelFilter === "all" || c.level === deferred.levelFilter)
+      .filter((c) => deferred.topicFilter === "all" || c.topics.includes(deferred.topicFilter))
+      .filter((c) => deferred.clusterFilter === "all" || c.clusters.includes(deferred.clusterFilter))
       .filter((c) => deferred.statusFilter === "all" || getStatus(progress[c.id]) === deferred.statusFilter);
     const dir = deferred.sortMode === "asc" ? 1 : -1;
-    return result.sort((a, b) => a.front.localeCompare(b.front, "en") * dir);
+    return result.sort((a, b) => a.lemma.localeCompare(b.lemma, "en") * dir);
   }, [allCards, progress, deferred]);
 
   return (
@@ -160,21 +209,27 @@ export default function WordsScreen() {
             </Pressable>
           </View>
 
-          <Text style={styles.sheetLabel}>Sortierung</Text>
-          {SORTS.map(({ id, label }) => (
-            <Pressable key={id} style={styles.option} onPress={() => setSortMode(id)}>
-              <Text style={styles.optionText}>{label}</Text>
-              {sortMode === id && <Check color={colors.accent} size={20} />}
-            </Pressable>
-          ))}
+          <ScrollView style={styles.sheetScroll} showsVerticalScrollIndicator={false}>
+            <Text style={styles.sheetLabel}>Sortierung</Text>
+            {SORTS.map(({ id, label }) => (
+              <Pressable key={id} style={styles.option} onPress={() => setSortMode(id)}>
+                <Text style={styles.optionText}>{label}</Text>
+                {sortMode === id && <Check color={colors.accent} size={20} />}
+              </Pressable>
+            ))}
 
-          <Text style={styles.sheetLabel}>Status</Text>
-          {STATUS_FILTERS.map(({ id, label }) => (
-            <Pressable key={id} style={styles.option} onPress={() => setStatusFilter(id)}>
-              <Text style={styles.optionText}>{label}</Text>
-              {statusFilter === id && <Check color={colors.accent} size={20} />}
-            </Pressable>
-          ))}
+            <Text style={styles.sheetLabel}>Status</Text>
+            <ChipGroup options={STATUS_FILTERS} value={statusFilter} onChange={(id) => setStatusFilter(id as StatusFilter)} />
+
+            <Text style={styles.sheetLabel}>Niveau</Text>
+            <ChipGroup options={levelOptions} value={levelFilter} onChange={setLevelFilter} />
+
+            <Text style={styles.sheetLabel}>Thema</Text>
+            <ChipGroup options={topicOptions} value={topicFilter} onChange={setTopicFilter} />
+
+            <Text style={styles.sheetLabel}>Lerngruppe</Text>
+            <ChipGroup options={clusterOptions} value={clusterFilter} onChange={setClusterFilter} />
+          </ScrollView>
 
           <View style={styles.sheetActions}>
             <Pressable
@@ -182,6 +237,9 @@ export default function WordsScreen() {
               onPress={() => {
                 setSortMode("asc");
                 setStatusFilter("all");
+                setLevelFilter("all");
+                setTopicFilter("all");
+                setClusterFilter("all");
               }}
             >
               <Text style={styles.chipText}>Zurücksetzen</Text>
@@ -249,6 +307,10 @@ const styles = StyleSheet.create({
   },
   optionText: { fontSize: 16, color: colors.text },
   sheetActions: { flexDirection: "row", gap: 10, marginTop: 24 },
+  sheetScroll: { maxHeight: 440 },
+  optionChips: { flexDirection: "row", flexWrap: "wrap", gap: 8, marginTop: 8 },
+  levelBadge: { backgroundColor: colors.text, borderRadius: 10, paddingHorizontal: 8, paddingVertical: 2 },
+  levelText: { fontSize: 11, fontWeight: "600", color: "#fff" },
   sheetButton: { flex: 1, alignItems: "center", borderWidth: StyleSheet.hairlineWidth, borderColor: colors.border },
   list: { backgroundColor: colors.card, borderRadius: 20, paddingHorizontal: 16 },
   row: {

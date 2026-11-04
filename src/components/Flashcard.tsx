@@ -1,13 +1,17 @@
-import { Lightbulb, RotateCw, Volume2 } from "lucide-react-native";
+import { RotateCw, Volume2 } from "lucide-react-native";
 import { useEffect } from "react";
 import { Animated, Pressable, ScrollView, StyleSheet, View, useAnimatedValue } from "react-native";
-import { CATEGORIES, CardData } from "../data/cards";
+import { POS_LABELS, TOPICS, WordEntry, isPhraseEntry } from "../data/cards";
 import { speak } from "../lib/speak";
 import { colors } from "../theme/colors";
+import { ExampleList } from "./ExampleList";
+import { RelationList } from "./RelationList";
 import { Text } from "./Text";
+import { UsageBlock } from "./UsageBlock";
+import { WordMeta } from "./WordMeta";
 
 type Props = {
-  card: CardData;
+  card: WordEntry;
   reverse: boolean; // true: Deutsch wird gezeigt, Englisch muss erraten werden
   flipped: boolean;
   onFlip: () => void;
@@ -15,9 +19,9 @@ type Props = {
 
 // Karteikarte mit Vorder- und Rückseite. Tippen dreht sie um.
 export function Flashcard({ card, reverse, flipped, onFlip }: Props) {
-  const category = CATEGORIES[card.category];
-  const isPhrase = card.category === "phrasen";
-  const frontText = reverse ? card.back : card.front;
+  const category = TOPICS[card.topics[0] ?? "daily"];
+  const isPhrase = isPhraseEntry(card);
+  const frontText = reverse ? card.de : card.lemma;
   const smallFront = isPhrase || frontText.length > 16;
 
   // 0 -> 1: Karte fliegt beim Erscheinen ein.
@@ -64,7 +68,8 @@ export function Flashcard({ card, reverse, flipped, onFlip }: Props) {
           <View style={[styles.fill, styles.front, { backgroundColor: category.color }]}>
             <View style={styles.badge}>
               <Text style={styles.badgeText}>
-                {category.label} · {isPhrase ? "Satz" : "Wort"}
+                {category.label} · {card.pos ? POS_LABELS[card.pos] : "Wort"}
+                {card.level ? ` · ${card.level}` : ""}
               </Text>
             </View>
 
@@ -74,10 +79,8 @@ export function Flashcard({ card, reverse, flipped, onFlip }: Props) {
                 <Text style={styles.phonetic}>Wie heisst das auf Englisch?</Text>
               ) : (
                 <>
-                  {card.phonetic.length > 0 && (
-                    <Text style={styles.phonetic}>{card.phonetic}</Text>
-                  )}
-                  <Pressable style={styles.speakButton} onPress={() => speak(card.front)} hitSlop={10}>
+                  {card.ipa && <Text style={styles.phonetic}>{card.ipa}</Text>}
+                  <Pressable style={styles.speakButton} onPress={() => speak(card.lemma)} hitSlop={10}>
                     <Volume2 color={colors.text} size={26} />
                   </Pressable>
                 </>
@@ -104,36 +107,27 @@ export function Flashcard({ card, reverse, flipped, onFlip }: Props) {
             <Text style={[styles.label, { color: category.accent }]}>Englisch</Text>
             <View style={styles.englishRow}>
               <View style={styles.englishTexts}>
-                <Text style={[styles.englishWord, isPhrase && styles.englishPhrase]}>{card.front}</Text>
-                {card.phonetic.length > 0 && (
-                  <Text style={styles.englishPhonetic}>{card.phonetic}</Text>
-                )}
+                <Text style={[styles.englishWord, isPhrase && styles.englishPhrase]}>{card.lemma}</Text>
+                {card.ipa && <Text style={styles.englishPhonetic}>{card.ipa}</Text>}
               </View>
-              <Pressable style={styles.speakSmall} onPress={() => speak(card.front)} hitSlop={10}>
+              <Pressable style={styles.speakSmall} onPress={() => speak(card.lemma)} hitSlop={10}>
                 <Volume2 color={colors.text} size={22} />
               </Pressable>
             </View>
 
             <Text style={[styles.label, { color: category.accent }]}>Deutsch</Text>
-            <Text style={styles.backText}>{card.back}</Text>
+            <Text style={styles.backText}>{card.de}</Text>
+            {card.deAlt && card.deAlt.length > 0 && <Text style={styles.alt}>{card.deAlt.join(" · ")}</Text>}
+            <WordMeta level={card.level} pos={card.pos} register={card.register} />
+            {card.definitionEn && <Text style={styles.definition}>{card.definitionEn}</Text>}
 
-            <Text style={styles.label}>Beispiele</Text>
-            {card.examples.map((example) => (
-              <Pressable key={example.en} style={styles.example} onPress={() => speak(example.en)}>
-                <View style={styles.exampleTexts}>
-                  <Text style={styles.exampleEn}>{example.en}</Text>
-                  <Text style={styles.exampleDe}>{example.de}</Text>
-                </View>
-                <Volume2 color={category.accent} size={20} />
-              </Pressable>
-            ))}
+            {card.examples.length > 0 && <Text style={styles.label}>Beispiele</Text>}
+            <ExampleList examples={card.examples} accent={category.accent} />
 
-            {card.note && (
-              <View style={[styles.note, { backgroundColor: category.color }]}>
-                <Lightbulb color={colors.text} size={18} />
-                <Text style={styles.noteText}>{card.note}</Text>
-              </View>
-            )}
+            <UsageBlock usage={card.usage} mnemonic={card.mnemonic} color={category.color} accent={category.accent} />
+
+            {card.relations.length > 0 && <Text style={styles.label}>Wortnetz</Text>}
+            <RelationList relations={card.relations} accent={category.accent} />
           </ScrollView>
         </Animated.View>
       </Pressable>
@@ -197,10 +191,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  example: { flexDirection: "row", alignItems: "center", gap: 10 },
-  exampleTexts: { flex: 1, gap: 2 },
-  exampleEn: { fontSize: 16, fontWeight: "600", color: colors.text },
-  exampleDe: { fontSize: 14, color: colors.muted },
-  note: { marginTop: "auto", flexDirection: "row", gap: 10, borderRadius: 14, padding: 12 },
-  noteText: { flex: 1, fontSize: 14, color: colors.text },
+  alt: { fontSize: 15, color: colors.muted },
+  definition: { fontSize: 15, fontStyle: "italic", color: colors.text },
 });

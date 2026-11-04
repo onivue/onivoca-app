@@ -1,4 +1,4 @@
-# Onivoca
+# onivoca
 
 Englisch-Lernapp (Fokus iOS) mit Karteikarten. Gebaut mit Expo, Expo Router, TypeScript und Lucide-Icons.
 

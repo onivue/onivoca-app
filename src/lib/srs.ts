@@ -5,7 +5,7 @@
 // - "Gut"     -> 1 Punkt mehr
 // - "Einfach" -> 2 Punkte mehr
 // Ab MASTERED_SCORE Punkten gilt eine Karte als gelernt.
-import { CardData } from "../data/cards";
+import { WordEntry } from "../data/cards";
 
 export type Rating = "again" | "good" | "easy";
 export type Status = "new" | "learning" | "mastered";
@@ -53,7 +53,7 @@ export function timesSeen(progress: CardProgress | undefined) {
 }
 
 // Übersicht: wie viele Karten sind neu, am Lernen oder gelernt?
-export function summarize(cards: CardData[], progress: ProgressMap) {
+export function summarize(cards: WordEntry[], progress: ProgressMap) {
   const counts = { new: 0, learning: 0, mastered: 0 };
   for (const card of cards) counts[getStatus(progress[card.id])] += 1;
   return { ...counts, total: cards.length, open: counts.new + counts.learning };
@@ -66,9 +66,9 @@ function shuffle<T>(items: T[]) {
 // Eine Runde: ein paar Karten, die noch wackeln, dann neue Karten.
 // Sind alle gelernt, gibt es eine Auffrischung mit zufälligen Karten.
 // Schon bekannte Karten werden manchmal umgekehrt gefragt (Deutsch -> Englisch).
-export type SessionItem = { card: CardData; reverse: boolean };
+export type SessionItem = { card: WordEntry; reverse: boolean };
 
-export function buildSession(cards: CardData[], progress: ProgressMap): SessionItem[] {
+export function buildSession(cards: WordEntry[], progress: ProgressMap): SessionItem[] {
   const byStatus = (status: Status) => cards.filter((c) => getStatus(progress[c.id]) === status);
   const learning = byStatus("learning").sort((a, b) => progress[a.id].score - progress[b.id].score);
 

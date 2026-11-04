@@ -13,12 +13,17 @@ type ProgressContextValue = {
 
 const ProgressContext = createContext<ProgressContextValue | null>(null);
 
+// Frühere IDs trugen das Präfix "fav-"; der gespeicherte Lernstand wird darauf umgeschrieben.
+function migrateIds(stored: ProgressMap): ProgressMap {
+  return Object.fromEntries(Object.entries(stored).map(([id, value]) => [id.replace(/^fav-/, ""), value]));
+}
+
 // Hält den Lernstand aller Karten und speichert ihn auf dem Gerät.
 export function ProgressProvider({ children }: { children: ReactNode }) {
   const [progress, setProgress] = useState<ProgressMap | null>(null);
 
   useEffect(() => {
-    AsyncStorage.getItem(STORAGE_KEY).then((raw) => setProgress(raw ? JSON.parse(raw) : {}));
+    AsyncStorage.getItem(STORAGE_KEY).then((raw) => setProgress(raw ? migrateIds(JSON.parse(raw)) : {}));
   }, []);
 
   // Solange der gespeicherte Stand lädt, zeigen wir ein Skeleton.
