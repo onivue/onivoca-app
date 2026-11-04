@@ -29670,5 +29670,3262 @@
     ],
     "clusters": [],
     "source": "favorite"
+  },
+  {
+    "id": "the-ball-is-in-your-court",
+    "lemma": "The ball is in your court.",
+    "pos": "idiom",
+    "ipa": "/ðə ˈbɔːl ɪz ɪn jʊr ˈkɔːrt/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Du bist am Zug.",
+    "deAlt": [
+      "Der Ball liegt bei dir.",
+      "Jetzt bist du dran."
+    ],
+    "definitionEn": "It is now your turn to decide or act.",
+    "examples": [
+      {
+        "en": "I've made my offer, so the ball is in your court.",
+        "de": "Ich habe mein Angebot gemacht, jetzt bist du am Zug.",
+        "hit": "the ball is in your court"
+      },
+      {
+        "en": "\"Should I call her first?\" \"Yes, the ball is in your court now.\"",
+        "de": "„Soll ich sie zuerst anrufen?“ „Ja, du bist jetzt am Zug.“",
+        "hit": "the ball is in your court"
+      },
+      {
+        "en": "We have sent the revised contract to the client, and the ball is now in their court to respond before the deadline.",
+        "de": "Wir haben dem Kunden den überarbeiteten Vertrag geschickt, und nun muss er vor Fristende reagieren.",
+        "hit": "the ball is now in their court"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "the ball is in his/her/their court",
+        "the ball is now in your court",
+        "toss the ball into someone's court",
+        "the ball is back in my court"
+      ],
+      "tip": "Stammt aus dem Tennis. Sagt, dass die andere Person als Nächste handeln oder entscheiden muss. Neutral, oft im Berufsalltag. Die Person im Satz wechselt (my, his, their)."
+    },
+    "mnemonic": "Beim Tennis liegt der Ball auf deiner Spielfeldseite: Du musst ihn zurückschlagen.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "it's up to you",
+        "noteDe": "allgemeiner, ohne Bildsprache"
+      },
+      {
+        "type": "antonym",
+        "word": "the ball is in my court",
+        "noteDe": "ich muss handeln"
+      },
+      {
+        "type": "related",
+        "word": "pass the buck",
+        "noteDe": "Verantwortung abschieben, negativer"
+      },
+      {
+        "type": "related",
+        "word": "it's your call"
+      }
+    ],
+    "topics": [
+      "work",
+      "daily"
+    ],
+    "clusters": [
+      "idioms-and-proverbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "its-not-rocket-science",
+    "lemma": "It's not rocket science.",
+    "pos": "idiom",
+    "ipa": "/ɪts nɑːt ˈrɑːkɪt ˈsaɪəns/",
+    "level": "B2",
+    "register": "informal",
+    "de": "Das ist keine Hexerei.",
+    "deAlt": [
+      "Das ist doch nicht so schwer.",
+      "Das ist keine Raketenwissenschaft."
+    ],
+    "definitionEn": "It is not difficult to understand or do.",
+    "examples": [
+      {
+        "en": "Just press the green button. It's not rocket science.",
+        "de": "Drück einfach den grünen Knopf. Das ist keine Hexerei.",
+        "hit": "It's not rocket science"
+      },
+      {
+        "en": "Learning to bake bread takes practice, but it's not rocket science once you know the basics.",
+        "de": "Brotbacken braucht Übung, aber es ist keine Hexerei, sobald man die Grundlagen kennt.",
+        "hit": "it's not rocket science"
+      },
+      {
+        "en": "The manager shrugged and said that balancing the monthly budget was not rocket science, just careful planning.",
+        "de": "Der Manager zuckte mit den Schultern und sagte, das Monatsbudget auszugleichen sei keine Hexerei, nur sorgfältige Planung.",
+        "hit": "not rocket science"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "it's not exactly rocket science",
+        "hardly rocket science",
+        "this isn't rocket science",
+        "you don't need to be a rocket scientist"
+      ],
+      "tip": "Umgangssprachlich, beruhigend oder leicht spöttisch. Kann herablassend wirken, wenn man es jemandem sagt, der etwas nicht versteht. Variante: 'It's not brain surgery.'"
+    },
+    "mnemonic": "Raketenwissenschaft ist das Schwerste überhaupt, und das hier eben nicht.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "it's not brain surgery",
+        "noteDe": "US-Variante"
+      },
+      {
+        "type": "synonym",
+        "word": "it's a piece of cake",
+        "noteDe": "betont eher Mühelosigkeit"
+      },
+      {
+        "type": "synonym",
+        "word": "it's child's play"
+      },
+      {
+        "type": "antonym",
+        "word": "it's easier said than done",
+        "noteDe": "klingt einfach, ist aber schwer"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work"
+    ],
+    "clusters": [
+      "idioms-and-proverbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "i-couldnt-agree-more",
+    "lemma": "I couldn't agree more.",
+    "pos": "phrase",
+    "ipa": "/aɪ ˈkʊdnt əˈɡriː ˈmɔːr/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Da stimme ich voll und ganz zu.",
+    "deAlt": [
+      "Ich bin ganz deiner Meinung.",
+      "Genau so sehe ich das auch."
+    ],
+    "definitionEn": "I completely share your opinion.",
+    "examples": [
+      {
+        "en": "\"This town needs a new library.\" \"I couldn't agree more.\"",
+        "de": "„Diese Stadt braucht eine neue Bibliothek.“ „Da stimme ich voll und ganz zu.“",
+        "hit": "I couldn't agree more"
+      },
+      {
+        "en": "When the chairwoman said that safety must come first, I couldn't agree more with her.",
+        "de": "Als die Vorsitzende sagte, Sicherheit müsse an erster Stelle stehen, stimmte ich ihr voll und ganz zu.",
+        "hit": "I couldn't agree more"
+      },
+      {
+        "en": "Several members of the audience nodded and whispered that they couldn't agree more with the speaker's criticism.",
+        "de": "Mehrere Zuhörer nickten und flüsterten, dass sie der Kritik des Redners voll zustimmten.",
+        "hit": "couldn't agree more"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "I couldn't agree more with you",
+        "I couldn't agree more with that",
+        "I couldn't agree with you more",
+        "I couldn't agree more on this"
+      ],
+      "tip": "Starke, höfliche Zustimmung (wörtlich: Ich könnte nicht mehr zustimmen). Passt in Gespräch und Meeting. Nicht mit 'I could agree more' verwechseln, das wäre das Gegenteil."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "I totally agree"
+      },
+      {
+        "type": "synonym",
+        "word": "you can say that again",
+        "noteDe": "umgangssprachlicher"
+      },
+      {
+        "type": "synonym",
+        "word": "absolutely",
+        "noteDe": "kürzer"
+      },
+      {
+        "type": "antonym",
+        "word": "I beg to differ",
+        "noteDe": "höflich-formell widersprechen"
+      }
+    ],
+    "topics": [
+      "society",
+      "daily"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "lets-not-jump-to-conclusions",
+    "lemma": "Let's not jump to conclusions.",
+    "pos": "phrase",
+    "ipa": "/lɛts nɑːt dʒʌmp tuː kənˈkluːʒənz/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Lass uns keine voreiligen Schlüsse ziehen.",
+    "deAlt": [
+      "Wir sollten nichts überstürzen.",
+      "Nur nicht voreilig urteilen."
+    ],
+    "definitionEn": "Let us not decide something before we know all the facts.",
+    "examples": [
+      {
+        "en": "He hasn't called yet, but let's not jump to conclusions.",
+        "de": "Er hat sich noch nicht gemeldet, aber lass uns keine voreiligen Schlüsse ziehen.",
+        "hit": "jump to conclusions"
+      },
+      {
+        "en": "The report shows a drop in sales, but let's not jump to conclusions before we have seen the full figures.",
+        "de": "Der Bericht zeigt einen Umsatzrückgang, aber ziehen wir keine voreiligen Schlüsse, bevor wir alle Zahlen kennen.",
+        "hit": "let's not jump to conclusions"
+      },
+      {
+        "en": "Seeing the broken window, she wanted to blame the neighbours, yet her husband gently urged her not to jump to conclusions.",
+        "de": "Beim Anblick des zerbrochenen Fensters wollte sie die Nachbarn beschuldigen, doch ihr Mann mahnte sie sanft, nicht voreilig zu urteilen.",
+        "hit": "jump to conclusions"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "jump to conclusions",
+        "don't jump to conclusions",
+        "no need to jump to conclusions",
+        "a tendency to jump to conclusions"
+      ],
+      "tip": "Bremst Spekulation, bis Fakten vorliegen. Neutral und im Alltag sehr häufig. Die feste Wendung ist 'jump to conclusions' (Plural), nicht 'a conclusion'."
+    },
+    "mnemonic": "Man springt (jump) über die Beweise hinweg direkt zum Ergebnis.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "let's not get ahead of ourselves"
+      },
+      {
+        "type": "synonym",
+        "word": "let's wait and see",
+        "noteDe": "betont das Abwarten"
+      },
+      {
+        "type": "related",
+        "word": "don't put the cart before the horse",
+        "noteDe": "Reihenfolge nicht vertauschen"
+      },
+      {
+        "type": "antonym",
+        "word": "leap to a conclusion",
+        "noteDe": "das voreilige Handeln selbst"
+      }
+    ],
+    "topics": [
+      "daily",
+      "society"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "thats-easier-said-than-done",
+    "lemma": "That's easier said than done.",
+    "pos": "idiom",
+    "ipa": "/ðæts ˈiːziər sɛd ðæn ˈdʌn/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Das ist leichter gesagt als getan.",
+    "deAlt": [
+      "Gesagt, getan ist es noch lange nicht.",
+      "Das sagt sich so leicht."
+    ],
+    "definitionEn": "It sounds simple, but it is hard to actually do.",
+    "examples": [
+      {
+        "en": "\"Just quit smoking.\" \"That's easier said than done.\"",
+        "de": "„Hör einfach mit dem Rauchen auf.“ „Das ist leichter gesagt als getan.“",
+        "hit": "easier said than done"
+      },
+      {
+        "en": "Staying calm during a job interview is easier said than done, especially when you really need the position.",
+        "de": "In einem Vorstellungsgespräch ruhig zu bleiben ist leichter gesagt als getan, besonders wenn man die Stelle dringend braucht.",
+        "hit": "easier said than done"
+      },
+      {
+        "en": "The coach told them to ignore the noise of the crowd, which, as the players soon found out, was easier said than done.",
+        "de": "Der Trainer sagte ihnen, sie sollten den Lärm der Menge ausblenden, was, wie die Spieler bald merkten, leichter gesagt als getan war.",
+        "hit": "easier said than done"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "much easier said than done",
+        "easier said than done",
+        "that's easier said than done",
+        "sounds easy, but easier said than done"
+      ],
+      "tip": "Antwort auf einen Ratschlag, der in der Praxis schwierig ist. Neutral. Mit 'much' oder 'far' verstärkbar."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "that's a tall order",
+        "noteDe": "bezieht sich auf eine schwer erfüllbare Forderung"
+      },
+      {
+        "type": "antonym",
+        "word": "it's not rocket science",
+        "ref": "its-not-rocket-science",
+        "noteDe": "bedeutet, es ist wirklich leicht"
+      },
+      {
+        "type": "related",
+        "word": "actions speak louder than words",
+        "noteDe": "Taten zählen mehr als Worte"
+      },
+      {
+        "type": "related",
+        "word": "talk is cheap"
+      }
+    ],
+    "topics": [
+      "daily",
+      "emotion"
+    ],
+    "clusters": [
+      "idioms-and-proverbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "it-goes-without-saying-that",
+    "lemma": "It goes without saying that …",
+    "pos": "phrase",
+    "ipa": "/ɪt ɡoʊz wɪˈðaʊt ˈseɪɪŋ ðæt/",
+    "level": "C1",
+    "register": "formal",
+    "de": "Es versteht sich von selbst, dass …",
+    "deAlt": [
+      "Selbstredend …",
+      "Es ist selbstverständlich, dass …"
+    ],
+    "definitionEn": "Used to introduce something that is so obvious that nobody needs to say it.",
+    "examples": [
+      {
+        "en": "It goes without saying that you can call me anytime.",
+        "de": "Es versteht sich von selbst, dass du mich jederzeit anrufen kannst.",
+        "hit": "It goes without saying"
+      },
+      {
+        "en": "It goes without saying that all employees must follow the safety rules when they enter the laboratory.",
+        "de": "Es versteht sich von selbst, dass alle Mitarbeiter die Sicherheitsregeln befolgen müssen, wenn sie das Labor betreten.",
+        "hit": "It goes without saying"
+      },
+      {
+        "en": "After years of hard work, it goes without saying that she was thrilled when the prize was finally announced.",
+        "de": "Nach Jahren harter Arbeit war sie selbstverständlich begeistert, als der Preis endlich verkündet wurde.",
+        "hit": "it goes without saying"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "it goes without saying",
+        "needless to say",
+        "that goes without saying",
+        "it should go without saying"
+      ],
+      "tip": "Leitet eine Selbstverständlichkeit ein, die man trotzdem ausspricht (oft zur Betonung oder Höflichkeit). Eher schriftlich oder gehoben. Danach folgt ein that-Satz."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "needless to say"
+      },
+      {
+        "type": "synonym",
+        "word": "obviously",
+        "noteDe": "kürzer, weniger formell"
+      },
+      {
+        "type": "synonym",
+        "word": "of course"
+      },
+      {
+        "type": "related",
+        "word": "stating the obvious",
+        "noteDe": "etwas Offensichtliches aussprechen"
+      }
+    ],
+    "topics": [
+      "society",
+      "work"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "had-i-known-i-would-have-acted-differently",
+    "lemma": "Had I known, I would have acted differently.",
+    "pos": "phrase",
+    "ipa": "/hæd aɪ ˈnoʊn aɪ wʊd hæv ˈæktɪd ˈdɪfrəntli/",
+    "level": "C1",
+    "register": "formal",
+    "de": "Hätte ich es gewusst, hätte ich anders gehandelt.",
+    "deAlt": [
+      "Wenn ich das gewusst hätte, hätte ich anders gehandelt."
+    ],
+    "definitionEn": "If I had known the facts, I would have chosen another course of action.",
+    "examples": [
+      {
+        "en": "I'm so sorry. Had I known, I would have acted differently.",
+        "de": "Es tut mir so leid. Hätte ich es gewusst, hätte ich anders gehandelt.",
+        "hit": "Had I known"
+      },
+      {
+        "en": "Had I known how dangerous the road was, I would have waited until the snow had melted.",
+        "de": "Hätte ich gewusst, wie gefährlich die Straße war, hätte ich gewartet, bis der Schnee geschmolzen wäre.",
+        "hit": "Had I known"
+      },
+      {
+        "en": "In his statement to the committee, the director admitted that had he known about the faulty brakes, he would have acted differently.",
+        "de": "In seiner Erklärung vor dem Ausschuss räumte der Direktor ein, dass er anders gehandelt hätte, wenn er von den defekten Bremsen gewusst hätte.",
+        "hit": "had he known"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "had I known",
+        "had I realised",
+        "had I been aware",
+        "would have acted differently"
+      ],
+      "tip": "Konditionalsatz Typ 3 ohne 'if': Inversion (Had I known = If I had known). Gehoben, wirkt in Entschuldigungen und Berichten. Im Alltag eher 'If I had known, …'."
+    },
+    "mnemonic": "Statt 'If I had known' wird 'had' nach vorn gestellt: Had I known …",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "if I had known",
+        "noteDe": "normale, weniger formelle Form"
+      },
+      {
+        "type": "related",
+        "word": "if only I had known",
+        "noteDe": "betont das Bedauern"
+      },
+      {
+        "type": "related",
+        "word": "hindsight is 20/20",
+        "noteDe": "im Nachhinein ist man schlauer"
+      },
+      {
+        "type": "related",
+        "word": "should I have known",
+        "noteDe": "frage, ob man es hätte wissen müssen"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "law"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "i-wouldnt-have-it-any-other-way",
+    "lemma": "I wouldn't have it any other way.",
+    "pos": "phrase",
+    "ipa": "/aɪ ˈwʊdnt hæv ɪt ˈɛni ˈʌðər weɪ/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Ich würde es nicht anders haben wollen.",
+    "deAlt": [
+      "Es ist genau so, wie ich es mir wünsche.",
+      "Anders möchte ich es gar nicht."
+    ],
+    "definitionEn": "I am completely happy with how things are.",
+    "examples": [
+      {
+        "en": "Sure, it's chaotic with three kids, but I wouldn't have it any other way.",
+        "de": "Klar, mit drei Kindern ist es chaotisch, aber ich würde es nicht anders haben wollen.",
+        "hit": "I wouldn't have it any other way"
+      },
+      {
+        "en": "She works long hours at the restaurant, yet she loves every minute and says she wouldn't have it any other way.",
+        "de": "Sie arbeitet lange im Restaurant, liebt aber jede Minute und sagt, sie wolle es nicht anders haben.",
+        "hit": "wouldn't have it any other way"
+      },
+      {
+        "en": "\"Even with the rain, the wedding was perfect.\" \"I wouldn't have it any other way.\"",
+        "de": "„Trotz des Regens war die Hochzeit perfekt.“ „Ich würde es nicht anders haben wollen.“",
+        "hit": "I wouldn't have it any other way"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "wouldn't have it any other way",
+        "I wouldn't have it any other way",
+        "she wouldn't have it any other way",
+        "I'd have it no other way"
+      ],
+      "tip": "Drückt Zufriedenheit mit einer Situation aus, auch wenn sie anstrengend ist. Neutral, im Gespräch häufig. Nicht mit 'I won't allow it' verwechseln."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "I wouldn't change a thing"
+      },
+      {
+        "type": "synonym",
+        "word": "it's perfect as it is"
+      },
+      {
+        "type": "related",
+        "word": "I couldn't be happier",
+        "noteDe": "betont das Glück"
+      },
+      {
+        "type": "antonym",
+        "word": "I'd rather it were different",
+        "noteDe": "Wunsch nach Veränderung"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "dont-count-your-chickens-before-they-hatch",
+    "lemma": "Don't count your chickens before they hatch.",
+    "pos": "idiom",
+    "ipa": "/doʊnt kaʊnt jʊr ˈtʃɪkənz bɪˈfɔːr ðeɪ hætʃ/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Man soll den Tag nicht vor dem Abend loben.",
+    "deAlt": [
+      "Freu dich nicht zu früh.",
+      "Man soll das Fell des Bären nicht verteilen, bevor er erlegt ist."
+    ],
+    "definitionEn": "Do not rely on a success that has not happened yet.",
+    "examples": [
+      {
+        "en": "You haven't got the job yet, so don't count your chickens before they hatch.",
+        "de": "Du hast die Stelle noch nicht, also lobe den Tag nicht vor dem Abend.",
+        "hit": "count your chickens before they hatch"
+      },
+      {
+        "en": "The team is two goals ahead, but my grandfather warned us not to count our chickens before they hatch.",
+        "de": "Das Team liegt zwei Tore vorn, aber mein Großvater warnte uns, den Tag nicht vor dem Abend zu loben.",
+        "hit": "count our chickens before they hatch"
+      },
+      {
+        "en": "Investors were already spending the profits of the unfinished project, which is exactly why experts say never to count your chickens before they hatch.",
+        "de": "Investoren gaben die Gewinne des unfertigen Projekts schon aus, weshalb Experten raten, den Tag nie vor dem Abend zu loben.",
+        "hit": "count your chickens before they hatch"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "don't count your chickens",
+        "count your chickens before they're hatched",
+        "counting your chickens",
+        "don't count your chickens too soon"
+      ],
+      "tip": "Sprichwort als Warnung vor verfrühter Freude oder Planung. Oft verkürzt: 'Don't count your chickens.' Neutral, leicht scherzhaft."
+    },
+    "mnemonic": "Küken zählt man erst, wenn sie geschlüpft sind, nicht schon als Eier.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "don't get ahead of yourself"
+      },
+      {
+        "type": "synonym",
+        "word": "don't put the cart before the horse",
+        "noteDe": "Reihenfolge, nicht Vorfreude"
+      },
+      {
+        "type": "related",
+        "word": "it ain't over till it's over",
+        "noteDe": "umgangssprachlich, nichts ist entschieden"
+      },
+      {
+        "type": "related",
+        "word": "let's not jump to conclusions",
+        "ref": "lets-not-jump-to-conclusions",
+        "noteDe": "bezieht sich auf Urteile, nicht auf Vorfreude"
+      }
+    ],
+    "topics": [
+      "daily",
+      "society"
+    ],
+    "clusters": [
+      "idioms-and-proverbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "better-late-than-never",
+    "lemma": "Better late than never.",
+    "pos": "idiom",
+    "ipa": "/ˈbɛtər leɪt ðæn ˈnɛvər/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Besser spät als nie.",
+    "deAlt": [
+      "Lieber spät als gar nicht."
+    ],
+    "definitionEn": "It is better to do something late than not to do it at all.",
+    "examples": [
+      {
+        "en": "Sorry I'm late to the party. \"Better late than never!\"",
+        "de": "Tut mir leid, dass ich zu spät zur Party komme. „Besser spät als nie!“",
+        "hit": "Better late than never"
+      },
+      {
+        "en": "He finally apologised to his sister after ten years, and she said that better late than never.",
+        "de": "Er entschuldigte sich nach zehn Jahren endlich bei seiner Schwester, und sie sagte, besser spät als nie.",
+        "hit": "better late than never"
+      },
+      {
+        "en": "The city council has at last approved funding for the bridge repairs, which, better late than never, will begin next month.",
+        "de": "Der Stadtrat hat endlich die Mittel für die Brückenreparatur bewilligt, die, besser spät als nie, nächsten Monat beginnt.",
+        "hit": "better late than never"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "better late than never",
+        "better late than never, I suppose",
+        "well, better late than never",
+        "late, but better than never"
+      ],
+      "tip": "Tröstet oder kommentiert Verspätung mit Nachsicht. Kann auch leicht ironisch klingen. Neutral, sehr geläufig."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "too little, too late",
+        "noteDe": "zu wenig und zu spät"
+      },
+      {
+        "type": "related",
+        "word": "it's never too late"
+      },
+      {
+        "type": "related",
+        "word": "better safe than sorry",
+        "noteDe": "anderes Sprichwort: Vorsicht ist besser"
+      },
+      {
+        "type": "related",
+        "word": "late to the party",
+        "noteDe": "als Letzter dazukommen"
+      }
+    ],
+    "topics": [
+      "daily",
+      "emotion"
+    ],
+    "clusters": [
+      "idioms-and-proverbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "the-devil-is-in-the-details",
+    "lemma": "The devil is in the details.",
+    "pos": "idiom",
+    "ipa": "/ðə ˈdɛvəl ɪz ɪn ðə ˈdiːteɪlz/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "Der Teufel steckt im Detail.",
+    "deAlt": [
+      "Die Tücke liegt im Detail",
+      "Auf die Kleinigkeiten kommt es an"
+    ],
+    "definitionEn": "small points in a plan or contract often cause the biggest problems",
+    "examples": [
+      {
+        "en": "The plan sounds great, but the devil is in the details.",
+        "de": "Der Plan klingt toll, aber der Teufel steckt im Detail.",
+        "hit": "the devil is in the details"
+      },
+      {
+        "en": "Before you sign the contract, read every clause carefully, because the devil is in the details.",
+        "de": "Lies vor der Unterschrift jede Klausel genau, denn der Teufel steckt im Detail.",
+        "hit": "the devil is in the details"
+      },
+      {
+        "en": "The report praised the new law in general, yet warned that the devil is in the details of its enforcement.",
+        "de": "Der Bericht lobte das neue Gesetz allgemein, warnte aber, dass der Teufel in den Details der Durchsetzung stecke.",
+        "hit": "the devil is in the details"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "the devil is in the detail",
+        "the devil is in the fine print",
+        "watch out for the details",
+        "agree in principle"
+      ],
+      "tip": "Verwendet, wenn eine Idee im Großen gut klingt, aber kleine Punkte Probleme machen können. Beide Formen (detail/details) sind üblich. Neutral, auch im Beruf und in Verträgen."
+    },
+    "mnemonic": "Der Teufel versteckt sich im Kleingedruckten.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "God is in the details",
+        "noteDe": "Gegenteil im Ton: Sorgfalt im Detail führt zu Qualität"
+      },
+      {
+        "type": "related",
+        "word": "read the fine print"
+      },
+      {
+        "type": "related",
+        "word": "the proof of the pudding is in the eating"
+      }
+    ],
+    "topics": [
+      "work",
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "well-cross-that-bridge-when-we-come-to-it",
+    "lemma": "We'll cross that bridge when we come to it.",
+    "pos": "idiom",
+    "ipa": "/wiːl krɔs ðæt brɪdʒ wɛn wi kʌm tu ɪt/",
+    "level": "C1",
+    "register": "informal",
+    "de": "Darüber machen wir uns Gedanken, wenn es soweit ist.",
+    "deAlt": [
+      "Wenn es soweit ist, sehen wir weiter",
+      "Eins nach dem anderen"
+    ],
+    "definitionEn": "we will deal with a possible problem only if it actually happens",
+    "examples": [
+      {
+        "en": "\"What if the funding falls through?\" \"We'll cross that bridge when we come to it.\"",
+        "de": "„Und wenn die Finanzierung platzt?“ „Darüber machen wir uns Gedanken, wenn es soweit ist.“",
+        "hit": "cross that bridge when we come to it"
+      },
+      {
+        "en": "The manager refused to discuss layoffs and said they would cross that bridge when they came to it.",
+        "de": "Der Chef weigerte sich, über Entlassungen zu sprechen, und sagte, man werde sich darum kümmern, wenn es so weit sei.",
+        "hit": "cross that bridge when they came to it"
+      },
+      {
+        "en": "I don't know where we'll live after the baby arrives, but we'll cross that bridge when we come to it.",
+        "de": "Ich weiß nicht, wo wir nach der Geburt wohnen, aber das sehen wir, wenn es so weit ist.",
+        "hit": "cross that bridge when we come to it"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "we'll cross that bridge when we get to it",
+        "cross that bridge when we come to it",
+        "let's not cross that bridge yet"
+      ],
+      "tip": "Man vertagt ein mögliches Problem, statt es jetzt zu lösen. Wirkt im Gespräch beruhigend oder ausweichend. Variante mit 'get to it' ebenso häufig."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "one step at a time"
+      },
+      {
+        "type": "related",
+        "word": "let's take it as it comes"
+      },
+      {
+        "type": "antonym",
+        "word": "plan for a rainy day",
+        "noteDe": "vorsorgen statt abwarten"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "im-at-my-wits-end",
+    "lemma": "I'm at my wit's end.",
+    "pos": "idiom",
+    "ipa": "/aɪm æt maɪ wɪts ɛnd/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "Ich bin mit meinem Latein am Ende.",
+    "deAlt": [
+      "Ich weiß nicht mehr weiter",
+      "Ich bin am Verzweifeln"
+    ],
+    "definitionEn": "I am so worried or frustrated that I do not know what else to do",
+    "examples": [
+      {
+        "en": "I'm at my wit's end; the printer still won't work.",
+        "de": "Ich bin mit meinem Latein am Ende; der Drucker funktioniert immer noch nicht.",
+        "hit": "at my wit's end"
+      },
+      {
+        "en": "After weeks of sleepless nights with the baby, she was at her wit's end and called her mother for help.",
+        "de": "Nach Wochen schlafloser Nächte mit dem Baby war sie mit ihrem Latein am Ende und rief ihre Mutter zu Hilfe.",
+        "hit": "at her wit's end"
+      },
+      {
+        "en": "The teachers are at their wits' end trying to keep the class under control.",
+        "de": "Die Lehrer wissen nicht mehr weiter, wie sie die Klasse im Griff behalten sollen.",
+        "hit": "at their wits' end"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "be at one's wit's end",
+        "at the end of my rope",
+        "driven to one's wit's end"
+      ],
+      "tip": "Ausdruck von Verzweiflung, wenn man alle Möglichkeiten ausprobiert hat. Die Person passt sich an (her wit's end, their wits' end). Auch 'wits' end' ohne Apostroph-s ist verbreitet."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "at the end of my rope",
+        "noteDe": "US-Variante"
+      },
+      {
+        "type": "synonym",
+        "word": "at the end of my tether",
+        "noteDe": "britische Variante"
+      },
+      {
+        "type": "antonym",
+        "word": "keep one's cool"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "its-a-blessing-in-disguise",
+    "lemma": "It's a blessing in disguise.",
+    "pos": "idiom",
+    "ipa": "/ɪts ə ˈblɛsɪŋ ɪn dɪsˈɡaɪz/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "Das ist ein Glück im Unglück.",
+    "deAlt": [
+      "Das war ein verkappter Segen",
+      "Ein Unglück, das sich als Glücksfall erweist"
+    ],
+    "definitionEn": "something that seems bad at first but turns out to be good",
+    "examples": [
+      {
+        "en": "Losing that job was a blessing in disguise.",
+        "de": "Der Verlust dieser Stelle war ein Glück im Unglück.",
+        "hit": "a blessing in disguise"
+      },
+      {
+        "en": "At the time I was devastated, but it's a blessing in disguise because I met my wife at my new company.",
+        "de": "Damals war ich am Boden zerstört, aber es war ein Glück im Unglück, denn in der neuen Firma lernte ich meine Frau kennen.",
+        "hit": "a blessing in disguise"
+      },
+      {
+        "en": "Critics called the factory closure a tragedy, though some residents later saw it as a blessing in disguise for the river.",
+        "de": "Kritiker nannten die Schließung der Fabrik eine Tragödie, doch manche Anwohner sahen darin später ein Glück im Unglück für den Fluss.",
+        "hit": "a blessing in disguise"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "turn out to be a blessing in disguise",
+        "prove a blessing in disguise",
+        "a real blessing in disguise"
+      ],
+      "tip": "Rückblickend gebraucht, wenn sich ein Rückschlag als Vorteil erweist. Auch ohne 'It's' üblich: 'a blessing in disguise'."
+    },
+    "mnemonic": "Der Segen trägt eine Verkleidung (disguise) und sieht zuerst wie Pech aus.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "every cloud has a silver lining"
+      },
+      {
+        "type": "synonym",
+        "word": "a happy accident"
+      },
+      {
+        "type": "antonym",
+        "word": "a curse in disguise"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "dont-take-it-personally",
+    "lemma": "Don't take it personally.",
+    "pos": "phrase",
+    "ipa": "/doʊnt teɪk ɪt ˈpɜrsənəli/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Nimm es nicht persönlich.",
+    "deAlt": [
+      "Beziehe das nicht auf dich",
+      "Nimm dir das nicht zu Herzen"
+    ],
+    "definitionEn": "do not feel hurt or insulted, because the remark was not aimed at you",
+    "examples": [
+      {
+        "en": "He's rude to everyone, so don't take it personally.",
+        "de": "Er ist zu jedem unhöflich, also nimm es nicht persönlich.",
+        "hit": "don't take it personally"
+      },
+      {
+        "en": "I'd love to join you, but I'm swamped this week, so please don't take it personally.",
+        "de": "Ich würde gern mitkommen, aber ich bin diese Woche überlastet, also nimm es bitte nicht persönlich.",
+        "hit": "don't take it personally"
+      },
+      {
+        "en": "The recruiter advised applicants not to take rejection personally, since hundreds of people apply for every position.",
+        "de": "Der Personalvermittler riet Bewerbern, eine Absage nicht persönlich zu nehmen, da sich Hunderte auf jede Stelle bewerben.",
+        "hit": "take rejection personally"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "don't take it personally",
+        "not take it personally",
+        "nothing personal",
+        "take criticism personally"
+      ],
+      "grammar": "take sth personally: Objekt steht zwischen take und personally",
+      "tip": "Beschwichtigung nach Kritik oder Ablehnung. Nicht verwechseln mit 'take it to heart' (sich etwas sehr zu Herzen nehmen)."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "don't take it to heart",
+        "noteDe": "ähnlich, betont die emotionale Wirkung"
+      },
+      {
+        "type": "related",
+        "word": "it's nothing personal"
+      },
+      {
+        "type": "antonym",
+        "word": "take offense",
+        "noteDe": "sich gekränkt fühlen"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "ill-get-back-to-you-on-that",
+    "lemma": "I'll get back to you on that.",
+    "pos": "phrase",
+    "ipa": "/aɪl ɡɛt bæk tu ju ɑn ðæt/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Dazu melde ich mich noch bei Ihnen.",
+    "deAlt": [
+      "Ich komme darauf zurück",
+      "Ich gebe Ihnen dazu Bescheid"
+    ],
+    "definitionEn": "I will give you an answer about this later",
+    "examples": [
+      {
+        "en": "I'm not sure about the price; I'll get back to you on that.",
+        "de": "Beim Preis bin ich nicht sicher; dazu melde ich mich bei Ihnen.",
+        "hit": "get back to you on that"
+      },
+      {
+        "en": "Thanks for your question, which I can't answer right now, but I'll get back to you on that by Friday.",
+        "de": "Danke für Ihre Frage, die ich gerade nicht beantworten kann, aber ich melde mich bis Freitag dazu.",
+        "hit": "get back to you on that"
+      },
+      {
+        "en": "She promised the client she would get back to him on that once she had checked the figures.",
+        "de": "Sie versprach dem Kunden, sich bei ihm zu melden, sobald sie die Zahlen geprüft hatte.",
+        "hit": "get back to him on that"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "get back to you on that",
+        "get back to you with an answer",
+        "get back to you shortly",
+        "I'll get back to you later"
+      ],
+      "grammar": "get back to sb on/about sth",
+      "tip": "Höfliche Standardfloskel im Beruf, wenn man keine sofortige Antwort hat. Im Deutschen nicht wörtlich 'zurückkommen zu dir' sagen."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "I'll look into it"
+      },
+      {
+        "type": "synonym",
+        "word": "let me check and come back to you"
+      },
+      {
+        "type": "related",
+        "word": "follow up"
+      }
+    ],
+    "topics": [
+      "work",
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "as-far-as-im-concerned",
+    "lemma": "As far as I'm concerned, …",
+    "pos": "phrase",
+    "ipa": "/æz fɑr æz aɪm kənˈsɜrnd/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Was mich betrifft, …",
+    "deAlt": [
+      "Meiner Meinung nach …",
+      "Für mich ist …"
+    ],
+    "definitionEn": "used to give your own opinion or position on a matter",
+    "examples": [
+      {
+        "en": "As far as I'm concerned, the meeting was a waste of time.",
+        "de": "Meiner Meinung nach war die Besprechung Zeitverschwendung.",
+        "hit": "as far as I'm concerned"
+      },
+      {
+        "en": "You can stay as long as you like; as far as I'm concerned, this is your home too.",
+        "de": "Du kannst bleiben, so lange du willst; was mich betrifft, ist das auch dein Zuhause.",
+        "hit": "as far as I'm concerned"
+      },
+      {
+        "en": "As far as I'm concerned, the case is closed, although the committee may still want to review it.",
+        "de": "Was mich betrifft, ist der Fall abgeschlossen, auch wenn der Ausschuss ihn vielleicht noch prüfen will.",
+        "hit": "as far as I'm concerned"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "as far as I'm concerned",
+        "as far as he is concerned",
+        "as far as money is concerned",
+        "as far as X goes"
+      ],
+      "tip": "Leitet eine persönliche Sicht ein und klingt oft bestimmt. Mit Nomen: 'as far as the budget is concerned' = was das Budget betrifft. Nach dem Ausdruck folgt ein Komma."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "in my opinion"
+      },
+      {
+        "type": "synonym",
+        "word": "from my point of view"
+      },
+      {
+        "type": "related",
+        "word": "as far as I know",
+        "noteDe": "bedeutet 'soweit ich weiß', nicht 'meiner Meinung nach'"
+      }
+    ],
+    "topics": [
+      "daily",
+      "society"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "it-slipped-my-mind",
+    "lemma": "It slipped my mind.",
+    "pos": "idiom",
+    "ipa": "/ɪt slɪpt maɪ maɪnd/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Das ist mir entfallen.",
+    "deAlt": [
+      "Das habe ich vergessen",
+      "Das ist mir entgangen"
+    ],
+    "definitionEn": "I forgot about it without meaning to",
+    "examples": [
+      {
+        "en": "Sorry, I forgot your birthday; it completely slipped my mind.",
+        "de": "Tut mir leid, ich habe deinen Geburtstag vergessen; er ist mir völlig entfallen.",
+        "hit": "slipped my mind"
+      },
+      {
+        "en": "I meant to call the dentist this morning, but it slipped my mind during the rush.",
+        "de": "Ich wollte heute Morgen beim Zahnarzt anrufen, aber im Trubel ist es mir entfallen.",
+        "hit": "slipped my mind"
+      },
+      {
+        "en": "The witness admitted that the exact time had slipped his mind after so many years.",
+        "de": "Der Zeuge räumte ein, dass ihm die genaue Uhrzeit nach so vielen Jahren entfallen war.",
+        "hit": "slipped his mind"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "slip one's mind",
+        "completely slipped my mind",
+        "it totally slipped my mind",
+        "let it slip one's mind"
+      ],
+      "grammar": "Subjekt ist die vergessene Sache, nicht die Person",
+      "tip": "Höflicher als 'I forgot', da es das Vergessen als unabsichtlich darstellt. Die Person steht als Possessivpronomen (my, his, her)."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "it escaped me"
+      },
+      {
+        "type": "synonym",
+        "word": "I drew a blank"
+      },
+      {
+        "type": "antonym",
+        "word": "bear in mind",
+        "noteDe": "im Gedächtnis behalten"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "you-cant-have-your-cake-and-eat-it-too",
+    "lemma": "You can't have your cake and eat it too.",
+    "pos": "idiom",
+    "ipa": "/ju kænt hæv jʊr keɪk ænd it ɪt tu/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "Man kann nicht alles haben.",
+    "deAlt": [
+      "Man kann nicht auf zwei Hochzeiten tanzen",
+      "Beides geht nicht"
+    ],
+    "definitionEn": "you cannot enjoy two good things that exclude each other",
+    "examples": [
+      {
+        "en": "You want a big salary and no stress? You can't have your cake and eat it too.",
+        "de": "Du willst ein hohes Gehalt und keinen Stress? Man kann nicht alles haben.",
+        "hit": "have your cake and eat it too"
+      },
+      {
+        "en": "She wants to travel the world and keep her old friendships, but you can't have your cake and eat it too.",
+        "de": "Sie möchte die Welt bereisen und ihre alten Freundschaften behalten, aber man kann nicht alles haben.",
+        "hit": "have your cake and eat it too"
+      },
+      {
+        "en": "The minister was accused of trying to have his cake and eat it too by promising lower taxes and higher spending.",
+        "de": "Dem Minister wurde vorgeworfen, alles zugleich haben zu wollen, indem er niedrigere Steuern und höhere Ausgaben versprach.",
+        "hit": "have his cake and eat it too"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "want to have your cake and eat it",
+        "try to have one's cake and eat it too",
+        "have your cake and eat it"
+      ],
+      "tip": "Britisch oft ohne 'too': 'have your cake and eat it'. Kritisch gemeint, wenn jemand widersprüchliche Vorteile will. Wörtlich: den Kuchen behalten und zugleich essen."
+    },
+    "mnemonic": "Aufgegessener Kuchen ist weg: du kannst ihn nicht mehr 'haben'.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "you can't have it both ways"
+      },
+      {
+        "type": "related",
+        "word": "there's no such thing as a free lunch"
+      }
+    ],
+    "topics": [
+      "daily",
+      "society"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "everything-happens-for-a-reason",
+    "lemma": "Everything happens for a reason.",
+    "pos": "idiom",
+    "ipa": "/ˈɛvriθɪŋ ˈhæpənz fɔr ə ˈrizən/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Alles hat seinen Grund.",
+    "deAlt": [
+      "Alles geschieht aus einem bestimmten Grund",
+      "Nichts passiert ohne Grund"
+    ],
+    "definitionEn": "even sad or unlucky events have a purpose or lead to something good",
+    "examples": [
+      {
+        "en": "I missed my flight, but everything happens for a reason.",
+        "de": "Ich habe meinen Flug verpasst, aber alles hat seinen Grund.",
+        "hit": "everything happens for a reason"
+      },
+      {
+        "en": "My grandmother always said that everything happens for a reason, even when life felt unfair.",
+        "de": "Meine Großmutter sagte immer, alles habe seinen Grund, selbst wenn sich das Leben unfair anfühlte.",
+        "hit": "everything happens for a reason"
+      },
+      {
+        "en": "Some find it comforting to believe that everything happens for a reason, while others consider it an empty cliché.",
+        "de": "Manche finden es tröstlich zu glauben, dass alles seinen Grund hat, andere halten es für eine leere Floskel.",
+        "hit": "everything happens for a reason"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "believe that everything happens for a reason",
+        "things happen for a reason",
+        "happen for a reason"
+      ],
+      "tip": "Trostformel nach Rückschlägen. Kann bei akutem Leid unsensibel wirken und gilt manchen als Klischee."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "it was meant to be"
+      },
+      {
+        "type": "related",
+        "word": "it's a blessing in disguise"
+      },
+      {
+        "type": "antonym",
+        "word": "stuff happens",
+        "noteDe": "umgangssprachlich: Dinge passieren eben ohne tieferen Sinn"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "im-not-in-a-position-to-comment",
+    "lemma": "I'm not in a position to comment.",
+    "pos": "phrase",
+    "ipa": "/aɪm nɑt ɪn ə pəˈzɪʃən tu ˈkɑmɛnt/",
+    "level": "C1",
+    "register": "formal",
+    "de": "Dazu kann ich mich nicht äußern.",
+    "deAlt": [
+      "Ich bin nicht befugt, das zu kommentieren.",
+      "Dazu kann ich nichts sagen."
+    ],
+    "definitionEn": "a polite way of refusing to give an opinion or information about something",
+    "examples": [
+      {
+        "en": "I'm not in a position to comment on the investigation at this stage.",
+        "de": "Zum jetzigen Zeitpunkt kann ich mich nicht zu den Ermittlungen äußern.",
+        "hit": "I'm not in a position to comment"
+      },
+      {
+        "en": "\"Is the company going to close the factory?\" \"Sorry, I'm not in a position to comment.\"",
+        "de": "„Wird die Firma das Werk schließen?“ „Tut mir leid, dazu kann ich mich nicht äußern.“",
+        "hit": "I'm not in a position to comment"
+      },
+      {
+        "en": "When reporters asked about the merger, the spokesman said he was not in a position to comment, citing legal reasons.",
+        "de": "Als Reporter nach der Fusion fragten, sagte der Sprecher aus rechtlichen Gründen, er könne sich nicht äußern.",
+        "hit": "not in a position to comment"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "I'm afraid I'm not in a position to comment",
+        "not in a position to comment on",
+        "not in a position to say",
+        "no comment"
+      ],
+      "tip": "Höfliche, formelle Ausweichformel, typisch für Sprecher, Anwälte und Vorgesetzte. Klingt weniger schroff als 'No comment'. Auch: 'I'm not in a position to discuss/confirm ...'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "No comment."
+      },
+      {
+        "type": "synonym",
+        "word": "I'm not at liberty to say."
+      },
+      {
+        "type": "related",
+        "word": "I couldn't possibly comment."
+      },
+      {
+        "type": "antonym",
+        "word": "I'd be happy to comment."
+      }
+    ],
+    "topics": [
+      "work",
+      "society"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "the-more-the-merrier",
+    "lemma": "The more, the merrier.",
+    "pos": "idiom",
+    "ipa": "/ðə mɔr ðə ˈmɛriər/",
+    "level": "B2",
+    "register": "informal",
+    "de": "Je mehr, desto besser.",
+    "deAlt": [
+      "Je mehr, desto lustiger.",
+      "Es können gar nicht genug kommen."
+    ],
+    "definitionEn": "said to welcome more people to join an activity because it makes it more enjoyable",
+    "examples": [
+      {
+        "en": "Can I bring a few friends along? \"Sure, the more, the merrier!\"",
+        "de": "Kann ich ein paar Freunde mitbringen? „Klar, je mehr, desto besser!“",
+        "hit": "the more, the merrier"
+      },
+      {
+        "en": "We're planning a barbecue on Saturday, so invite whoever you like, because the more, the merrier.",
+        "de": "Wir planen am Samstag ein Grillfest, also lade ein, wen du willst, denn je mehr, desto lustiger.",
+        "hit": "the more, the merrier"
+      },
+      {
+        "en": "The organisers put up a sign at the entrance of the hall reading: Everyone welcome, the more, the merrier.",
+        "de": "Die Veranstalter hängten am Eingang der Halle ein Schild auf: Alle willkommen, je mehr, desto besser.",
+        "hit": "the more, the merrier"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "the more, the merrier",
+        "the more the merrier, I say",
+        "Come along, the more, the merrier."
+      ],
+      "tip": "Typische Einladung zu Partys und Aktivitäten. Gilt nur für Menschen und Geselligkeit, nicht für Dinge (dort eher 'the more, the better'). Locker, nicht für formelle Schreiben."
+    },
+    "mnemonic": "Je mehr Leute (more), desto fröhlicher (merrier) – beide Wörter beginnen mit m-.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "There's always room for one more."
+      },
+      {
+        "type": "confusable",
+        "word": "the more, the better",
+        "noteDe": "'merrier' bezieht sich auf Stimmung und Geselligkeit, 'better' ist allgemeiner und gilt auch für Dinge."
+      },
+      {
+        "type": "antonym",
+        "word": "Two's company, three's a crowd."
+      },
+      {
+        "type": "related",
+        "word": "the more the better"
+      }
+    ],
+    "topics": [
+      "daily",
+      "society"
+    ],
+    "clusters": [
+      "idioms-and-proverbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "let-bygones-be-bygones",
+    "lemma": "Let bygones be bygones.",
+    "pos": "idiom",
+    "ipa": "/lɛt ˈbaɪˌɡɔnz bi ˈbaɪˌɡɔnz/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "Schwamm drüber.",
+    "deAlt": [
+      "Vergangenes ruhen lassen.",
+      "Vergeben und vergessen.",
+      "Lass uns die alten Geschichten vergessen."
+    ],
+    "definitionEn": "to forget past disagreements and stop being angry about them",
+    "examples": [
+      {
+        "en": "We argued for years, but now let's let bygones be bygones.",
+        "de": "Wir haben jahrelang gestritten, aber jetzt lassen wir Vergangenes ruhen.",
+        "hit": "let bygones be bygones"
+      },
+      {
+        "en": "After the long dispute over the inheritance, the two sisters finally decided to let bygones be bygones and have dinner together.",
+        "de": "Nach dem langen Erbstreit beschlossen die beiden Schwestern endlich, Schwamm drüber zu machen und gemeinsam zu essen.",
+        "hit": "let bygones be bygones"
+      },
+      {
+        "en": "\"I'm sorry about what I said.\" \"It's fine. Let bygones be bygones.\"",
+        "de": "„Es tut mir leid, was ich gesagt habe.“ „Schon gut. Schwamm drüber.“",
+        "hit": "Let bygones be bygones"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "let bygones be bygones",
+        "decide to let bygones be bygones",
+        "time to let bygones be bygones"
+      ],
+      "tip": "Feststehende Wendung, 'bygones' wird nur in diesem Ausdruck verwendet. Oft als Versöhnungsangebot oder Aufforderung. Kann auch ein wenig altmodisch klingen."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "bury the hatchet"
+      },
+      {
+        "type": "synonym",
+        "word": "forgive and forget"
+      },
+      {
+        "type": "synonym",
+        "word": "water under the bridge"
+      },
+      {
+        "type": "antonym",
+        "word": "hold a grudge"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "society"
+    ],
+    "clusters": [
+      "idioms-and-proverbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "to-make-matters-worse",
+    "lemma": "To make matters worse, …",
+    "pos": "phrase",
+    "ipa": "/tu meɪk ˈmætərz wɜrs/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Zu allem Überfluss …",
+    "deAlt": [
+      "Als wäre das nicht schlimm genug, …",
+      "Erschwerend kam hinzu, dass …",
+      "Und es kam noch schlimmer: …"
+    ],
+    "definitionEn": "used to introduce something that makes a bad situation even worse",
+    "examples": [
+      {
+        "en": "To make matters worse, it started to rain just as we reached the summit.",
+        "de": "Zu allem Überfluss begann es zu regnen, als wir den Gipfel erreichten.",
+        "hit": "To make matters worse"
+      },
+      {
+        "en": "The train was already two hours late and, to make matters worse, the heating had stopped working.",
+        "de": "Der Zug hatte schon zwei Stunden Verspätung und zu allem Überfluss fiel auch noch die Heizung aus.",
+        "hit": "to make matters worse"
+      },
+      {
+        "en": "The company reported heavy losses last year. To make matters worse, its largest client has now cancelled its contract.",
+        "de": "Das Unternehmen meldete im letzten Jahr hohe Verluste. Zu allem Überfluss hat nun auch der größte Kunde den Vertrag gekündigt.",
+        "hit": "To make matters worse"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "to make matters worse, …",
+        "and, to make matters worse, …",
+        "just to make matters worse"
+      ],
+      "tip": "Leitet einen weiteren negativen Umstand ein, steht meist am Satzanfang mit Komma oder mitten im Satz zwischen Kommas. Auch möglich: 'to make things worse'. Passt in Erzählungen, Berichte und Gespräche."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "what's worse, …"
+      },
+      {
+        "type": "synonym",
+        "word": "on top of that, …"
+      },
+      {
+        "type": "related",
+        "word": "to add insult to injury"
+      },
+      {
+        "type": "antonym",
+        "word": "to make matters better"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "its-only-a-matter-of-time",
+    "lemma": "It's only a matter of time.",
+    "pos": "phrase",
+    "ipa": "/ɪts ˈoʊnli ə ˈmætər əv taɪm/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Es ist nur eine Frage der Zeit.",
+    "deAlt": [
+      "Das ist nur eine Frage der Zeit.",
+      "Das wird früher oder später passieren."
+    ],
+    "definitionEn": "said when something will certainly happen sooner or later",
+    "examples": [
+      {
+        "en": "Don't worry, it's only a matter of time before she gets the job.",
+        "de": "Keine Sorge, es ist nur eine Frage der Zeit, bis sie die Stelle bekommt.",
+        "hit": "only a matter of time"
+      },
+      {
+        "en": "Experts warn that without stronger flood defences, it is only a matter of time before the city is hit again.",
+        "de": "Experten warnen, dass es ohne besseren Hochwasserschutz nur eine Frage der Zeit ist, bis die Stadt erneut getroffen wird.",
+        "hit": "only a matter of time"
+      },
+      {
+        "en": "He kept ignoring the warning signs, and everyone knew it was only a matter of time until the whole system collapsed.",
+        "de": "Er ignorierte weiter die Warnzeichen, und alle wussten, dass es nur eine Frage der Zeit war, bis das ganze System zusammenbrach.",
+        "hit": "only a matter of time"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "only a matter of time before …",
+        "just a matter of time",
+        "a matter of time until …",
+        "it's a question of time"
+      ],
+      "tip": "Wird für Ereignisse verwendet, die als sicher gelten, oft für negative Entwicklungen. Meist mit 'before' oder 'until' fortgesetzt. 'just' und 'only' sind austauschbar."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "sooner or later"
+      },
+      {
+        "type": "synonym",
+        "word": "it's bound to happen"
+      },
+      {
+        "type": "related",
+        "word": "the writing is on the wall"
+      },
+      {
+        "type": "antonym",
+        "word": "it'll never happen"
+      }
+    ],
+    "topics": [
+      "daily",
+      "society"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "i-take-your-point-but",
+    "lemma": "I take your point, but …",
+    "pos": "phrase",
+    "ipa": "/aɪ teɪk jʊr pɔɪnt bʌt/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "Ich verstehe, was du meinst, aber …",
+    "deAlt": [
+      "Das Argument lasse ich gelten, aber …",
+      "Da ist etwas dran, aber …",
+      "Ich sehe deinen Punkt, aber …"
+    ],
+    "definitionEn": "used to accept that someone's argument is valid before disagreeing or adding a different view",
+    "examples": [
+      {
+        "en": "I take your point, but we simply don't have the budget this year.",
+        "de": "Ich verstehe, was du meinst, aber uns fehlt dieses Jahr einfach das Budget.",
+        "hit": "I take your point"
+      },
+      {
+        "en": "I take your point, but I still think we should ask the customers before changing the design.",
+        "de": "Das Argument lasse ich gelten, aber ich finde trotzdem, wir sollten die Kunden fragen, bevor wir das Design ändern.",
+        "hit": "I take your point"
+      },
+      {
+        "en": "\"The route is much shorter.\" \"I take your point, but it goes through the mountains, so it would be slower in winter.\"",
+        "de": "„Die Strecke ist viel kürzer.“ „Da ist etwas dran, aber sie führt durch die Berge und wäre im Winter langsamer.“",
+        "hit": "I take your point"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "I take your point, but …",
+        "point taken",
+        "I take your point about …",
+        "fair point, but …"
+      ],
+      "tip": "Höfliche Einleitung, um Widerspruch abzufedern. Man zeigt, dass man das Argument verstanden hat, bevor man etwas entgegnet. Typisch in Meetings und Diskussionen. Allein ('Point taken.') bedeutet: Ich akzeptiere das."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "fair point, but …"
+      },
+      {
+        "type": "synonym",
+        "word": "I see what you mean, but …"
+      },
+      {
+        "type": "related",
+        "word": "point taken"
+      },
+      {
+        "type": "antonym",
+        "word": "I don't see your point"
+      }
+    ],
+    "topics": [
+      "work",
+      "society"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "nothing-could-be-further-from-the-truth",
+    "lemma": "Nothing could be further from the truth.",
+    "pos": "phrase",
+    "ipa": "/ˈnʌθɪŋ kʊd bi ˈfɜrðər frəm ðə truθ/",
+    "level": "C1",
+    "register": "formal",
+    "de": "Das ist völlig falsch.",
+    "deAlt": [
+      "Das Gegenteil ist der Fall.",
+      "Weit gefehlt.",
+      "Das könnte nicht weiter von der Wahrheit entfernt sein."
+    ],
+    "definitionEn": "used to say that a statement is completely untrue",
+    "examples": [
+      {
+        "en": "People think she is cold, but nothing could be further from the truth.",
+        "de": "Die Leute halten sie für kühl, aber das Gegenteil ist der Fall.",
+        "hit": "nothing could be further from the truth"
+      },
+      {
+        "en": "The report claims that the staff were unhappy, yet nothing could be further from the truth, as our surveys clearly show.",
+        "de": "Der Bericht behauptet, die Belegschaft sei unzufrieden gewesen, doch das ist völlig falsch, wie unsere Umfragen klar zeigen.",
+        "hit": "nothing could be further from the truth"
+      },
+      {
+        "en": "\"So you were bored on holiday?\" \"Nothing could be further from the truth. It was the best week of my life.\"",
+        "de": "„Dann hast du dich im Urlaub gelangweilt?“ „Weit gefehlt. Es war die beste Woche meines Lebens.“",
+        "hit": "Nothing could be further from the truth"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "Nothing could be further from the truth.",
+        "nothing is further from the truth",
+        "far from the truth",
+        "quite the opposite"
+      ],
+      "tip": "Nachdrückliche, eher formelle Zurückweisung einer Behauptung oder Annahme. Steht oft nach einer Aussage, die man widerlegt. Etwas stärker als 'That's not true'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "quite the opposite"
+      },
+      {
+        "type": "synonym",
+        "word": "far from it"
+      },
+      {
+        "type": "related",
+        "word": "nothing could be further from my mind"
+      },
+      {
+        "type": "antonym",
+        "word": "that's absolutely right"
+      }
+    ],
+    "topics": [
+      "society",
+      "daily"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "im-snowed-under-with-work",
+    "lemma": "I'm snowed under with work.",
+    "pos": "idiom",
+    "ipa": "/aɪm snoʊd ˈʌndər wɪð wɜrk/",
+    "level": "C1",
+    "register": "informal",
+    "de": "Ich ersticke in Arbeit.",
+    "deAlt": [
+      "Ich bin mit Arbeit überhäuft.",
+      "Ich versinke in Arbeit.",
+      "Ich habe Arbeit bis über beide Ohren."
+    ],
+    "definitionEn": "to have so much work that you can hardly manage it",
+    "examples": [
+      {
+        "en": "Sorry I haven't called, I'm snowed under with work this week.",
+        "de": "Tut mir leid, dass ich nicht angerufen habe, ich ersticke diese Woche in Arbeit.",
+        "hit": "snowed under with work"
+      },
+      {
+        "en": "Our accountant is completely snowed under with work at the end of the tax year, so please send your documents early.",
+        "de": "Unser Buchhalter versinkt am Ende des Steuerjahres komplett in Arbeit, bitte schicken Sie Ihre Unterlagen früh.",
+        "hit": "snowed under with work"
+      },
+      {
+        "en": "After two colleagues left, she was snowed under with work and often stayed at the office until midnight.",
+        "de": "Nachdem zwei Kollegen gegangen waren, war sie mit Arbeit überhäuft und blieb oft bis Mitternacht im Büro.",
+        "hit": "snowed under with work"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "snowed under with work",
+        "snowed under with emails",
+        "snowed under at the moment",
+        "feel snowed under"
+      ],
+      "tip": "Umgangssprachlich, um Überlastung zu erklären, z. B. als Entschuldigung. Auch ohne Objekt: 'I'm snowed under.' oder mit 'with + Substantiv' (paperwork, emails). Man sagt nicht 'snowed in', das heißt 'eingeschneit'."
+    },
+    "mnemonic": "Wie von einer Schneelawine begraben: Die Arbeit türmt sich wie Schnee über dir.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "swamped with work"
+      },
+      {
+        "type": "synonym",
+        "word": "up to my eyes in work"
+      },
+      {
+        "type": "confusable",
+        "word": "snowed in",
+        "noteDe": "'snowed in' heißt eingeschneit (man kommt nicht raus), 'snowed under' bedeutet überlastet."
+      },
+      {
+        "type": "antonym",
+        "word": "have nothing to do"
+      }
+    ],
+    "topics": [
+      "work",
+      "daily"
+    ],
+    "clusters": [
+      "idioms-and-proverbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "dont-beat-around-the-bush",
+    "lemma": "Don't beat around the bush.",
+    "pos": "idiom",
+    "ipa": "/doʊnt bit əˈraʊnd ðə bʊʃ/",
+    "level": "B2",
+    "register": "informal",
+    "de": "Rede nicht um den heißen Brei herum.",
+    "deAlt": [
+      "Komm zur Sache.",
+      "Sag es geradeheraus.",
+      "Mach es nicht so spannend."
+    ],
+    "definitionEn": "to avoid saying directly what you mean, often because it is uncomfortable",
+    "examples": [
+      {
+        "en": "Don't beat around the bush, just tell me what happened.",
+        "de": "Rede nicht um den heißen Brei herum, sag mir einfach, was passiert ist.",
+        "hit": "beat around the bush"
+      },
+      {
+        "en": "The manager asked him not to beat around the bush and to explain clearly why the project had failed.",
+        "de": "Der Manager bat ihn, nicht um den heißen Brei herumzureden und klar zu erklären, warum das Projekt gescheitert war.",
+        "hit": "beat around the bush"
+      },
+      {
+        "en": "She never beats around the bush; when she disagrees, you hear it immediately and in plain words.",
+        "de": "Sie redet nie um den heißen Brei herum; wenn sie anderer Meinung ist, hört man es sofort und in klaren Worten.",
+        "hit": "beats around the bush"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "stop beating around the bush",
+        "no point in beating around the bush",
+        "without beating around the bush",
+        "beat about the bush"
+      ],
+      "tip": "Als Aufforderung oder Beschreibung einer Person verwendbar. Im britischen Englisch auch 'beat about the bush'. Eher locker; im formellen Kontext besser 'Please come to the point'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "get to the point"
+      },
+      {
+        "type": "synonym",
+        "word": "cut to the chase"
+      },
+      {
+        "type": "antonym",
+        "word": "speak plainly"
+      },
+      {
+        "type": "related",
+        "word": "call a spade a spade"
+      }
+    ],
+    "topics": [
+      "daily",
+      "society"
+    ],
+    "clusters": [
+      "idioms-and-proverbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "actions-speak-louder-than-words",
+    "lemma": "Actions speak louder than words.",
+    "pos": "idiom",
+    "ipa": "/ˈækʃənz spik ˈlaʊdər ðæn wɜrdz/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Taten sagen mehr als Worte.",
+    "deAlt": [
+      "Auf Taten kommt es an, nicht auf Worte.",
+      "Taten zählen mehr als Versprechen."
+    ],
+    "definitionEn": "what people do is more important and honest than what they say",
+    "examples": [
+      {
+        "en": "He keeps promising to help, but actions speak louder than words.",
+        "de": "Er verspricht ständig zu helfen, aber Taten sagen mehr als Worte.",
+        "hit": "actions speak louder than words"
+      },
+      {
+        "en": "The mayor talked a lot about protecting the park, yet actions speak louder than words, and the bulldozers arrived last week.",
+        "de": "Der Bürgermeister sprach viel über den Schutz des Parks, doch Taten sagen mehr als Worte, und letzte Woche rückten die Bagger an.",
+        "hit": "actions speak louder than words"
+      },
+      {
+        "en": "My grandmother never said she loved us; she simply cooked for everyone and waited at the door, because for her actions spoke louder than words.",
+        "de": "Meine Großmutter sagte nie, dass sie uns liebte; sie kochte einfach für alle und wartete an der Tür, denn für sie zählten Taten mehr als Worte.",
+        "hit": "actions spoke louder than words"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "actions speak louder than words",
+        "actions spoke louder than words",
+        "prove it through actions",
+        "put your money where your mouth is"
+      ],
+      "tip": "Sprichwort, oft als Kritik an leeren Versprechen oder als Lob für stille Hilfsbereitschaft. Das Verb wird in der Vergangenheit angepasst ('spoke'). Neutral, in Reden und Alltag gebräuchlich."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "practise what you preach"
+      },
+      {
+        "type": "synonym",
+        "word": "put your money where your mouth is"
+      },
+      {
+        "type": "antonym",
+        "word": "all talk and no action"
+      },
+      {
+        "type": "related",
+        "word": "talk is cheap"
+      }
+    ],
+    "topics": [
+      "society",
+      "emotion"
+    ],
+    "clusters": [
+      "idioms-and-proverbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "its-not-what-you-know-its-who-you-know",
+    "lemma": "It's not what you know, it's who you know.",
+    "pos": "idiom",
+    "ipa": "/ɪts nɑt wʌt ju noʊ ɪts hu ju noʊ/",
+    "level": "B2",
+    "register": "informal",
+    "de": "Es kommt nicht darauf an, was man weiß, sondern wen man kennt.",
+    "deAlt": [
+      "Beziehungen sind alles",
+      "Ohne Vitamin B geht nichts"
+    ],
+    "definitionEn": "Success depends more on useful personal contacts than on skill or knowledge.",
+    "examples": [
+      {
+        "en": "Don't be surprised he got the job; it's not what you know, it's who you know.",
+        "de": "Wundere dich nicht, dass er die Stelle bekam; es kommt nicht darauf an, was man weiß, sondern wen man kennt.",
+        "hit": "it's not what you know, it's who you know"
+      },
+      {
+        "en": "She shrugged and said, \"It's not what you know, it's who you know.\"",
+        "de": "Sie zuckte mit den Schultern und sagte: „Beziehungen sind alles.“",
+        "hit": "It's not what you know, it's who you know"
+      },
+      {
+        "en": "The report suggests that in this industry, it's not what you know, it's who you know, and newcomers struggle to find openings.",
+        "de": "Der Bericht legt nahe, dass in dieser Branche Beziehungen zählen und Neueinsteiger kaum Chancen finden.",
+        "hit": "it's not what you know, it's who you know"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "It's not what you know, but who you know",
+        "It's all about who you know",
+        "get a job through connections"
+      ],
+      "tip": "Sprichwort, meist leicht zynisch, wenn Vetternwirtschaft oder Netzwerke den Erfolg erklären. Auch verkürzt: 'It's who you know.' Im Deutschen: 'Vitamin B'."
+    },
+    "mnemonic": "Vitamin B: nicht Wissen, sondern Wen.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "It's all about connections"
+      },
+      {
+        "type": "related",
+        "word": "pull strings"
+      },
+      {
+        "type": "related",
+        "word": "old boys' network"
+      },
+      {
+        "type": "antonym",
+        "word": "Merit is what counts"
+      }
+    ],
+    "topics": [
+      "work",
+      "society"
+    ],
+    "clusters": [
+      "idioms-and-proverbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "id-rather-not-say",
+    "lemma": "I'd rather not say.",
+    "pos": "phrase",
+    "ipa": "/aɪd ˈræðɚ nɑt seɪ/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Das möchte ich lieber nicht sagen.",
+    "deAlt": [
+      "Dazu sage ich lieber nichts",
+      "Ich möchte mich dazu nicht äußern"
+    ],
+    "definitionEn": "A polite way of declining to give information or an opinion.",
+    "examples": [
+      {
+        "en": "\"How much did it cost?\" \"I'd rather not say.\"",
+        "de": "„Wie viel hat es gekostet?“ „Das möchte ich lieber nicht sagen.“",
+        "hit": "I'd rather not say"
+      },
+      {
+        "en": "When the journalist asked about his salary, he smiled and replied that he'd rather not say.",
+        "de": "Als der Journalist nach seinem Gehalt fragte, lächelte er und antwortete, er wolle das lieber nicht sagen.",
+        "hit": "he'd rather not say"
+      },
+      {
+        "en": "I know who broke the window, but I'd rather not say, because it would only cause more trouble in the family.",
+        "de": "Ich weiß, wer das Fenster zerbrochen hat, sage es aber lieber nicht, weil es nur mehr Ärger in der Familie gäbe.",
+        "hit": "I'd rather not say"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "I'd rather not say",
+        "I'd rather not talk about it",
+        "I'd prefer not to say",
+        "if you don't mind, I'd rather not"
+      ],
+      "tip": "Höfliche, aber bestimmte Ablehnung. 'I'd rather not say' ist weicher als 'No comment' und weniger förmlich als 'I'd prefer not to disclose that'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "I'd prefer not to say"
+      },
+      {
+        "type": "synonym",
+        "word": "No comment"
+      },
+      {
+        "type": "related",
+        "word": "I'd rather not talk about it"
+      },
+      {
+        "type": "antonym",
+        "word": "I don't mind telling you"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "be-that-as-it-may-we-have-to-move-on",
+    "lemma": "Be that as it may, we have to move on.",
+    "pos": "phrase",
+    "ipa": "/bi ðæt æz ɪt meɪ wi hæv tu muv ɑn/",
+    "level": "C1",
+    "register": "formal",
+    "de": "Wie dem auch sei, wir müssen weitermachen.",
+    "deAlt": [
+      "Dem sei, wie ihm wolle, wir müssen weiter",
+      "Das mag sein, aber wir müssen voran"
+    ],
+    "definitionEn": "A formal way to accept a point but insist on continuing anyway.",
+    "examples": [
+      {
+        "en": "\"It was unfair.\" \"Be that as it may, we have to move on.\"",
+        "de": "„Das war unfair.“ „Wie dem auch sei, wir müssen weitermachen.“",
+        "hit": "Be that as it may"
+      },
+      {
+        "en": "The chairman acknowledged the complaints but said that, be that as it may, we have to move on to the budget.",
+        "de": "Der Vorsitzende räumte die Beschwerden ein, sagte aber, wie dem auch sei, man müsse zum Haushalt übergehen.",
+        "hit": "be that as it may"
+      },
+      {
+        "en": "Be that as it may, we have to move on, and the sooner we stop blaming each other, the better for the whole team.",
+        "de": "Wie dem auch sei, wir müssen weitermachen, und je früher wir aufhören, uns gegenseitig zu beschuldigen, desto besser für das ganze Team.",
+        "hit": "Be that as it may"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "be that as it may",
+        "we have to move on",
+        "be that as it may, the fact remains",
+        "be that as it may, we must"
+      ],
+      "tip": "'Be that as it may' räumt etwas ein, ohne es zu widerlegen, und leitet dann zum eigentlichen Punkt über. Eher förmlich, in Sitzungen und Reden üblich."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "even so"
+      },
+      {
+        "type": "synonym",
+        "word": "nevertheless"
+      },
+      {
+        "type": "related",
+        "word": "that being said"
+      },
+      {
+        "type": "related",
+        "word": "let's move on"
+      }
+    ],
+    "topics": [
+      "work",
+      "society"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "if-it-were-up-to-me",
+    "lemma": "If it were up to me, …",
+    "pos": "phrase",
+    "ipa": "/ɪf ɪt wɚ ʌp tu mi/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Wenn es nach mir ginge, …",
+    "deAlt": [
+      "Läge es an mir, …",
+      "Hinge es von mir ab, …"
+    ],
+    "definitionEn": "Introduces what you would do if you alone could decide.",
+    "examples": [
+      {
+        "en": "If it were up to me, we'd leave right now.",
+        "de": "Wenn es nach mir ginge, würden wir sofort aufbrechen.",
+        "hit": "If it were up to me"
+      },
+      {
+        "en": "If it were up to me, the city would ban cars from the old town entirely, but the council disagrees.",
+        "de": "Wenn es nach mir ginge, würde die Stadt Autos aus der Altstadt komplett verbannen, aber der Stadtrat sieht das anders.",
+        "hit": "If it were up to me"
+      },
+      {
+        "en": "\"Would you sell the house?\" she asked. \"If it were up to me, I'd have sold it years ago,\" he said.",
+        "de": "„Würdest du das Haus verkaufen?“, fragte sie. „Wenn es nach mir ginge, hätte ich es schon vor Jahren verkauft“, sagte er.",
+        "hit": "If it were up to me"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "if it were up to me, I would …",
+        "if it were up to him/her",
+        "if it were entirely up to me",
+        "but it's not up to me"
+      ],
+      "grammar": "Irrealis (Konjunktiv): 'were' nach 'if it', dann 'would' + Infinitiv.",
+      "tip": "Drückt eine persönliche Präferenz aus, die man nicht durchsetzen kann. Umgangssprachlich auch 'if it was up to me'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "if I had my way"
+      },
+      {
+        "type": "synonym",
+        "word": "if I were in charge"
+      },
+      {
+        "type": "antonym",
+        "word": "it's not up to me"
+      },
+      {
+        "type": "related",
+        "word": "it's up to you"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "youre-barking-up-the-wrong-tree",
+    "lemma": "You're barking up the wrong tree.",
+    "pos": "idiom",
+    "ipa": "/jʊr ˈbɑrkɪŋ ʌp ðə rɔŋ tri/",
+    "level": "B2",
+    "register": "informal",
+    "de": "Du bist auf dem Holzweg.",
+    "deAlt": [
+      "Da bist du an der falschen Adresse",
+      "Du verfolgst die falsche Spur"
+    ],
+    "definitionEn": "You are making a wrong guess or pursuing a mistaken course of action.",
+    "examples": [
+      {
+        "en": "If you think I took your keys, you're barking up the wrong tree.",
+        "de": "Wenn du denkst, ich hätte deine Schlüssel genommen, bist du auf dem Holzweg.",
+        "hit": "you're barking up the wrong tree"
+      },
+      {
+        "en": "The detectives realised they were barking up the wrong tree when the real thief confessed.",
+        "de": "Die Ermittler merkten, dass sie auf dem Holzweg waren, als der wahre Dieb gestand.",
+        "hit": "barking up the wrong tree"
+      },
+      {
+        "en": "\"Are you asking me to lend you money? Sorry, you're barking up the wrong tree; I'm broke myself.\"",
+        "de": "„Willst du Geld von mir leihen? Tut mir leid, da bist du an der falschen Adresse; ich bin selbst pleite.“",
+        "hit": "you're barking up the wrong tree"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "bark up the wrong tree",
+        "be barking up the wrong tree",
+        "you're barking up the wrong tree if …",
+        "bark up the right tree"
+      ],
+      "tip": "Bildlich vom Jagdhund, der am falschen Baum bellt. Gilt für falsche Verdächtigungen, falsche Ansprechpartner oder falsche Annahmen. Umgangssprachlich."
+    },
+    "mnemonic": "Der Hund bellt den falschen Baum an, die Beute sitzt woanders.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "be on the wrong track"
+      },
+      {
+        "type": "synonym",
+        "word": "get the wrong end of the stick"
+      },
+      {
+        "type": "antonym",
+        "word": "hit the nail on the head"
+      },
+      {
+        "type": "related",
+        "word": "be mistaken"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "idioms-and-proverbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "were-running-out-of-time",
+    "lemma": "We're running out of time.",
+    "pos": "phrase",
+    "ipa": "/wɪr ˈrʌnɪŋ aʊt ʌv taɪm/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Uns läuft die Zeit davon.",
+    "deAlt": [
+      "Wir haben nicht mehr viel Zeit",
+      "Die Zeit wird knapp"
+    ],
+    "definitionEn": "There is very little time left to finish something.",
+    "examples": [
+      {
+        "en": "Hurry up, we're running out of time!",
+        "de": "Beeil dich, uns läuft die Zeit davon!",
+        "hit": "we're running out of time"
+      },
+      {
+        "en": "The project manager warned the team that we're running out of time and the deadline cannot be moved.",
+        "de": "Der Projektleiter warnte das Team, dass uns die Zeit davonläuft und der Termin nicht verschoben werden kann.",
+        "hit": "we're running out of time"
+      },
+      {
+        "en": "As the rescue operation dragged on through the night, everyone knew that we're running out of time to find any survivors.",
+        "de": "Als die Rettungsaktion sich durch die Nacht zog, wusste jeder, dass uns die Zeit davonläuft, um Überlebende zu finden.",
+        "hit": "we're running out of time"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "running out of time",
+        "time is running out",
+        "we're running short of time",
+        "run out of patience/money"
+      ],
+      "grammar": "'run out of' + Nomen; ohne Objekt: 'Time is running out.'",
+      "tip": "Allgemein gebräuchlich. Nicht 'We run out time'; die Präposition 'of' ist nötig."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "time is running out"
+      },
+      {
+        "type": "synonym",
+        "word": "the clock is ticking"
+      },
+      {
+        "type": "antonym",
+        "word": "we have plenty of time"
+      },
+      {
+        "type": "related",
+        "word": "against the clock"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "it-never-rains-but-it-pours",
+    "lemma": "It never rains but it pours.",
+    "pos": "idiom",
+    "ipa": "/ɪt ˈnɛvɚ reɪnz bʌt ɪt pɔrz/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "Ein Unglück kommt selten allein.",
+    "deAlt": [
+      "Wenn es schlecht läuft, dann richtig"
+    ],
+    "definitionEn": "Bad things tend to happen all at once rather than one at a time.",
+    "examples": [
+      {
+        "en": "First my car broke down, then I lost my wallet; it never rains but it pours.",
+        "de": "Erst ging mein Auto kaputt, dann verlor ich mein Portemonnaie; ein Unglück kommt selten allein.",
+        "hit": "it never rains but it pours"
+      },
+      {
+        "en": "\"The boiler has failed and now the roof is leaking.\" \"Oh dear, it never rains but it pours.\"",
+        "de": "„Die Heizung ist ausgefallen und jetzt leckt das Dach.“ „Oje, ein Unglück kommt selten allein.“",
+        "hit": "it never rains but it pours"
+      },
+      {
+        "en": "The company lost its biggest client in March and then faced a lawsuit in April, proving once more that it never rains but it pours.",
+        "de": "Die Firma verlor im März ihren größten Kunden und sah sich im April einer Klage gegenüber, ein erneuter Beweis, dass ein Unglück selten allein kommt.",
+        "hit": "it never rains but it pours"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "it never rains but it pours",
+        "when it rains, it pours",
+        "a run of bad luck",
+        "one thing after another"
+      ],
+      "tip": "Sprichwort für gehäuftes Pech. Die moderne Kurzform 'When it rains, it pours' ist sehr verbreitet und kann auch Positives meinen."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "when it rains, it pours"
+      },
+      {
+        "type": "synonym",
+        "word": "troubles never come singly"
+      },
+      {
+        "type": "related",
+        "word": "one thing after another"
+      },
+      {
+        "type": "related",
+        "word": "add insult to injury"
+      }
+    ],
+    "topics": [
+      "daily",
+      "emotion"
+    ],
+    "clusters": [
+      "idioms-and-proverbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "theres-no-point-in-arguing-about-it",
+    "lemma": "There's no point in arguing about it.",
+    "pos": "phrase",
+    "ipa": "/ðɛrz noʊ pɔɪnt ɪn ˈɑrgjuɪŋ əˈbaʊt ɪt/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Es hat keinen Sinn, darüber zu streiten.",
+    "deAlt": [
+      "Es bringt nichts, darüber zu diskutieren",
+      "Streiten nützt nichts"
+    ],
+    "definitionEn": "Arguing would be useless because it will change nothing.",
+    "examples": [
+      {
+        "en": "The decision is final, so there's no point in arguing about it.",
+        "de": "Die Entscheidung ist endgültig, es hat also keinen Sinn, darüber zu streiten.",
+        "hit": "there's no point in arguing about it"
+      },
+      {
+        "en": "\"I still think you were wrong.\" \"Maybe, but there's no point in arguing about it now.\"",
+        "de": "„Ich finde immer noch, dass du unrecht hattest.“ „Vielleicht, aber es hat jetzt keinen Sinn, darüber zu streiten.“",
+        "hit": "there's no point in arguing about it"
+      },
+      {
+        "en": "After hours of heated debate, the mediator finally said there's no point in arguing about it any longer, since neither side would give way.",
+        "de": "Nach stundenlanger hitziger Debatte sagte der Vermittler schließlich, es habe keinen Sinn mehr zu streiten, da keine Seite nachgebe.",
+        "hit": "there's no point in arguing about it"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "there's no point in arguing",
+        "there's no point (in) doing something",
+        "what's the point of arguing?",
+        "no point in going on"
+      ],
+      "grammar": "'no point in' + -ing-Form; 'in' wird umgangssprachlich oft weggelassen.",
+      "tip": "Beendet eine Diskussion sachlich. Nach 'point in' steht immer die -ing-Form, nicht der Infinitiv."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "it's pointless to argue"
+      },
+      {
+        "type": "synonym",
+        "word": "it's no use arguing"
+      },
+      {
+        "type": "related",
+        "word": "let's agree to disagree"
+      },
+      {
+        "type": "antonym",
+        "word": "it's worth discussing"
+      }
+    ],
+    "topics": [
+      "daily",
+      "society"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "i-cant-help-feeling-that-something-is-wrong",
+    "lemma": "I can't help feeling that something is wrong.",
+    "pos": "phrase",
+    "ipa": "/aɪ kænt hɛlp ˈfilɪŋ ðæt ˈsʌmθɪŋ ɪz rɔŋ/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "Ich werde das Gefühl nicht los, dass etwas nicht stimmt.",
+    "deAlt": [
+      "Ich kann mich des Gefühls nicht erwehren, dass etwas nicht stimmt"
+    ],
+    "definitionEn": "You keep having a worrying impression that something is not right.",
+    "examples": [
+      {
+        "en": "I can't help feeling that something is wrong; he hasn't called all week.",
+        "de": "Ich werde das Gefühl nicht los, dass etwas nicht stimmt; er hat die ganze Woche nicht angerufen.",
+        "hit": "I can't help feeling that something is wrong"
+      },
+      {
+        "en": "The inspector admitted in his report that he couldn't help feeling that something was wrong with the official accounts.",
+        "de": "Der Inspektor räumte in seinem Bericht ein, er werde das Gefühl nicht los, dass mit den offiziellen Büchern etwas nicht stimme.",
+        "hit": "feeling that something was wrong"
+      },
+      {
+        "en": "She stood at the door for a moment, thinking, \"I can't help feeling that something is wrong here,\" before she stepped inside.",
+        "de": "Sie blieb einen Moment an der Tür stehen und dachte: „Ich werde das Gefühl nicht los, dass hier etwas nicht stimmt“, bevor sie eintrat.",
+        "hit": "I can't help feeling that something is wrong"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "can't help feeling",
+        "can't help thinking",
+        "can't help but feel",
+        "a nagging feeling that something is wrong"
+      ],
+      "grammar": "'can't help' + -ing-Form; Variante: 'can't help but' + Infinitiv.",
+      "tip": "Drückt ein unwillkürliches, hartnäckiges Gefühl oder Ahnung aus. Nicht mit 'I can't help you' (Ich kann dir nicht helfen) verwechseln."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "I have a nagging feeling that …"
+      },
+      {
+        "type": "synonym",
+        "word": "I can't shake the feeling that …"
+      },
+      {
+        "type": "related",
+        "word": "something doesn't feel right"
+      },
+      {
+        "type": "confusable",
+        "word": "I can't help you",
+        "noteDe": "bedeutet 'Ich kann dir nicht helfen', nicht 'Ich kann nicht anders'"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "whatever-it-takes",
+    "lemma": "Whatever it takes.",
+    "pos": "phrase",
+    "ipa": "/wʌtˈɛvɚ ɪt teɪks/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Koste es, was es wolle.",
+    "deAlt": [
+      "Egal, was dafür nötig ist",
+      "Um jeden Preis"
+    ],
+    "definitionEn": "Whatever effort or sacrifice is needed to achieve a goal.",
+    "examples": [
+      {
+        "en": "\"Can you finish by Friday?\" \"Whatever it takes.\"",
+        "de": "„Kannst du bis Freitag fertig werden?“ „Koste es, was es wolle.“",
+        "hit": "Whatever it takes"
+      },
+      {
+        "en": "The coach told his players to win the title, whatever it takes.",
+        "de": "Der Trainer sagte seinen Spielern, sie sollten den Titel gewinnen, koste es, was es wolle.",
+        "hit": "whatever it takes"
+      },
+      {
+        "en": "The government has promised to protect jobs and support families through the crisis, whatever it takes, though critics doubt it can afford the cost.",
+        "de": "Die Regierung hat versprochen, Arbeitsplätze zu schützen und Familien durch die Krise zu helfen, koste es, was es wolle, doch Kritiker bezweifeln, dass sie sich das leisten kann.",
+        "hit": "whatever it takes"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "do whatever it takes",
+        "whatever it takes to win",
+        "I'll do whatever it takes",
+        "whatever it takes to get the job done"
+      ],
+      "tip": "Zeigt Entschlossenheit. Kann eigenständig als Antwort stehen oder an einen Satz angehängt werden. Bei Bedarf mit 'to' + Infinitiv fortsetzen."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "at all costs"
+      },
+      {
+        "type": "synonym",
+        "word": "by any means necessary"
+      },
+      {
+        "type": "related",
+        "word": "go the extra mile"
+      },
+      {
+        "type": "antonym",
+        "word": "within reason"
+      }
+    ],
+    "topics": [
+      "work",
+      "emotion"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "she-has-a-lot-on-her-plate",
+    "lemma": "She has a lot on her plate.",
+    "pos": "idiom",
+    "ipa": "/ʃi hæz ə lɑt ɑn hɜr pleɪt/",
+    "level": "B2",
+    "register": "informal",
+    "de": "Sie hat viel um die Ohren.",
+    "deAlt": [
+      "Sie hat einiges zu tun",
+      "Sie ist stark ausgelastet"
+    ],
+    "definitionEn": "someone has many tasks or problems to deal with at the same time",
+    "examples": [
+      {
+        "en": "Don't ask Maria to help; she has a lot on her plate right now.",
+        "de": "Frag Maria nicht um Hilfe; sie hat gerade viel um die Ohren.",
+        "hit": "a lot on her plate"
+      },
+      {
+        "en": "With two jobs, a toddler and an exam coming up, she has a lot on her plate this month.",
+        "de": "Mit zwei Jobs, einem Kleinkind und einer anstehenden Prüfung hat sie diesen Monat viel um die Ohren.",
+        "hit": "a lot on her plate"
+      },
+      {
+        "en": "The manager admitted that the team already had a lot on its plate and could not take on another project.",
+        "de": "Der Manager räumte ein, dass das Team schon viel zu tun hatte und kein weiteres Projekt übernehmen konnte.",
+        "hit": "a lot on its plate"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "have a lot on your plate",
+        "have enough on your plate",
+        "have too much on your plate",
+        "have a full plate"
+      ],
+      "tip": "Umgangssprachlich, aber auch im Büro üblich. Das Pronomen wird angepasst (I/he/they ... on my/his/their plate). Oft als höfliche Absage: 'I have enough on my plate.'"
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "be snowed under",
+        "noteDe": "mit Arbeit überschüttet sein"
+      },
+      {
+        "type": "synonym",
+        "word": "have one's hands full",
+        "noteDe": "alle Hände voll zu tun haben"
+      },
+      {
+        "type": "antonym",
+        "word": "have time on one's hands",
+        "noteDe": "viel freie Zeit haben"
+      },
+      {
+        "type": "related",
+        "word": "bite off more than one can chew",
+        "noteDe": "sich zu viel zumuten"
+      }
+    ],
+    "topics": [
+      "work",
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "that-rings-a-bell",
+    "lemma": "That rings a bell.",
+    "pos": "idiom",
+    "ipa": "/ðæt rɪŋz ə bɛl/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Das kommt mir bekannt vor.",
+    "deAlt": [
+      "Das erinnert mich an etwas",
+      "Das sagt mir was"
+    ],
+    "definitionEn": "something sounds familiar, but you cannot remember exactly why",
+    "examples": [
+      {
+        "en": "\"Do you know a Peter Lang?\" \"Hmm, that rings a bell.\"",
+        "de": "„Kennst du einen Peter Lang?“ „Hm, der Name kommt mir bekannt vor.“",
+        "hit": "that rings a bell"
+      },
+      {
+        "en": "The name of the village rang a bell, but I could not remember where I had heard it before.",
+        "de": "Der Name des Dorfes kam mir bekannt vor, aber ich wusste nicht mehr, wo ich ihn schon gehört hatte.",
+        "hit": "rang a bell"
+      },
+      {
+        "en": "When the witness described the car, something about the number plate rang a bell with the detective.",
+        "de": "Als der Zeuge das Auto beschrieb, kam dem Kommissar etwas an dem Kennzeichen bekannt vor.",
+        "hit": "rang a bell"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "ring a bell (with someone)",
+        "the name rings a bell",
+        "does that ring a bell?",
+        "it doesn't ring any bells"
+      ],
+      "grammar": "Verb ändert sich: rings / rang / has rung",
+      "tip": "Man sagt es, wenn eine vage Erinnerung auftaucht. Nicht für sichere Erinnerung verwenden. Verneint: 'It doesn't ring a bell.' = Das sagt mir nichts."
+    },
+    "mnemonic": "Eine Glocke läutet im Kopf, aber man sieht nicht, wo sie hängt.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "sound familiar",
+        "noteDe": "vertraut klingen"
+      },
+      {
+        "type": "related",
+        "word": "it's on the tip of my tongue",
+        "noteDe": "es liegt mir auf der Zunge"
+      },
+      {
+        "type": "antonym",
+        "word": "that means nothing to me",
+        "noteDe": "das sagt mir gar nichts"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "the-proof-of-the-pudding-is-in-the-eating",
+    "lemma": "The proof of the pudding is in the eating.",
+    "pos": "idiom",
+    "ipa": "/ðə pruf əv ðə ˈpʊdɪŋ ɪz ɪn ði ˈitɪŋ/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "Probieren geht über Studieren.",
+    "deAlt": [
+      "Der Beweis liegt in der Praxis",
+      "Ob etwas taugt, zeigt sich erst im Gebrauch"
+    ],
+    "definitionEn": "you can only judge how good something is by trying it",
+    "examples": [
+      {
+        "en": "The recipe looks odd, but the proof of the pudding is in the eating.",
+        "de": "Das Rezept sieht merkwürdig aus, aber Probieren geht über Studieren.",
+        "hit": "the proof of the pudding is in the eating"
+      },
+      {
+        "en": "Critics doubted the new teaching method, yet the proof of the pudding is in the eating: test scores have risen every year since.",
+        "de": "Kritiker zweifelten an der neuen Lehrmethode, doch der Beweis liegt in der Praxis: Die Testergebnisse steigen seitdem jedes Jahr.",
+        "hit": "the proof of the pudding is in the eating"
+      },
+      {
+        "en": "\"Will the new software really save us time?\" \"Well, the proof of the pudding is in the eating, so let's run a trial.\"",
+        "de": "„Spart uns die neue Software wirklich Zeit?“ „Nun, Probieren geht über Studieren, machen wir einen Test.“",
+        "hit": "proof of the pudding"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "the proof of the pudding",
+        "the proof of the pudding is in the eating",
+        "the proof is in the pudding"
+      ],
+      "tip": "Sprichwort; oft verkürzt zu 'the proof of the pudding'. Verwendet, wenn man Zweifel an etwas hat und erst das Ergebnis zählt. 'Proof' bedeutet hier ursprünglich 'Test', nicht 'Beweis'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "the proof is in the results",
+        "noteDe": "das Ergebnis entscheidet"
+      },
+      {
+        "type": "related",
+        "word": "actions speak louder than words",
+        "noteDe": "Taten sagen mehr als Worte"
+      },
+      {
+        "type": "related",
+        "word": "seeing is believing",
+        "noteDe": "Glauben heißt sehen / nur was man sieht, glaubt man"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "dont-judge-a-book-by-its-cover",
+    "lemma": "Don't judge a book by its cover.",
+    "pos": "idiom",
+    "ipa": "/doʊnt dʒʌdʒ ə bʊk baɪ ɪts ˈkʌvər/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Man soll nicht nach dem Äußeren urteilen.",
+    "deAlt": [
+      "Der Schein trügt",
+      "Nicht alles, was glänzt, ist Gold (ähnlich)"
+    ],
+    "definitionEn": "you should not form an opinion of someone or something from appearance alone",
+    "examples": [
+      {
+        "en": "He looks scary with all those tattoos, but don't judge a book by its cover.",
+        "de": "Mit all den Tattoos sieht er furchteinflößend aus, aber man soll nicht nach dem Äußeren urteilen.",
+        "hit": "don't judge a book by its cover"
+      },
+      {
+        "en": "The restaurant looked shabby from outside, yet the food was wonderful, which proved once again that you should not judge a book by its cover.",
+        "de": "Das Restaurant sah von außen heruntergekommen aus, doch das Essen war wunderbar, was wieder einmal bewies, dass man nicht nach dem Äußeren urteilen sollte.",
+        "hit": "judge a book by its cover"
+      },
+      {
+        "en": "In interviews, recruiters are trained not to judge a book by its cover but to focus on skills and experience.",
+        "de": "In Vorstellungsgesprächen werden Personalverantwortliche geschult, nicht nach dem Äußeren zu urteilen, sondern auf Fähigkeiten und Erfahrung zu achten.",
+        "hit": "judge a book by its cover"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "never judge a book by its cover",
+        "you can't judge a book by its cover",
+        "judge a book by its cover"
+      ],
+      "tip": "Sehr gebräuchliches Sprichwort, auch als Verb-Phrase im Satz ('not to judge a book by its cover'). Bezieht sich auf Menschen und Dinge."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "appearances can be deceiving",
+        "noteDe": "der Schein trügt"
+      },
+      {
+        "type": "related",
+        "word": "all that glitters is not gold",
+        "noteDe": "es ist nicht alles Gold, was glänzt"
+      },
+      {
+        "type": "related",
+        "word": "first impressions can be wrong",
+        "noteDe": "der erste Eindruck kann täuschen"
+      }
+    ],
+    "topics": [
+      "society",
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "im-in-two-minds-about-it",
+    "lemma": "I'm in two minds about it.",
+    "pos": "phrase",
+    "ipa": "/aɪm ɪn tu maɪndz əˈbaʊt ɪt/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "Ich bin mir noch nicht sicher.",
+    "deAlt": [
+      "Ich bin hin- und hergerissen",
+      "Ich schwanke noch"
+    ],
+    "definitionEn": "you cannot decide because you have doubts either way",
+    "examples": [
+      {
+        "en": "Should we move to Berlin? Honestly, I'm in two minds about it.",
+        "de": "Sollen wir nach Berlin ziehen? Ehrlich gesagt bin ich hin- und hergerissen.",
+        "hit": "in two minds about it"
+      },
+      {
+        "en": "She was in two minds about accepting the offer, because the salary was great but the commute would be long.",
+        "de": "Sie schwankte, ob sie das Angebot annehmen sollte, denn das Gehalt war toll, aber der Arbeitsweg wäre lang.",
+        "hit": "in two minds"
+      },
+      {
+        "en": "Voters remain in two minds about the proposed tax reform, according to the latest survey.",
+        "de": "Laut der jüngsten Umfrage sind die Wähler bei der geplanten Steuerreform weiterhin unentschlossen.",
+        "hit": "in two minds"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "be in two minds about something",
+        "be in two minds whether to do something",
+        "remain in two minds"
+      ],
+      "tip": "Vor allem britisches Englisch; im amerikanischen Englisch eher 'be of two minds' oder 'be torn'. Pronomen anpassbar (she is, we were)."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "be torn",
+        "noteDe": "hin- und hergerissen sein"
+      },
+      {
+        "type": "synonym",
+        "word": "be of two minds",
+        "noteDe": "US-Variante"
+      },
+      {
+        "type": "synonym",
+        "word": "sit on the fence",
+        "noteDe": "sich nicht festlegen"
+      },
+      {
+        "type": "antonym",
+        "word": "make up one's mind",
+        "noteDe": "sich entscheiden"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "its-high-time-we-did-something-about-it",
+    "lemma": "It's high time we did something about it.",
+    "pos": "phrase",
+    "ipa": "/ɪts haɪ taɪm wi dɪd ˈsʌmθɪŋ əˈbaʊt ɪt/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "Es ist höchste Zeit, dass wir etwas dagegen tun.",
+    "deAlt": [
+      "Es wird allmählich Zeit, dass wir etwas unternehmen"
+    ],
+    "definitionEn": "the time to act has come, and it is already a little late",
+    "examples": [
+      {
+        "en": "The roof has been leaking for months; it's high time we did something about it.",
+        "de": "Das Dach ist seit Monaten undicht; es ist höchste Zeit, dass wir etwas dagegen tun.",
+        "hit": "high time we did something"
+      },
+      {
+        "en": "After years of complaints from residents, the council finally admitted that it was high time it did something about the traffic.",
+        "de": "Nach jahrelangen Beschwerden der Anwohner räumte der Stadtrat endlich ein, dass es höchste Zeit sei, etwas gegen den Verkehr zu unternehmen.",
+        "hit": "high time"
+      },
+      {
+        "en": "\"Your room is a mess!\" \"I know, it's high time I cleaned it.\"",
+        "de": "„Dein Zimmer ist ein Chaos!“ „Ich weiß, es ist höchste Zeit, dass ich aufräume.“",
+        "hit": "high time"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "it's high time + past simple",
+        "high time for a change",
+        "high time someone did something",
+        "about time"
+      ],
+      "grammar": "Nach 'it's (high) time' steht das Past Simple (did), obwohl die Bedeutung Gegenwart ist; alternativ 'high time to do'.",
+      "tip": "Typischer Fehler: 'it's high time we do'. Richtig ist 'we did'. Enthält leichten Vorwurf oder Ungeduld."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "it's about time",
+        "noteDe": "es wird Zeit; weniger formell"
+      },
+      {
+        "type": "related",
+        "word": "better late than never",
+        "noteDe": "besser spät als nie"
+      },
+      {
+        "type": "related",
+        "word": "the time has come to",
+        "noteDe": "die Zeit ist gekommen, zu"
+      }
+    ],
+    "topics": [
+      "society",
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "theres-no-use-crying-over-spilled-milk",
+    "lemma": "There's no use crying over spilled milk.",
+    "pos": "idiom",
+    "ipa": "/ðɛrz noʊ jus ˈkraɪɪŋ ˈoʊvər spɪld mɪlk/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Es hat keinen Sinn, Vergangenem nachzutrauern.",
+    "deAlt": [
+      "Geschehen ist geschehen",
+      "Was passiert ist, ist passiert"
+    ],
+    "definitionEn": "it is pointless to be upset about a mistake that cannot be undone",
+    "examples": [
+      {
+        "en": "I know you missed the train, but there's no use crying over spilled milk; let's catch the next one.",
+        "de": "Ich weiß, dass du den Zug verpasst hast, aber es hat keinen Sinn, Vergangenem nachzutrauern; nehmen wir den nächsten.",
+        "hit": "no use crying over spilled milk"
+      },
+      {
+        "en": "The investment lost half its value, but dwelling on it is like crying over spilled milk, so he focused on rebuilding his savings.",
+        "de": "Die Anlage verlor die Hälfte ihres Werts, aber sich damit zu quälen bringt nichts, also konzentrierte er sich darauf, seine Ersparnisse wieder aufzubauen.",
+        "hit": "crying over spilled milk"
+      },
+      {
+        "en": "My grandmother always said that there's no use crying over spilled milk, and she faced every setback with a shrug.",
+        "de": "Meine Großmutter sagte immer, geschehen sei geschehen, und sie nahm jeden Rückschlag mit einem Achselzucken hin.",
+        "hit": "no use crying over spilled milk"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "no use crying over spilled milk",
+        "it's no good crying over spilled milk",
+        "cry over spilled milk"
+      ],
+      "tip": "Britisch auch 'spilt milk'. Wird als Trost oder Mahnung gesagt, nach einem Fehler nach vorne zu schauen. Kann bei Betroffenen schroff wirken."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "what's done is done",
+        "noteDe": "geschehen ist geschehen"
+      },
+      {
+        "type": "related",
+        "word": "water under the bridge",
+        "noteDe": "Schnee von gestern"
+      },
+      {
+        "type": "related",
+        "word": "let bygones be bygones",
+        "noteDe": "Vergangenes ruhen lassen"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "hindsight-is-twenty-twenty",
+    "lemma": "Hindsight is twenty-twenty.",
+    "pos": "idiom",
+    "ipa": "/ˈhaɪndˌsaɪt ɪz ˈtwɛnti ˈtwɛnti/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "Hinterher ist man immer klüger.",
+    "deAlt": [
+      "Im Nachhinein sieht man alles klar"
+    ],
+    "definitionEn": "it is easy to understand what should have been done once events are over",
+    "examples": [
+      {
+        "en": "I should never have trusted him, but hindsight is twenty-twenty.",
+        "de": "Ich hätte ihm nie vertrauen sollen, aber hinterher ist man immer klüger.",
+        "hit": "hindsight is twenty-twenty"
+      },
+      {
+        "en": "Reporters asked why the warning signs had been ignored, and the minister replied that hindsight is twenty-twenty.",
+        "de": "Reporter fragten, warum man die Warnzeichen ignoriert hatte, und der Minister antwortete, hinterher sei man immer klüger.",
+        "hit": "hindsight is twenty-twenty"
+      },
+      {
+        "en": "Looking back, the company's decision to ignore online shopping seems foolish, though of course hindsight is twenty-twenty.",
+        "de": "Rückblickend wirkt die Entscheidung der Firma, den Onlinehandel zu ignorieren, töricht, aber natürlich ist man hinterher immer klüger.",
+        "hit": "hindsight is twenty-twenty"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "hindsight is 20/20",
+        "with the benefit of hindsight",
+        "in hindsight",
+        "hindsight bias"
+      ],
+      "tip": "Bezieht sich auf perfekte Sehschärfe (20/20 in den USA). Oft als Entschuldigung für Fehlentscheidungen. Im britischen Englisch auch 'hindsight is a wonderful thing'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "hindsight is a wonderful thing",
+        "noteDe": "britische Variante"
+      },
+      {
+        "type": "related",
+        "word": "with the benefit of hindsight",
+        "noteDe": "aus heutiger Sicht"
+      },
+      {
+        "type": "related",
+        "word": "armchair quarterback",
+        "noteDe": "Besserwisser, der im Nachhinein urteilt"
+      }
+    ],
+    "topics": [
+      "society",
+      "daily"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "well-see-how-things-pan-out",
+    "lemma": "We'll see how things pan out.",
+    "pos": "phrase",
+    "ipa": "/wil si haʊ θɪŋz pæn aʊt/",
+    "level": "C1",
+    "register": "informal",
+    "de": "Wir werden sehen, wie sich die Dinge entwickeln.",
+    "deAlt": [
+      "Mal sehen, wie es läuft",
+      "Wir warten ab, wie es ausgeht"
+    ],
+    "definitionEn": "we will wait and find out how a situation develops or ends",
+    "examples": [
+      {
+        "en": "I'm not sure the plan will work, but we'll see how things pan out.",
+        "de": "Ich bin nicht sicher, ob der Plan funktioniert, aber wir werden sehen, wie sich die Dinge entwickeln.",
+        "hit": "see how things pan out"
+      },
+      {
+        "en": "The company has not decided on layoffs yet; management says it will see how things pan out over the next quarter.",
+        "de": "Die Firma hat noch nicht über Entlassungen entschieden; die Leitung will abwarten, wie sich die Dinge im nächsten Quartal entwickeln.",
+        "hit": "see how things pan out"
+      },
+      {
+        "en": "\"Are you two moving in together?\" \"Maybe someday. We'll see how things pan out.\"",
+        "de": "„Zieht ihr zwei zusammen?“ „Vielleicht irgendwann. Mal sehen, wie es läuft.“",
+        "hit": "see how things pan out"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "see how things pan out",
+        "wait and see how it pans out",
+        "pan out well",
+        "if things pan out"
+      ],
+      "tip": "'Pan out' stammt vom Goldwaschen (Pfanne). Umgangssprachlich; gut für unverbindliche Antworten, wenn die Zukunft offen ist."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "wait and see",
+        "noteDe": "abwarten"
+      },
+      {
+        "type": "synonym",
+        "word": "see how it goes",
+        "noteDe": "mal sehen, wie es läuft"
+      },
+      {
+        "type": "related",
+        "word": "play it by ear",
+        "noteDe": "spontan entscheiden, nach Gefühl vorgehen"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work"
+    ],
+    "clusters": [],
+    "source": "generated"
+  },
+  {
+    "id": "he-got-away-with-it-by-the-skin-of-his-teeth",
+    "lemma": "He got away with it by the skin of his teeth.",
+    "pos": "idiom",
+    "ipa": "/hi gɑt əˈweɪ wɪð ɪt baɪ ðə skɪn əv hɪz tiθ/",
+    "level": "C1",
+    "register": "informal",
+    "de": "Er ist gerade noch einmal davongekommen.",
+    "deAlt": [
+      "Er ist mit knapper Not davongekommen",
+      "Es ging um Haaresbreite gut"
+    ],
+    "definitionEn": "he only just avoided trouble or failure, with almost no margin",
+    "examples": [
+      {
+        "en": "He got away with it by the skin of his teeth; the teacher almost caught him cheating.",
+        "de": "Er ist gerade noch einmal davongekommen; der Lehrer hätte ihn beinahe beim Schummeln erwischt.",
+        "hit": "by the skin of his teeth"
+      },
+      {
+        "en": "The striker escaped a red card by the skin of his teeth, as the referee decided the tackle was not dangerous enough.",
+        "de": "Der Stürmer entging nur knapp einer Roten Karte, da der Schiedsrichter das Foul nicht für gefährlich genug hielt.",
+        "hit": "by the skin of his teeth"
+      },
+      {
+        "en": "We escaped the burning building by the skin of our teeth, just seconds before the roof collapsed.",
+        "de": "Wir entkamen dem brennenden Gebäude um Haaresbreite, nur Sekunden bevor das Dach einstürzte.",
+        "hit": "by the skin of our teeth"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "escape by the skin of one's teeth",
+        "win by the skin of one's teeth",
+        "survive by the skin of one's teeth",
+        "pass by the skin of one's teeth"
+      ],
+      "tip": "Possessivpronomen anpassen (my, her, our ...). 'Get away with' bedeutet 'ungestraft davonkommen'; die Kombination hier betont das knappe Entkommen. Die Wendung geht auf die Bibel (Hiob 19,20) zurück."
+    },
+    "mnemonic": "Zähne haben keine Haut: Mehr Abstand als nichts gibt es nicht.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "by a hair's breadth",
+        "noteDe": "um Haaresbreite"
+      },
+      {
+        "type": "synonym",
+        "word": "a close call",
+        "noteDe": "eine knappe Sache"
+      },
+      {
+        "type": "related",
+        "word": "get off scot-free",
+        "noteDe": "ungestraft davonkommen"
+      },
+      {
+        "type": "antonym",
+        "word": "by a mile",
+        "noteDe": "mit großem Abstand"
+      }
+    ],
+    "topics": [
+      "daily",
+      "law"
+    ],
+    "clusters": [],
+    "source": "generated"
   }
 ]

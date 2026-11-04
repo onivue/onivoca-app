@@ -7,7 +7,7 @@ const SEED_WORDS = data as WordEntry[];
 
 // Bei Änderungen an Schema oder Startdaten erhöhen: die Karten werden dann neu eingespielt.
 // Der Lernstand liegt getrennt (AsyncStorage) und bleibt erhalten.
-const SCHEMA_VERSION = 5;
+const SCHEMA_VERSION = 6;
 
 type CardRow = {
   id: string;
