@@ -16,6 +16,30 @@ npm start        # QR-Code mit der Expo-Go-App (iPhone) scannen
 npm run ios      # oder direkt im iOS-Simulator (Xcode nötig)
 ```
 
+## iOS-Release mit EAS
+
+Die folgenden Befehle im Projektstamm ausführen. Voraussetzung sind ein Expo-Konto und ein Apple-Developer-Konto. Beim ersten Lauf fragt EAS interaktiv nach den nötigen iOS-Signatur- und App-Store-Connect-Zugangsdaten.
+
+1. Einmalig bei Expo anmelden (falls noch nicht angemeldet):
+
+  ```bash
+  npx eas-cli@latest login
+  ```
+
+2. iOS-Produktionsbuild erstellen und warten, bis EAS den Build abgeschlossen hat:
+
+  ```bash
+  npx eas-cli@latest build --platform ios --profile production
+  ```
+
+3. Den neuesten iOS-Build zu App Store Connect hochladen:
+
+  ```bash
+  npx eas-cli@latest submit --platform ios --profile production --latest
+  ```
+
+Anschliessend erscheint der Build nach der Verarbeitung in TestFlight. Für die Veröffentlichung im App Store muss er danach in App Store Connect geprüft und zur App Review eingereicht werden. `eas.json` verwendet die Versionsverwaltung von EAS mit automatischem Hochzählen der iOS-Buildnummer; die sichtbare App-Version (`expo.version` in `app.json`) bei einem neuen Store-Release weiterhin selbst aktualisieren.
+
 ## Struktur
 
 ```
