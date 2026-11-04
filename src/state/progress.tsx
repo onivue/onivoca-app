@@ -1,13 +1,20 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { ReactNode, createContext, useContext, useEffect, useState } from "react";
 import { ListSkeleton } from "../components/Skeleton";
-import { ProgressMap, Rating, review } from "../lib/srs";
+import { ProgressMap, Rating, RoundDelays, review } from "../lib/srs";
 
 const STORAGE_KEY = "progress-v2";
+const SETTINGS_KEY = "study-settings-v1";
+const DEFAULT_DELAYS: RoundDelays = { again: 1, good: 3 };
+type StudySettings = { round: number; delays: RoundDelays };
 
 type ProgressContextValue = {
   progress: ProgressMap;
+  round: number;
+  delays: RoundDelays;
   rate: (cardId: string, rating: Rating) => void;
+  advanceRound: () => void;
+  setDelay: (rating: keyof RoundDelays, rounds: number) => void;
   reset: () => void;
 };
 
@@ -21,13 +28,24 @@ function migrateIds(stored: ProgressMap): ProgressMap {
 // Hält den Lernstand aller Karten und speichert ihn auf dem Gerät.
 export function ProgressProvider({ children }: { children: ReactNode }) {
   const [progress, setProgress] = useState<ProgressMap | null>(null);
+  const [settings, setSettings] = useState<StudySettings | null>(null);
 
   useEffect(() => {
-    AsyncStorage.getItem(STORAGE_KEY).then((raw) => setProgress(raw ? migrateIds(JSON.parse(raw)) : {}));
+    Promise.all([AsyncStorage.getItem(STORAGE_KEY), AsyncStorage.getItem(SETTINGS_KEY)]).then(
+      ([progressRaw, settingsRaw]) => {
+        setProgress(progressRaw ? migrateIds(JSON.parse(progressRaw)) : {});
+        const storedSettings = settingsRaw ? JSON.parse(settingsRaw) : null;
+        setSettings(
+          storedSettings
+            ? { ...storedSettings, delays: { ...DEFAULT_DELAYS, ...storedSettings.delays } }
+            : { round: 0, delays: DEFAULT_DELAYS },
+        );
+      },
+    );
   }, []);
 
   // Solange der gespeicherte Stand lädt, zeigen wir ein Skeleton.
-  if (!progress) return <ListSkeleton />;
+  if (!progress || !settings) return <ListSkeleton />;
 
   // Optimistisch: die UI übernimmt sofort, bei Speicherfehler geht es zurück zum alten Stand.
   function save(next: ProgressMap) {
@@ -37,11 +55,29 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   }
 
   function rate(cardId: string, rating: Rating) {
-    save({ ...progress!, [cardId]: review(progress![cardId], rating) });
+    save({ ...progress!, [cardId]: review(progress![cardId], rating, settings!.round, settings!.delays) });
+  }
+
+  function updateSettings(next: StudySettings) {
+    setSettings(next);
+    AsyncStorage.setItem(SETTINGS_KEY, JSON.stringify(next));
+  }
+
+  function advanceRound() {
+    updateSettings({ ...settings!, round: settings!.round + 1 });
+  }
+
+  function setDelay(rating: keyof RoundDelays, rounds: number) {
+    updateSettings({ ...settings!, delays: { ...settings!.delays, [rating]: rounds } });
+  }
+
+  function reset() {
+    save({});
+    updateSettings({ ...settings!, round: 0 });
   }
 
   return (
-    <ProgressContext.Provider value={{ progress, rate, reset: () => save({}) }}>
+    <ProgressContext.Provider value={{ progress, round: settings.round, delays: settings.delays, rate, advanceRound, setDelay, reset }}>
       {children}
     </ProgressContext.Provider>
   );

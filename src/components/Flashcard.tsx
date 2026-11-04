@@ -59,12 +59,13 @@ export function Flashcard({ card, reverse, flipped, onFlip }: Props) {
 
   return (
     <Animated.View style={[styles.wrapper, enterStyle]}>
-      <Pressable style={styles.wrapper} onPress={onFlip}>
-        {/* Vorderseite. pointerEvents: nur die sichtbare Seite darf Taps annehmen. */}
-        <Animated.View
-          pointerEvents={flipped ? "none" : "auto"}
-          style={[styles.face, rotateY("0deg", "180deg")]}
-        >
+      {/* Vorderseite. Im aufgedeckten Zustand ist nur diese Fläche nicht mehr tappbar. */}
+      <Pressable
+        pointerEvents={flipped ? "none" : "auto"}
+        style={styles.face}
+        onPress={onFlip}
+      >
+        <Animated.View pointerEvents={flipped ? "none" : "auto"} style={[StyleSheet.absoluteFill, rotateY("0deg", "180deg")]}>
           <View style={[styles.fill, styles.front, { backgroundColor: category.color }]}>
             <View style={styles.badge}>
               <Text style={styles.badgeText}>
@@ -93,30 +94,32 @@ export function Flashcard({ card, reverse, flipped, onFlip }: Props) {
             </View>
           </View>
         </Animated.View>
+      </Pressable>
 
-        {/* Rückseite */}
-        <Animated.View
-          pointerEvents={flipped ? "auto" : "none"}
-          style={[styles.face, rotateY("180deg", "360deg")]}
-        >
+      {/* Rückseite */}
+      <Animated.View
+        pointerEvents={flipped ? "auto" : "none"}
+        style={[styles.face, rotateY("180deg", "360deg")]}
+      >
           <ScrollView
             style={styles.back}
             contentContainerStyle={styles.backContent}
             showsVerticalScrollIndicator={false}
           >
-            <Text style={[styles.label, { color: category.accent }]}>Englisch</Text>
-            <View style={styles.englishRow}>
-              <View style={styles.englishTexts}>
-                <Text style={[styles.englishWord, isPhrase && styles.englishPhrase]}>{card.lemma}</Text>
-                {card.ipa && <Text style={styles.englishPhonetic}>{card.ipa}</Text>}
+            <View style={styles.translation}>
+              <Text style={[styles.translationHeading, { color: category.accent }]}>English - Deutsch</Text>
+              <View style={styles.englishRow}>
+                <View style={styles.englishTexts}>
+                  <Text style={[styles.englishWord, isPhrase && styles.englishPhrase]}>{card.lemma}</Text>
+                  {card.ipa && <Text style={styles.englishPhonetic}>{card.ipa}</Text>}
+                </View>
+                <Pressable style={styles.speakSmall} onPress={() => speak(card.lemma)} hitSlop={10}>
+                  <Volume2 color={colors.text} size={22} />
+                </Pressable>
               </View>
-              <Pressable style={styles.speakSmall} onPress={() => speak(card.lemma)} hitSlop={10}>
-                <Volume2 color={colors.text} size={22} />
-              </Pressable>
+              <Text style={styles.translationGerman}>{card.de}</Text>
             </View>
 
-            <Text style={[styles.label, { color: category.accent }]}>Deutsch</Text>
-            <Text style={styles.backText}>{card.de}</Text>
             {card.deAlt && card.deAlt.length > 0 && <Text style={styles.alt}>{card.deAlt.join(" · ")}</Text>}
             <WordMeta level={card.level} pos={card.pos} register={card.register} />
             {card.definitionEn && <Text style={styles.definition}>{card.definitionEn}</Text>}
@@ -129,8 +132,7 @@ export function Flashcard({ card, reverse, flipped, onFlip }: Props) {
             {card.relations.length > 0 && <Text style={styles.label}>Wortnetz</Text>}
             <RelationList relations={card.relations} accent={category.accent} />
           </ScrollView>
-        </Animated.View>
-      </Pressable>
+      </Animated.View>
     </Animated.View>
   );
 }
@@ -147,6 +149,9 @@ const styles = StyleSheet.create({
   front: { justifyContent: "space-between" },
   back: { flex: 1, borderRadius: 28, backgroundColor: colors.card },
   backContent: { flexGrow: 1, padding: 24, gap: 10 },
+  translation: { backgroundColor: colors.background, borderRadius: 20, padding: 18, gap: 12 },
+  translationHeading: { fontSize: 13, fontWeight: "700", textTransform: "uppercase" },
+  translationGerman: { color: colors.text, fontSize: 24, fontWeight: "600" },
   badge: {
     alignSelf: "flex-start",
     backgroundColor: "rgba(255,255,255,0.6)",
@@ -177,7 +182,6 @@ const styles = StyleSheet.create({
     color: colors.muted,
     textTransform: "uppercase",
   },
-  backText: { fontSize: 22, fontWeight: "600", color: colors.text },
   englishRow: { flexDirection: "row", alignItems: "center", gap: 12 },
   englishTexts: { flex: 1 },
   englishWord: { fontSize: 30, fontWeight: "700", color: colors.text },

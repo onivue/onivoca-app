@@ -15,9 +15,11 @@ export type CardProgress = {
   again: number;
   good: number;
   easy: number;
+  dueRound?: number;
   history: Rating[]; // neueste Entscheidung zuerst
 };
 export type ProgressMap = Record<string, CardProgress>;
+export type RoundDelays = { again: number; good: number };
 
 export const MASTERED_SCORE = 4;
 export const SESSION_SIZE = 10;
@@ -29,12 +31,18 @@ const SCORE_CHANGE: Record<Rating, number> = { again: -2, good: 1, easy: 2 };
 const EMPTY: CardProgress = { score: 0, again: 0, good: 0, easy: 0, history: [] };
 
 // Neuer Lernstand einer Karte nach einer Bewertung.
-export function review(progress: CardProgress | undefined, rating: Rating): CardProgress {
+export function review(
+  progress: CardProgress | undefined,
+  rating: Rating,
+  currentRound = 0,
+  delays: RoundDelays = { again: 1, good: 3 },
+): CardProgress {
   const p = progress ?? EMPTY;
   const score = Math.min(Math.max(p.score + SCORE_CHANGE[rating], 0), MASTERED_SCORE);
   return {
     ...p,
     score,
+    dueRound: currentRound + (rating === "again" ? delays.again : rating === "good" ? delays.good : 6),
     again: p.again + (rating === "again" ? 1 : 0),
     good: p.good + (rating === "good" ? 1 : 0),
     easy: p.easy + (rating === "easy" ? 1 : 0),
@@ -68,8 +76,9 @@ function shuffle<T>(items: T[]) {
 // Schon bekannte Karten werden manchmal umgekehrt gefragt (Deutsch -> Englisch).
 export type SessionItem = { card: WordEntry; reverse: boolean };
 
-export function buildSession(cards: WordEntry[], progress: ProgressMap): SessionItem[] {
-  const byStatus = (status: Status) => cards.filter((c) => getStatus(progress[c.id]) === status);
+export function buildSession(cards: WordEntry[], progress: ProgressMap, round = 0): SessionItem[] {
+  const byStatus = (status: Status) =>
+    cards.filter((c) => getStatus(progress[c.id]) === status && (progress[c.id]?.dueRound ?? 0) <= round);
   const learning = byStatus("learning").sort((a, b) => progress[a.id].score - progress[b.id].score);
 
   return [

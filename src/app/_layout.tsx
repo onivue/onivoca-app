@@ -1,8 +1,8 @@
 import {
-    SpaceGrotesk_400Regular,
-    SpaceGrotesk_500Medium,
-    SpaceGrotesk_600SemiBold,
-    SpaceGrotesk_700Bold,
+  SpaceGrotesk_400Regular,
+  SpaceGrotesk_500Medium,
+  SpaceGrotesk_600SemiBold,
+  SpaceGrotesk_700Bold,
 } from "@expo-google-fonts/space-grotesk";
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
@@ -26,7 +26,7 @@ export default function RootLayout() {
     <CardsProvider>
       <ProgressProvider>
       <StatusBar style="dark" />
-      <Stack screenOptions={{ headerShown: false }}>
+      <Stack screenOptions={{ headerShown: false, headerBackTitle: "Zurück" }}>
         {/* Detailseite eines Worts: mit Zurück-Pfeil */}
         <Stack.Screen
           name="word/[id]"
