@@ -1,6 +1,6 @@
 import { PartyPopper } from "lucide-react-native";
 import { useState } from "react";
-import { StyleSheet, View } from "react-native";
+import { View } from "react-native";
 import { Flashcard } from "../../components/Flashcard";
 import { PressableScale } from "../../components/PressableScale";
 import { ProgressBar } from "../../components/ProgressBar";
@@ -11,14 +11,16 @@ import { Rating, buildSession } from "../../lib/srs";
 import { useCards } from "../../state/cards";
 import { useProgress } from "../../state/progress";
 import { colors } from "../../theme/colors";
+import { themed, useTheme } from "../../theme/theme";
 
 // Tab 1: Lernrunde mit Karteikarten.
 export default function StudyScreen() {
-  const { progress, round, rate, advanceRound } = useProgress();
+  useTheme();
+  const { progress, round, sessionSize, rate, advanceRound } = useProgress();
   const cards = useCards();
 
   // Die Warteschlange bleibt bis zum Rundenende stabil.
-  const [queue, setQueue] = useState(() => buildSession(cards, progress, round));
+  const [queue, setQueue] = useState(() => buildSession(cards, progress, round, sessionSize));
   const [total, setTotal] = useState(queue.length);
   const [done, setDone] = useState(0);
   const [step, setStep] = useState(0); // sorgt dafür, dass jede Karte neu einfliegt
@@ -37,7 +39,7 @@ export default function StudyScreen() {
   function startNewRound() {
     const nextRound = round + 1;
     advanceRound();
-    const next = buildSession(cards, progress, nextRound);
+    const next = buildSession(cards, progress, nextRound, sessionSize);
     setQueue(next);
     setTotal(next.length);
     setDone(0);
@@ -83,7 +85,7 @@ export default function StudyScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = themed(() => ({
   progress: { flexDirection: "row", alignItems: "center", gap: 10 },
   bar: { flex: 1 },
   progressText: { color: colors.muted, fontSize: 13, fontWeight: "500" },
@@ -98,5 +100,5 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     paddingHorizontal: 32,
   },
-  startButtonText: { color: "#fff", fontSize: 16, fontWeight: "600" },
-});
+  startButtonText: { color: colors.onAccent, fontSize: 16, fontWeight: "600" },
+}));

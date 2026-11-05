@@ -12,6 +12,7 @@ import { Status, getStatus } from "../../lib/srs";
 import { useCards } from "../../state/cards";
 import { useProgress } from "../../state/progress";
 import { colors } from "../../theme/colors";
+import { themed, useTheme } from "../../theme/theme";
 
 type Filter = "word" | "phrase";
 type SortMode = "asc" | "desc";
@@ -28,6 +29,7 @@ function ChipGroup<T extends string>({
   value: T | "all";
   onChange: (id: T | "all") => void;
 }) {
+  useTheme();
   return (
     <View style={styles.optionChips}>
       {options.map(({ id, label }) => (
@@ -55,6 +57,7 @@ const FILTERS: { id: Filter; label: string }[] = [
 
 // Memoisiert, damit unveränderte Zeilen beim Filtern nicht neu rendern.
 const WordRow = memo(function WordRow({ card, status }: { card: WordEntry; status: Status }) {
+  useTheme();
   const router = useRouter();
   return (
     <Pressable style={styles.row} onPress={() => router.push(`/word/${card.id}`)}>
@@ -79,6 +82,7 @@ const WordRow = memo(function WordRow({ card, status }: { card: WordEntry; statu
 
 // Tab 2: Liste der Karten mit Suche, Filter und A–Z-Sortierung. Tippen öffnet die Details.
 export default function WordsScreen() {
+  useTheme();
   const { progress } = useProgress();
   const allCards = useCards();
   const [query, setQuery] = useState("");
@@ -184,7 +188,7 @@ export default function WordsScreen() {
           style={[styles.chip, styles.sortChip, activeCount > 0 && styles.chipActive]}
           onPress={openSheet}
         >
-          <SlidersHorizontal color={activeCount > 0 ? "#fff" : colors.text} size={18} />
+          <SlidersHorizontal color={activeCount > 0 ? colors.onAccent : colors.text} size={18} />
           <Text style={[styles.chipText, activeCount > 0 && styles.chipTextActive]}>
             {activeCount > 0 ? `Filter · ${activeCount}` : "Filter"}
           </Text>
@@ -266,7 +270,7 @@ export default function WordsScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = themed(() => ({
   search: {
     flexDirection: "row",
     alignItems: "center",
@@ -283,9 +287,9 @@ const styles = StyleSheet.create({
   chipActive: { backgroundColor: colors.accent },
   sortChip: { flexDirection: "row", alignItems: "center", gap: 6, marginLeft: "auto" },
   chipText: { fontSize: 15, fontWeight: "500", color: colors.text },
-  chipTextActive: { color: "#fff" },
+  chipTextActive: { color: colors.onAccent },
   overlay: { flex: 1, justifyContent: "flex-end" },
-  backdrop: { backgroundColor: "rgba(0,0,0,0.4)" },
+  backdrop: { backgroundColor: colors.backdrop },
   sheet: {
     backgroundColor: colors.card,
     borderTopLeftRadius: 24,
@@ -310,7 +314,7 @@ const styles = StyleSheet.create({
   sheetScroll: { maxHeight: 440 },
   optionChips: { flexDirection: "row", flexWrap: "wrap", gap: 8, marginTop: 8 },
   levelBadge: { backgroundColor: colors.text, borderRadius: 10, paddingHorizontal: 8, paddingVertical: 2 },
-  levelText: { fontSize: 11, fontWeight: "600", color: "#fff" },
+  levelText: { fontSize: 11, fontWeight: "600", color: colors.onText },
   sheetButton: { flex: 1, alignItems: "center", borderWidth: StyleSheet.hairlineWidth, borderColor: colors.border },
   list: { backgroundColor: colors.card, borderRadius: 20, paddingHorizontal: 16 },
   row: {
@@ -325,4 +329,4 @@ const styles = StyleSheet.create({
   texts: { flex: 1 },
   front: { fontSize: 17, fontWeight: "600", color: colors.text },
   back: { fontSize: 14, color: colors.muted },
-});
+}));

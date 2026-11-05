@@ -1,6 +1,6 @@
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Volume2 } from "lucide-react-native";
-import { Pressable, StyleSheet, View } from "react-native";
+import { Pressable, View } from "react-native";
 import { ExampleList } from "../../components/ExampleList";
 import { ProgressBar } from "../../components/ProgressBar";
 import { RelationList } from "../../components/RelationList";
@@ -16,9 +16,11 @@ import { useCards } from "../../state/cards";
 import { useProgress } from "../../state/progress";
 import { colors } from "../../theme/colors";
 import { RATING_ORDER, RATINGS } from "../../theme/ratings";
+import { themed, useTheme } from "../../theme/theme";
 
 // Detailseite eines Worts: Inhalt der Karte und der eigene Lernverlauf.
 export default function WordDetailScreen() {
+  useTheme();
   const { id } = useLocalSearchParams<{ id: string }>();
   const { progress } = useProgress();
   const router = useRouter();
@@ -133,7 +135,7 @@ export default function WordDetailScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = themed(() => ({
   hero: { borderRadius: 24, padding: 20, flexDirection: "row", alignItems: "center", gap: 12 },
   heroTexts: { flex: 1, gap: 4 },
   phonetic: { fontSize: 18, color: colors.muted },
@@ -142,7 +144,7 @@ const styles = StyleSheet.create({
     width: 56,
     height: 56,
     borderRadius: 28,
-    backgroundColor: "rgba(255,255,255,0.6)",
+    backgroundColor: colors.overlay,
     alignItems: "center",
     justifyContent: "center",
   },
@@ -162,4 +164,4 @@ const styles = StyleSheet.create({
   historyRow: { flexDirection: "row", flexWrap: "wrap", gap: 6 },
   historyDot: { width: 28, height: 28, borderRadius: 14, alignItems: "center", justifyContent: "center" },
   historyHint: { fontSize: 12, color: colors.muted },
-});
+}));

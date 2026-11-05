@@ -1,12 +1,14 @@
-import { StyleSheet, View } from "react-native";
+import { View } from "react-native";
 import { Level, POS_LABELS, Pos, REGISTER_LABELS, Register } from "../data/cards";
 import { colors } from "../theme/colors";
 import { Text } from "./Text";
+import { themed, useTheme } from "../theme/theme";
 
 type Props = { level?: Level; pos?: Pos; register?: Register };
 
 // Kleine Badges für Niveau, Wortart und Stilebene.
 export function WordMeta({ level, pos, register }: Props) {
+  useTheme();
   const items = [
     level && { key: "level", label: level, strong: true },
     pos && { key: "pos", label: POS_LABELS[pos], strong: false },
@@ -25,10 +27,10 @@ export function WordMeta({ level, pos, register }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = themed(() => ({
   row: { flexDirection: "row", flexWrap: "wrap", gap: 6 },
-  badge: { backgroundColor: "rgba(255,255,255,0.6)", borderRadius: 12, paddingHorizontal: 10, paddingVertical: 4 },
+  badge: { backgroundColor: colors.overlay, borderRadius: 12, paddingHorizontal: 10, paddingVertical: 4 },
   badgeStrong: { backgroundColor: colors.text },
   text: { fontSize: 12, fontWeight: "600", color: colors.text },
-  textStrong: { color: "#fff" },
-});
+  textStrong: { color: colors.onText },
+}));

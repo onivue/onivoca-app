@@ -22,11 +22,14 @@ export type ProgressMap = Record<string, CardProgress>;
 export type RoundDelays = { again: number; good: number };
 
 export const MASTERED_SCORE = 4;
+export const LEARNING_SLOTS = 5;
 export const SESSION_SIZE = 10;
-const LEARNING_PER_SESSION = 5;
+export const SESSION_SIZES = [10, 15, 20, 25, 30];
+const LEARNING_PER_SESSION = LEARNING_SLOTS;
+export const EASY_DELAY = 6;
 const REVERSE_CHANCE = 0.5;
 const HISTORY_LENGTH = 10;
-const SCORE_CHANGE: Record<Rating, number> = { again: -2, good: 1, easy: 2 };
+export const SCORE_CHANGE: Record<Rating, number> = { again: -2, good: 1, easy: 2 };
 
 const EMPTY: CardProgress = { score: 0, again: 0, good: 0, easy: 0, history: [] };
 
@@ -42,7 +45,7 @@ export function review(
   return {
     ...p,
     score,
-    dueRound: currentRound + (rating === "again" ? delays.again : rating === "good" ? delays.good : 6),
+    dueRound: currentRound + (rating === "again" ? delays.again : rating === "good" ? delays.good : EASY_DELAY),
     again: p.again + (rating === "again" ? 1 : 0),
     good: p.good + (rating === "good" ? 1 : 0),
     easy: p.easy + (rating === "easy" ? 1 : 0),
@@ -76,7 +79,7 @@ function shuffle<T>(items: T[]) {
 // Schon bekannte Karten werden manchmal umgekehrt gefragt (Deutsch -> Englisch).
 export type SessionItem = { card: WordEntry; reverse: boolean };
 
-export function buildSession(cards: WordEntry[], progress: ProgressMap, round = 0): SessionItem[] {
+export function buildSession(cards: WordEntry[], progress: ProgressMap, round = 0, size = SESSION_SIZE): SessionItem[] {
   const byStatus = (status: Status) =>
     cards.filter((c) => getStatus(progress[c.id]) === status && (progress[c.id]?.dueRound ?? 0) <= round);
   const learning = byStatus("learning").sort((a, b) => progress[a.id].score - progress[b.id].score);
@@ -87,6 +90,6 @@ export function buildSession(cards: WordEntry[], progress: ProgressMap, round = 
     ...learning.slice(LEARNING_PER_SESSION),
     ...shuffle(byStatus("mastered")),
   ]
-    .slice(0, SESSION_SIZE)
+    .slice(0, size)
     .map((card) => ({ card, reverse: !!progress[card.id] && Math.random() < REVERSE_CHANCE }));
 }

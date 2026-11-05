@@ -1,9 +1,11 @@
 import { useEffect } from "react";
-import { Animated, StyleSheet, View, useAnimatedValue } from "react-native";
+import { Animated, View, useAnimatedValue } from "react-native";
 import { colors } from "../theme/colors";
+import { themed, useTheme } from "../theme/theme";
 
 // Fortschrittsbalken (value: 0 bis 1), der sanft zum neuen Wert läuft.
 export function ProgressBar({ value, color = colors.accent }: { value: number; color?: string }) {
+  useTheme();
   const animated = useAnimatedValue(value);
 
   useEffect(() => {
@@ -20,7 +22,7 @@ export function ProgressBar({ value, color = colors.accent }: { value: number; c
   );
 }
 
-const styles = StyleSheet.create({
+const styles = themed(() => ({
   track: { height: 10, borderRadius: 5, backgroundColor: colors.border, overflow: "hidden" },
   fill: { height: "100%", borderRadius: 5 },
-});
+}));

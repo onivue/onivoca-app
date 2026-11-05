@@ -1,13 +1,15 @@
 import { ExternalLink } from "lucide-react-native";
-import { Alert, Linking, StyleSheet, View } from "react-native";
+import { Alert, Linking, View } from "react-native";
 import { PressableScale } from "../components/PressableScale";
 import { Screen } from "../components/Screen";
 import { Text } from "../components/Text";
 import { colors } from "../theme/colors";
+import { themed, useTheme } from "../theme/theme";
 
 const PRIVACY_URL = "https://onivue.github.io/onivoca-app/privacy.html";
 
 export default function PrivacyScreen() {
+  useTheme();
   return (
     <Screen title="Datenschutz">
       <View style={styles.content}>
@@ -22,7 +24,7 @@ export default function PrivacyScreen() {
             );
           }}
         >
-          <ExternalLink size={18} color={colors.primary} />
+          <ExternalLink size={18} color={colors.accent} />
           <Text style={styles.linkText}>Datenschutzerklärung öffnen</Text>
         </PressableScale>
         <Text style={styles.url}>{PRIVACY_URL}</Text>
@@ -31,7 +33,7 @@ export default function PrivacyScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = themed(() => ({
   content: { gap: 12 },
   body: { color: colors.text, fontSize: 15, lineHeight: 23 },
   link: {
@@ -41,6 +43,6 @@ const styles = StyleSheet.create({
     gap: 8,
     paddingVertical: 10,
   },
-  linkText: { color: colors.primary, fontSize: 16, fontWeight: "600" },
+  linkText: { color: colors.accent, fontSize: 16, fontWeight: "600" },
   url: { color: colors.muted, fontSize: 13, lineHeight: 19 },
-});
+}));

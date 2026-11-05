@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { Animated, DimensionValue, Easing, StyleSheet, View } from "react-native";
+import { Animated, DimensionValue, Easing, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { colors } from "../theme/colors";
+import { themed, useTheme } from "../theme/theme";
 
 // Pulsierender Platzhalter, solange Daten laden.
 export function Skeleton({
@@ -13,6 +14,7 @@ export function Skeleton({
   height?: number;
   radius?: number;
 }) {
+  useTheme();
   const [pulse] = useState(() => new Animated.Value(0));
 
   useEffect(() => {
@@ -38,11 +40,13 @@ export function Skeleton({
 
 // Ein einzelner Blob als Platzhalter für die Liste.
 export function RowsSkeleton() {
+  useTheme();
   return <Skeleton height={320} radius={20} />;
 }
 
 // Vollbild-Platzhalter beim ersten Laden.
 export function ListSkeleton() {
+  useTheme();
   const insets = useSafeAreaInsets();
 
   return (
@@ -52,6 +56,6 @@ export function ListSkeleton() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = themed(() => ({
   screen: { flex: 1, backgroundColor: colors.background, padding: 20 },
-});
+}));

@@ -1,8 +1,9 @@
-import { ReactNode } from "react";
-import { ScrollView, StyleSheet, View } from "react-native";
+import { ReactNode, useEffect, useState } from "react";
+import { Animated, ScrollView, useAnimatedValue } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { colors } from "../theme/colors";
 import { Text } from "./Text";
+import { themed, useTheme } from "../theme/theme";
 
 type Props = {
   title: string;
@@ -12,20 +13,35 @@ type Props = {
 
 // Gemeinsamer Rahmen für jede Seite: Titel, Hintergrund, Abstände.
 export function Screen({ title, scroll = true, children }: Props) {
+  useTheme();
   const insets = useSafeAreaInsets();
+  const reveal = useAnimatedValue(0);
+  const [settled, setSettled] = useState(false);
+
+  // Beim Start liefern die nativen Tabs den unteren Rand (Tab-Leiste) erst nach dem ersten Layout.
+  // Feste Seiten bleiben deshalb kurz unsichtbar, bis sich der Rand nicht mehr ändert, damit nichts springt.
+  useEffect(() => {
+    if (scroll) return;
+    const timer = setTimeout(() => setSettled(true), 150);
+    return () => clearTimeout(timer);
+  }, [scroll, insets.bottom, insets.top]);
+
+  useEffect(() => {
+    if (settled) Animated.timing(reveal, { toValue: 1, duration: 180, useNativeDriver: true }).start();
+  }, [settled, reveal]);
 
   if (!scroll) {
     return (
-      <View
+      <Animated.View
         style={[
           styles.screen,
           styles.fixed,
-          { paddingTop: insets.top + 8, paddingBottom: insets.bottom + 8 },
+          { paddingTop: insets.top + 8, paddingBottom: insets.bottom + 8, opacity: reveal },
         ]}
       >
         <Text style={[styles.title, styles.titleCompact]}>{title}</Text>
         {children}
-      </View>
+      </Animated.View>
     );
   }
 
@@ -41,10 +57,10 @@ export function Screen({ title, scroll = true, children }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = themed(() => ({
   screen: { flex: 1, backgroundColor: colors.background },
   content: { padding: 20, gap: 16 },
   fixed: { paddingHorizontal: 20, gap: 12 },
   title: { fontSize: 36, fontWeight: "700", color: colors.text },
   titleCompact: { fontSize: 30 },
-});
+}));

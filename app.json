@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "scheme": "onivoca",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "ch.onivoca.app",

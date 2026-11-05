@@ -1,7 +1,8 @@
-import { StyleSheet } from "react-native";
+import {  } from "react-native";
 import { Screen } from "../components/Screen";
 import { Text } from "../components/Text";
 import { colors } from "../theme/colors";
+import { themed, useTheme } from "../theme/theme";
 
 const SPACE_GROTESK_LICENSE = `Copyright 2020 The Space Grotesk Project Authors (https://github.com/floriankarsten/space-grotesk)
 
@@ -45,6 +46,7 @@ DISCLAIMER
 THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.`;
 
 export default function LicensesScreen() {
+  useTheme();
   return (
     <Screen title="Drittanbieter-Lizenzen">
       <Text style={styles.name}>Space Grotesk</Text>
@@ -58,8 +60,8 @@ export default function LicensesScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = themed(() => ({
   name: { color: colors.text, fontSize: 20, fontWeight: "600" },
   summary: { color: colors.muted, fontSize: 14, lineHeight: 21 },
   license: { color: colors.text, fontSize: 12, lineHeight: 18 },
-});
+}));

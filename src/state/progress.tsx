@@ -1,17 +1,19 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { ReactNode, createContext, useContext, useEffect, useState } from "react";
 import { ListSkeleton } from "../components/Skeleton";
-import { ProgressMap, Rating, RoundDelays, review } from "../lib/srs";
+import { ProgressMap, Rating, RoundDelays, SESSION_SIZE, review } from "../lib/srs";
 
 const STORAGE_KEY = "progress-v2";
 const SETTINGS_KEY = "study-settings-v1";
 const DEFAULT_DELAYS: RoundDelays = { again: 1, good: 3 };
-type StudySettings = { round: number; delays: RoundDelays };
+type StudySettings = { round: number; delays: RoundDelays; sessionSize: number };
 
 type ProgressContextValue = {
   progress: ProgressMap;
   round: number;
   delays: RoundDelays;
+  sessionSize: number;
+  setSessionSize: (size: number) => void;
   rate: (cardId: string, rating: Rating) => void;
   advanceRound: () => void;
   setDelay: (rating: keyof RoundDelays, rounds: number) => void;
@@ -37,8 +39,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
         const storedSettings = settingsRaw ? JSON.parse(settingsRaw) : null;
         setSettings(
           storedSettings
-            ? { ...storedSettings, delays: { ...DEFAULT_DELAYS, ...storedSettings.delays } }
-            : { round: 0, delays: DEFAULT_DELAYS },
+            ? { sessionSize: SESSION_SIZE, ...storedSettings, delays: { ...DEFAULT_DELAYS, ...storedSettings.delays } }
+            : { round: 0, delays: DEFAULT_DELAYS, sessionSize: SESSION_SIZE },
         );
       },
     );
@@ -71,13 +73,17 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     updateSettings({ ...settings!, delays: { ...settings!.delays, [rating]: rounds } });
   }
 
+  function setSessionSize(size: number) {
+    updateSettings({ ...settings!, sessionSize: size });
+  }
+
   function reset() {
     save({});
     updateSettings({ ...settings!, round: 0 });
   }
 
   return (
-    <ProgressContext.Provider value={{ progress, round: settings.round, delays: settings.delays, rate, advanceRound, setDelay, reset }}>
+    <ProgressContext.Provider value={{ progress, round: settings.round, delays: settings.delays, sessionSize: settings.sessionSize, setSessionSize, rate, advanceRound, setDelay, reset }}>
       {children}
     </ProgressContext.Provider>
   );

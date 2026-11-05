@@ -1,12 +1,14 @@
 import { useEffect } from "react";
-import { Animated, StyleSheet, useAnimatedValue, View } from "react-native";
+import { Animated, useAnimatedValue, View } from "react-native";
 import { Rating } from "../lib/srs";
 import { RATING_ORDER, RATINGS } from "../theme/ratings";
 import { PressableScale } from "./PressableScale";
 import { Text } from "./Text";
+import { themed, useTheme } from "../theme/theme";
 
 // Die drei Bewertungs-Buttons; sie blenden nach dem Umdrehen ein.
 export function RatingButtons({ onRate }: { onRate: (rating: Rating) => void }) {
+  useTheme();
   const appear = useAnimatedValue(0);
 
   useEffect(() => {
@@ -38,9 +40,9 @@ export function RatingButtons({ onRate }: { onRate: (rating: Rating) => void }) 
   );
 }
 
-const styles = StyleSheet.create({
+const styles = themed(() => ({
   row: { flexDirection: "row", gap: 10 },
   cell: { flex: 1 },
   button: { borderRadius: 18, paddingVertical: 14, alignItems: "center", gap: 4 },
   label: { fontSize: 16, fontWeight: "600" },
-});
+}));

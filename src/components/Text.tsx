@@ -1,4 +1,6 @@
 import { Text as RNText, StyleSheet, TextProps } from "react-native";
+import { colors } from "../theme/colors";
+import { useTheme } from "../theme/theme";
 
 function fontFor(weight: unknown) {
   switch (String(weight)) {
@@ -16,6 +18,7 @@ function fontFor(weight: unknown) {
 }
 
 export function Text({ style, ...props }: TextProps) {
+  useTheme();
   const { fontWeight } = StyleSheet.flatten(style) ?? {};
-  return <RNText {...props} style={[{ fontFamily: fontFor(fontWeight) }, style, { fontWeight: undefined }]} />;
+  return <RNText {...props} style={[{ fontFamily: fontFor(fontWeight), color: colors.text }, style, { fontWeight: undefined }]} />;
 }
