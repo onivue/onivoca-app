@@ -13,9 +13,9 @@ export default function TabsLayout() {
         <NativeTabs.Trigger.Label>Wörter</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon sf="books.vertical.fill" />
       </NativeTabs.Trigger>
-      <NativeTabs.Trigger name="stats">
-        <NativeTabs.Trigger.Label>Fortschritt</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon sf="chart.bar.fill" />
+      <NativeTabs.Trigger name="settings">
+        <NativeTabs.Trigger.Label>Einstellungen</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="gearshape.fill" />
       </NativeTabs.Trigger>
     </NativeTabs>
   );

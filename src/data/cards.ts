@@ -1,15 +1,17 @@
 // Typen und Themen der Karteikarten. Die Stammdaten liegen in src/data/words/data.json, zur Laufzeit in SQLite (src/db).
 
 export type TopicId = "daily" | "emotion" | "law" | "society" | "body" | "nature" | "work";
-export type Level = "B2" | "C1" | "C2";
+export type Level = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
+export type Lang = "en" | "es";
 export type Register = "neutral" | "formal" | "informal" | "literary" | "archaic" | "slang" | "vulgar";
-export type Pos = "noun" | "verb" | "adj" | "adv" | "phrasal-verb" | "idiom" | "phrase";
+export type Pos = "noun" | "verb" | "adj" | "adv" | "phrasal-verb" | "idiom" | "phrase" | "sentence";
 export type RelationType = "synonym" | "antonym" | "confusable" | "family" | "collocate" | "related";
 
+// Feldnamen mit "en"/"definitionEn" gelten für die Zielsprache (Englisch oder Spanisch), "de" ist immer Deutsch.
 export type Example = {
-  en: string;
+  en: string; // Satz in der Zielsprache
   de: string;
-  hit?: string; // Wortform des Lemmas im englischen Satz
+  hit?: string; // Wortform des Lemmas im Satz der Zielsprache
 };
 
 export type Relation = {
@@ -27,7 +29,9 @@ export type Usage = {
 
 // Eine Karte = ein Sinn eines Lemmas. Favoriten-Importe haben noch keine Beispiele und kein Level.
 export type WordEntry = {
-  id: string;
+  id: string; // Spanische IDs beginnen mit "es-"
+  lang?: Lang; // fehlt = "en"
+  focus?: string; // nur Satzkarten: das Wort, um das es im Satz geht
   lemma: string;
   pos?: Pos;
   ipa?: string;
@@ -56,7 +60,14 @@ export const TOPICS: Record<TopicId, { label: string; color: string; accent: str
   work: { label: "Arbeit & Geld", color: "#FFF0B8", accent: "#B45309" },
 };
 
-export const LEVELS: Level[] = ["B2", "C1", "C2"];
+export const LEVELS: Level[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
+
+// Sprachen, die man lernen kann. speech = Sprachcode für die Vorlesefunktion.
+export const LANGUAGES: Record<Lang, { label: string; speech: string; sort: string }> = {
+  en: { label: "Englisch", speech: "en-US", sort: "en" },
+  es: { label: "Spanisch", speech: "es-ES", sort: "es" },
+};
+export const LANG_ORDER: Lang[] = ["en", "es"];
 
 export const REGISTER_LABELS: Record<Register, string> = {
   neutral: "neutral",
@@ -76,6 +87,7 @@ export const POS_LABELS: Record<Pos, string> = {
   "phrasal-verb": "Phrasal Verb",
   idiom: "Redewendung",
   phrase: "Wendung",
+  sentence: "Satz",
 };
 
 export const RELATION_LABELS: Record<RelationType, string> = {
@@ -95,8 +107,19 @@ export const CLUSTER_LABELS: Record<string, string> = {
   "seven-sins": "Sieben Todsünden",
   "ough-words": "Verwechselbare -ough-Wörter",
   "doom-family": "Untergang & Verhängnis",
+  // Spanisch
+  time: "Zeit & Kalender",
+  "life-and-death": "Leben & Tod",
+  "place-and-community": "Orte & Gemeinschaft",
+  "family-and-people": "Familie & Menschen",
+  communication: "Sprechen & Kommunikation",
+  "body-parts": "Körperteile",
+  "law-and-order": "Recht & Ordnung",
+  "food-and-drink": "Essen & Trinken",
+  "business-and-work": "Firma & Beruf",
 };
 
+// "Sätze" sind alle Karten, die länger als ein Wort sind: Wendungen, Redewendungen und ganze Sätze.
 export function isPhraseEntry(card: WordEntry) {
-  return card.pos === "phrase" || card.pos === "idiom";
+  return card.pos === "phrase" || card.pos === "idiom" || card.pos === "sentence";
 }

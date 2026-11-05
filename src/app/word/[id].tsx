@@ -12,7 +12,7 @@ import { WordMeta } from "../../components/WordMeta";
 import { CLUSTER_LABELS, TOPICS } from "../../data/cards";
 import { speak } from "../../lib/speak";
 import { getStatus, MASTERED_SCORE, timesSeen } from "../../lib/srs";
-import { useCards } from "../../state/cards";
+import { useCards, useSentences } from "../../state/cards";
 import { useProgress } from "../../state/progress";
 import { colors } from "../../theme/colors";
 import { RATING_ORDER, RATINGS } from "../../theme/ratings";
@@ -25,7 +25,9 @@ export default function WordDetailScreen() {
   const { progress } = useProgress();
   const router = useRouter();
 
-  const cards = useCards();
+  const words = useCards();
+  const sentences = useSentences();
+  const cards = [...words, ...sentences];
 
   const card = cards.find((c) => c.id === id);
   if (!card) return null;

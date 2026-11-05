@@ -1,8 +1,9 @@
 import { BookOpen, Languages, MessageSquareQuote, Network, RotateCw, Volume2 } from "lucide-react-native";
 import { useEffect } from "react";
 import { Animated, Pressable, ScrollView, StyleSheet, View, useAnimatedValue } from "react-native";
-import { POS_LABELS, TOPICS, WordEntry, isPhraseEntry } from "../data/cards";
+import { LANGUAGES, POS_LABELS, TOPICS, WordEntry, isPhraseEntry } from "../data/cards";
 import { speak } from "../lib/speak";
+import { useLanguage } from "../state/language";
 import { colors } from "../theme/colors";
 import { ExampleList } from "./ExampleList";
 import { RelationList } from "./RelationList";
@@ -13,14 +14,28 @@ import { themed, useTheme } from "../theme/theme";
 
 type Props = {
   card: WordEntry;
-  reverse: boolean; // true: Deutsch wird gezeigt, Englisch muss erraten werden
+  reverse: boolean; // true: Deutsch wird gezeigt, Zielsprache muss erraten werden
   flipped: boolean;
   onFlip: () => void;
 };
 
+// Hebt das Fokuswort eines Satzes hervor.
+function highlight(text: string, focus: string, accent: string) {
+  const index = text.toLowerCase().indexOf(focus.toLowerCase());
+  return (
+    <>
+      {text.slice(0, index)}
+      <Text style={{ color: accent }}>{text.slice(index, index + focus.length)}</Text>
+      {text.slice(index + focus.length)}
+    </>
+  );
+}
+
 // Karteikarte mit Vorder- und Rückseite. Tippen dreht sie um.
 export function Flashcard({ card, reverse, flipped, onFlip }: Props) {
   useTheme();
+  const { lang } = useLanguage();
+  const langLabel = LANGUAGES[lang].label;
   const category = TOPICS[card.topics[0] ?? "daily"];
   const isPhrase = isPhraseEntry(card);
   const frontText = reverse ? card.de : card.lemma;
@@ -79,9 +94,13 @@ export function Flashcard({ card, reverse, flipped, onFlip }: Props) {
             </View>
 
             <View style={styles.center}>
-              <Text style={[styles.frontText, smallFront && styles.frontTextSmall]}>{frontText}</Text>
+              <Text style={[styles.frontText, smallFront && styles.frontTextSmall]}>
+                {!reverse && card.focus && frontText.toLowerCase().includes(card.focus.toLowerCase())
+                  ? highlight(frontText, card.focus, category.accent)
+                  : frontText}
+              </Text>
               {reverse ? (
-                <Text style={styles.phonetic}>Wie heisst das auf Englisch?</Text>
+                <Text style={styles.phonetic}>Wie heißt das auf {langLabel}?</Text>
               ) : (
                 <>
                   {card.ipa && <Text style={styles.phonetic}>{card.ipa}</Text>}
@@ -113,7 +132,7 @@ export function Flashcard({ card, reverse, flipped, onFlip }: Props) {
             <View style={[styles.translation, { backgroundColor: category.color }]}>
               <View style={styles.headingRow}>
                 <Languages color={category.accent} size={16} />
-                <Text style={[styles.translationHeading, { color: category.accent }]}>English – Deutsch</Text>
+                <Text style={[styles.translationHeading, { color: category.accent }]}>{langLabel} – Deutsch</Text>
               </View>
               <View style={styles.englishRow}>
                 <View style={styles.englishTexts}>

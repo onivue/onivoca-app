@@ -1,5 +1,5 @@
 import { ReactNode, useEffect, useState } from "react";
-import { Animated, ScrollView, useAnimatedValue } from "react-native";
+import { Animated, ScrollView, View, useAnimatedValue } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { colors } from "../theme/colors";
 import { Text } from "./Text";
@@ -7,12 +7,13 @@ import { themed, useTheme } from "../theme/theme";
 
 type Props = {
   title: string;
+  titleAccessory?: ReactNode; // z. B. ein Badge neben dem Titel
   scroll?: boolean; // false: feste Seite ohne Scrollen, Inhalt füllt den Platz
   children: ReactNode;
 };
 
 // Gemeinsamer Rahmen für jede Seite: Titel, Hintergrund, Abstände.
-export function Screen({ title, scroll = true, children }: Props) {
+export function Screen({ title, titleAccessory, scroll = true, children }: Props) {
   useTheme();
   const insets = useSafeAreaInsets();
   const reveal = useAnimatedValue(0);
@@ -39,7 +40,10 @@ export function Screen({ title, scroll = true, children }: Props) {
           { paddingTop: insets.top + 8, paddingBottom: insets.bottom + 8, opacity: reveal },
         ]}
       >
-        <Text style={[styles.title, styles.titleCompact]}>{title}</Text>
+        <View style={styles.titleRow}>
+          <Text style={[styles.title, styles.titleCompact]}>{title}</Text>
+          {titleAccessory}
+        </View>
         {children}
       </Animated.View>
     );
@@ -51,7 +55,10 @@ export function Screen({ title, scroll = true, children }: Props) {
       contentContainerStyle={styles.content}
       contentInsetAdjustmentBehavior="automatic"
     >
-      <Text style={styles.title}>{title}</Text>
+      <View style={styles.titleRow}>
+        <Text style={styles.title}>{title}</Text>
+        {titleAccessory}
+      </View>
       {children}
     </ScrollView>
   );
@@ -61,6 +68,7 @@ const styles = themed(() => ({
   screen: { flex: 1, backgroundColor: colors.background },
   content: { padding: 20, gap: 16 },
   fixed: { paddingHorizontal: 20, gap: 12 },
+  titleRow: { flexDirection: "row", alignItems: "center", gap: 12 },
   title: { fontSize: 36, fontWeight: "700", color: colors.text },
   titleCompact: { fontSize: 30 },
 }));

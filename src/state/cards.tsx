@@ -1,11 +1,14 @@
-import { ReactNode, createContext, useContext, useEffect, useState } from "react";
+import { ReactNode, createContext, useContext, useEffect, useMemo, useState } from "react";
 import { ListSkeleton } from "../components/Skeleton";
-import { WordEntry } from "../data/cards";
+import { WordEntry, isPhraseEntry } from "../data/cards";
 import { loadCards } from "../db/database";
+import { useLanguage } from "./language";
 
-const CardsContext = createContext<WordEntry[] | null>(null);
+type CardsValue = { words: WordEntry[]; sentences: WordEntry[] };
+const CardsContext = createContext<CardsValue | null>(null);
 
-// Lädt die Karten einmal aus der Datenbank und stellt sie allen Seiten zur Verfügung.
+// Lädt die Karten einmal aus der Datenbank und stellt die Karten der gewählten Lernsprache bereit,
+// getrennt in Wörter und Sätze (Wendungen, Redewendungen, ganze Sätze).
 export function CardsProvider({ children }: { children: ReactNode }) {
   const [cards, setCards] = useState<WordEntry[] | null>(null);
 
@@ -13,13 +16,33 @@ export function CardsProvider({ children }: { children: ReactNode }) {
     loadCards().then(setCards);
   }, []);
 
-  if (!cards) return <ListSkeleton />;
+  const { lang } = useLanguage();
+  const value = useMemo<CardsValue | null>(() => {
+    if (!cards) return null;
+    const forLang = cards.filter((c) => (c.lang ?? "en") === lang);
+    return {
+      words: forLang.filter((c) => !isPhraseEntry(c)),
+      sentences: forLang.filter(isPhraseEntry),
+    };
+  }, [cards, lang]);
 
-  return <CardsContext.Provider value={cards}>{children}</CardsContext.Provider>;
+  if (!value) return <ListSkeleton />;
+
+  return <CardsContext.Provider value={value}>{children}</CardsContext.Provider>;
 }
 
+function useCardsValue() {
+  const value = useContext(CardsContext);
+  if (!value) throw new Error("useCards muss innerhalb von CardsProvider genutzt werden");
+  return value;
+}
+
+// Wörter der gewählten Sprache.
 export function useCards() {
-  const cards = useContext(CardsContext);
-  if (!cards) throw new Error("useCards muss innerhalb von CardsProvider genutzt werden");
-  return cards;
+  return useCardsValue().words;
+}
+
+// Sätze der gewählten Sprache (Wendungen und ganze Sätze), leer wenn es keine gibt.
+export function useSentences() {
+  return useCardsValue().sentences;
 }

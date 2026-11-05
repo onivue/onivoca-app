@@ -6,15 +6,16 @@ import { Screen } from "../../components/Screen";
 import { RowsSkeleton } from "../../components/Skeleton";
 import { StatusPill } from "../../components/StatusPill";
 import { Text } from "../../components/Text";
-import { CLUSTER_LABELS, LEVELS, Level, TOPICS, TopicId, WordEntry, isPhraseEntry } from "../../data/cards";
+import { CLUSTER_LABELS, LANGUAGES, LEVELS, Level, TOPICS, TopicId, WordEntry } from "../../data/cards";
 import { speak } from "../../lib/speak";
 import { Status, getStatus } from "../../lib/srs";
-import { useCards } from "../../state/cards";
+import { useCards, useSentences } from "../../state/cards";
+import { useLanguage } from "../../state/language";
 import { useProgress } from "../../state/progress";
 import { colors } from "../../theme/colors";
 import { themed, useTheme } from "../../theme/theme";
 
-type Filter = "word" | "phrase";
+type Filter = "word" | "sentence";
 type SortMode = "asc" | "desc";
 type StatusFilter = Status | "all";
 type Option<T extends string> = { id: T | "all"; label: string };
@@ -50,9 +51,10 @@ const STATUS_FILTERS: { id: StatusFilter; label: string }[] = [
   { id: "learning", label: "Am Lernen" },
   { id: "mastered", label: "Gelernt" },
 ];
+const PAGE_SIZE = 100; // Sätze gibt es tausende, daher schrittweise anzeigen
 const FILTERS: { id: Filter; label: string }[] = [
   { id: "word", label: "Wörter" },
-  { id: "phrase", label: "Sätze" },
+  { id: "sentence", label: "Sätze" },
 ];
 
 // Memoisiert, damit unveränderte Zeilen beim Filtern nicht neu rendern.
@@ -82,9 +84,18 @@ const WordRow = memo(function WordRow({ card, status }: { card: WordEntry; statu
 
 // Tab 2: Liste der Karten mit Suche, Filter und A–Z-Sortierung. Tippen öffnet die Details.
 export default function WordsScreen() {
+  const { lang } = useLanguage();
+  // Beim Sprachwechsel passen Filter und Suche nicht mehr, daher neu starten.
+  return <WordsList key={lang} />;
+}
+
+function WordsList() {
   useTheme();
   const { progress } = useProgress();
-  const allCards = useCards();
+  const wordCards = useCards();
+  const sentenceCards = useSentences();
+  const [limit, setLimit] = useState(PAGE_SIZE);
+  const { lang } = useLanguage();
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<Filter>("word");
   const [sortMode, setSortMode] = useState<SortMode>("asc");
@@ -117,15 +128,15 @@ export default function WordsScreen() {
     [statusFilter, levelFilter, topicFilter, clusterFilter].filter((f) => f !== "all").length +
     (sortMode !== "asc" ? 1 : 0);
 
-  const levelOptions: Option<Level>[] = [{ id: "all", label: "Alle" }, ...LEVELS.map((l) => ({ id: l, label: l }))];
+  const levelOptions: Option<Level>[] = [{ id: "all", label: "Alle" }, ...LEVELS.filter((l) => wordCards.some((c) => c.level === l)).map((l) => ({ id: l, label: l }))];
   const topicOptions: Option<TopicId>[] = [
     { id: "all", label: "Alle" },
     ...(Object.keys(TOPICS) as TopicId[]).map((t) => ({ id: t, label: TOPICS[t].label })),
   ];
   const clusterOptions: Option<string>[] = useMemo(() => {
-    const ids = [...new Set(allCards.flatMap((c) => c.clusters))];
+    const ids = [...new Set(wordCards.flatMap((c) => c.clusters))];
     return [{ id: "all", label: "Alle" }, ...ids.map((id) => ({ id, label: CLUSTER_LABELS[id] ?? id }))];
-  }, [allCards]);
+  }, [wordCards]);
 
   const criteria = useMemo(
     () => ({ query, filter, sortMode, statusFilter, levelFilter, topicFilter, clusterFilter }),
@@ -135,23 +146,22 @@ export default function WordsScreen() {
   const deferred = useDeferredValue(criteria);
   const pending = deferred !== criteria;
 
-  // Sucht in Englisch und Deutsch sowie in Alternativen, Definition und Wortverbindungen.
+  // Sucht in der Lernsprache und Deutsch sowie in Alternativen, Definition und Wortverbindungen.
   const cards = useMemo(() => {
     const search = deferred.query.trim().toLowerCase();
     const matches = (c: WordEntry) =>
       [c.lemma, c.de, ...(c.deAlt ?? []), c.definitionEn ?? "", ...(c.usage?.collocations ?? [])].some((text) =>
         text.toLowerCase().includes(search),
       );
-    const result = allCards
-      .filter((c) => isPhraseEntry(c) === (deferred.filter === "phrase"))
-      .filter(matches)
+    const result = (deferred.filter === "sentence" ? sentenceCards : wordCards)
+            .filter(matches)
       .filter((c) => deferred.levelFilter === "all" || c.level === deferred.levelFilter)
       .filter((c) => deferred.topicFilter === "all" || c.topics.includes(deferred.topicFilter))
       .filter((c) => deferred.clusterFilter === "all" || c.clusters.includes(deferred.clusterFilter))
       .filter((c) => deferred.statusFilter === "all" || getStatus(progress[c.id]) === deferred.statusFilter);
     const dir = deferred.sortMode === "asc" ? 1 : -1;
-    return result.sort((a, b) => a.lemma.localeCompare(b.lemma, "en") * dir);
-  }, [allCards, progress, deferred]);
+    return result.sort((a, b) => a.lemma.localeCompare(b.lemma, LANGUAGES[lang].sort) * dir);
+  }, [wordCards, sentenceCards, progress, deferred, lang]);
 
   return (
     <Screen title="Wörter">
@@ -160,8 +170,11 @@ export default function WordsScreen() {
         <TextInput
           style={styles.input}
           value={query}
-          onChangeText={setQuery}
-          placeholder="Englisch oder Deutsch suchen"
+          onChangeText={(text) => {
+            setQuery(text);
+            setLimit(PAGE_SIZE);
+          }}
+          placeholder={`${LANGUAGES[lang].label} oder Deutsch suchen`}
           placeholderTextColor={colors.muted}
           autoCapitalize="none"
           autoCorrect={false}
@@ -179,7 +192,10 @@ export default function WordsScreen() {
           <Pressable
             key={id}
             style={[styles.chip, filter === id && styles.chipActive]}
-            onPress={() => setFilter(id)}
+            onPress={() => {
+              setFilter(id);
+              setLimit(PAGE_SIZE);
+            }}
           >
             <Text style={[styles.chipText, filter === id && styles.chipTextActive]}>{label}</Text>
           </Pressable>
@@ -261,9 +277,14 @@ export default function WordsScreen() {
         <RowsSkeleton />
       ) : (
         <View style={styles.list}>
-          {cards.map((card) => (
+          {cards.slice(0, limit).map((card) => (
             <WordRow key={card.id} card={card} status={getStatus(progress[card.id])} />
           ))}
+          {cards.length > limit && (
+            <Pressable style={styles.more} onPress={() => setLimit(limit + PAGE_SIZE)}>
+              <Text style={styles.moreText}>Mehr anzeigen ({cards.length - limit} weitere)</Text>
+            </Pressable>
+          )}
         </View>
       )}
     </Screen>
@@ -271,6 +292,8 @@ export default function WordsScreen() {
 }
 
 const styles = themed(() => ({
+  more: { alignItems: "center", paddingVertical: 14 },
+  moreText: { color: colors.accent, fontSize: 15, fontWeight: "600" },
   search: {
     flexDirection: "row",
     alignItems: "center",

@@ -1,13 +1,32 @@
 import * as SQLite from "expo-sqlite";
-import type { Level, Pos, Register, RelationType, TopicId, WordEntry } from "../data/cards";
+import type { Lang, Level, Pos, Register, RelationType, TopicId, WordEntry } from "../data/cards";
 import data from "../data/words/data.json";
+import dataEs from "../data/words/es.json";
+import sentencesEs from "../data/words/es-sentences.json";
 
 // Stammdaten: data.json ist die einzige Quelle für die Datenbank.
-const SEED_WORDS = data as WordEntry[];
+const SEED_WORDS = [...(data as WordEntry[]), ...(dataEs as WordEntry[])];
+
+// Satzkarten aus dem Anki-Deck: kompakt als [Satz, Übersetzung, Fokuswort?] gespeichert.
+const SEED_SENTENCES: WordEntry[] = (sentencesEs as string[][]).map(([text, de, focus], index) => ({
+  id: `es-satz-${String(index + 1).padStart(4, "0")}`,
+  lang: "es",
+  lemma: text,
+  pos: "sentence",
+  de,
+  focus: focus || undefined,
+  examples: [],
+  relations: [],
+  topics: [],
+  clusters: [],
+  source: "generated",
+}));
 
 // Bei Änderungen an Schema oder Startdaten erhöhen: die Karten werden dann neu eingespielt.
 // Der Lernstand liegt getrennt (AsyncStorage) und bleibt erhalten.
-const SCHEMA_VERSION = 6;
+// Zusätzlich fließt die Anzahl der Karten ein, damit neue Wörter auch ohne Hochzählen eingespielt werden.
+const SCHEMA_REVISION = 8;
+const SCHEMA_VERSION = SCHEMA_REVISION * 100000 + (SEED_WORDS.length + SEED_SENTENCES.length);
 
 type CardRow = {
   id: string;
@@ -15,6 +34,8 @@ type CardRow = {
   pos: Pos | null;
   ipa: string | null;
   level: Level | null;
+  lang: Lang | null;
+  focus: string | null;
   register: Register | null;
   de: string;
   de_alt: string | null;
@@ -34,7 +55,7 @@ async function openDatabase() {
   const db = await SQLite.openDatabaseAsync("onivue.db");
   const row = await db.getFirstAsync<{ user_version: number }>("PRAGMA user_version");
 
-  if ((row?.user_version ?? 0) < SCHEMA_VERSION) {
+  if ((row?.user_version ?? 0) !== SCHEMA_VERSION) {
     await db.withTransactionAsync(async () => {
       await db.execAsync(`
         DROP TABLE IF EXISTS card_clusters;
@@ -49,6 +70,8 @@ async function openDatabase() {
           pos TEXT,
           ipa TEXT,
           level TEXT,
+          lang TEXT NOT NULL DEFAULT 'en',
+          focus TEXT,
           register TEXT,
           de TEXT NOT NULL,
           de_alt TEXT,
@@ -81,9 +104,9 @@ async function openDatabase() {
 
       for (const card of SEED_WORDS) {
         await db.runAsync(
-          `INSERT INTO cards (id, lemma_key, lemma, pos, ipa, level, register, de, de_alt, definition_en,
+          `INSERT INTO cards (id, lemma_key, lemma, pos, ipa, level, lang, register, de, de_alt, definition_en,
              collocations, grammar, tip, mnemonic, source)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
           [
             card.id,
             normalize(card.lemma),
@@ -91,6 +114,7 @@ async function openDatabase() {
             card.pos ?? null,
             card.ipa ?? null,
             card.level ?? null,
+            card.lang ?? "en",
             card.register ?? null,
             card.de,
             card.deAlt?.length ? JSON.stringify(card.deAlt) : null,
@@ -127,6 +151,18 @@ async function openDatabase() {
           await db.runAsync("INSERT INTO card_clusters (card_id, cluster) VALUES (?, ?)", [card.id, cluster]);
         }
       }
+
+      // Satzkarten haben nur Grunddaten und werden in Blöcken eingefügt (schneller beim ersten Start).
+      const CHUNK = 100;
+      for (let i = 0; i < SEED_SENTENCES.length; i += CHUNK) {
+        const chunk = SEED_SENTENCES.slice(i, i + CHUNK);
+        await db.runAsync(
+          `INSERT INTO cards (id, lemma_key, lemma, pos, lang, focus, de, source) VALUES ${chunk
+            .map(() => "(?, ?, ?, ?, ?, ?, ?, ?)")
+            .join(", ")}`,
+          chunk.flatMap((c) => [c.id, normalize(c.lemma), c.lemma, "sentence", "es", c.focus ?? null, c.de, "generated"]),
+        );
+      }
     });
     await db.execAsync(`PRAGMA user_version = ${SCHEMA_VERSION}`);
   }
@@ -135,7 +171,7 @@ async function openDatabase() {
 }
 
 function normalize(value: string) {
-  return value.normalize("NFKC").toLocaleLowerCase("en").replace(/[^\p{L}\p{N}]+/gu, "");
+  return value.normalize("NFKC").toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
 }
 
 function groupBy<T extends { card_id: string }>(rows: T[]) {
@@ -166,6 +202,8 @@ export async function loadCards(): Promise<WordEntry[]> {
       pos: card.pos ?? undefined,
       ipa: card.ipa ?? undefined,
       level: card.level ?? undefined,
+      lang: card.lang ?? "en",
+      focus: card.focus ?? undefined,
       register: card.register ?? undefined,
       de: card.de,
       deAlt: card.de_alt ? JSON.parse(card.de_alt) : undefined,

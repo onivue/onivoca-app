@@ -1,27 +1,31 @@
-// Prüft src/data/words/data.json. Aufruf: npm run validate:words
+// Prüft src/data/words/data.json (Englisch) und es.json (Spanisch). Aufruf: npm run validate:words
 import { readFileSync } from "node:fs";
 
-const FILE = "src/data/words/data.json";
-const LEVELS = ["B2", "C1", "C2"];
+const FILES = ["src/data/words/data.json", "src/data/words/es.json"];
+const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
 const REGISTERS = ["neutral", "formal", "informal", "literary", "archaic", "slang", "vulgar"];
-const POS = ["noun", "verb", "adj", "adv", "phrasal-verb", "idiom", "phrase"];
+const POS = ["noun", "verb", "adj", "adv", "phrasal-verb", "idiom", "phrase", "sentence"];
 const RELATIONS = ["synonym", "antonym", "confusable", "family", "collocate", "related"];
 const TOPICS = ["daily", "emotion", "law", "society", "body", "nature", "work"];
 
+const SENTENCES_FILE = "src/data/words/es-sentences.json";
+
 const errors = [];
 const entries = [];
-let data;
-try {
-  data = JSON.parse(readFileSync(FILE, "utf8"));
-} catch (e) {
-  console.error(`${FILE}: ungültiges JSON (${e.message})`);
-  process.exit(1);
+for (const FILE of FILES) {
+  let data;
+  try {
+    data = JSON.parse(readFileSync(FILE, "utf8"));
+  } catch (e) {
+    console.error(`${FILE}: ungültiges JSON (${e.message})`);
+    process.exit(1);
+  }
+  if (!Array.isArray(data)) {
+    console.error(`${FILE}: Array erwartet`);
+    process.exit(1);
+  }
+  for (const entry of data) entries.push({ file: FILE.split("/").pop(), entry });
 }
-if (!Array.isArray(data)) {
-  console.error(`${FILE}: Array erwartet`);
-  process.exit(1);
-}
-for (const entry of data) entries.push({ file: "data.json", entry });
 
 const ids = new Set();
 for (const { entry } of entries) {
@@ -34,6 +38,9 @@ for (const { file, entry: e } of entries) {
   const at = `${file}:${e.id}`;
   const fail = (msg) => errors.push(`${at}: ${msg}`);
   if (!isStr(e.id) || !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(e.id)) fail("ID muss kleingeschrieben mit Bindestrichen sein");
+  const isEs = file === "es.json";
+  if (isEs !== e.id.startsWith("es-")) fail("spanische IDs beginnen mit es-, englische nicht");
+  if ((e.lang ?? "en") !== (isEs ? "es" : "en")) fail("lang passt nicht zur Datei");
   if (!isStr(e.lemma)) fail("lemma fehlt");
   if (!isStr(e.de)) fail("de fehlt");
   if (e.pos !== undefined && !POS.includes(e.pos)) fail(`pos ungültig: ${e.pos}`);
@@ -64,6 +71,21 @@ for (const { file, entry: e } of entries) {
     if (!isStr(e.usage?.tip)) fail("usage.tip fehlt");
     if (!(e.relations?.length >= 2)) fail("mindestens 2 relations");
   }
+}
+
+// Satzkarten (Anki): Array aus [Satz, Übersetzung, Fokuswort?]
+try {
+  const sentences = JSON.parse(readFileSync(SENTENCES_FILE, "utf8"));
+  if (!Array.isArray(sentences)) errors.push(`${SENTENCES_FILE}: Array erwartet`);
+  else
+    sentences.forEach((row, i) => {
+      const ok = Array.isArray(row) && row.length >= 2 && row.length <= 3 && row.every((v) => typeof v === "string");
+      if (!ok || !isStr(row[0]) || !isStr(row[1])) errors.push(`${SENTENCES_FILE}[${i}]: [Satz, Übersetzung, Fokuswort?] erwartet`);
+      else if (row[2] && !row[0].toLowerCase().includes(row[2].toLowerCase())) errors.push(`${SENTENCES_FILE}[${i}]: Fokuswort nicht im Satz`);
+    });
+  console.log(`Satzkarten: ${Array.isArray(sentences) ? sentences.length : 0}`);
+} catch (e) {
+  errors.push(`${SENTENCES_FILE}: ungültiges JSON (${e.message})`);
 }
 
 if (errors.length > 0) {

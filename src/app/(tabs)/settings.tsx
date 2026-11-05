@@ -1,6 +1,8 @@
 import { Link } from "expo-router";
 import {
   Brain,
+  CircleHelp,
+  Languages,
   CalendarClock,
   ChevronDown,
   ChevronUp,
@@ -28,17 +30,25 @@ import { ProgressRing } from "../../components/ProgressRing";
 import { Screen } from "../../components/Screen";
 import { Text } from "../../components/Text";
 import { EASY_DELAY, LEARNING_SLOTS, MASTERED_SCORE, SCORE_CHANGE, SESSION_SIZES, summarize } from "../../lib/srs";
-import { useCards } from "../../state/cards";
+import { LANGUAGES, LANG_ORDER } from "../../data/cards";
+import { useCards, useSentences } from "../../state/cards";
+import { useLanguage } from "../../state/language";
+import { useOnboarding } from "../../state/onboarding";
 import { useProgress } from "../../state/progress";
 import { colors } from "../../theme/colors";
 import { themed, useTheme } from "../../theme/theme";
 
-// Tab 3: Lernfortschritt, Erklärung des Algorithmus und Einstellungen.
-export default function StatsScreen() {
+// Tab 3: Einstellungen (Sprache, Anleitung, Lernen, Design) mit Lernfortschritt und Erklärung des Algorithmus.
+export default function SettingsScreen() {
   useTheme();
   const { progress, round, delays, sessionSize, setSessionSize, setDelay, reset } = useProgress();
   const { pref, setPref } = useTheme();
-  const cards = useCards();
+  const { lang, setLang, deck } = useLanguage();
+  const { open: openGuide } = useOnboarding();
+  const words = useCards();
+  const sentences = useSentences();
+  const showSentences = deck === "sentences" && sentences.length > 0;
+  const cards = showSentences ? sentences : words;
   const summary = summarize(cards, progress);
   const [explainOpen, setExplainOpen] = useState(false);
 
@@ -58,12 +68,26 @@ export default function StatsScreen() {
   }
 
   return (
-    <Screen title="Fortschritt">
+    <Screen title="Einstellungen">
+      {/* Sprache und Anleitung */}
+      <Section icon={<Languages color={colors.accent} size={20} />} title="Sprache">
+        <Text style={styles.hint}>Welche Sprache du gerade lernst. Der Lernstand wird pro Sprache getrennt gespeichert.</Text>
+        <Segmented
+          options={LANG_ORDER.map((id) => ({ value: id, label: LANGUAGES[id].label }))}
+          value={lang}
+          onChange={setLang}
+        />
+        <PressableScale style={styles.guideButton} onPress={openGuide} accessibilityRole="button">
+          <CircleHelp color={colors.accent} size={18} />
+          <Text style={styles.guideText}>Anleitung ansehen</Text>
+        </PressableScale>
+      </Section>
+
       {/* Hero: Ring + gestapelter Balken */}
       <View style={[styles.hero, { backgroundColor: colors.primary }]}>
         <ProgressRing value={summary.mastered / total} color={colors.accent} label="gelernt" />
         <Text style={styles.heroText}>
-          {summary.mastered} von {summary.total} Karten gelernt
+          {summary.mastered} von {summary.total} {showSentences ? "Sätzen" : "Wörtern"} gelernt
         </Text>
         <View style={styles.stack}>
           <View style={[styles.stackPart, { flex: summary.mastered, backgroundColor: "#16A34A" }]} />
@@ -126,7 +150,7 @@ export default function StatsScreen() {
               übersprungen.
             </Step>
             <Step n={5} title="Richtung wechselt">
-              Bereits bekannte Karten werden in etwa der Hälfte der Fälle umgekehrt gefragt: Deutsch zeigen, Englisch erraten.
+              Bereits bekannte Karten werden in etwa der Hälfte der Fälle umgekehrt gefragt: Deutsch zeigen, die Lernsprache erraten.
             </Step>
           </View>
         )}
@@ -369,6 +393,8 @@ function DelayControl({
 }
 
 const styles = themed(() => ({
+  guideButton: { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8, paddingVertical: 10 },
+  guideText: { color: colors.accent, fontSize: 15, fontWeight: "600" },
   hero: { borderRadius: 28, padding: 24, alignItems: "center", gap: 18 },
   heroText: { fontSize: 17, fontWeight: "600", color: colors.text },
   stack: { flexDirection: "row", alignSelf: "stretch", height: 14, borderRadius: 7, overflow: "hidden" },
