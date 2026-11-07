@@ -41,7 +41,7 @@ export function ProgressRing({ value, size = 180, stroke = 16, color = colors.ac
         />
       </Svg>
       <View style={styles.center}>
-        <Text style={styles.percent}>{Math.round(value * 100)}%</Text>
+        <Text style={[styles.percent, { fontSize: Math.round(size * 0.24) }]}>{Math.round(value * 100)}%</Text>
         {label && <Text style={styles.label}>{label}</Text>}
       </View>
     </View>

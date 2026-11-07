@@ -59,6 +59,11 @@ function AppStack() {
       <Stack screenOptions={{ headerShown: false, headerBackTitle: "Zurück", contentStyle: { backgroundColor: colors.background } }}>
         {/* Detailseite eines Worts: mit Zurück-Pfeil */}
         <Stack.Screen name="word/[id]" options={headerOptions} />
+        {/* Unterseiten der Einstellungen */}
+        <Stack.Screen name="settings/progress" options={headerOptions} />
+        <Stack.Screen name="settings/difficulty" options={headerOptions} />
+        <Stack.Screen name="settings/rounds" options={headerOptions} />
+        <Stack.Screen name="settings/how-it-works" options={headerOptions} />
         <Stack.Screen name="privacy" options={headerOptions} />
         <Stack.Screen name="licenses" options={headerOptions} />
       </Stack>

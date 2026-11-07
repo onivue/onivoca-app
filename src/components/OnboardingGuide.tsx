@@ -1,4 +1,4 @@
-import { BookOpen, Check, Layers, RotateCw, Sparkles } from "lucide-react-native";
+import { BookOpen, Check, Gauge, Layers, RotateCw, Sparkles } from "lucide-react-native";
 import { ReactNode, useState } from "react";
 import { Modal, Pressable, ScrollView, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -8,11 +8,12 @@ import { useOnboarding } from "../state/onboarding";
 import { colors } from "../theme/colors";
 import { RATING_ORDER, RATINGS } from "../theme/ratings";
 import { themed, useTheme } from "../theme/theme";
+import { MixModeList, MixPreview } from "./DifficultyMixer";
 import { PressableScale } from "./PressableScale";
 import { Text } from "./Text";
 
 const LANG_HINTS = { en: "Wörter und Wendungen von A2 bis C2", es: "Häufige Wörter und Sätze (A1–B1)" } as const;
-const STEPS = 4;
+const STEPS = 5;
 
 // Kurzer Guide: Sprache wählen und erklären, wie die App funktioniert.
 export function OnboardingGuide() {
@@ -75,6 +76,19 @@ function GuideContent() {
 
           {step === 1 && (
             <>
+              <Hero icon={<Gauge color={colors.onAccent} size={30} />} />
+              <Text style={styles.title}>Wie schwer soll es sein?</Text>
+              <Text style={styles.text}>
+                Jedes Wort hat eine Stufe von A1 (leicht) bis C2 (schwer). Wähle, wie deine Runden gemischt werden.
+              </Text>
+              <MixModeList compact />
+              <MixPreview />
+              <Text style={styles.small}>Feinjustieren kannst du später unter Einstellungen → Schwierigkeit.</Text>
+            </>
+          )}
+
+          {step === 2 && (
+            <>
               <Hero icon={<RotateCw color={colors.onAccent} size={30} />} />
               <Text style={styles.title}>Karte umdrehen</Text>
               <Text style={styles.text}>
@@ -85,7 +99,7 @@ function GuideContent() {
             </>
           )}
 
-          {step === 2 && (
+          {step === 3 && (
             <>
               <Hero icon={<Layers color={colors.onAccent} size={30} />} />
               <Text style={styles.title}>Ehrlich bewerten</Text>
@@ -102,12 +116,13 @@ function GuideContent() {
                 })}
               </View>
               <Text style={styles.text}>
-                „Nochmal“ kommt bald wieder, „Einfach“ erst nach mehreren Runden. Karten mit genug Punkten gelten als gelernt.
+                „Nochmal“ kommt bald wieder, „Einfach“ erst nach mehreren Runden. Karten mit genug Punkten gelten als gelernt. Nach
+                jeder Runde siehst du einen Rückblick mit allen Karten und deinen Bewertungen.
               </Text>
             </>
           )}
 
-          {step === 3 && (
+          {step === 4 && (
             <>
               <Hero icon={<BookOpen color={colors.onAccent} size={30} />} />
               <Text style={styles.title}>Wörter oder Sätze</Text>
