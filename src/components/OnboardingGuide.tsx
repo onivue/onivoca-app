@@ -11,7 +11,7 @@ import { themed, useTheme } from "../theme/theme";
 import { PressableScale } from "./PressableScale";
 import { Text } from "./Text";
 
-const LANG_HINTS = { en: "Schwierige Wörter und Wendungen (B2–C2)", es: "Häufige Wörter und Sätze (A1–B1)" } as const;
+const LANG_HINTS = { en: "Wörter und Wendungen von A2 bis C2", es: "Häufige Wörter und Sätze (A1–B1)" } as const;
 const STEPS = 4;
 
 // Kurzer Guide: Sprache wählen und erklären, wie die App funktioniert.

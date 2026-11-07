@@ -6,6 +6,7 @@
 // - "Einfach" -> 2 Punkte mehr
 // Ab MASTERED_SCORE Punkten gilt eine Karte als gelernt.
 import { WordEntry } from "../data/cards";
+import { LevelWeights, pickByMix } from "./difficulty";
 
 export type Rating = "again" | "good" | "easy";
 export type Status = "new" | "learning" | "mastered";
@@ -76,20 +77,29 @@ function shuffle<T>(items: T[]) {
 
 // Eine Runde: ein paar Karten, die noch wackeln, dann neue Karten.
 // Sind alle gelernt, gibt es eine Auffrischung mit zufälligen Karten.
+// Mit Schwierigkeits-Mix (weights) wird aus dieser Reihenfolge pro Stufe ausgewählt.
 // Schon bekannte Karten werden manchmal umgekehrt gefragt (Deutsch -> Englisch).
 export type SessionItem = { card: WordEntry; reverse: boolean };
 
-export function buildSession(cards: WordEntry[], progress: ProgressMap, round = 0, size = SESSION_SIZE): SessionItem[] {
+export function buildSession(
+  cards: WordEntry[],
+  progress: ProgressMap,
+  round = 0,
+  size = SESSION_SIZE,
+  weights: LevelWeights | null = null,
+): SessionItem[] {
   const byStatus = (status: Status) =>
     cards.filter((c) => getStatus(progress[c.id]) === status && (progress[c.id]?.dueRound ?? 0) <= round);
   const learning = byStatus("learning").sort((a, b) => progress[a.id].score - progress[b.id].score);
 
-  return [
+  const ordered = [
     ...learning.slice(0, LEARNING_PER_SESSION),
     ...byStatus("new"),
     ...learning.slice(LEARNING_PER_SESSION),
     ...shuffle(byStatus("mastered")),
-  ]
-    .slice(0, size)
-    .map((card) => ({ card, reverse: !!progress[card.id] && Math.random() < REVERSE_CHANCE }));
+  ];
+  return (weights ? pickByMix(ordered, size, weights) : ordered.slice(0, size)).map((card) => ({
+    card,
+    reverse: !!progress[card.id] && Math.random() < REVERSE_CHANCE,
+  }));
 }

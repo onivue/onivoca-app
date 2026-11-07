@@ -25,7 +25,7 @@ const SEED_SENTENCES: WordEntry[] = (sentencesEs as string[][]).map(([text, de, 
 // Bei Änderungen an Schema oder Startdaten erhöhen: die Karten werden dann neu eingespielt.
 // Der Lernstand liegt getrennt (AsyncStorage) und bleibt erhalten.
 // Zusätzlich fließt die Anzahl der Karten ein, damit neue Wörter auch ohne Hochzählen eingespielt werden.
-const SCHEMA_REVISION = 8;
+const SCHEMA_REVISION = 9;
 const SCHEMA_VERSION = SCHEMA_REVISION * 100000 + (SEED_WORDS.length + SEED_SENTENCES.length);
 
 type CardRow = {

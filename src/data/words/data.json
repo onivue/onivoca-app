@@ -32927,5 +32927,6490 @@
     ],
     "clusters": [],
     "source": "generated"
+  },
+  {
+    "id": "become",
+    "lemma": "become",
+    "pos": "verb",
+    "ipa": "/bɪˈkʌm/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "werden",
+    "deAlt": [
+      "zu etwas werden"
+    ],
+    "definitionEn": "to start to be something, such as older, famous or clear",
+    "examples": [
+      {
+        "en": "She wants to become a nurse one day.",
+        "de": "Sie möchte eines Tages Krankenschwester werden.",
+        "hit": "become"
+      },
+      {
+        "en": "It became clear that we were lost.",
+        "de": "Es wurde klar, dass wir uns verirrt hatten.",
+        "hit": "became"
+      },
+      {
+        "en": "The small café has become very popular with students.",
+        "de": "Das kleine Café ist bei Studierenden sehr beliebt geworden.",
+        "hit": "become"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "become famous",
+        "become clear",
+        "become a doctor",
+        "become friends"
+      ],
+      "grammar": "unregelmäßig: become – became – become",
+      "tip": "Falscher Freund: 'become' heißt 'werden', nicht 'bekommen'. 'Bekommen' ist 'get' oder 'receive'."
+    },
+    "mnemonic": "Wer etwas bekommt, der GETs – wer etwas wird, der BECOMES.",
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "get",
+        "noteDe": "get = bekommen; become = werden"
+      },
+      {
+        "type": "synonym",
+        "word": "turn into",
+        "noteDe": "sich verwandeln in"
+      },
+      {
+        "type": "related",
+        "word": "receive",
+        "noteDe": "erhalten (formell)"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "false-friends"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "actually",
+    "lemma": "actually",
+    "pos": "adv",
+    "ipa": "/ˈæktʃuəli/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "eigentlich",
+    "deAlt": [
+      "tatsächlich",
+      "in Wirklichkeit"
+    ],
+    "definitionEn": "used to say what is really true, often when it is surprising",
+    "examples": [
+      {
+        "en": "Actually, I don't like coffee very much.",
+        "de": "Eigentlich mag ich Kaffee nicht besonders.",
+        "hit": "Actually"
+      },
+      {
+        "en": "Did she actually say that to her boss?",
+        "de": "Hat sie das tatsächlich zu ihrem Chef gesagt?",
+        "hit": "actually"
+      },
+      {
+        "en": "He looks strict, but he is actually very kind.",
+        "de": "Er wirkt streng, ist aber eigentlich sehr freundlich.",
+        "hit": "actually"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "actually, I think",
+        "what actually happened",
+        "did you actually"
+      ],
+      "tip": "Falscher Freund: 'actually' heißt nicht 'aktuell'. 'Aktuell' ist 'current' oder 'currently'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "currently",
+        "noteDe": "currently = aktuell, zurzeit"
+      },
+      {
+        "type": "synonym",
+        "word": "in fact",
+        "noteDe": "tatsächlich"
+      },
+      {
+        "type": "family",
+        "word": "actual",
+        "noteDe": "tatsächlich (Adjektiv)"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "false-friends"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "sensible",
+    "lemma": "sensible",
+    "pos": "adj",
+    "ipa": "/ˈsɛnsəbəl/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "vernünftig",
+    "deAlt": [
+      "klug",
+      "praktisch"
+    ],
+    "definitionEn": "showing good judgment and practical thinking",
+    "examples": [
+      {
+        "en": "That sounds like a sensible plan to me.",
+        "de": "Das klingt für mich nach einem vernünftigen Plan.",
+        "hit": "sensible"
+      },
+      {
+        "en": "Wear sensible shoes for the long walk.",
+        "de": "Zieh für die lange Wanderung praktische Schuhe an.",
+        "hit": "sensible"
+      },
+      {
+        "en": "It would be sensible to book the tickets early.",
+        "de": "Es wäre vernünftig, die Tickets früh zu buchen.",
+        "hit": "sensible"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a sensible decision",
+        "sensible shoes",
+        "the sensible thing to do"
+      ],
+      "tip": "Falscher Freund: 'sensible' heißt 'vernünftig'. 'Sensibel' heißt auf Englisch 'sensitive'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "sensitive",
+        "noteDe": "sensitive = sensibel, empfindlich"
+      },
+      {
+        "type": "synonym",
+        "word": "reasonable",
+        "noteDe": "vernünftig"
+      },
+      {
+        "type": "antonym",
+        "word": "silly",
+        "ref": "silly",
+        "noteDe": "albern"
+      },
+      {
+        "type": "family",
+        "word": "sense",
+        "noteDe": "Verstand, Sinn"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "false-friends"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "gift",
+    "lemma": "gift",
+    "pos": "noun",
+    "ipa": "/ɡɪft/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "Geschenk",
+    "deAlt": [
+      "Begabung",
+      "Talent"
+    ],
+    "definitionEn": "something you give to someone, for example on a birthday",
+    "examples": [
+      {
+        "en": "Thank you so much for the lovely gift.",
+        "de": "Vielen Dank für das schöne Geschenk.",
+        "hit": "gift"
+      },
+      {
+        "en": "She bought a small gift for her teacher.",
+        "de": "Sie kaufte ein kleines Geschenk für ihre Lehrerin.",
+        "hit": "gift"
+      },
+      {
+        "en": "He has a real gift for languages.",
+        "de": "Er hat eine echte Begabung für Sprachen.",
+        "hit": "gift"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "birthday gift",
+        "gift shop",
+        "a gift for something",
+        "gift card"
+      ],
+      "tip": "Falscher Freund: 'gift' ist ein Geschenk, kein Gift. 'Gift' heißt auf Englisch 'poison'."
+    },
+    "mnemonic": "Ein Geschenk (gift) – hoffentlich ohne Gift (poison).",
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "poison",
+        "noteDe": "poison = Gift"
+      },
+      {
+        "type": "synonym",
+        "word": "present",
+        "noteDe": "Geschenk"
+      },
+      {
+        "type": "family",
+        "word": "gifted",
+        "noteDe": "begabt"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "false-friends"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "chef",
+    "lemma": "chef",
+    "pos": "noun",
+    "ipa": "/ʃɛf/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Koch, Köchin",
+    "deAlt": [
+      "Küchenchef"
+    ],
+    "definitionEn": "a person whose job is cooking in a restaurant",
+    "examples": [
+      {
+        "en": "The chef prepared a wonderful meal for us.",
+        "de": "Der Koch bereitete uns ein wunderbares Essen zu.",
+        "hit": "chef"
+      },
+      {
+        "en": "My brother works as a chef in a hotel.",
+        "de": "Mein Bruder arbeitet als Koch in einem Hotel.",
+        "hit": "chef"
+      },
+      {
+        "en": "The dish was created by a famous chef on television.",
+        "de": "Das Gericht wurde von einem bekannten Fernsehkoch erfunden.",
+        "hit": "chef"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "head chef",
+        "pastry chef",
+        "top chef"
+      ],
+      "tip": "Falscher Freund: 'chef' ist ein Koch. Der Chef im Büro ist 'boss' oder 'manager'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "boss",
+        "noteDe": "boss = Chef, Vorgesetzte(r)"
+      },
+      {
+        "type": "related",
+        "word": "cook",
+        "noteDe": "Koch (auch privat); kochen"
+      },
+      {
+        "type": "related",
+        "word": "kitchen",
+        "noteDe": "Küche"
+      }
+    ],
+    "topics": [
+      "work",
+      "daily"
+    ],
+    "clusters": [
+      "false-friends"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "handy",
+    "lemma": "handy",
+    "pos": "adj",
+    "ipa": "/ˈhændi/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "praktisch",
+    "deAlt": [
+      "nützlich",
+      "griffbereit"
+    ],
+    "definitionEn": "useful and easy to use, or close and easy to reach",
+    "examples": [
+      {
+        "en": "This little knife is really handy for camping.",
+        "de": "Dieses kleine Messer ist beim Camping wirklich praktisch.",
+        "hit": "handy"
+      },
+      {
+        "en": "Keep your passport handy at the airport.",
+        "de": "Halte deinen Pass am Flughafen griffbereit.",
+        "hit": "handy"
+      },
+      {
+        "en": "A few words of the local language can come in handy.",
+        "de": "Ein paar Worte der Landessprache können sich als nützlich erweisen.",
+        "hit": "handy"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "come in handy",
+        "keep something handy",
+        "a handy tool"
+      ],
+      "tip": "Falscher Freund: 'handy' heißt 'praktisch'. Das Handy ist 'mobile phone' (UK) oder 'cell phone' (US)."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "cell phone",
+        "noteDe": "cell phone = Handy"
+      },
+      {
+        "type": "synonym",
+        "word": "useful",
+        "noteDe": "nützlich"
+      },
+      {
+        "type": "synonym",
+        "word": "convenient",
+        "ref": "convenient",
+        "noteDe": "bequem, günstig"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "false-friends"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "spend",
+    "lemma": "spend",
+    "pos": "verb",
+    "ipa": "/spɛnd/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "ausgeben",
+    "deAlt": [
+      "verbringen"
+    ],
+    "definitionEn": "to use money to buy things, or to use time doing something",
+    "examples": [
+      {
+        "en": "I spent too much money on clothes.",
+        "de": "Ich habe zu viel Geld für Kleidung ausgegeben.",
+        "hit": "spent"
+      },
+      {
+        "en": "We spent the weekend at the lake.",
+        "de": "Wir haben das Wochenende am See verbracht.",
+        "hit": "spent"
+      },
+      {
+        "en": "She spends hours reading every evening.",
+        "de": "Sie verbringt jeden Abend Stunden mit Lesen.",
+        "hit": "spends"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "spend money on",
+        "spend time",
+        "spend the night",
+        "spend hours doing"
+      ],
+      "grammar": "unregelmäßig: spend – spent – spent; spend time doing something",
+      "tip": "Falscher Freund: 'spend' heißt 'ausgeben' oder 'verbringen', nicht 'spenden'. 'Spenden' ist 'donate'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "donate",
+        "noteDe": "donate = spenden"
+      },
+      {
+        "type": "antonym",
+        "word": "save",
+        "ref": "save-verb-money",
+        "noteDe": "sparen"
+      },
+      {
+        "type": "antonym",
+        "word": "earn",
+        "ref": "earn",
+        "noteDe": "verdienen"
+      },
+      {
+        "type": "related",
+        "word": "waste",
+        "noteDe": "verschwenden"
+      }
+    ],
+    "topics": [
+      "work",
+      "daily"
+    ],
+    "clusters": [
+      "false-friends",
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "fabric",
+    "lemma": "fabric",
+    "pos": "noun",
+    "ipa": "/ˈfæbrɪk/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Stoff",
+    "deAlt": [
+      "Gewebe"
+    ],
+    "definitionEn": "material made from cotton, wool or other threads, used for clothes",
+    "examples": [
+      {
+        "en": "This dress is made of a soft fabric.",
+        "de": "Dieses Kleid ist aus einem weichen Stoff.",
+        "hit": "fabric"
+      },
+      {
+        "en": "We need more fabric for the curtains.",
+        "de": "Wir brauchen mehr Stoff für die Vorhänge.",
+        "hit": "fabric"
+      },
+      {
+        "en": "Cheap fabric often loses its color after a few washes.",
+        "de": "Billiger Stoff verliert oft nach ein paar Wäschen seine Farbe.",
+        "hit": "fabric"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "soft fabric",
+        "cotton fabric",
+        "a piece of fabric"
+      ],
+      "tip": "Falscher Freund: 'fabric' ist Stoff. Eine Fabrik ist 'factory'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "factory",
+        "noteDe": "factory = Fabrik"
+      },
+      {
+        "type": "synonym",
+        "word": "material",
+        "noteDe": "Material, Stoff"
+      },
+      {
+        "type": "synonym",
+        "word": "cloth",
+        "noteDe": "Tuch, Stoff"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "false-friends"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "brand",
+    "lemma": "brand",
+    "pos": "noun",
+    "ipa": "/brænd/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Marke",
+    "deAlt": [
+      "Markenname"
+    ],
+    "definitionEn": "a product name used by a company to sell its goods",
+    "examples": [
+      {
+        "en": "Which brand of coffee do you usually buy?",
+        "de": "Welche Kaffeemarke kaufst du normalerweise?",
+        "hit": "brand"
+      },
+      {
+        "en": "She only wears clothes from expensive brands.",
+        "de": "Sie trägt nur Kleidung von teuren Marken.",
+        "hit": "brands"
+      },
+      {
+        "en": "The company spent millions building a strong brand.",
+        "de": "Die Firma hat Millionen ausgegeben, um eine starke Marke aufzubauen.",
+        "hit": "brand"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "brand name",
+        "a well-known brand",
+        "brand loyalty"
+      ],
+      "tip": "Falscher Freund: 'brand' ist eine Marke. Ein Brand (Feuer) ist 'fire'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "fire",
+        "noteDe": "fire = Brand, Feuer"
+      },
+      {
+        "type": "synonym",
+        "word": "label",
+        "noteDe": "Label, Marke"
+      },
+      {
+        "type": "related",
+        "word": "trademark",
+        "noteDe": "eingetragene Marke"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "false-friends"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "billion",
+    "lemma": "billion",
+    "pos": "noun",
+    "ipa": "/ˈbɪljən/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Milliarde",
+    "definitionEn": "the number 1,000,000,000; a thousand millions",
+    "examples": [
+      {
+        "en": "The city spent two billion dollars on the new airport.",
+        "de": "Die Stadt gab zwei Milliarden Dollar für den neuen Flughafen aus.",
+        "hit": "billion"
+      },
+      {
+        "en": "There are about eight billion people in the world.",
+        "de": "Es gibt etwa acht Milliarden Menschen auf der Welt.",
+        "hit": "billion"
+      },
+      {
+        "en": "The project cost more than a billion euros in the end.",
+        "de": "Das Projekt kostete am Ende mehr als eine Milliarde Euro.",
+        "hit": "billion"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a billion dollars",
+        "billions of people",
+        "two billion"
+      ],
+      "grammar": "Nach Zahlen kein Plural-s: two billion (nicht two billions); aber: billions of …",
+      "tip": "Falscher Freund: 'billion' = Milliarde (10⁹). Die deutsche Billion heißt 'trillion'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "trillion",
+        "noteDe": "trillion = Billion (10¹²)"
+      },
+      {
+        "type": "related",
+        "word": "million",
+        "noteDe": "Million"
+      },
+      {
+        "type": "related",
+        "word": "thousand",
+        "noteDe": "tausend"
+      }
+    ],
+    "topics": [
+      "work",
+      "society"
+    ],
+    "clusters": [
+      "false-friends"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "luggage",
+    "lemma": "luggage",
+    "pos": "noun",
+    "ipa": "/ˈlʌɡɪdʒ/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "Gepäck",
+    "definitionEn": "the bags and cases you carry when you travel",
+    "examples": [
+      {
+        "en": "Please don't leave your luggage unattended.",
+        "de": "Bitte lassen Sie Ihr Gepäck nicht unbeaufsichtigt.",
+        "hit": "luggage"
+      },
+      {
+        "en": "How much luggage are we allowed on the plane?",
+        "de": "Wie viel Gepäck dürfen wir mit ins Flugzeug nehmen?",
+        "hit": "luggage"
+      },
+      {
+        "en": "Our luggage was lost somewhere between the two flights.",
+        "de": "Unser Gepäck ging irgendwo zwischen den beiden Flügen verloren.",
+        "hit": "luggage"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "hand luggage",
+        "luggage allowance",
+        "lost luggage",
+        "a piece of luggage"
+      ],
+      "grammar": "unzählbar: much luggage, a piece of luggage (nicht a luggage / luggages)",
+      "tip": "Nie 'luggages' sagen. Ein einzelnes Stück ist 'a piece of luggage' oder 'a bag'. Im US-Englisch auch 'baggage'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "baggage",
+        "noteDe": "v. a. US, Flughafen"
+      },
+      {
+        "type": "related",
+        "word": "suitcase",
+        "noteDe": "Koffer"
+      },
+      {
+        "type": "collocate",
+        "word": "check in",
+        "noteDe": "einchecken, aufgeben"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "travel-and-transport"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "delay",
+    "lemma": "delay",
+    "pos": "noun",
+    "ipa": "/dɪˈleɪ/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Verspätung",
+    "deAlt": [
+      "Verzögerung"
+    ],
+    "definitionEn": "a period of waiting because something happens later than planned",
+    "examples": [
+      {
+        "en": "There is a delay of twenty minutes on our train.",
+        "de": "Unser Zug hat zwanzig Minuten Verspätung.",
+        "hit": "delay"
+      },
+      {
+        "en": "We apologize for the delay to your flight.",
+        "de": "Wir entschuldigen uns für die Verspätung Ihres Flugs.",
+        "hit": "delay"
+      },
+      {
+        "en": "Heavy snow caused long delays across the country.",
+        "de": "Starker Schneefall verursachte im ganzen Land lange Verzögerungen.",
+        "hit": "delays"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a long delay",
+        "without delay",
+        "cause a delay",
+        "apologize for the delay"
+      ],
+      "tip": "Für Verkehrsmittel sagt man 'The train is delayed' oder 'There is a delay'. 'Delay' ist auch ein Verb: verzögern, aufschieben."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "hold-up",
+        "noteDe": "umgangssprachlich"
+      },
+      {
+        "type": "related",
+        "word": "postpone",
+        "ref": "postpone",
+        "noteDe": "verschieben"
+      },
+      {
+        "type": "antonym",
+        "word": "on time",
+        "noteDe": "pünktlich"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "travel-and-transport"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "departure",
+    "lemma": "departure",
+    "pos": "noun",
+    "ipa": "/dɪˈpɑrtʃər/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Abfahrt",
+    "deAlt": [
+      "Abflug",
+      "Abreise"
+    ],
+    "definitionEn": "the act of leaving a place, especially at the start of a trip",
+    "examples": [
+      {
+        "en": "Please arrive one hour before departure.",
+        "de": "Bitte seien Sie eine Stunde vor Abfahrt da.",
+        "hit": "departure"
+      },
+      {
+        "en": "Check the departure board for your gate number.",
+        "de": "Schau auf der Abflugtafel nach deiner Gate-Nummer.",
+        "hit": "departure"
+      },
+      {
+        "en": "His sudden departure from the company surprised everyone.",
+        "de": "Sein plötzliches Ausscheiden aus der Firma überraschte alle.",
+        "hit": "departure"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "departure time",
+        "departure lounge",
+        "departures board",
+        "sudden departure"
+      ],
+      "tip": "Gegenteil: 'arrival'. Am Flughafen stehen die Schilder 'Departures' und 'Arrivals' im Plural."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "arrival",
+        "noteDe": "Ankunft"
+      },
+      {
+        "type": "family",
+        "word": "depart",
+        "noteDe": "abfahren (formell)"
+      },
+      {
+        "type": "related",
+        "word": "leave",
+        "noteDe": "abfahren, verlassen"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "travel-and-transport"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "destination",
+    "lemma": "destination",
+    "pos": "noun",
+    "ipa": "/ˌdɛstəˈneɪʃən/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Reiseziel",
+    "deAlt": [
+      "Ziel",
+      "Bestimmungsort"
+    ],
+    "definitionEn": "the place where someone or something is going",
+    "examples": [
+      {
+        "en": "We finally reached our destination after ten hours.",
+        "de": "Nach zehn Stunden erreichten wir endlich unser Ziel.",
+        "hit": "destination"
+      },
+      {
+        "en": "This island is a popular holiday destination.",
+        "de": "Diese Insel ist ein beliebtes Urlaubsziel.",
+        "hit": "destination"
+      },
+      {
+        "en": "The package never arrived at its final destination.",
+        "de": "Das Paket kam nie an seinem endgültigen Bestimmungsort an.",
+        "hit": "destination"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "holiday destination",
+        "reach your destination",
+        "final destination"
+      ],
+      "tip": "'Destination' ist ein Ort. Für ein persönliches Ziel (Absicht) sagt man 'goal' oder 'aim'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "goal",
+        "noteDe": "goal = Ziel im Sinne von Absicht"
+      },
+      {
+        "type": "related",
+        "word": "journey",
+        "ref": "journey",
+        "noteDe": "Reise, Fahrt"
+      },
+      {
+        "type": "related",
+        "word": "arrival",
+        "noteDe": "Ankunft"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "travel-and-transport"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "journey",
+    "lemma": "journey",
+    "pos": "noun",
+    "ipa": "/ˈdʒɜrni/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "Reise",
+    "deAlt": [
+      "Fahrt"
+    ],
+    "definitionEn": "a trip from one place to another, especially a long one",
+    "examples": [
+      {
+        "en": "The journey to the coast takes three hours.",
+        "de": "Die Fahrt an die Küste dauert drei Stunden.",
+        "hit": "journey"
+      },
+      {
+        "en": "Have a safe journey home tonight!",
+        "de": "Komm heute Abend gut nach Hause!",
+        "hit": "journey"
+      },
+      {
+        "en": "Learning a language is a long journey, not a race.",
+        "de": "Eine Sprache zu lernen ist eine lange Reise, kein Wettrennen.",
+        "hit": "journey"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a long journey",
+        "make a journey",
+        "safe journey",
+        "journey time"
+      ],
+      "tip": "'Journey' betont den Weg selbst. 'Trip' ist die ganze Reise samt Aufenthalt; 'travel' ist meist unzählbar (das Reisen allgemein)."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "trip",
+        "noteDe": "trip = Reise mit Aufenthalt, Ausflug"
+      },
+      {
+        "type": "confusable",
+        "word": "travel",
+        "noteDe": "travel = das Reisen allgemein, meist unzählbar"
+      },
+      {
+        "type": "related",
+        "word": "destination",
+        "ref": "destination",
+        "noteDe": "Reiseziel"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "travel-and-transport"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "passenger",
+    "lemma": "passenger",
+    "pos": "noun",
+    "ipa": "/ˈpæsəndʒər/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "Fahrgast",
+    "deAlt": [
+      "Passagier",
+      "Beifahrer"
+    ],
+    "definitionEn": "a person in a car, bus, train or plane who is not driving",
+    "examples": [
+      {
+        "en": "The bus had only three passengers this morning.",
+        "de": "Der Bus hatte heute Morgen nur drei Fahrgäste.",
+        "hit": "passengers"
+      },
+      {
+        "en": "All passengers must show their tickets.",
+        "de": "Alle Fahrgäste müssen ihre Fahrkarten vorzeigen.",
+        "hit": "passengers"
+      },
+      {
+        "en": "She fell asleep in the passenger seat.",
+        "de": "Sie schlief auf dem Beifahrersitz ein.",
+        "hit": "passenger"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "passenger seat",
+        "airline passengers",
+        "passenger train"
+      ],
+      "tip": "Wer fährt (driver), ist kein 'passenger'. 'Passenger seat' ist der Beifahrersitz."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "driver",
+        "noteDe": "Fahrer(in)"
+      },
+      {
+        "type": "related",
+        "word": "traveler",
+        "noteDe": "Reisende(r)"
+      },
+      {
+        "type": "related",
+        "word": "crew",
+        "noteDe": "Besatzung"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "travel-and-transport"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "crowded",
+    "lemma": "crowded",
+    "pos": "adj",
+    "ipa": "/ˈkraʊdɪd/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "überfüllt",
+    "deAlt": [
+      "voll",
+      "gedrängt"
+    ],
+    "definitionEn": "full of people, with little space to move",
+    "examples": [
+      {
+        "en": "The train was so crowded that we had to stand.",
+        "de": "Der Zug war so voll, dass wir stehen mussten.",
+        "hit": "crowded"
+      },
+      {
+        "en": "I don't like crowded places like shopping malls.",
+        "de": "Ich mag keine überfüllten Orte wie Einkaufszentren.",
+        "hit": "crowded"
+      },
+      {
+        "en": "The beach gets very crowded in the summer.",
+        "de": "Der Strand wird im Sommer sehr voll.",
+        "hit": "crowded"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "crowded with people",
+        "a crowded room",
+        "extremely crowded"
+      ],
+      "tip": "'Crowded with' + Menschen: 'crowded with tourists'. Für Dinge sagt man eher 'full of'."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "crowd",
+        "noteDe": "Menschenmenge"
+      },
+      {
+        "type": "antonym",
+        "word": "empty",
+        "noteDe": "leer"
+      },
+      {
+        "type": "synonym",
+        "word": "packed",
+        "noteDe": "rappelvoll (umgangssprachlich)"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "travel-and-transport"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "cancel",
+    "lemma": "cancel",
+    "pos": "verb",
+    "ipa": "/ˈkænsəl/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "absagen",
+    "deAlt": [
+      "stornieren",
+      "streichen"
+    ],
+    "definitionEn": "to decide that a planned event will not happen",
+    "examples": [
+      {
+        "en": "The concert was canceled because of the storm.",
+        "de": "Das Konzert wurde wegen des Sturms abgesagt.",
+        "hit": "canceled"
+      },
+      {
+        "en": "I need to cancel my appointment for tomorrow.",
+        "de": "Ich muss meinen Termin für morgen absagen.",
+        "hit": "cancel"
+      },
+      {
+        "en": "If you cancel the booking, you won't get a refund.",
+        "de": "Wenn du die Buchung stornierst, bekommst du kein Geld zurück.",
+        "hit": "cancel"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "cancel a flight",
+        "cancel an order",
+        "cancel a meeting",
+        "cancel a subscription"
+      ],
+      "grammar": "US: canceled, canceling; UK: cancelled, cancelling",
+      "tip": "Man sagt einfach 'cancel the meeting'. Für 'verschieben' nimmt man 'postpone'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "postpone",
+        "ref": "postpone",
+        "noteDe": "postpone = verschieben, nicht absagen"
+      },
+      {
+        "type": "antonym",
+        "word": "book",
+        "ref": "book-verb-reserve",
+        "noteDe": "buchen"
+      },
+      {
+        "type": "family",
+        "word": "cancellation",
+        "noteDe": "Absage, Stornierung"
+      },
+      {
+        "type": "synonym",
+        "word": "call off",
+        "noteDe": "umgangssprachlich"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "travel-and-transport"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "accommodation",
+    "lemma": "accommodation",
+    "pos": "noun",
+    "ipa": "/əˌkɑməˈdeɪʃən/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Unterkunft",
+    "definitionEn": "a place where you stay or live, such as a hotel room",
+    "examples": [
+      {
+        "en": "The price includes flights and accommodation.",
+        "de": "Der Preis beinhaltet Flüge und Unterkunft.",
+        "hit": "accommodation"
+      },
+      {
+        "en": "Finding cheap accommodation in the city is difficult.",
+        "de": "Eine günstige Unterkunft in der Stadt zu finden ist schwierig.",
+        "hit": "accommodation"
+      },
+      {
+        "en": "Students are offered accommodation near the campus.",
+        "de": "Studierenden wird eine Unterkunft in der Nähe des Campus angeboten.",
+        "hit": "accommodation"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "cheap accommodation",
+        "find accommodation",
+        "provide accommodation"
+      ],
+      "grammar": "UK meist unzählbar; US oft Plural: accommodations",
+      "tip": "Achtung Schreibweise: zwei c und zwei m – a-cc-o-mm-odation."
+    },
+    "mnemonic": "Ein Zimmer für zwei: doppel-c und doppel-m.",
+    "relations": [
+      {
+        "type": "related",
+        "word": "hotel",
+        "noteDe": "Hotel"
+      },
+      {
+        "type": "related",
+        "word": "hostel",
+        "noteDe": "Jugendherberge"
+      },
+      {
+        "type": "synonym",
+        "word": "lodging",
+        "noteDe": "formell"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "travel-and-transport"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "sightseeing",
+    "lemma": "sightseeing",
+    "pos": "noun",
+    "ipa": "/ˈsaɪtˌsiɪŋ/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Besichtigungen",
+    "deAlt": [
+      "Sightseeing"
+    ],
+    "definitionEn": "visiting interesting places as a tourist",
+    "examples": [
+      {
+        "en": "We spent the whole day sightseeing in the old town.",
+        "de": "Wir verbrachten den ganzen Tag mit Besichtigungen in der Altstadt.",
+        "hit": "sightseeing"
+      },
+      {
+        "en": "Let's go sightseeing right after breakfast tomorrow.",
+        "de": "Lass uns morgen gleich nach dem Frühstück die Stadt anschauen.",
+        "hit": "sightseeing"
+      },
+      {
+        "en": "The sightseeing tour takes about two hours.",
+        "de": "Die Stadtrundfahrt dauert ungefähr zwei Stunden.",
+        "hit": "sightseeing"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "go sightseeing",
+        "sightseeing tour",
+        "a day of sightseeing"
+      ],
+      "tip": "Man sagt 'go sightseeing' (ohne 'to'). Die Sehenswürdigkeiten selbst heißen 'sights'."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "sights",
+        "noteDe": "Sehenswürdigkeiten"
+      },
+      {
+        "type": "related",
+        "word": "tourist",
+        "noteDe": "Tourist(in)"
+      },
+      {
+        "type": "related",
+        "word": "guided tour",
+        "noteDe": "Führung"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "travel-and-transport"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "book-verb-reserve",
+    "lemma": "book",
+    "pos": "verb",
+    "ipa": "/bʊk/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "buchen",
+    "deAlt": [
+      "reservieren"
+    ],
+    "definitionEn": "to arrange to have a seat, room or ticket at a later time",
+    "examples": [
+      {
+        "en": "I booked a table for four at eight.",
+        "de": "Ich habe einen Tisch für vier Personen um acht reserviert.",
+        "hit": "booked"
+      },
+      {
+        "en": "Have you booked the flights yet?",
+        "de": "Hast du die Flüge schon gebucht?",
+        "hit": "booked"
+      },
+      {
+        "en": "The hotel is fully booked for the whole summer.",
+        "de": "Das Hotel ist den ganzen Sommer ausgebucht.",
+        "hit": "booked"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "book a table",
+        "book a flight",
+        "fully booked",
+        "book in advance"
+      ],
+      "tip": "'Fully booked' heißt 'ausgebucht'. Das Nomen 'book' (Buch) hat mit dieser Bedeutung nichts zu tun."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "reserve",
+        "noteDe": "reservieren"
+      },
+      {
+        "type": "antonym",
+        "word": "cancel",
+        "ref": "cancel",
+        "noteDe": "absagen, stornieren"
+      },
+      {
+        "type": "family",
+        "word": "booking",
+        "noteDe": "Buchung"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "travel-and-transport"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "miss-verb",
+    "lemma": "miss",
+    "pos": "verb",
+    "ipa": "/mɪs/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "verpassen",
+    "deAlt": [
+      "vermissen",
+      "verfehlen"
+    ],
+    "definitionEn": "to arrive too late for something, or to feel sad without someone",
+    "examples": [
+      {
+        "en": "Hurry up or we'll miss the bus!",
+        "de": "Beeil dich, sonst verpassen wir den Bus!",
+        "hit": "miss"
+      },
+      {
+        "en": "I really miss my friends from school.",
+        "de": "Ich vermisse meine Schulfreunde wirklich.",
+        "hit": "miss"
+      },
+      {
+        "en": "The ball missed the goal by a few centimeters.",
+        "de": "Der Ball verfehlte das Tor um ein paar Zentimeter.",
+        "hit": "missed"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "miss the train",
+        "miss someone",
+        "miss a chance",
+        "miss out on"
+      ],
+      "tip": "Ein Wort, drei Bedeutungen: verpassen, vermissen, verfehlen. 'I miss you' = Ich vermisse dich."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "catch",
+        "noteDe": "erwischen (Bus, Zug)"
+      },
+      {
+        "type": "related",
+        "word": "miss out",
+        "noteDe": "etwas verpassen (Erlebnis)"
+      },
+      {
+        "type": "family",
+        "word": "missing",
+        "noteDe": "fehlend, vermisst"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "travel-and-transport"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "tidy",
+    "lemma": "tidy",
+    "pos": "adj",
+    "ipa": "/ˈtaɪdi/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "ordentlich",
+    "deAlt": [
+      "aufgeräumt"
+    ],
+    "definitionEn": "neat and arranged in good order",
+    "examples": [
+      {
+        "en": "Her desk is always clean and tidy.",
+        "de": "Ihr Schreibtisch ist immer sauber und aufgeräumt.",
+        "hit": "tidy"
+      },
+      {
+        "en": "Please try to keep your room tidy.",
+        "de": "Bitte versuch, dein Zimmer ordentlich zu halten.",
+        "hit": "tidy"
+      },
+      {
+        "en": "He tidied the kitchen before the guests arrived.",
+        "de": "Er räumte die Küche auf, bevor die Gäste kamen.",
+        "hit": "tidied"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "neat and tidy",
+        "keep something tidy",
+        "tidy up"
+      ],
+      "grammar": "Adjektiv; auch Verb: tidy (up) = aufräumen",
+      "tip": "Im US-Englisch sagt man öfter 'neat' bzw. 'clean up'. 'Tidy up' (aufräumen) ist v. a. britisch."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "neat",
+        "ref": "neat",
+        "noteDe": "ordentlich"
+      },
+      {
+        "type": "antonym",
+        "word": "messy",
+        "noteDe": "unordentlich"
+      },
+      {
+        "type": "family",
+        "word": "mess",
+        "ref": "mess",
+        "noteDe": "Unordnung"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "home-and-household"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "chore",
+    "lemma": "chore",
+    "pos": "noun",
+    "ipa": "/tʃɔr/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Hausarbeit",
+    "deAlt": [
+      "lästige Aufgabe"
+    ],
+    "definitionEn": "a regular job you have to do at home, such as cleaning",
+    "examples": [
+      {
+        "en": "We share the household chores in our apartment.",
+        "de": "Wir teilen uns die Hausarbeit in unserer Wohnung.",
+        "hit": "chores"
+      },
+      {
+        "en": "Washing the dishes is my least favorite chore.",
+        "de": "Abwaschen ist die Hausarbeit, die ich am wenigsten mag.",
+        "hit": "chore"
+      },
+      {
+        "en": "Filling in tax forms is a real chore.",
+        "de": "Steuerformulare auszufüllen ist eine echte Plackerei.",
+        "hit": "chore"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "household chores",
+        "do the chores",
+        "a real chore",
+        "daily chores"
+      ],
+      "tip": "Meist im Plural: 'do the chores'. Übertragen heißt 'a chore' eine lästige Pflicht."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "housework",
+        "noteDe": "Hausarbeit (unzählbar)"
+      },
+      {
+        "type": "synonym",
+        "word": "task",
+        "noteDe": "Aufgabe"
+      },
+      {
+        "type": "related",
+        "word": "laundry",
+        "noteDe": "Wäsche"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "home-and-household"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "rent",
+    "lemma": "rent",
+    "pos": "noun",
+    "ipa": "/rɛnt/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Miete",
+    "definitionEn": "money you pay regularly to live in or use a place",
+    "examples": [
+      {
+        "en": "The rent is due on the first of the month.",
+        "de": "Die Miete ist am Ersten des Monats fällig.",
+        "hit": "rent"
+      },
+      {
+        "en": "Rents in the city center have gone up again.",
+        "de": "Die Mieten im Stadtzentrum sind wieder gestiegen.",
+        "hit": "Rents"
+      },
+      {
+        "en": "They can barely pay the rent this month.",
+        "de": "Sie können die Miete diesen Monat kaum bezahlen.",
+        "hit": "rent"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "pay the rent",
+        "the rent is due",
+        "high rent",
+        "rent increase"
+      ],
+      "grammar": "auch Verb: rent a flat/car = mieten; rent out = vermieten",
+      "tip": "Für Autos und Geräte sagt man im US-Englisch 'rent', im UK eher 'hire'. 'Rent out' heißt vermieten."
+    },
+    "relations": [
+      {
+        "type": "related",
+        "word": "landlord",
+        "noteDe": "Vermieter(in)"
+      },
+      {
+        "type": "related",
+        "word": "tenant",
+        "noteDe": "Mieter(in)"
+      },
+      {
+        "type": "collocate",
+        "word": "deposit",
+        "ref": "deposit",
+        "noteDe": "Kaution"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work"
+    ],
+    "clusters": [
+      "home-and-household"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "neighbor",
+    "lemma": "neighbor",
+    "pos": "noun",
+    "ipa": "/ˈneɪbər/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "Nachbar",
+    "deAlt": [
+      "Nachbarin"
+    ],
+    "definitionEn": "a person who lives next to you or near you",
+    "examples": [
+      {
+        "en": "Our neighbors are very friendly and helpful.",
+        "de": "Unsere Nachbarn sind sehr freundlich und hilfsbereit.",
+        "hit": "neighbors"
+      },
+      {
+        "en": "I asked my neighbor to water the plants.",
+        "de": "Ich bat meine Nachbarin, die Pflanzen zu gießen.",
+        "hit": "neighbor"
+      },
+      {
+        "en": "The noise from next door kept the whole neighborhood awake.",
+        "de": "Der Lärm von nebenan hielt die ganze Nachbarschaft wach.",
+        "hit": "neighborhood"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "next-door neighbor",
+        "friendly neighbor",
+        "noisy neighbors"
+      ],
+      "tip": "US: neighbor, UK: neighbour. 'Neighborhood' bedeutet Nachbarschaft oder Wohnviertel."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "neighborhood",
+        "noteDe": "Nachbarschaft, Viertel"
+      },
+      {
+        "type": "related",
+        "word": "next door",
+        "noteDe": "nebenan"
+      },
+      {
+        "type": "related",
+        "word": "community",
+        "noteDe": "Gemeinschaft"
+      }
+    ],
+    "topics": [
+      "society",
+      "daily"
+    ],
+    "clusters": [
+      "home-and-household"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "borrow",
+    "lemma": "borrow",
+    "pos": "verb",
+    "ipa": "/ˈbɑroʊ/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "ausleihen",
+    "deAlt": [
+      "sich leihen",
+      "borgen"
+    ],
+    "definitionEn": "to take something from someone and give it back later",
+    "examples": [
+      {
+        "en": "Can I borrow your pen for a minute?",
+        "de": "Kann ich mir kurz deinen Stift leihen?",
+        "hit": "borrow"
+      },
+      {
+        "en": "She borrowed three books from the library.",
+        "de": "Sie hat sich drei Bücher aus der Bibliothek ausgeliehen.",
+        "hit": "borrowed"
+      },
+      {
+        "en": "The company had to borrow money from the bank.",
+        "de": "Die Firma musste sich Geld von der Bank leihen.",
+        "hit": "borrow"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "borrow money",
+        "borrow something from someone",
+        "borrow a book"
+      ],
+      "tip": "Typischer Fehler: 'borrow' heißt sich etwas leihen (nehmen). Jemandem etwas leihen (geben) ist 'lend'."
+    },
+    "mnemonic": "Borrow = bekommen (beides mit b), lend = loslassen (beides mit l).",
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "lend",
+        "ref": "lend",
+        "noteDe": "lend = jemandem etwas leihen (geben)"
+      },
+      {
+        "type": "antonym",
+        "word": "give back",
+        "noteDe": "zurückgeben"
+      },
+      {
+        "type": "related",
+        "word": "owe",
+        "ref": "owe",
+        "noteDe": "schulden"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "home-and-household"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "lend",
+    "lemma": "lend",
+    "pos": "verb",
+    "ipa": "/lɛnd/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "verleihen",
+    "deAlt": [
+      "jemandem etwas leihen"
+    ],
+    "definitionEn": "to give something to someone for a short time",
+    "examples": [
+      {
+        "en": "Could you lend me ten dollars until Friday?",
+        "de": "Könntest du mir bis Freitag zehn Dollar leihen?",
+        "hit": "lend"
+      },
+      {
+        "en": "I lent my bike to a friend last week.",
+        "de": "Ich habe letzte Woche einem Freund mein Fahrrad geliehen.",
+        "hit": "lent"
+      },
+      {
+        "en": "Banks are lending less money to small businesses.",
+        "de": "Banken verleihen weniger Geld an kleine Unternehmen.",
+        "hit": "lending"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "lend someone money",
+        "lend a hand",
+        "lend something to someone"
+      ],
+      "grammar": "unregelmäßig: lend – lent – lent; lend someone something / lend something to someone",
+      "tip": "'Lend a hand' heißt 'mit anpacken, helfen'. Nicht mit 'borrow' (sich leihen) verwechseln."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "borrow",
+        "ref": "borrow",
+        "noteDe": "borrow = sich etwas leihen (nehmen)"
+      },
+      {
+        "type": "family",
+        "word": "loan",
+        "noteDe": "Darlehen, Kredit"
+      },
+      {
+        "type": "related",
+        "word": "lend a hand",
+        "noteDe": "helfen, mit anpacken"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work"
+    ],
+    "clusters": [
+      "home-and-household"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "appliance",
+    "lemma": "appliance",
+    "pos": "noun",
+    "ipa": "/əˈplaɪəns/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Haushaltsgerät",
+    "deAlt": [
+      "Gerät"
+    ],
+    "definitionEn": "a machine used at home, such as a fridge or washing machine",
+    "examples": [
+      {
+        "en": "We bought new kitchen appliances for the apartment.",
+        "de": "Wir haben neue Küchengeräte für die Wohnung gekauft.",
+        "hit": "appliances"
+      },
+      {
+        "en": "Turn off all electrical appliances before you leave.",
+        "de": "Schalte alle Elektrogeräte aus, bevor du gehst.",
+        "hit": "appliances"
+      },
+      {
+        "en": "Modern appliances use much less energy than older models.",
+        "de": "Moderne Geräte verbrauchen viel weniger Energie als ältere Modelle.",
+        "hit": "appliances"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "household appliance",
+        "kitchen appliance",
+        "electrical appliance"
+      ],
+      "tip": "Nicht mit 'application' (Bewerbung, Anwendung) verwechseln. Für kleine elektronische Geräte sagt man 'device' oder 'gadget'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "application",
+        "noteDe": "application = Bewerbung, Anwendung"
+      },
+      {
+        "type": "synonym",
+        "word": "device",
+        "noteDe": "Gerät (oft elektronisch)"
+      },
+      {
+        "type": "related",
+        "word": "furniture",
+        "ref": "furniture",
+        "noteDe": "Möbel"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "home-and-household"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "leak",
+    "lemma": "leak",
+    "pos": "verb",
+    "ipa": "/lik/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "undicht sein",
+    "deAlt": [
+      "auslaufen",
+      "durchsickern"
+    ],
+    "definitionEn": "to let liquid or gas escape through a hole or crack",
+    "examples": [
+      {
+        "en": "The kitchen tap has been leaking all night.",
+        "de": "Der Küchenhahn tropft schon die ganze Nacht.",
+        "hit": "leaking"
+      },
+      {
+        "en": "Water was leaking through the roof.",
+        "de": "Wasser drang durch das Dach.",
+        "hit": "leaking"
+      },
+      {
+        "en": "Secret details of the plan were leaked to the press.",
+        "de": "Geheime Details des Plans wurden an die Presse durchgestochen.",
+        "hit": "leaked"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "leak water",
+        "a leaking roof",
+        "leak information",
+        "leak to the press"
+      ],
+      "grammar": "auch Nomen: a leak = ein Leck, eine undichte Stelle",
+      "tip": "Übertragen: Informationen 'leaken' (heimlich weitergeben). Daher kommt 'leak' für veröffentlichte Geheimnisse."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "leak",
+        "noteDe": "Leck, undichte Stelle"
+      },
+      {
+        "type": "related",
+        "word": "drip",
+        "noteDe": "tropfen"
+      },
+      {
+        "type": "related",
+        "word": "flood",
+        "ref": "flood",
+        "noteDe": "Hochwasser"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "home-and-household"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "mess",
+    "lemma": "mess",
+    "pos": "noun",
+    "ipa": "/mɛs/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Unordnung",
+    "deAlt": [
+      "Chaos",
+      "Durcheinander"
+    ],
+    "definitionEn": "a dirty or untidy state, or a confusing and difficult situation",
+    "examples": [
+      {
+        "en": "Your room is a complete mess!",
+        "de": "Dein Zimmer ist das reinste Chaos!",
+        "hit": "mess"
+      },
+      {
+        "en": "Sorry about the mess, we've just moved in.",
+        "de": "Entschuldige die Unordnung, wir sind gerade erst eingezogen.",
+        "hit": "mess"
+      },
+      {
+        "en": "He made a mess of the job interview.",
+        "de": "Er hat das Vorstellungsgespräch total vermasselt.",
+        "hit": "mess"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "make a mess",
+        "a complete mess",
+        "clean up the mess",
+        "be in a mess"
+      ],
+      "grammar": "Verb: mess up = vermasseln, durcheinanderbringen",
+      "tip": "'Make a mess of something' heißt etwas vermasseln. Adjektiv: messy (unordentlich)."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "order",
+        "noteDe": "Ordnung"
+      },
+      {
+        "type": "family",
+        "word": "messy",
+        "noteDe": "unordentlich"
+      },
+      {
+        "type": "antonym",
+        "word": "tidy",
+        "ref": "tidy",
+        "noteDe": "ordentlich"
+      },
+      {
+        "type": "related",
+        "word": "mess up",
+        "noteDe": "vermasseln"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "home-and-household"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "cozy",
+    "lemma": "cozy",
+    "pos": "adj",
+    "ipa": "/ˈkoʊzi/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "gemütlich",
+    "deAlt": [
+      "behaglich"
+    ],
+    "definitionEn": "warm, comfortable and pleasant, especially a small room",
+    "examples": [
+      {
+        "en": "We stayed in a cozy little cabin in the mountains.",
+        "de": "Wir wohnten in einer gemütlichen kleinen Hütte in den Bergen.",
+        "hit": "cozy"
+      },
+      {
+        "en": "The café is small but really cozy.",
+        "de": "Das Café ist klein, aber richtig gemütlich.",
+        "hit": "cozy"
+      },
+      {
+        "en": "Wrapped in a blanket, she felt warm and cozy.",
+        "de": "In eine Decke gewickelt fühlte sie sich warm und geborgen.",
+        "hit": "cozy"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a cozy room",
+        "nice and cozy",
+        "a cozy atmosphere"
+      ],
+      "tip": "US: cozy, UK: cosy. Für 'Gemütlichkeit' gibt es kein exaktes Wort; 'coziness' kommt nah dran."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "comfortable",
+        "noteDe": "bequem"
+      },
+      {
+        "type": "synonym",
+        "word": "snug",
+        "noteDe": "kuschelig, behaglich"
+      },
+      {
+        "type": "antonym",
+        "word": "uncomfortable",
+        "noteDe": "unbequem"
+      }
+    ],
+    "topics": [
+      "daily",
+      "emotion"
+    ],
+    "clusters": [
+      "home-and-household"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "proud",
+    "lemma": "proud",
+    "pos": "adj",
+    "ipa": "/praʊd/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "stolz",
+    "definitionEn": "pleased about something you or someone close to you has done",
+    "examples": [
+      {
+        "en": "Your parents must be very proud of you.",
+        "de": "Deine Eltern müssen sehr stolz auf dich sein.",
+        "hit": "proud"
+      },
+      {
+        "en": "She was proud to represent her school.",
+        "de": "Sie war stolz, ihre Schule zu vertreten.",
+        "hit": "proud"
+      },
+      {
+        "en": "He was too proud to ask for help.",
+        "de": "Er war zu stolz, um um Hilfe zu bitten.",
+        "hit": "proud"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "proud of someone",
+        "proud to do something",
+        "feel proud"
+      ],
+      "grammar": "proud OF someone/something (nicht 'proud on')",
+      "tip": "Präposition 'of', nicht 'on': 'I'm proud of you'. Nomen: pride."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "pride",
+        "ref": "pride",
+        "noteDe": "Stolz"
+      },
+      {
+        "type": "antonym",
+        "word": "ashamed",
+        "noteDe": "beschämt"
+      },
+      {
+        "type": "synonym",
+        "word": "pleased",
+        "noteDe": "erfreut, zufrieden"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "lonely",
+    "lemma": "lonely",
+    "pos": "adj",
+    "ipa": "/ˈloʊnli/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "einsam",
+    "definitionEn": "unhappy because you are alone or have no friends",
+    "examples": [
+      {
+        "en": "She felt lonely after moving to a new city.",
+        "de": "Nach dem Umzug in eine neue Stadt fühlte sie sich einsam.",
+        "hit": "lonely"
+      },
+      {
+        "en": "Old people often live lonely lives.",
+        "de": "Ältere Menschen führen oft ein einsames Leben.",
+        "hit": "lonely"
+      },
+      {
+        "en": "You can feel lonely even in a crowded room.",
+        "de": "Man kann sich selbst in einem vollen Raum einsam fühlen.",
+        "hit": "lonely"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "feel lonely",
+        "a lonely life",
+        "get lonely"
+      ],
+      "tip": "'Lonely' ist ein Gefühl (einsam). 'Alone' heißt nur 'allein' – man kann allein sein, ohne sich einsam zu fühlen."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "alone",
+        "noteDe": "alone = allein (ohne Gefühl)"
+      },
+      {
+        "type": "family",
+        "word": "loneliness",
+        "noteDe": "Einsamkeit"
+      },
+      {
+        "type": "related",
+        "word": "isolated",
+        "noteDe": "isoliert"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "nervous",
+    "lemma": "nervous",
+    "pos": "adj",
+    "ipa": "/ˈnɜrvəs/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "nervös",
+    "deAlt": [
+      "aufgeregt",
+      "ängstlich"
+    ],
+    "definitionEn": "worried or a little afraid about something that will happen",
+    "examples": [
+      {
+        "en": "I always get nervous before exams.",
+        "de": "Vor Prüfungen werde ich immer nervös.",
+        "hit": "nervous"
+      },
+      {
+        "en": "She was too nervous to speak in front of the class.",
+        "de": "Sie war zu nervös, um vor der Klasse zu sprechen.",
+        "hit": "nervous"
+      },
+      {
+        "en": "The nervous dog hid under the table during the storm.",
+        "de": "Der ängstliche Hund versteckte sich während des Gewitters unter dem Tisch.",
+        "hit": "nervous"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "feel nervous",
+        "get nervous",
+        "nervous about something",
+        "a nervous smile"
+      ],
+      "tip": "Vor schönen Ereignissen sagt man eher 'excited' (freudig aufgeregt), vor Prüfungen 'nervous'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "excited",
+        "noteDe": "excited = freudig aufgeregt"
+      },
+      {
+        "type": "synonym",
+        "word": "anxious",
+        "noteDe": "besorgt, ängstlich"
+      },
+      {
+        "type": "antonym",
+        "word": "calm",
+        "noteDe": "ruhig"
+      },
+      {
+        "type": "antonym",
+        "word": "confident",
+        "ref": "confident",
+        "noteDe": "selbstbewusst"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "grateful",
+    "lemma": "grateful",
+    "pos": "adj",
+    "ipa": "/ˈɡreɪtfəl/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "dankbar",
+    "definitionEn": "feeling thankful because someone has helped you or been kind",
+    "examples": [
+      {
+        "en": "I'm really grateful for all your help.",
+        "de": "Ich bin dir wirklich dankbar für all deine Hilfe.",
+        "hit": "grateful"
+      },
+      {
+        "en": "We would be grateful if you could reply soon.",
+        "de": "Wir wären Ihnen dankbar, wenn Sie bald antworten könnten.",
+        "hit": "grateful"
+      },
+      {
+        "en": "She was grateful to be alive after the accident.",
+        "de": "Nach dem Unfall war sie dankbar, am Leben zu sein.",
+        "hit": "grateful"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "grateful for something",
+        "grateful to someone",
+        "deeply grateful",
+        "I would be grateful if"
+      ],
+      "tip": "'I would be grateful if …' ist eine höfliche Bitte in formellen E-Mails. Nicht 'greatful' schreiben."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "thankful",
+        "noteDe": "dankbar"
+      },
+      {
+        "type": "family",
+        "word": "gratitude",
+        "noteDe": "Dankbarkeit"
+      },
+      {
+        "type": "related",
+        "word": "appreciate",
+        "ref": "appreciate",
+        "noteDe": "schätzen"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "annoyed",
+    "lemma": "annoyed",
+    "pos": "adj",
+    "ipa": "/əˈnɔɪd/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "genervt",
+    "deAlt": [
+      "verärgert"
+    ],
+    "definitionEn": "slightly angry about something",
+    "examples": [
+      {
+        "en": "I was annoyed because he was late again.",
+        "de": "Ich war genervt, weil er schon wieder zu spät kam.",
+        "hit": "annoyed"
+      },
+      {
+        "en": "She looked annoyed when I interrupted her.",
+        "de": "Sie sah verärgert aus, als ich sie unterbrach.",
+        "hit": "annoyed"
+      },
+      {
+        "en": "Many customers were annoyed by the long wait.",
+        "de": "Viele Kunden ärgerten sich über die lange Wartezeit.",
+        "hit": "annoyed"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "annoyed with someone",
+        "annoyed about something",
+        "get annoyed"
+      ],
+      "tip": "-ed beschreibt das Gefühl (I'm annoyed = ich bin genervt), -ing den Auslöser (It's annoying = es ist nervig)."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "annoying",
+        "noteDe": "nervig"
+      },
+      {
+        "type": "synonym",
+        "word": "irritated",
+        "noteDe": "gereizt"
+      },
+      {
+        "type": "related",
+        "word": "upset",
+        "ref": "upset",
+        "noteDe": "aufgebracht"
+      },
+      {
+        "type": "antonym",
+        "word": "pleased",
+        "noteDe": "zufrieden"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "upset",
+    "lemma": "upset",
+    "pos": "adj",
+    "ipa": "/ʌpˈsɛt/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "aufgebracht",
+    "deAlt": [
+      "traurig",
+      "gekränkt",
+      "verstimmt (Magen)"
+    ],
+    "definitionEn": "unhappy or worried because something bad has happened",
+    "examples": [
+      {
+        "en": "She was upset when she heard the news.",
+        "de": "Sie war bestürzt, als sie die Nachricht hörte.",
+        "hit": "upset"
+      },
+      {
+        "en": "Don't get upset, it was only a joke.",
+        "de": "Reg dich nicht auf, es war nur ein Witz.",
+        "hit": "upset"
+      },
+      {
+        "en": "Spicy food sometimes gives me an upset stomach.",
+        "de": "Von scharfem Essen bekomme ich manchmal Magenprobleme.",
+        "hit": "upset"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "get upset",
+        "upset about something",
+        "deeply upset",
+        "an upset stomach"
+      ],
+      "grammar": "auch Verb: upset – upset – upset (jemanden kränken, aus der Fassung bringen)",
+      "tip": "'Upset' mischt Traurigkeit und Ärger und ist stärker als 'annoyed'. 'An upset stomach' = Magenverstimmung."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "hurt",
+        "noteDe": "verletzt, gekränkt"
+      },
+      {
+        "type": "related",
+        "word": "annoyed",
+        "ref": "annoyed",
+        "noteDe": "genervt"
+      },
+      {
+        "type": "related",
+        "word": "disturbed",
+        "ref": "disturbed",
+        "noteDe": "verstört"
+      },
+      {
+        "type": "antonym",
+        "word": "calm",
+        "noteDe": "ruhig"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "shy",
+    "lemma": "shy",
+    "pos": "adj",
+    "ipa": "/ʃaɪ/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "schüchtern",
+    "definitionEn": "nervous and uncomfortable when meeting or talking to new people",
+    "examples": [
+      {
+        "en": "He's very shy and doesn't talk much.",
+        "de": "Er ist sehr schüchtern und redet nicht viel.",
+        "hit": "shy"
+      },
+      {
+        "en": "The shy little girl hid behind her mother.",
+        "de": "Das schüchterne kleine Mädchen versteckte sich hinter seiner Mutter.",
+        "hit": "shy"
+      },
+      {
+        "en": "Don't be shy, come and join us!",
+        "de": "Sei nicht schüchtern, komm zu uns!",
+        "hit": "shy"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a shy person",
+        "too shy to",
+        "a shy smile",
+        "camera-shy"
+      ],
+      "tip": "'Camera-shy' heißt kamerascheu. Nomen: shyness (Schüchternheit)."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "confident",
+        "ref": "confident",
+        "noteDe": "selbstbewusst"
+      },
+      {
+        "type": "antonym",
+        "word": "outgoing",
+        "noteDe": "kontaktfreudig"
+      },
+      {
+        "type": "synonym",
+        "word": "timid",
+        "noteDe": "zaghaft, ängstlich"
+      },
+      {
+        "type": "family",
+        "word": "shyness",
+        "noteDe": "Schüchternheit"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "brave",
+    "lemma": "brave",
+    "pos": "adj",
+    "ipa": "/breɪv/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "mutig",
+    "deAlt": [
+      "tapfer"
+    ],
+    "definitionEn": "willing to do dangerous or difficult things without showing fear",
+    "examples": [
+      {
+        "en": "The brave firefighter saved the child.",
+        "de": "Der mutige Feuerwehrmann rettete das Kind.",
+        "hit": "brave"
+      },
+      {
+        "en": "It was brave of you to tell the truth.",
+        "de": "Es war mutig von dir, die Wahrheit zu sagen.",
+        "hit": "brave"
+      },
+      {
+        "en": "She put on a brave face despite the pain.",
+        "de": "Trotz der Schmerzen ließ sie sich nichts anmerken.",
+        "hit": "brave"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a brave decision",
+        "brave of you",
+        "put on a brave face"
+      ],
+      "tip": "Verwechslungsgefahr: 'brav' heißt auf Englisch 'good' oder 'well-behaved', nicht 'brave'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "well-behaved",
+        "noteDe": "well-behaved = brav"
+      },
+      {
+        "type": "synonym",
+        "word": "courageous",
+        "noteDe": "mutig (formeller)"
+      },
+      {
+        "type": "antonym",
+        "word": "coward",
+        "ref": "coward",
+        "noteDe": "Feigling"
+      },
+      {
+        "type": "family",
+        "word": "bravery",
+        "noteDe": "Tapferkeit"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "confident",
+    "lemma": "confident",
+    "pos": "adj",
+    "ipa": "/ˈkɑnfɪdənt/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "selbstbewusst",
+    "deAlt": [
+      "zuversichtlich",
+      "sicher"
+    ],
+    "definitionEn": "sure about your abilities, or sure that something will happen",
+    "examples": [
+      {
+        "en": "She feels confident about the exam.",
+        "de": "Sie ist zuversichtlich, was die Prüfung angeht.",
+        "hit": "confident"
+      },
+      {
+        "en": "He became more confident after the course.",
+        "de": "Nach dem Kurs wurde er selbstbewusster.",
+        "hit": "confident"
+      },
+      {
+        "en": "We are confident that the project will succeed.",
+        "de": "Wir sind zuversichtlich, dass das Projekt gelingen wird.",
+        "hit": "confident"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "confident about",
+        "feel confident",
+        "confident that",
+        "self-confident"
+      ],
+      "tip": "Nicht mit 'confidential' (vertraulich) verwechseln. Nomen: confidence."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "confidence",
+        "ref": "confidence",
+        "noteDe": "Selbstvertrauen"
+      },
+      {
+        "type": "confusable",
+        "word": "confidential",
+        "noteDe": "confidential = vertraulich"
+      },
+      {
+        "type": "antonym",
+        "word": "shy",
+        "ref": "shy",
+        "noteDe": "schüchtern"
+      },
+      {
+        "type": "antonym",
+        "word": "insecure",
+        "noteDe": "unsicher"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "curious",
+    "lemma": "curious",
+    "pos": "adj",
+    "ipa": "/ˈkjʊriəs/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "neugierig",
+    "deAlt": [
+      "gespannt",
+      "seltsam"
+    ],
+    "definitionEn": "wanting to know or learn about something",
+    "examples": [
+      {
+        "en": "Children are naturally curious about the world.",
+        "de": "Kinder sind von Natur aus neugierig auf die Welt.",
+        "hit": "curious"
+      },
+      {
+        "en": "I'm curious to see what happens next.",
+        "de": "Ich bin gespannt, was als Nächstes passiert.",
+        "hit": "curious"
+      },
+      {
+        "en": "A curious thing happened to me on the way home.",
+        "de": "Auf dem Heimweg ist mir etwas Seltsames passiert.",
+        "hit": "curious"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "curious about",
+        "curious to know",
+        "a curious thing"
+      ],
+      "tip": "'I'm curious to see …' entspricht oft 'Ich bin gespannt …'. 'Curious' kann auch 'merkwürdig' heißen."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "curiosity",
+        "noteDe": "Neugier"
+      },
+      {
+        "type": "synonym",
+        "word": "inquisitive",
+        "noteDe": "wissbegierig"
+      },
+      {
+        "type": "synonym",
+        "word": "strange",
+        "noteDe": "seltsam"
+      },
+      {
+        "type": "antonym",
+        "word": "indifferent",
+        "noteDe": "gleichgültig"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "reliable",
+    "lemma": "reliable",
+    "pos": "adj",
+    "ipa": "/rɪˈlaɪəbəl/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "zuverlässig",
+    "deAlt": [
+      "verlässlich"
+    ],
+    "definitionEn": "able to be trusted to do what is expected",
+    "examples": [
+      {
+        "en": "She is a reliable colleague who never misses deadlines.",
+        "de": "Sie ist eine zuverlässige Kollegin, die nie eine Frist versäumt.",
+        "hit": "reliable"
+      },
+      {
+        "en": "We need a reliable car for the long trip.",
+        "de": "Wir brauchen ein zuverlässiges Auto für die lange Fahrt.",
+        "hit": "reliable"
+      },
+      {
+        "en": "The information comes from a reliable source.",
+        "de": "Die Information stammt aus einer verlässlichen Quelle.",
+        "hit": "reliable"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a reliable source",
+        "reliable information",
+        "completely reliable"
+      ],
+      "tip": "Verb: rely on (sich verlassen auf). Nomen: reliability."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "reliability",
+        "ref": "reliability",
+        "noteDe": "Zuverlässigkeit"
+      },
+      {
+        "type": "family",
+        "word": "rely on",
+        "noteDe": "sich verlassen auf"
+      },
+      {
+        "type": "synonym",
+        "word": "dependable",
+        "noteDe": "verlässlich"
+      },
+      {
+        "type": "antonym",
+        "word": "unreliable",
+        "noteDe": "unzuverlässig"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "work"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "selfish",
+    "lemma": "selfish",
+    "pos": "adj",
+    "ipa": "/ˈsɛlfɪʃ/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "egoistisch",
+    "deAlt": [
+      "selbstsüchtig"
+    ],
+    "definitionEn": "caring only about yourself and not about other people",
+    "examples": [
+      {
+        "en": "It was selfish of him to eat all the cake.",
+        "de": "Es war egoistisch von ihm, den ganzen Kuchen zu essen.",
+        "hit": "selfish"
+      },
+      {
+        "en": "Don't be so selfish, share your toys!",
+        "de": "Sei nicht so egoistisch, teil deine Spielsachen!",
+        "hit": "selfish"
+      },
+      {
+        "en": "Her selfish behavior upset the whole team.",
+        "de": "Ihr selbstsüchtiges Verhalten verärgerte das ganze Team.",
+        "hit": "selfish"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "selfish behavior",
+        "selfish of someone",
+        "a selfish person"
+      ],
+      "tip": "Nicht mit 'selfless' (selbstlos) verwechseln – das ist das Gegenteil."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "generous",
+        "ref": "generous",
+        "noteDe": "großzügig"
+      },
+      {
+        "type": "antonym",
+        "word": "selfless",
+        "noteDe": "selbstlos"
+      },
+      {
+        "type": "family",
+        "word": "selfishness",
+        "noteDe": "Egoismus"
+      },
+      {
+        "type": "related",
+        "word": "greedy",
+        "ref": "greedy",
+        "noteDe": "gierig"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "patient-adj",
+    "lemma": "patient",
+    "pos": "adj",
+    "ipa": "/ˈpeɪʃənt/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "geduldig",
+    "definitionEn": "able to wait calmly without getting angry",
+    "examples": [
+      {
+        "en": "Please be patient, the doctor will see you soon.",
+        "de": "Bitte haben Sie Geduld, die Ärztin ist gleich für Sie da.",
+        "hit": "patient"
+      },
+      {
+        "en": "My teacher was very patient with me.",
+        "de": "Meine Lehrerin war sehr geduldig mit mir.",
+        "hit": "patient"
+      },
+      {
+        "en": "You have to be patient when learning a new language.",
+        "de": "Beim Lernen einer neuen Sprache muss man geduldig sein.",
+        "hit": "patient"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "be patient",
+        "patient with someone",
+        "extremely patient"
+      ],
+      "tip": "'Patient' ist auch ein Nomen: der Patient, die Patientin. Das Nomen 'Geduld' heißt 'patience'."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "patience",
+        "noteDe": "Geduld"
+      },
+      {
+        "type": "antonym",
+        "word": "impatient",
+        "noteDe": "ungeduldig"
+      },
+      {
+        "type": "confusable",
+        "word": "patient (noun)",
+        "noteDe": "Nomen: Patient(in)"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "worried",
+    "lemma": "worried",
+    "pos": "adj",
+    "ipa": "/ˈwɜrid/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "besorgt",
+    "definitionEn": "unhappy because you think something bad might happen",
+    "examples": [
+      {
+        "en": "I'm worried about my grandmother's health.",
+        "de": "Ich mache mir Sorgen um die Gesundheit meiner Oma.",
+        "hit": "worried"
+      },
+      {
+        "en": "Don't look so worried, everything will be fine.",
+        "de": "Schau nicht so besorgt, alles wird gut.",
+        "hit": "worried"
+      },
+      {
+        "en": "Parents were worried that the school would close.",
+        "de": "Die Eltern befürchteten, dass die Schule schließen würde.",
+        "hit": "worried"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "worried about",
+        "worried that",
+        "deeply worried",
+        "a worried look"
+      ],
+      "tip": "'Worried about' + Person/Sache. Als Verb: 'Don't worry!' = Keine Sorge!"
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "anxious",
+        "noteDe": "besorgt, ängstlich"
+      },
+      {
+        "type": "family",
+        "word": "worry",
+        "noteDe": "sich Sorgen machen; Sorge"
+      },
+      {
+        "type": "antonym",
+        "word": "relaxed",
+        "noteDe": "entspannt"
+      },
+      {
+        "type": "related",
+        "word": "relief",
+        "ref": "relief",
+        "noteDe": "Erleichterung"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "salary",
+    "lemma": "salary",
+    "pos": "noun",
+    "ipa": "/ˈsæləri/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Gehalt",
+    "definitionEn": "fixed money you get each month or year for your job",
+    "examples": [
+      {
+        "en": "She earns a good salary as an engineer.",
+        "de": "Sie verdient als Ingenieurin ein gutes Gehalt.",
+        "hit": "salary"
+      },
+      {
+        "en": "My salary is paid at the end of the month.",
+        "de": "Mein Gehalt wird am Monatsende überwiesen.",
+        "hit": "salary"
+      },
+      {
+        "en": "He asked his boss for a higher salary.",
+        "de": "Er bat seinen Chef um ein höheres Gehalt.",
+        "hit": "salary"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "annual salary",
+        "starting salary",
+        "earn a salary",
+        "salary increase"
+      ],
+      "tip": "'Salary' ist ein festes Monats- oder Jahresgehalt. Stunden- oder Wochenlöhne heißen 'wages'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "wages",
+        "ref": "wages",
+        "noteDe": "wages = Lohn (oft pro Stunde/Woche)"
+      },
+      {
+        "type": "related",
+        "word": "income",
+        "noteDe": "Einkommen"
+      },
+      {
+        "type": "related",
+        "word": "earn",
+        "ref": "earn",
+        "noteDe": "verdienen"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "colleague",
+    "lemma": "colleague",
+    "pos": "noun",
+    "ipa": "/ˈkɑliɡ/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Kollege",
+    "deAlt": [
+      "Kollegin"
+    ],
+    "definitionEn": "a person you work with",
+    "examples": [
+      {
+        "en": "I'm having lunch with a colleague today.",
+        "de": "Ich esse heute mit einem Kollegen zu Mittag.",
+        "hit": "colleague"
+      },
+      {
+        "en": "She gets along well with her colleagues.",
+        "de": "Sie versteht sich gut mit ihren Kolleginnen und Kollegen.",
+        "hit": "colleagues"
+      },
+      {
+        "en": "A former colleague recommended me for the job.",
+        "de": "Ein ehemaliger Kollege hat mich für die Stelle empfohlen.",
+        "hit": "colleague"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a work colleague",
+        "a former colleague",
+        "colleagues at work"
+      ],
+      "tip": "Achtung Schreibweise: colleague (mit -gue am Ende). Umgangssprachlich auch 'coworker' (US)."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "coworker",
+        "noteDe": "v. a. US"
+      },
+      {
+        "type": "related",
+        "word": "boss",
+        "noteDe": "Chef(in)"
+      },
+      {
+        "type": "related",
+        "word": "team",
+        "noteDe": "Team"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "deadline",
+    "lemma": "deadline",
+    "pos": "noun",
+    "ipa": "/ˈdɛdˌlaɪn/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Frist",
+    "deAlt": [
+      "Abgabetermin",
+      "Stichtag"
+    ],
+    "definitionEn": "the time or date by which something must be finished",
+    "examples": [
+      {
+        "en": "The deadline for the report is Friday.",
+        "de": "Die Frist für den Bericht ist Freitag.",
+        "hit": "deadline"
+      },
+      {
+        "en": "I always work late when a deadline is close.",
+        "de": "Ich arbeite immer lange, wenn ein Abgabetermin naht.",
+        "hit": "deadline"
+      },
+      {
+        "en": "If you miss the deadline, your application won't be accepted.",
+        "de": "Wenn du die Frist versäumst, wird deine Bewerbung nicht angenommen.",
+        "hit": "deadline"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "meet a deadline",
+        "miss a deadline",
+        "a tight deadline",
+        "extend the deadline"
+      ],
+      "tip": "'Meet a deadline' = eine Frist einhalten (nicht 'hold'). 'A tight deadline' = eine knappe Frist."
+    },
+    "relations": [
+      {
+        "type": "collocate",
+        "word": "meet",
+        "noteDe": "einhalten"
+      },
+      {
+        "type": "related",
+        "word": "due date",
+        "noteDe": "Fälligkeitsdatum"
+      },
+      {
+        "type": "related",
+        "word": "postpone",
+        "ref": "postpone",
+        "noteDe": "verschieben"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "interview",
+    "lemma": "interview",
+    "pos": "noun",
+    "ipa": "/ˈɪntərˌvju/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Vorstellungsgespräch",
+    "deAlt": [
+      "Interview"
+    ],
+    "definitionEn": "a formal meeting where someone is asked questions, for example about a job",
+    "examples": [
+      {
+        "en": "I have a job interview tomorrow morning.",
+        "de": "Ich habe morgen früh ein Vorstellungsgespräch.",
+        "hit": "interview"
+      },
+      {
+        "en": "She was nervous before the interview.",
+        "de": "Sie war vor dem Vorstellungsgespräch nervös.",
+        "hit": "interview"
+      },
+      {
+        "en": "The minister refused to give any interviews after the scandal.",
+        "de": "Der Minister lehnte nach dem Skandal alle Interviews ab.",
+        "hit": "interviews"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a job interview",
+        "have an interview",
+        "give an interview",
+        "an interview for a job"
+      ],
+      "tip": "'Job interview' = Vorstellungsgespräch. Man geht 'to an interview' und hat es 'for a job'."
+    },
+    "relations": [
+      {
+        "type": "related",
+        "word": "apply",
+        "ref": "apply",
+        "noteDe": "sich bewerben"
+      },
+      {
+        "type": "related",
+        "word": "candidate",
+        "noteDe": "Bewerber(in)"
+      },
+      {
+        "type": "family",
+        "word": "interviewer",
+        "noteDe": "Interviewer(in)"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "apply",
+    "lemma": "apply",
+    "pos": "verb",
+    "ipa": "/əˈplaɪ/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "sich bewerben",
+    "deAlt": [
+      "beantragen",
+      "gelten"
+    ],
+    "definitionEn": "to formally ask for a job, place or document, usually in writing",
+    "examples": [
+      {
+        "en": "I'm going to apply for that job.",
+        "de": "Ich werde mich auf diese Stelle bewerben.",
+        "hit": "apply"
+      },
+      {
+        "en": "You can apply for a visa online.",
+        "de": "Ein Visum kannst du online beantragen.",
+        "hit": "apply"
+      },
+      {
+        "en": "These rules apply to all employees.",
+        "de": "Diese Regeln gelten für alle Mitarbeitenden.",
+        "hit": "apply"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "apply for a job",
+        "apply to a university",
+        "apply for a visa"
+      ],
+      "grammar": "apply FOR (Stelle, Visum), apply TO (Firma, Uni); apply to = gelten für",
+      "tip": "Bei 'sich bewerben' kein 'sich': 'I applied for the job'. Nomen: application (Bewerbung)."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "application",
+        "noteDe": "Bewerbung, Antrag"
+      },
+      {
+        "type": "family",
+        "word": "applicant",
+        "noteDe": "Bewerber(in)"
+      },
+      {
+        "type": "related",
+        "word": "interview",
+        "ref": "interview",
+        "noteDe": "Vorstellungsgespräch"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "earn",
+    "lemma": "earn",
+    "pos": "verb",
+    "ipa": "/ɜrn/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "verdienen",
+    "definitionEn": "to get money for work you do",
+    "examples": [
+      {
+        "en": "How much do you earn per hour?",
+        "de": "Wie viel verdienst du pro Stunde?",
+        "hit": "earn"
+      },
+      {
+        "en": "She earns her living as a photographer.",
+        "de": "Sie verdient ihren Lebensunterhalt als Fotografin.",
+        "hit": "earns"
+      },
+      {
+        "en": "He earned the respect of his whole team.",
+        "de": "Er hat sich den Respekt seines ganzen Teams verdient.",
+        "hit": "earned"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "earn money",
+        "earn a living",
+        "earn respect",
+        "earn a salary"
+      ],
+      "tip": "'Earn' ist verdienen durch Arbeit oder Leistung. 'Verdienen' im Sinne von 'zustehen' ist 'deserve'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "deserve",
+        "ref": "deserve",
+        "noteDe": "deserve = es verdient haben"
+      },
+      {
+        "type": "antonym",
+        "word": "spend",
+        "ref": "spend",
+        "noteDe": "ausgeben"
+      },
+      {
+        "type": "related",
+        "word": "salary",
+        "ref": "salary",
+        "noteDe": "Gehalt"
+      },
+      {
+        "type": "family",
+        "word": "earnings",
+        "noteDe": "Einkünfte"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "save-verb-money",
+    "lemma": "save",
+    "pos": "verb",
+    "ipa": "/seɪv/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "sparen",
+    "deAlt": [
+      "retten",
+      "speichern"
+    ],
+    "definitionEn": "to keep money so you can use it later",
+    "examples": [
+      {
+        "en": "I'm saving for a new laptop.",
+        "de": "Ich spare auf einen neuen Laptop.",
+        "hit": "saving"
+      },
+      {
+        "en": "We save a little money every month.",
+        "de": "Wir sparen jeden Monat ein bisschen Geld.",
+        "hit": "save"
+      },
+      {
+        "en": "Taking the train saves time and money.",
+        "de": "Mit dem Zug zu fahren spart Zeit und Geld.",
+        "hit": "saves"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "save money",
+        "save up for",
+        "save time",
+        "save energy"
+      ],
+      "tip": "'Save up for something' = auf etwas sparen. 'Save' heißt auch retten (save a life) und speichern (save a file)."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "spend",
+        "ref": "spend",
+        "noteDe": "ausgeben"
+      },
+      {
+        "type": "related",
+        "word": "budget",
+        "ref": "budget",
+        "noteDe": "Budget"
+      },
+      {
+        "type": "family",
+        "word": "savings",
+        "noteDe": "Ersparnisse"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "debt",
+    "lemma": "debt",
+    "pos": "noun",
+    "ipa": "/dɛt/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Schulden",
+    "deAlt": [
+      "Schuld"
+    ],
+    "definitionEn": "money that you owe to someone",
+    "examples": [
+      {
+        "en": "They are trying to pay off their debts.",
+        "de": "Sie versuchen, ihre Schulden abzubezahlen.",
+        "hit": "debts"
+      },
+      {
+        "en": "Many students finish university in debt.",
+        "de": "Viele Studierende beenden die Uni mit Schulden.",
+        "hit": "debt"
+      },
+      {
+        "en": "The country's national debt has grown rapidly.",
+        "de": "Die Staatsverschuldung des Landes ist rasant gewachsen.",
+        "hit": "debt"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "in debt",
+        "pay off a debt",
+        "get into debt",
+        "national debt"
+      ],
+      "tip": "Das 'b' ist stumm: /dɛt/. 'Be in debt' = verschuldet sein."
+    },
+    "mnemonic": "Das b in debt schweigt – so wie man über Schulden gern schweigt.",
+    "relations": [
+      {
+        "type": "related",
+        "word": "owe",
+        "ref": "owe",
+        "noteDe": "schulden"
+      },
+      {
+        "type": "related",
+        "word": "loan",
+        "noteDe": "Kredit"
+      },
+      {
+        "type": "family",
+        "word": "debtor",
+        "noteDe": "Schuldner(in)"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "skill",
+    "lemma": "skill",
+    "pos": "noun",
+    "ipa": "/skɪl/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Fähigkeit",
+    "deAlt": [
+      "Fertigkeit",
+      "Können"
+    ],
+    "definitionEn": "an ability to do something well, learned through practice",
+    "examples": [
+      {
+        "en": "Cooking is a useful skill to have.",
+        "de": "Kochen ist eine nützliche Fähigkeit.",
+        "hit": "skill"
+      },
+      {
+        "en": "The job requires good communication skills.",
+        "de": "Die Stelle erfordert gute Kommunikationsfähigkeiten.",
+        "hit": "skills"
+      },
+      {
+        "en": "She improved her skills by practicing every day.",
+        "de": "Sie verbesserte ihr Können, indem sie täglich übte.",
+        "hit": "skills"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "communication skills",
+        "language skills",
+        "develop a skill"
+      ],
+      "tip": "Oft im Plural: 'skills'. Adjektiv: skilled (ausgebildet, qualifiziert)."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "ability",
+        "noteDe": "Fähigkeit"
+      },
+      {
+        "type": "family",
+        "word": "skilled",
+        "noteDe": "qualifiziert"
+      },
+      {
+        "type": "related",
+        "word": "talent",
+        "noteDe": "Talent"
+      },
+      {
+        "type": "related",
+        "word": "improve",
+        "ref": "improve",
+        "noteDe": "verbessern"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "promotion",
+    "lemma": "promotion",
+    "pos": "noun",
+    "ipa": "/prəˈmoʊʃən/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Beförderung",
+    "deAlt": [
+      "Werbeaktion"
+    ],
+    "definitionEn": "a move to a more important job in the same company",
+    "examples": [
+      {
+        "en": "She got a promotion after only one year.",
+        "de": "Sie wurde nach nur einem Jahr befördert.",
+        "hit": "promotion"
+      },
+      {
+        "en": "He's hoping for a promotion to manager.",
+        "de": "Er hofft auf eine Beförderung zum Manager.",
+        "hit": "promotion"
+      },
+      {
+        "en": "The store is running a special promotion this week.",
+        "de": "Das Geschäft hat diese Woche eine Sonderaktion.",
+        "hit": "promotion"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "get a promotion",
+        "be up for promotion",
+        "a sales promotion"
+      ],
+      "tip": "Nicht die deutsche 'Promotion' (Doktortitel) – die heißt 'doctorate' oder 'PhD'. Verb: promote (befördern, bewerben)."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "doctorate",
+        "noteDe": "doctorate = Promotion (Doktor)"
+      },
+      {
+        "type": "family",
+        "word": "promote",
+        "noteDe": "befördern"
+      },
+      {
+        "type": "antonym",
+        "word": "demotion",
+        "noteDe": "Degradierung"
+      },
+      {
+        "type": "related",
+        "word": "career",
+        "ref": "career",
+        "noteDe": "Laufbahn"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "quit",
+    "lemma": "quit",
+    "pos": "verb",
+    "ipa": "/kwɪt/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "kündigen",
+    "deAlt": [
+      "aufhören",
+      "aufgeben"
+    ],
+    "definitionEn": "to leave a job or stop doing something",
+    "examples": [
+      {
+        "en": "He quit his job to travel the world.",
+        "de": "Er kündigte seinen Job, um die Welt zu bereisen.",
+        "hit": "quit"
+      },
+      {
+        "en": "I quit smoking three years ago.",
+        "de": "Ich habe vor drei Jahren mit dem Rauchen aufgehört.",
+        "hit": "quit"
+      },
+      {
+        "en": "Don't quit now, you're almost finished!",
+        "de": "Gib jetzt nicht auf, du bist fast fertig!",
+        "hit": "quit"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "quit a job",
+        "quit smoking",
+        "quit doing something"
+      ],
+      "grammar": "unregelmäßig (US): quit – quit – quit; quit + -ing",
+      "tip": "'Quit' ist umgangssprachlicher als 'resign'. Danach folgt die -ing-Form: quit smoking."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "resign",
+        "ref": "resign",
+        "noteDe": "formell kündigen"
+      },
+      {
+        "type": "synonym",
+        "word": "give up",
+        "noteDe": "aufgeben"
+      },
+      {
+        "type": "related",
+        "word": "retire",
+        "ref": "retire",
+        "noteDe": "in Rente gehen"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "career",
+    "lemma": "career",
+    "pos": "noun",
+    "ipa": "/kəˈrɪr/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Laufbahn",
+    "deAlt": [
+      "Karriere",
+      "Beruf"
+    ],
+    "definitionEn": "the series of jobs you have during your working life",
+    "examples": [
+      {
+        "en": "She started her career as a teacher.",
+        "de": "Sie begann ihre Laufbahn als Lehrerin.",
+        "hit": "career"
+      },
+      {
+        "en": "He wants a career in medicine.",
+        "de": "Er möchte beruflich in die Medizin gehen.",
+        "hit": "career"
+      },
+      {
+        "en": "After twenty years, she decided on a complete career change.",
+        "de": "Nach zwanzig Jahren entschied sie sich für einen kompletten Berufswechsel.",
+        "hit": "career"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a career change",
+        "a successful career",
+        "career path",
+        "start a career"
+      ],
+      "tip": "Betonung auf der zweiten Silbe: ca-REER. 'Career' ist die ganze Laufbahn, nicht nur der Aufstieg."
+    },
+    "relations": [
+      {
+        "type": "related",
+        "word": "job",
+        "noteDe": "Stelle, Job"
+      },
+      {
+        "type": "related",
+        "word": "profession",
+        "noteDe": "Beruf"
+      },
+      {
+        "type": "related",
+        "word": "promotion",
+        "ref": "promotion",
+        "noteDe": "Beförderung"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "budget",
+    "lemma": "budget",
+    "pos": "noun",
+    "ipa": "/ˈbʌdʒɪt/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Budget",
+    "deAlt": [
+      "Etat",
+      "Haushalt"
+    ],
+    "definitionEn": "the amount of money you have or plan to spend",
+    "examples": [
+      {
+        "en": "We need to stay within our budget.",
+        "de": "Wir müssen im Rahmen unseres Budgets bleiben.",
+        "hit": "budget"
+      },
+      {
+        "en": "The film was made on a very small budget.",
+        "de": "Der Film wurde mit einem sehr kleinen Budget gedreht.",
+        "hit": "budget"
+      },
+      {
+        "en": "The government announced cuts to the education budget.",
+        "de": "Die Regierung kündigte Kürzungen im Bildungsetat an.",
+        "hit": "budget"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a tight budget",
+        "on a budget",
+        "stay within budget",
+        "budget cuts"
+      ],
+      "grammar": "auch Verb: budget for something = etwas einplanen",
+      "tip": "'On a budget' = mit wenig Geld, sparsam: 'travel on a budget'."
+    },
+    "relations": [
+      {
+        "type": "related",
+        "word": "save",
+        "ref": "save-verb-money",
+        "noteDe": "sparen"
+      },
+      {
+        "type": "related",
+        "word": "afford",
+        "ref": "afford",
+        "noteDe": "sich leisten"
+      },
+      {
+        "type": "related",
+        "word": "expense",
+        "noteDe": "Ausgabe"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "invoice",
+    "lemma": "invoice",
+    "pos": "noun",
+    "ipa": "/ˈɪnvɔɪs/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Rechnung",
+    "definitionEn": "a document that lists goods or services and how much to pay",
+    "examples": [
+      {
+        "en": "Please send the invoice to our accounts department.",
+        "de": "Bitte schicken Sie die Rechnung an unsere Buchhaltung.",
+        "hit": "invoice"
+      },
+      {
+        "en": "The invoice must be paid within thirty days.",
+        "de": "Die Rechnung muss innerhalb von dreißig Tagen bezahlt werden.",
+        "hit": "invoice"
+      },
+      {
+        "en": "We still haven't received an invoice for the repairs.",
+        "de": "Wir haben immer noch keine Rechnung für die Reparaturen erhalten.",
+        "hit": "invoice"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "send an invoice",
+        "pay an invoice",
+        "issue an invoice"
+      ],
+      "tip": "'Invoice' ist die geschäftliche Rechnung. Im Restaurant sagt man 'the bill' (UK) bzw. 'the check' (US)."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "bill",
+        "noteDe": "bill = Rechnung im Restaurant (UK)"
+      },
+      {
+        "type": "related",
+        "word": "receipt",
+        "noteDe": "Quittung, Kassenbon"
+      },
+      {
+        "type": "related",
+        "word": "payment",
+        "noteDe": "Zahlung"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "injury",
+    "lemma": "injury",
+    "pos": "noun",
+    "ipa": "/ˈɪndʒəri/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Verletzung",
+    "definitionEn": "physical harm done to the body, for example in an accident",
+    "examples": [
+      {
+        "en": "He missed the game because of a knee injury.",
+        "de": "Er verpasste das Spiel wegen einer Knieverletzung.",
+        "hit": "injury"
+      },
+      {
+        "en": "Luckily, nobody suffered serious injuries in the crash.",
+        "de": "Glücklicherweise wurde bei dem Unfall niemand schwer verletzt.",
+        "hit": "injuries"
+      },
+      {
+        "en": "Most injuries at home happen in the kitchen.",
+        "de": "Die meisten Verletzungen im Haushalt passieren in der Küche.",
+        "hit": "injuries"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a serious injury",
+        "a knee injury",
+        "suffer an injury",
+        "minor injuries"
+      ],
+      "tip": "Verb: injure (verletzen), Adjektiv: injured. Für verletzte Gefühle sagt man 'hurt', nicht 'injured'."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "injured",
+        "noteDe": "verletzt"
+      },
+      {
+        "type": "synonym",
+        "word": "wound",
+        "noteDe": "Wunde"
+      },
+      {
+        "type": "related",
+        "word": "hurt",
+        "noteDe": "wehtun, verletzen"
+      }
+    ],
+    "topics": [
+      "body"
+    ],
+    "clusters": [
+      "health-and-body"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "headache",
+    "lemma": "headache",
+    "pos": "noun",
+    "ipa": "/ˈhɛdˌeɪk/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "Kopfschmerzen",
+    "definitionEn": "a pain in your head",
+    "examples": [
+      {
+        "en": "I have a terrible headache today.",
+        "de": "Ich habe heute furchtbare Kopfschmerzen.",
+        "hit": "headache"
+      },
+      {
+        "en": "Too much screen time gives me a headache.",
+        "de": "Zu viel Bildschirmzeit verursacht bei mir Kopfschmerzen.",
+        "hit": "headache"
+      },
+      {
+        "en": "Finding a parking space here is a real headache.",
+        "de": "Hier einen Parkplatz zu finden ist echt nervig.",
+        "hit": "headache"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "have a headache",
+        "a bad headache",
+        "give someone a headache"
+      ],
+      "grammar": "zählbar: a headache (mit Artikel!)",
+      "tip": "Im Englischen mit Artikel: 'I have a headache'. Übertragen ist 'a headache' ein lästiges Problem."
+    },
+    "relations": [
+      {
+        "type": "related",
+        "word": "stomachache",
+        "noteDe": "Bauchschmerzen"
+      },
+      {
+        "type": "related",
+        "word": "pain",
+        "noteDe": "Schmerz"
+      },
+      {
+        "type": "related",
+        "word": "sore",
+        "ref": "sore",
+        "noteDe": "wund, schmerzend"
+      }
+    ],
+    "topics": [
+      "body"
+    ],
+    "clusters": [
+      "health-and-body"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "cough",
+    "lemma": "cough",
+    "pos": "noun",
+    "ipa": "/kɔf/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Husten",
+    "definitionEn": "the act or sound of suddenly pushing air out of your throat",
+    "examples": [
+      {
+        "en": "I've had a bad cough for a week.",
+        "de": "Ich habe seit einer Woche einen schlimmen Husten.",
+        "hit": "cough"
+      },
+      {
+        "en": "Take this syrup for your cough.",
+        "de": "Nimm diesen Saft gegen deinen Husten.",
+        "hit": "cough"
+      },
+      {
+        "en": "A dry cough is one symptom of the flu.",
+        "de": "Trockener Husten ist ein Symptom der Grippe.",
+        "hit": "cough"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a bad cough",
+        "a dry cough",
+        "cough syrup",
+        "have a cough"
+      ],
+      "grammar": "auch Verb: cough = husten",
+      "tip": "Aussprache: 'ough' wie in 'off': /kɔf/. Weitere knifflige -ough-Wörter findest du in derselben Lerngruppe."
+    },
+    "relations": [
+      {
+        "type": "related",
+        "word": "sneeze",
+        "noteDe": "niesen"
+      },
+      {
+        "type": "related",
+        "word": "symptom",
+        "ref": "symptom",
+        "noteDe": "Symptom"
+      },
+      {
+        "type": "confusable",
+        "word": "tough",
+        "ref": "tough",
+        "noteDe": "tough /tʌf/: gleiche Endung, andere Aussprache"
+      },
+      {
+        "type": "confusable",
+        "word": "through",
+        "ref": "through",
+        "noteDe": "through /θru/: -ough wie 'u'"
+      }
+    ],
+    "topics": [
+      "body"
+    ],
+    "clusters": [
+      "health-and-body",
+      "ough-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "recover",
+    "lemma": "recover",
+    "pos": "verb",
+    "ipa": "/rɪˈkʌvər/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "sich erholen",
+    "deAlt": [
+      "genesen",
+      "wiedererlangen"
+    ],
+    "definitionEn": "to become healthy again after an illness or injury",
+    "examples": [
+      {
+        "en": "It took her weeks to recover from the flu.",
+        "de": "Sie brauchte Wochen, um sich von der Grippe zu erholen.",
+        "hit": "recover"
+      },
+      {
+        "en": "He is recovering well after the operation.",
+        "de": "Er erholt sich gut nach der Operation.",
+        "hit": "recovering"
+      },
+      {
+        "en": "The police recovered the stolen car the next day.",
+        "de": "Die Polizei stellte das gestohlene Auto am nächsten Tag sicher.",
+        "hit": "recovered"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "recover from",
+        "fully recover",
+        "recover quickly"
+      ],
+      "tip": "'Recover from' + Krankheit, ohne 'sich': 'She recovered' = Sie hat sich erholt. Nomen: recovery."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "recovery",
+        "noteDe": "Genesung"
+      },
+      {
+        "type": "synonym",
+        "word": "get better",
+        "noteDe": "gesund werden"
+      },
+      {
+        "type": "related",
+        "word": "heal",
+        "ref": "heal",
+        "noteDe": "heilen"
+      }
+    ],
+    "topics": [
+      "body"
+    ],
+    "clusters": [
+      "health-and-body"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "symptom",
+    "lemma": "symptom",
+    "pos": "noun",
+    "ipa": "/ˈsɪmptəm/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Symptom",
+    "deAlt": [
+      "Anzeichen"
+    ],
+    "definitionEn": "a sign that someone has an illness",
+    "examples": [
+      {
+        "en": "Fever and a sore throat are common symptoms.",
+        "de": "Fieber und Halsschmerzen sind häufige Symptome.",
+        "hit": "symptoms"
+      },
+      {
+        "en": "Call a doctor if the symptoms get worse.",
+        "de": "Ruf einen Arzt, wenn die Symptome schlimmer werden.",
+        "hit": "symptoms"
+      },
+      {
+        "en": "Rising prices are a symptom of a deeper problem.",
+        "de": "Steigende Preise sind ein Anzeichen für ein tieferes Problem.",
+        "hit": "symptom"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "common symptoms",
+        "mild symptoms",
+        "show symptoms",
+        "symptoms of"
+      ],
+      "tip": "Übertragen: 'a symptom of' = ein Anzeichen für ein größeres Problem."
+    },
+    "relations": [
+      {
+        "type": "related",
+        "word": "fever",
+        "ref": "fever",
+        "noteDe": "Fieber"
+      },
+      {
+        "type": "related",
+        "word": "cough",
+        "ref": "cough",
+        "noteDe": "Husten"
+      },
+      {
+        "type": "synonym",
+        "word": "sign",
+        "noteDe": "Zeichen"
+      }
+    ],
+    "topics": [
+      "body"
+    ],
+    "clusters": [
+      "health-and-body"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "prescription",
+    "lemma": "prescription",
+    "pos": "noun",
+    "ipa": "/prɪˈskrɪpʃən/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Rezept",
+    "deAlt": [
+      "Verschreibung"
+    ],
+    "definitionEn": "a doctor's written order for medicine",
+    "examples": [
+      {
+        "en": "You need a prescription for these pills.",
+        "de": "Für diese Tabletten brauchst du ein Rezept.",
+        "hit": "prescription"
+      },
+      {
+        "en": "The doctor gave me a prescription for antibiotics.",
+        "de": "Die Ärztin hat mir ein Rezept für Antibiotika gegeben.",
+        "hit": "prescription"
+      },
+      {
+        "en": "Some painkillers are available without a prescription.",
+        "de": "Manche Schmerzmittel sind ohne Rezept erhältlich.",
+        "hit": "prescription"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "on prescription",
+        "prescription drugs",
+        "write a prescription"
+      ],
+      "tip": "Ein Kochrezept heißt 'recipe', nicht 'prescription'. Verb: prescribe (verschreiben)."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "recipe",
+        "noteDe": "recipe = Kochrezept"
+      },
+      {
+        "type": "family",
+        "word": "prescribe",
+        "noteDe": "verschreiben"
+      },
+      {
+        "type": "related",
+        "word": "pharmacy",
+        "noteDe": "Apotheke"
+      }
+    ],
+    "topics": [
+      "body"
+    ],
+    "clusters": [
+      "health-and-body"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "sore",
+    "lemma": "sore",
+    "pos": "adj",
+    "ipa": "/sɔr/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "wund",
+    "deAlt": [
+      "schmerzend",
+      "entzündet"
+    ],
+    "definitionEn": "painful, especially because of an injury or too much use",
+    "examples": [
+      {
+        "en": "I have a sore throat and a slight fever.",
+        "de": "Ich habe Halsschmerzen und leichtes Fieber.",
+        "hit": "sore"
+      },
+      {
+        "en": "My legs are sore after yesterday's run.",
+        "de": "Meine Beine tun nach dem Lauf gestern weh.",
+        "hit": "sore"
+      },
+      {
+        "en": "Losing the final is still a sore point for him.",
+        "de": "Die Niederlage im Finale ist für ihn immer noch ein wunder Punkt.",
+        "hit": "sore"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a sore throat",
+        "sore muscles",
+        "sore eyes",
+        "a sore point"
+      ],
+      "tip": "'Sore throat' = Halsschmerzen. 'Sore muscles' = Muskelkater."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "painful",
+        "noteDe": "schmerzhaft"
+      },
+      {
+        "type": "related",
+        "word": "ache",
+        "noteDe": "Schmerz"
+      },
+      {
+        "type": "related",
+        "word": "headache",
+        "ref": "headache",
+        "noteDe": "Kopfschmerzen"
+      }
+    ],
+    "topics": [
+      "body"
+    ],
+    "clusters": [
+      "health-and-body"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "heal",
+    "lemma": "heal",
+    "pos": "verb",
+    "ipa": "/hil/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "heilen",
+    "deAlt": [
+      "verheilen"
+    ],
+    "definitionEn": "to become healthy again, especially for a wound or broken bone",
+    "examples": [
+      {
+        "en": "The cut on my finger healed quickly.",
+        "de": "Der Schnitt an meinem Finger ist schnell verheilt.",
+        "hit": "healed"
+      },
+      {
+        "en": "It takes about six weeks for a broken bone to heal.",
+        "de": "Ein Knochenbruch braucht etwa sechs Wochen zum Heilen.",
+        "hit": "heal"
+      },
+      {
+        "en": "Time heals all wounds, people say.",
+        "de": "Die Zeit heilt alle Wunden, sagt man.",
+        "hit": "heals"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "heal quickly",
+        "heal a wound",
+        "time heals"
+      ],
+      "tip": "Nicht mit 'heel' (Ferse) verwechseln – gleiche Aussprache /hil/."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "heel",
+        "noteDe": "heel = Ferse, gleiche Aussprache"
+      },
+      {
+        "type": "related",
+        "word": "recover",
+        "ref": "recover",
+        "noteDe": "sich erholen"
+      },
+      {
+        "type": "family",
+        "word": "healing",
+        "noteDe": "Heilung"
+      }
+    ],
+    "topics": [
+      "body"
+    ],
+    "clusters": [
+      "health-and-body"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "appointment",
+    "lemma": "appointment",
+    "pos": "noun",
+    "ipa": "/əˈpɔɪntmənt/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Termin",
+    "deAlt": [
+      "Verabredung",
+      "Ernennung"
+    ],
+    "definitionEn": "an arranged time to meet someone, such as a doctor",
+    "examples": [
+      {
+        "en": "I have a dentist appointment at three.",
+        "de": "Ich habe um drei einen Zahnarzttermin.",
+        "hit": "appointment"
+      },
+      {
+        "en": "Can I make an appointment for next week?",
+        "de": "Kann ich einen Termin für nächste Woche vereinbaren?",
+        "hit": "appointment"
+      },
+      {
+        "en": "She was late for her appointment because of traffic.",
+        "de": "Wegen des Verkehrs kam sie zu spät zu ihrem Termin.",
+        "hit": "appointment"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "make an appointment",
+        "cancel an appointment",
+        "a doctor's appointment",
+        "by appointment"
+      ],
+      "tip": "'Appointment' für Arzt, Amt, Friseur. Mit Freunden hat man eher 'plans'; ein romantisches Treffen ist 'a date'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "date",
+        "noteDe": "date = Verabredung (romantisch), Datum"
+      },
+      {
+        "type": "related",
+        "word": "cancel",
+        "ref": "cancel",
+        "noteDe": "absagen"
+      },
+      {
+        "type": "related",
+        "word": "schedule",
+        "noteDe": "Zeitplan"
+      }
+    ],
+    "topics": [
+      "body",
+      "daily"
+    ],
+    "clusters": [
+      "health-and-body"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "fever",
+    "lemma": "fever",
+    "pos": "noun",
+    "ipa": "/ˈfivər/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Fieber",
+    "definitionEn": "a body temperature that is higher than normal because of illness",
+    "examples": [
+      {
+        "en": "The child has a high fever tonight.",
+        "de": "Das Kind hat heute Abend hohes Fieber.",
+        "hit": "fever"
+      },
+      {
+        "en": "If the fever doesn't go down, see a doctor.",
+        "de": "Wenn das Fieber nicht sinkt, geh zum Arzt.",
+        "hit": "fever"
+      },
+      {
+        "en": "The whole town was gripped by football fever.",
+        "de": "Die ganze Stadt war im Fußballfieber.",
+        "hit": "fever"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a high fever",
+        "have a fever",
+        "run a fever",
+        "the fever goes down"
+      ],
+      "tip": "'Run a fever' (US) = Fieber haben. Mit Artikel: 'I have a fever'."
+    },
+    "relations": [
+      {
+        "type": "related",
+        "word": "temperature",
+        "noteDe": "Temperatur"
+      },
+      {
+        "type": "related",
+        "word": "symptom",
+        "ref": "symptom",
+        "noteDe": "Symptom"
+      },
+      {
+        "type": "related",
+        "word": "flu",
+        "noteDe": "Grippe"
+      }
+    ],
+    "topics": [
+      "body"
+    ],
+    "clusters": [
+      "health-and-body"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "lightning",
+    "lemma": "lightning",
+    "pos": "noun",
+    "ipa": "/ˈlaɪtnɪŋ/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Blitz",
+    "definitionEn": "a bright flash of light in the sky during a storm",
+    "examples": [
+      {
+        "en": "The tree was struck by lightning.",
+        "de": "Der Baum wurde vom Blitz getroffen.",
+        "hit": "lightning"
+      },
+      {
+        "en": "We saw lightning over the mountains last night.",
+        "de": "Gestern Abend sahen wir Blitze über den Bergen.",
+        "hit": "lightning"
+      },
+      {
+        "en": "She ran across the field as fast as lightning.",
+        "de": "Sie rannte blitzschnell über das Feld.",
+        "hit": "lightning"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "struck by lightning",
+        "a flash of lightning",
+        "thunder and lightning"
+      ],
+      "grammar": "unzählbar: lightning (ein einzelner Blitz: a flash/bolt of lightning)",
+      "tip": "Nicht mit 'lighting' (Beleuchtung) verwechseln – 'lightning' hat ein n mehr."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "lighting",
+        "noteDe": "lighting = Beleuchtung"
+      },
+      {
+        "type": "related",
+        "word": "thunder",
+        "ref": "thunder",
+        "noteDe": "Donner"
+      },
+      {
+        "type": "related",
+        "word": "storm",
+        "noteDe": "Sturm, Gewitter"
+      }
+    ],
+    "topics": [
+      "nature"
+    ],
+    "clusters": [
+      "weather-and-environment"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "thunder",
+    "lemma": "thunder",
+    "pos": "noun",
+    "ipa": "/ˈθʌndər/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Donner",
+    "definitionEn": "the loud noise you hear after a flash of light in a storm",
+    "examples": [
+      {
+        "en": "The dog is scared of thunder.",
+        "de": "Der Hund hat Angst vor Donner.",
+        "hit": "thunder"
+      },
+      {
+        "en": "We heard thunder in the distance.",
+        "de": "Wir hörten in der Ferne Donner.",
+        "hit": "thunder"
+      },
+      {
+        "en": "The applause sounded like thunder in the hall.",
+        "de": "Der Applaus dröhnte wie Donner durch den Saal.",
+        "hit": "thunder"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a clap of thunder",
+        "thunder and lightning",
+        "a rumble of thunder"
+      ],
+      "tip": "'Thunderstorm' = Gewitter. Das 'th' wird wie in 'think' gesprochen."
+    },
+    "relations": [
+      {
+        "type": "related",
+        "word": "lightning",
+        "ref": "lightning",
+        "noteDe": "Blitz"
+      },
+      {
+        "type": "family",
+        "word": "thunderstorm",
+        "noteDe": "Gewitter"
+      },
+      {
+        "type": "related",
+        "word": "storm",
+        "noteDe": "Sturm"
+      }
+    ],
+    "topics": [
+      "nature"
+    ],
+    "clusters": [
+      "weather-and-environment"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "fog",
+    "lemma": "fog",
+    "pos": "noun",
+    "ipa": "/fɑɡ/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Nebel",
+    "definitionEn": "thick cloud near the ground that makes it hard to see",
+    "examples": [
+      {
+        "en": "The airport closed because of thick fog.",
+        "de": "Der Flughafen wurde wegen dichten Nebels geschlossen.",
+        "hit": "fog"
+      },
+      {
+        "en": "Drive slowly, there's fog on the roads.",
+        "de": "Fahr langsam, auf den Straßen ist Nebel.",
+        "hit": "fog"
+      },
+      {
+        "en": "The fog lifted and the sun came out.",
+        "de": "Der Nebel lichtete sich und die Sonne kam heraus.",
+        "hit": "fog"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "thick fog",
+        "dense fog",
+        "the fog lifts"
+      ],
+      "tip": "'Mist' ist leichter Nebel (Dunst) – im Englischen kein Schimpfwort! Adjektiv: foggy."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "mist",
+        "noteDe": "mist = leichter Nebel, Dunst"
+      },
+      {
+        "type": "family",
+        "word": "foggy",
+        "noteDe": "neblig"
+      },
+      {
+        "type": "related",
+        "word": "cloud",
+        "noteDe": "Wolke"
+      }
+    ],
+    "topics": [
+      "nature"
+    ],
+    "clusters": [
+      "weather-and-environment"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "freezing",
+    "lemma": "freezing",
+    "pos": "adj",
+    "ipa": "/ˈfrizɪŋ/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "eiskalt",
+    "deAlt": [
+      "sehr kalt"
+    ],
+    "definitionEn": "extremely cold",
+    "examples": [
+      {
+        "en": "It's freezing outside, wear a warm coat.",
+        "de": "Draußen ist es eiskalt, zieh einen warmen Mantel an.",
+        "hit": "freezing"
+      },
+      {
+        "en": "My hands are freezing after the walk.",
+        "de": "Meine Hände sind nach dem Spaziergang eiskalt.",
+        "hit": "freezing"
+      },
+      {
+        "en": "Temperatures dropped below freezing during the night.",
+        "de": "In der Nacht fielen die Temperaturen unter null.",
+        "hit": "freezing"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "freezing cold",
+        "below freezing",
+        "freezing weather"
+      ],
+      "tip": "'Below freezing' = unter dem Gefrierpunkt. 'I'm freezing!' = Mir ist eiskalt!"
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "freeze",
+        "noteDe": "frieren, gefrieren"
+      },
+      {
+        "type": "antonym",
+        "word": "boiling",
+        "noteDe": "kochend heiß (umgangssprachlich)"
+      },
+      {
+        "type": "synonym",
+        "word": "ice-cold",
+        "noteDe": "eiskalt"
+      }
+    ],
+    "topics": [
+      "nature"
+    ],
+    "clusters": [
+      "weather-and-environment"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "humid",
+    "lemma": "humid",
+    "pos": "adj",
+    "ipa": "/ˈhjumɪd/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "schwül",
+    "deAlt": [
+      "feucht"
+    ],
+    "definitionEn": "hot and wet in a way that feels uncomfortable",
+    "examples": [
+      {
+        "en": "The weather in the summer is hot and humid.",
+        "de": "Im Sommer ist das Wetter heiß und schwül.",
+        "hit": "humid"
+      },
+      {
+        "en": "It's so humid that my clothes stick to me.",
+        "de": "Es ist so schwül, dass mir die Kleidung am Körper klebt.",
+        "hit": "humid"
+      },
+      {
+        "en": "These plants grow best in a warm, humid climate.",
+        "de": "Diese Pflanzen wachsen am besten in einem warmen, feuchten Klima.",
+        "hit": "humid"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "hot and humid",
+        "humid air",
+        "a humid climate"
+      ],
+      "tip": "Nomen: humidity (Luftfeuchtigkeit). Gegenteil: dry."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "humidity",
+        "noteDe": "Luftfeuchtigkeit"
+      },
+      {
+        "type": "antonym",
+        "word": "dry",
+        "noteDe": "trocken"
+      },
+      {
+        "type": "synonym",
+        "word": "muggy",
+        "noteDe": "schwül (umgangssprachlich)"
+      }
+    ],
+    "topics": [
+      "nature"
+    ],
+    "clusters": [
+      "weather-and-environment"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "drought",
+    "lemma": "drought",
+    "pos": "noun",
+    "ipa": "/draʊt/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Dürre",
+    "deAlt": [
+      "Trockenheit"
+    ],
+    "definitionEn": "a long period with little or no rain",
+    "examples": [
+      {
+        "en": "The drought destroyed most of the crops.",
+        "de": "Die Dürre vernichtete den größten Teil der Ernte.",
+        "hit": "drought"
+      },
+      {
+        "en": "Farmers are suffering from the worst drought in years.",
+        "de": "Die Bauern leiden unter der schlimmsten Dürre seit Jahren.",
+        "hit": "drought"
+      },
+      {
+        "en": "Severe droughts are becoming more common due to climate change.",
+        "de": "Schwere Dürren werden durch den Klimawandel immer häufiger.",
+        "hit": "droughts"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a severe drought",
+        "a long drought",
+        "suffer from drought"
+      ],
+      "tip": "Aussprache: 'ough' wie in 'out': /draʊt/. Passt zu den kniffligen -ough-Wörtern."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "flood",
+        "ref": "flood",
+        "noteDe": "Hochwasser"
+      },
+      {
+        "type": "confusable",
+        "word": "tough",
+        "ref": "tough",
+        "noteDe": "tough /tʌf/: gleiche Schreibung -ough, andere Aussprache"
+      },
+      {
+        "type": "related",
+        "word": "dry",
+        "noteDe": "trocken"
+      }
+    ],
+    "topics": [
+      "nature"
+    ],
+    "clusters": [
+      "weather-and-environment",
+      "ough-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "flood",
+    "lemma": "flood",
+    "pos": "noun",
+    "ipa": "/flʌd/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Hochwasser",
+    "deAlt": [
+      "Überschwemmung",
+      "Flut"
+    ],
+    "definitionEn": "a large amount of water covering land that is usually dry",
+    "examples": [
+      {
+        "en": "The flood damaged hundreds of homes.",
+        "de": "Das Hochwasser beschädigte Hunderte von Häusern.",
+        "hit": "flood"
+      },
+      {
+        "en": "Heavy rain caused floods in the north.",
+        "de": "Starker Regen verursachte Überschwemmungen im Norden.",
+        "hit": "floods"
+      },
+      {
+        "en": "The office received a flood of complaints after the update.",
+        "de": "Nach dem Update erhielt das Büro eine Flut von Beschwerden.",
+        "hit": "flood"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a flood warning",
+        "a flash flood",
+        "a flood of something"
+      ],
+      "grammar": "auch Verb: flood = überfluten",
+      "tip": "Aussprache /flʌd/ wie 'blood', nicht wie 'food'. 'A flood of' = eine Flut von."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "drought",
+        "ref": "drought",
+        "noteDe": "Dürre"
+      },
+      {
+        "type": "related",
+        "word": "tides",
+        "ref": "tides",
+        "noteDe": "Gezeiten"
+      },
+      {
+        "type": "related",
+        "word": "rain",
+        "noteDe": "Regen"
+      }
+    ],
+    "topics": [
+      "nature"
+    ],
+    "clusters": [
+      "weather-and-environment"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "environment",
+    "lemma": "environment",
+    "pos": "noun",
+    "ipa": "/ɪnˈvaɪrənmənt/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Umwelt",
+    "deAlt": [
+      "Umgebung"
+    ],
+    "definitionEn": "the natural world of land, water, air, plants and animals",
+    "examples": [
+      {
+        "en": "We should all do more to protect the environment.",
+        "de": "Wir sollten alle mehr tun, um die Umwelt zu schützen.",
+        "hit": "environment"
+      },
+      {
+        "en": "Plastic waste is harmful to the environment.",
+        "de": "Plastikmüll schadet der Umwelt.",
+        "hit": "environment"
+      },
+      {
+        "en": "Children learn best in a safe and calm environment.",
+        "de": "Kinder lernen am besten in einer sicheren und ruhigen Umgebung.",
+        "hit": "environment"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "protect the environment",
+        "harm the environment",
+        "a work environment"
+      ],
+      "tip": "Achtung Schreibweise: enviro-n-ment (das n wird oft vergessen). Adjektiv: environmental."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "environmental",
+        "noteDe": "Umwelt-"
+      },
+      {
+        "type": "related",
+        "word": "nature",
+        "noteDe": "Natur"
+      },
+      {
+        "type": "related",
+        "word": "pollution",
+        "ref": "pollution",
+        "noteDe": "Verschmutzung"
+      }
+    ],
+    "topics": [
+      "nature",
+      "society"
+    ],
+    "clusters": [
+      "weather-and-environment"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "pollution",
+    "lemma": "pollution",
+    "pos": "noun",
+    "ipa": "/pəˈluʃən/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Verschmutzung",
+    "deAlt": [
+      "Umweltverschmutzung"
+    ],
+    "definitionEn": "damage to air, water or land caused by harmful substances",
+    "examples": [
+      {
+        "en": "Air pollution is a big problem in many cities.",
+        "de": "Luftverschmutzung ist in vielen Städten ein großes Problem.",
+        "hit": "pollution"
+      },
+      {
+        "en": "The factory was fined for river pollution.",
+        "de": "Die Fabrik musste wegen Flussverschmutzung eine Strafe zahlen.",
+        "hit": "pollution"
+      },
+      {
+        "en": "Noise pollution near the airport keeps residents awake.",
+        "de": "Die Lärmbelastung in Flughafennähe hält die Anwohner wach.",
+        "hit": "pollution"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "air pollution",
+        "noise pollution",
+        "reduce pollution",
+        "water pollution"
+      ],
+      "tip": "Verb: pollute (verschmutzen). 'Noise pollution' = Lärmbelastung."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "pollute",
+        "noteDe": "verschmutzen"
+      },
+      {
+        "type": "related",
+        "word": "environment",
+        "ref": "environment",
+        "noteDe": "Umwelt"
+      },
+      {
+        "type": "related",
+        "word": "waste",
+        "noteDe": "Abfall"
+      }
+    ],
+    "topics": [
+      "nature",
+      "society"
+    ],
+    "clusters": [
+      "weather-and-environment"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "recycle",
+    "lemma": "recycle",
+    "pos": "verb",
+    "ipa": "/riˈsaɪkəl/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "recyceln",
+    "deAlt": [
+      "wiederverwerten"
+    ],
+    "definitionEn": "to treat used things so that their material can be used again",
+    "examples": [
+      {
+        "en": "We recycle all our glass and paper.",
+        "de": "Wir recyceln unser ganzes Glas und Papier.",
+        "hit": "recycle"
+      },
+      {
+        "en": "Most plastic bottles can be recycled.",
+        "de": "Die meisten Plastikflaschen können recycelt werden.",
+        "hit": "recycled"
+      },
+      {
+        "en": "The jacket is made from recycled fishing nets.",
+        "de": "Die Jacke ist aus recycelten Fischernetzen hergestellt.",
+        "hit": "recycled"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "recycle paper",
+        "recycling bin",
+        "recycled materials"
+      ],
+      "tip": "Nomen: recycling. 'Recycling bin' = Wertstofftonne."
+    },
+    "relations": [
+      {
+        "type": "related",
+        "word": "waste",
+        "noteDe": "Abfall"
+      },
+      {
+        "type": "related",
+        "word": "environment",
+        "ref": "environment",
+        "noteDe": "Umwelt"
+      },
+      {
+        "type": "related",
+        "word": "reusable",
+        "ref": "reusable",
+        "noteDe": "wiederverwendbar"
+      }
+    ],
+    "topics": [
+      "nature"
+    ],
+    "clusters": [
+      "weather-and-environment"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "manage",
+    "lemma": "manage",
+    "pos": "verb",
+    "ipa": "/ˈmænɪdʒ/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "schaffen",
+    "deAlt": [
+      "leiten",
+      "zurechtkommen"
+    ],
+    "definitionEn": "to succeed in doing something difficult, or to be in charge of something",
+    "examples": [
+      {
+        "en": "Did you manage to finish the report?",
+        "de": "Hast du es geschafft, den Bericht fertigzustellen?",
+        "hit": "manage"
+      },
+      {
+        "en": "She manages a team of twelve people.",
+        "de": "Sie leitet ein Team von zwölf Personen.",
+        "hit": "manages"
+      },
+      {
+        "en": "Don't worry, we'll manage somehow without a car.",
+        "de": "Keine Sorge, irgendwie kommen wir auch ohne Auto zurecht.",
+        "hit": "manage"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "manage to do something",
+        "manage a team",
+        "manage your time"
+      ],
+      "tip": "'Manage to do' = es schaffen, etwas zu tun (mit to!). Das deutsche 'managen' deckt meist nur 'leiten' ab."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "cope",
+        "noteDe": "zurechtkommen"
+      },
+      {
+        "type": "family",
+        "word": "manager",
+        "noteDe": "Leiter(in)"
+      },
+      {
+        "type": "family",
+        "word": "management",
+        "noteDe": "Führung, Leitung"
+      },
+      {
+        "type": "synonym",
+        "word": "achieve",
+        "ref": "achieve",
+        "noteDe": "erreichen"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "remind",
+    "lemma": "remind",
+    "pos": "verb",
+    "ipa": "/rɪˈmaɪnd/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "erinnern (an)",
+    "deAlt": [
+      "jemanden erinnern"
+    ],
+    "definitionEn": "to make someone think of something they must do or not forget",
+    "examples": [
+      {
+        "en": "Please remind me to call the dentist.",
+        "de": "Bitte erinnere mich daran, den Zahnarzt anzurufen.",
+        "hit": "remind"
+      },
+      {
+        "en": "This song reminds me of my childhood.",
+        "de": "Dieses Lied erinnert mich an meine Kindheit.",
+        "hit": "reminds"
+      },
+      {
+        "en": "Passengers are reminded to keep their bags with them.",
+        "de": "Fahrgäste werden daran erinnert, ihr Gepäck bei sich zu behalten.",
+        "hit": "reminded"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "remind someone to do",
+        "remind someone of",
+        "remind someone about"
+      ],
+      "tip": "Typischer Fehler: 'remind' = JEMANDEN erinnern, 'remember' = sich SELBST erinnern. 'Remind me of' = erinnert mich an (Ähnlichkeit)."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "remember",
+        "noteDe": "remember = sich erinnern"
+      },
+      {
+        "type": "family",
+        "word": "reminder",
+        "noteDe": "Erinnerung, Mahnung"
+      },
+      {
+        "type": "related",
+        "word": "forget",
+        "noteDe": "vergessen"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "avoid",
+    "lemma": "avoid",
+    "pos": "verb",
+    "ipa": "/əˈvɔɪd/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "vermeiden",
+    "deAlt": [
+      "meiden",
+      "ausweichen"
+    ],
+    "definitionEn": "to stay away from someone or something, or stop something from happening",
+    "examples": [
+      {
+        "en": "Try to avoid sugary drinks in the evening.",
+        "de": "Versuch, abends zuckerhaltige Getränke zu vermeiden.",
+        "hit": "avoid"
+      },
+      {
+        "en": "We left early to avoid the traffic.",
+        "de": "Wir sind früh losgefahren, um den Verkehr zu umgehen.",
+        "hit": "avoid"
+      },
+      {
+        "en": "He has been avoiding me since our argument.",
+        "de": "Seit unserem Streit geht er mir aus dem Weg.",
+        "hit": "avoiding"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "avoid doing something",
+        "avoid the traffic",
+        "avoid mistakes",
+        "avoid at all costs"
+      ],
+      "grammar": "avoid + -ing (avoid eating, nicht avoid to eat)",
+      "tip": "Nach 'avoid' folgt die -ing-Form: 'avoid making mistakes'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "prevent",
+        "noteDe": "verhindern"
+      },
+      {
+        "type": "related",
+        "word": "dodge",
+        "ref": "dodge",
+        "noteDe": "ausweichen"
+      },
+      {
+        "type": "antonym",
+        "word": "face",
+        "noteDe": "sich stellen"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "achieve",
+    "lemma": "achieve",
+    "pos": "verb",
+    "ipa": "/əˈtʃiv/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "erreichen",
+    "deAlt": [
+      "erzielen",
+      "schaffen"
+    ],
+    "definitionEn": "to succeed in doing or getting something after a lot of effort",
+    "examples": [
+      {
+        "en": "She achieved her goal of running a marathon.",
+        "de": "Sie erreichte ihr Ziel, einen Marathon zu laufen.",
+        "hit": "achieved"
+      },
+      {
+        "en": "You can achieve a lot if you work hard.",
+        "de": "Wenn du hart arbeitest, kannst du viel erreichen.",
+        "hit": "achieve"
+      },
+      {
+        "en": "Very little was achieved at the meeting.",
+        "de": "Bei dem Treffen wurde sehr wenig erreicht.",
+        "hit": "achieved"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "achieve a goal",
+        "achieve success",
+        "achieve results"
+      ],
+      "tip": "'Achieve' braucht ein Ziel oder Ergebnis als Objekt. Einen Ort erreicht man mit 'reach'. Nomen: achievement (Leistung)."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "reach",
+        "noteDe": "reach = einen Ort erreichen"
+      },
+      {
+        "type": "family",
+        "word": "achievement",
+        "noteDe": "Leistung, Erfolg"
+      },
+      {
+        "type": "related",
+        "word": "effort",
+        "ref": "effort",
+        "noteDe": "Anstrengung"
+      },
+      {
+        "type": "related",
+        "word": "accomplished",
+        "ref": "accomplished",
+        "noteDe": "vollendet, versiert"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "improve",
+    "lemma": "improve",
+    "pos": "verb",
+    "ipa": "/ɪmˈpruv/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "verbessern",
+    "deAlt": [
+      "sich verbessern"
+    ],
+    "definitionEn": "to make something better, or to become better",
+    "examples": [
+      {
+        "en": "I want to improve my English this year.",
+        "de": "Ich möchte dieses Jahr mein Englisch verbessern.",
+        "hit": "improve"
+      },
+      {
+        "en": "The weather should improve by the weekend.",
+        "de": "Das Wetter soll bis zum Wochenende besser werden.",
+        "hit": "improve"
+      },
+      {
+        "en": "Sales have improved steadily since the new manager arrived.",
+        "de": "Die Verkaufszahlen haben sich seit der Ankunft der neuen Managerin stetig verbessert.",
+        "hit": "improved"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "improve your skills",
+        "improve the quality",
+        "greatly improve"
+      ],
+      "tip": "'Improve' geht ohne 'sich': 'The weather improved' = Das Wetter hat sich gebessert. Nomen: improvement."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "improvement",
+        "noteDe": "Verbesserung"
+      },
+      {
+        "type": "antonym",
+        "word": "worsen",
+        "noteDe": "verschlechtern"
+      },
+      {
+        "type": "synonym",
+        "word": "get better",
+        "noteDe": "besser werden"
+      },
+      {
+        "type": "related",
+        "word": "skill",
+        "ref": "skill",
+        "noteDe": "Fähigkeit"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "realize",
+    "lemma": "realize",
+    "pos": "verb",
+    "ipa": "/ˈriəˌlaɪz/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "merken",
+    "deAlt": [
+      "erkennen",
+      "begreifen",
+      "verwirklichen"
+    ],
+    "definitionEn": "to suddenly understand or notice something",
+    "examples": [
+      {
+        "en": "I didn't realize it was so late.",
+        "de": "Mir war nicht klar, dass es schon so spät ist.",
+        "hit": "realize"
+      },
+      {
+        "en": "She suddenly realized she had left her keys at home.",
+        "de": "Plötzlich merkte sie, dass sie ihre Schlüssel zu Hause gelassen hatte.",
+        "hit": "realized"
+      },
+      {
+        "en": "He finally realized his dream of opening a bakery.",
+        "de": "Er verwirklichte endlich seinen Traum von einer eigenen Bäckerei.",
+        "hit": "realized"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "suddenly realize",
+        "realize that",
+        "realize a dream"
+      ],
+      "tip": "Meist heißt 'realize' 'merken, begreifen' – nicht 'realisieren' im Sinne von umsetzen (dafür 'carry out'). UK: realise."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "notice",
+        "noteDe": "bemerken"
+      },
+      {
+        "type": "synonym",
+        "word": "understand",
+        "noteDe": "verstehen"
+      },
+      {
+        "type": "family",
+        "word": "realization",
+        "noteDe": "Erkenntnis"
+      },
+      {
+        "type": "related",
+        "word": "recognize",
+        "ref": "recognize",
+        "noteDe": "erkennen"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "suggest",
+    "lemma": "suggest",
+    "pos": "verb",
+    "ipa": "/səɡˈdʒɛst/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "vorschlagen",
+    "deAlt": [
+      "andeuten"
+    ],
+    "definitionEn": "to mention an idea or plan for other people to think about",
+    "examples": [
+      {
+        "en": "I suggest we take a short break.",
+        "de": "Ich schlage vor, dass wir eine kurze Pause machen.",
+        "hit": "suggest"
+      },
+      {
+        "en": "My friend suggested a nice restaurant near the station.",
+        "de": "Mein Freund schlug ein nettes Restaurant in Bahnhofsnähe vor.",
+        "hit": "suggested"
+      },
+      {
+        "en": "The results suggest that the new method works.",
+        "de": "Die Ergebnisse deuten darauf hin, dass die neue Methode funktioniert.",
+        "hit": "suggest"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "suggest doing something",
+        "suggest that",
+        "strongly suggest"
+      ],
+      "grammar": "suggest + -ing oder that-Satz; NICHT suggest someone to do",
+      "tip": "Typischer Fehler: 'He suggested me to go' ist falsch. Richtig: 'He suggested (that) I go' oder 'He suggested going'."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "suggestion",
+        "ref": "suggestion",
+        "noteDe": "Vorschlag"
+      },
+      {
+        "type": "synonym",
+        "word": "propose",
+        "noteDe": "vorschlagen (formell)"
+      },
+      {
+        "type": "related",
+        "word": "recommend",
+        "noteDe": "empfehlen"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "decide",
+    "lemma": "decide",
+    "pos": "verb",
+    "ipa": "/dɪˈsaɪd/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "entscheiden",
+    "deAlt": [
+      "beschließen"
+    ],
+    "definitionEn": "to choose something after thinking about the options",
+    "examples": [
+      {
+        "en": "We decided to stay at home tonight.",
+        "de": "Wir haben beschlossen, heute Abend zu Hause zu bleiben.",
+        "hit": "decided"
+      },
+      {
+        "en": "I can't decide what to wear.",
+        "de": "Ich kann mich nicht entscheiden, was ich anziehen soll.",
+        "hit": "decide"
+      },
+      {
+        "en": "The final result will be decided by the judges.",
+        "de": "Über das Endergebnis entscheidet die Jury.",
+        "hit": "decided"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "decide to do something",
+        "decide on",
+        "decide between"
+      ],
+      "tip": "Ohne 'sich': 'I decided' = Ich habe mich entschieden. 'Decide on something' = sich für etwas entscheiden. Nomen: decision."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "decision",
+        "noteDe": "Entscheidung"
+      },
+      {
+        "type": "synonym",
+        "word": "choose",
+        "noteDe": "wählen"
+      },
+      {
+        "type": "related",
+        "word": "hesitate",
+        "ref": "hesitate",
+        "noteDe": "zögern"
+      },
+      {
+        "type": "related",
+        "word": "determine",
+        "ref": "determine",
+        "noteDe": "bestimmen"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "expect",
+    "lemma": "expect",
+    "pos": "verb",
+    "ipa": "/ɪkˈspɛkt/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "erwarten",
+    "deAlt": [
+      "rechnen mit",
+      "vermuten"
+    ],
+    "definitionEn": "to think that something will probably happen",
+    "examples": [
+      {
+        "en": "We expect the train to arrive on time.",
+        "de": "Wir erwarten, dass der Zug pünktlich ankommt.",
+        "hit": "expect"
+      },
+      {
+        "en": "I didn't expect so many people at the party.",
+        "de": "Ich hatte nicht mit so vielen Leuten auf der Party gerechnet.",
+        "hit": "expect"
+      },
+      {
+        "en": "She is expecting her first baby in the spring.",
+        "de": "Sie erwartet im Frühling ihr erstes Kind.",
+        "hit": "expecting"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "expect someone to do",
+        "as expected",
+        "be expecting a baby",
+        "expect too much"
+      ],
+      "tip": "'Expect' = erwarten, für wahrscheinlich halten. 'Sich auf etwas freuen' ist 'look forward to', nicht 'expect'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "look forward to",
+        "noteDe": "look forward to = sich freuen auf"
+      },
+      {
+        "type": "family",
+        "word": "expectation",
+        "noteDe": "Erwartung"
+      },
+      {
+        "type": "family",
+        "word": "unexpected",
+        "noteDe": "unerwartet"
+      },
+      {
+        "type": "related",
+        "word": "assume",
+        "ref": "assume",
+        "noteDe": "annehmen"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "mention",
+    "lemma": "mention",
+    "pos": "verb",
+    "ipa": "/ˈmɛnʃən/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "erwähnen",
+    "definitionEn": "to say something briefly, without giving many details",
+    "examples": [
+      {
+        "en": "Did she mention when she would be back?",
+        "de": "Hat sie erwähnt, wann sie zurück ist?",
+        "hit": "mention"
+      },
+      {
+        "en": "He never mentioned that he had a sister.",
+        "de": "Er hat nie erwähnt, dass er eine Schwester hat.",
+        "hit": "mentioned"
+      },
+      {
+        "en": "Not to mention the cost, the trip is far too long.",
+        "de": "Ganz abgesehen von den Kosten ist die Reise viel zu lang.",
+        "hit": "mention"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "mention something to someone",
+        "not to mention",
+        "as mentioned"
+      ],
+      "tip": "Kein 'about': 'He mentioned the problem' (nicht 'mentioned about'). 'Don't mention it' = Gern geschehen."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "refer to",
+        "noteDe": "sich beziehen auf"
+      },
+      {
+        "type": "antonym",
+        "word": "omit",
+        "ref": "omit",
+        "noteDe": "weglassen"
+      },
+      {
+        "type": "related",
+        "word": "say",
+        "noteDe": "sagen"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "admit",
+    "lemma": "admit",
+    "pos": "verb",
+    "ipa": "/ədˈmɪt/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "zugeben",
+    "deAlt": [
+      "einräumen",
+      "aufnehmen"
+    ],
+    "definitionEn": "to agree that something is true, often when you do not want to",
+    "examples": [
+      {
+        "en": "I have to admit that I was wrong.",
+        "de": "Ich muss zugeben, dass ich mich geirrt habe.",
+        "hit": "admit"
+      },
+      {
+        "en": "He finally admitted stealing the money.",
+        "de": "Schließlich gab er zu, das Geld gestohlen zu haben.",
+        "hit": "admitted"
+      },
+      {
+        "en": "She was admitted to hospital with chest pains.",
+        "de": "Sie wurde mit Brustschmerzen ins Krankenhaus eingeliefert.",
+        "hit": "admitted"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "admit a mistake",
+        "admit doing something",
+        "admit defeat",
+        "be admitted to hospital"
+      ],
+      "grammar": "admit + -ing oder that-Satz; Nomen: admission",
+      "tip": "'Admit doing' (nicht 'admit to do'). Bei Krankenhaus oder Uni heißt 'be admitted' 'aufgenommen werden'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "confess",
+        "noteDe": "gestehen"
+      },
+      {
+        "type": "synonym",
+        "word": "acknowledge",
+        "ref": "acknowledge",
+        "noteDe": "anerkennen, eingestehen"
+      },
+      {
+        "type": "antonym",
+        "word": "deny",
+        "noteDe": "leugnen"
+      },
+      {
+        "type": "related",
+        "word": "guilty",
+        "ref": "guilty",
+        "noteDe": "schuldig"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "deserve",
+    "lemma": "deserve",
+    "pos": "verb",
+    "ipa": "/dɪˈzɜrv/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "verdienen",
+    "deAlt": [
+      "verdient haben"
+    ],
+    "definitionEn": "to have earned something because of how you have acted",
+    "examples": [
+      {
+        "en": "You worked hard and you deserve a break.",
+        "de": "Du hast hart gearbeitet und verdienst eine Pause.",
+        "hit": "deserve"
+      },
+      {
+        "en": "She deserves all the credit for this success.",
+        "de": "Ihr gebührt die ganze Anerkennung für diesen Erfolg.",
+        "hit": "deserves"
+      },
+      {
+        "en": "The issue deserves more attention from the government.",
+        "de": "Das Thema verdient mehr Aufmerksamkeit von der Regierung.",
+        "hit": "deserves"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "deserve a break",
+        "deserve credit",
+        "well-deserved",
+        "deserve better"
+      ],
+      "tip": "'Deserve' = es verdient haben (es steht einem zu). Geld verdienen heißt 'earn'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "earn",
+        "ref": "earn",
+        "noteDe": "earn = Geld verdienen"
+      },
+      {
+        "type": "family",
+        "word": "well-deserved",
+        "noteDe": "wohlverdient"
+      },
+      {
+        "type": "related",
+        "word": "merit",
+        "noteDe": "Verdienst"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "prefer",
+    "lemma": "prefer",
+    "pos": "verb",
+    "ipa": "/prɪˈfɜr/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "bevorzugen",
+    "deAlt": [
+      "lieber mögen"
+    ],
+    "definitionEn": "to like one thing or person more than another",
+    "examples": [
+      {
+        "en": "I prefer tea to coffee in the morning.",
+        "de": "Morgens trinke ich lieber Tee als Kaffee.",
+        "hit": "prefer"
+      },
+      {
+        "en": "Would you prefer to sit by the window?",
+        "de": "Möchtest du lieber am Fenster sitzen?",
+        "hit": "prefer"
+      },
+      {
+        "en": "Most customers preferred the cheaper option.",
+        "de": "Die meisten Kunden bevorzugten die günstigere Variante.",
+        "hit": "preferred"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "prefer A to B",
+        "prefer to do",
+        "would prefer",
+        "prefer not to"
+      ],
+      "grammar": "prefer A TO B (nicht 'than'); preferred mit rr",
+      "tip": "Mit 'to' vergleichen: 'I prefer tea to coffee'. Bei 'would rather' dagegen 'than': 'I'd rather have tea than coffee'."
+    },
+    "relations": [
+      {
+        "type": "related",
+        "word": "rather",
+        "ref": "rather",
+        "noteDe": "lieber"
+      },
+      {
+        "type": "family",
+        "word": "preference",
+        "noteDe": "Vorliebe"
+      },
+      {
+        "type": "synonym",
+        "word": "favor",
+        "noteDe": "bevorzugen"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "however",
+    "lemma": "however",
+    "pos": "adv",
+    "ipa": "/haʊˈɛvər/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "jedoch",
+    "deAlt": [
+      "allerdings",
+      "wie auch immer"
+    ],
+    "definitionEn": "used to add a statement that contrasts with what was said before",
+    "examples": [
+      {
+        "en": "The hotel was nice. However, it was very expensive.",
+        "de": "Das Hotel war schön. Allerdings war es sehr teuer.",
+        "hit": "However"
+      },
+      {
+        "en": "We wanted to go out; however, it started to rain.",
+        "de": "Wir wollten ausgehen, doch es fing an zu regnen.",
+        "hit": "however"
+      },
+      {
+        "en": "However hard I try, I can't remember her name.",
+        "de": "Wie sehr ich mich auch anstrenge, mir fällt ihr Name nicht ein.",
+        "hit": "However"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "however, …",
+        "however hard",
+        "however much"
+      ],
+      "grammar": "Satzadverb, meist mit Komma: 'However, …'; 'however + Adjektiv' = wie … auch immer",
+      "tip": "Nicht wie 'but' einfach mitten in den Satz setzen: Vor 'however' steht ein Punkt oder Semikolon."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "nevertheless",
+        "noteDe": "dennoch"
+      },
+      {
+        "type": "related",
+        "word": "although",
+        "ref": "although",
+        "noteDe": "obwohl"
+      },
+      {
+        "type": "related",
+        "word": "but",
+        "noteDe": "aber"
+      },
+      {
+        "type": "related",
+        "word": "therefore",
+        "ref": "therefore",
+        "noteDe": "deshalb"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "linking-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "therefore",
+    "lemma": "therefore",
+    "pos": "adv",
+    "ipa": "/ˈðɛrˌfɔr/",
+    "level": "B2",
+    "register": "formal",
+    "de": "deshalb",
+    "deAlt": [
+      "daher",
+      "folglich"
+    ],
+    "definitionEn": "for that reason; as a result",
+    "examples": [
+      {
+        "en": "He was ill and therefore couldn't come.",
+        "de": "Er war krank und konnte deshalb nicht kommen.",
+        "hit": "therefore"
+      },
+      {
+        "en": "The road was closed; therefore, we took the train.",
+        "de": "Die Straße war gesperrt, deshalb nahmen wir den Zug.",
+        "hit": "therefore"
+      },
+      {
+        "en": "Prices have risen, and therefore demand has fallen.",
+        "de": "Die Preise sind gestiegen, und folglich ist die Nachfrage gesunken.",
+        "hit": "therefore"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "and therefore",
+        "therefore, …"
+      ],
+      "tip": "Eher schriftlich und formell. Im Gespräch sagt man meist 'so': 'He was ill, so he didn't come.'"
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "so",
+        "noteDe": "also, deshalb (umgangssprachlich)"
+      },
+      {
+        "type": "synonym",
+        "word": "consequently",
+        "noteDe": "folglich"
+      },
+      {
+        "type": "related",
+        "word": "however",
+        "ref": "however",
+        "noteDe": "jedoch"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "linking-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "meanwhile",
+    "lemma": "meanwhile",
+    "pos": "adv",
+    "ipa": "/ˈminˌwaɪl/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "inzwischen",
+    "deAlt": [
+      "unterdessen",
+      "währenddessen"
+    ],
+    "definitionEn": "while something else is happening, or in the time between two events",
+    "examples": [
+      {
+        "en": "I'll cook dinner. Meanwhile, you can set the table.",
+        "de": "Ich koche das Abendessen. Du kannst inzwischen den Tisch decken.",
+        "hit": "Meanwhile"
+      },
+      {
+        "en": "The doctor will be here soon; meanwhile, please wait outside.",
+        "de": "Die Ärztin kommt gleich; bitte warten Sie solange draußen.",
+        "hit": "meanwhile"
+      },
+      {
+        "en": "Prices keep rising; meanwhile, wages have stayed the same.",
+        "de": "Die Preise steigen weiter; die Löhne sind unterdessen gleich geblieben.",
+        "hit": "meanwhile"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "in the meanwhile",
+        "meanwhile, back at home"
+      ],
+      "tip": "'Meanwhile' steht meist am Satzanfang mit Komma. 'In the meantime' bedeutet dasselbe."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "in the meantime",
+        "noteDe": "in der Zwischenzeit"
+      },
+      {
+        "type": "related",
+        "word": "while",
+        "noteDe": "während"
+      },
+      {
+        "type": "related",
+        "word": "eventually",
+        "ref": "eventually",
+        "noteDe": "schließlich"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "linking-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "anyway",
+    "lemma": "anyway",
+    "pos": "adv",
+    "ipa": "/ˈɛniˌweɪ/",
+    "level": "B1",
+    "register": "informal",
+    "de": "trotzdem",
+    "deAlt": [
+      "jedenfalls",
+      "sowieso"
+    ],
+    "definitionEn": "despite something; also used to change the subject or end a conversation",
+    "examples": [
+      {
+        "en": "It was raining, but we went for a walk anyway.",
+        "de": "Es regnete, aber wir gingen trotzdem spazieren.",
+        "hit": "anyway"
+      },
+      {
+        "en": "Anyway, I have to go now. See you later!",
+        "de": "Jedenfalls muss ich jetzt los. Bis später!",
+        "hit": "Anyway"
+      },
+      {
+        "en": "Don't worry about the tickets; I wasn't going to go anyway.",
+        "de": "Mach dir wegen der Tickets keinen Kopf, ich wäre sowieso nicht hingegangen.",
+        "hit": "anyway"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "anyway, …",
+        "… anyway",
+        "but anyway"
+      ],
+      "tip": "Allzweckwort: am Satzende 'trotzdem/sowieso', am Satzanfang 'jedenfalls' (Themenwechsel). 'Anyways' ist sehr umgangssprachlich."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "in any case",
+        "noteDe": "auf jeden Fall"
+      },
+      {
+        "type": "synonym",
+        "word": "nevertheless",
+        "noteDe": "dennoch (formeller)"
+      },
+      {
+        "type": "related",
+        "word": "however",
+        "ref": "however",
+        "noteDe": "jedoch"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "linking-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "instead",
+    "lemma": "instead",
+    "pos": "adv",
+    "ipa": "/ɪnˈstɛd/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "stattdessen",
+    "definitionEn": "in place of someone or something else",
+    "examples": [
+      {
+        "en": "We didn't have rice, so I made pasta instead.",
+        "de": "Wir hatten keinen Reis, also habe ich stattdessen Nudeln gemacht.",
+        "hit": "instead"
+      },
+      {
+        "en": "Instead of driving, why don't we walk?",
+        "de": "Warum gehen wir nicht zu Fuß, statt zu fahren?",
+        "hit": "Instead"
+      },
+      {
+        "en": "He stayed at home instead of going to the party.",
+        "de": "Er blieb zu Hause, anstatt auf die Party zu gehen.",
+        "hit": "instead"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "instead of",
+        "instead of doing",
+        "… instead"
+      ],
+      "grammar": "'instead of' + Nomen oder -ing-Form",
+      "tip": "'Instead' allein steht am Satzende; vor einem Nomen oder Verb braucht man 'instead of': 'instead of going'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "rather than",
+        "noteDe": "anstatt"
+      },
+      {
+        "type": "related",
+        "word": "rather",
+        "ref": "rather",
+        "noteDe": "lieber, eher"
+      },
+      {
+        "type": "related",
+        "word": "alternative",
+        "noteDe": "Alternative"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "linking-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "rarely",
+    "lemma": "rarely",
+    "pos": "adv",
+    "ipa": "/ˈrɛrli/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "selten",
+    "definitionEn": "not often",
+    "examples": [
+      {
+        "en": "We rarely eat out during the week.",
+        "de": "Unter der Woche gehen wir selten essen.",
+        "hit": "rarely"
+      },
+      {
+        "en": "He rarely talks about his childhood.",
+        "de": "Er spricht selten über seine Kindheit.",
+        "hit": "rarely"
+      },
+      {
+        "en": "Rarely have I seen such a beautiful sunset.",
+        "de": "Selten habe ich einen so schönen Sonnenuntergang gesehen.",
+        "hit": "Rarely"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "very rarely",
+        "rarely if ever",
+        "only rarely"
+      ],
+      "grammar": "steht vor dem Hauptverb; am Satzanfang mit Inversion: 'Rarely have I …'",
+      "tip": "Wortstellung: 'I rarely go there' (nicht 'I go rarely there'). Am Satzanfang folgt eine Inversion – sehr formell."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "seldom",
+        "noteDe": "selten (formeller)"
+      },
+      {
+        "type": "antonym",
+        "word": "often",
+        "noteDe": "oft"
+      },
+      {
+        "type": "antonym",
+        "word": "usually",
+        "ref": "usually",
+        "noteDe": "normalerweise"
+      },
+      {
+        "type": "family",
+        "word": "rare",
+        "noteDe": "selten (Adjektiv)"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "linking-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "lately",
+    "lemma": "lately",
+    "pos": "adv",
+    "ipa": "/ˈleɪtli/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "in letzter Zeit",
+    "deAlt": [
+      "neuerdings"
+    ],
+    "definitionEn": "recently; in the last few days or weeks",
+    "examples": [
+      {
+        "en": "Have you seen any good movies lately?",
+        "de": "Hast du in letzter Zeit gute Filme gesehen?",
+        "hit": "lately"
+      },
+      {
+        "en": "I've been feeling very tired lately.",
+        "de": "Ich bin in letzter Zeit sehr müde.",
+        "hit": "lately"
+      },
+      {
+        "en": "Lately, more people have started working from home.",
+        "de": "In letzter Zeit arbeiten mehr Menschen von zu Hause aus.",
+        "hit": "Lately"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "lately, …",
+        "have been … lately"
+      ],
+      "grammar": "meist mit Present Perfect (Progressive): 'I've been busy lately'",
+      "tip": "Nicht mit 'late' (spät) verwechseln: 'lately' heißt 'in letzter Zeit', nicht 'verspätet'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "late",
+        "noteDe": "late = spät"
+      },
+      {
+        "type": "synonym",
+        "word": "recently",
+        "noteDe": "kürzlich"
+      },
+      {
+        "type": "related",
+        "word": "recent",
+        "ref": "recent",
+        "noteDe": "kürzlich, neu"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "linking-words"
+    ],
+    "source": "generated"
   }
 ]

@@ -1,13 +1,13 @@
-import { PartyPopper } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
 import { DeckSwitch } from "../../components/DeckSwitch";
 import { Flashcard } from "../../components/Flashcard";
-import { PressableScale } from "../../components/PressableScale";
 import { ProgressBar } from "../../components/ProgressBar";
 import { RatingButtons } from "../../components/RatingButtons";
+import { RoundResult, RoundSummary } from "../../components/RoundSummary";
 import { Screen } from "../../components/Screen";
 import { Text } from "../../components/Text";
+import { resolveWeights } from "../../lib/difficulty";
 import { Rating, buildSession } from "../../lib/srs";
 import { useCards, useSentences } from "../../state/cards";
 import { LANGUAGES, Lang } from "../../data/cards";
@@ -42,13 +42,16 @@ function LanguageBadge({ lang }: { lang: Lang }) {
 
 function StudySession({ deck }: { deck: Deck }) {
   useTheme();
-  const { progress, round, sessionSize, rate, advanceRound } = useProgress();
+  const { progress, round, sessionSize, mix, rate, advanceRound } = useProgress();
   const words = useCards();
   const sentences = useSentences();
   const cards = deck === "sentences" ? sentences : words;
 
   // Die Warteschlange bleibt bis zum Rundenende stabil.
-  const [queue, setQueue] = useState(() => buildSession(cards, progress, round, sessionSize));
+  const [queue, setQueue] = useState(() =>
+    buildSession(cards, progress, round, sessionSize, resolveWeights(mix, cards, progress)),
+  );
+  const [results, setResults] = useState<RoundResult[]>([]); // für die Übersicht am Rundenende
   const [total, setTotal] = useState(queue.length);
   const [done, setDone] = useState(0);
   const [step, setStep] = useState(0); // sorgt dafür, dass jede Karte neu einfliegt
@@ -57,7 +60,9 @@ function StudySession({ deck }: { deck: Deck }) {
   const current = queue[0];
 
   function answer(rating: Rating) {
-    rate(current.card.id, rating);
+    const before = progress[current.card.id];
+    const after = rate(current.card.id, rating);
+    setResults([...results, { item: current, rating, before, after, round }]);
     setFlipped(false);
     setStep(step + 1);
     setQueue(queue.slice(1));
@@ -67,24 +72,14 @@ function StudySession({ deck }: { deck: Deck }) {
   function startNewRound() {
     const nextRound = round + 1;
     advanceRound();
-    const next = buildSession(cards, progress, nextRound, sessionSize);
+    const next = buildSession(cards, progress, nextRound, sessionSize, resolveWeights(mix, cards, progress));
     setQueue(next);
     setTotal(next.length);
     setDone(0);
+    setResults([]);
   }
 
-  if (!current) {
-    return (
-      <View style={styles.finished}>
-        <PartyPopper color={colors.text} size={56} />
-        <Text style={styles.finishedTitle}>Runde geschafft!</Text>
-        <Text style={styles.finishedText}>Mach eine Pause oder gleich weiter, ganz wie du willst.</Text>
-        <PressableScale style={styles.startButton} onPress={startNewRound}>
-          <Text style={styles.startButtonText}>Neue Runde</Text>
-        </PressableScale>
-      </View>
-    );
-  }
+  if (!current) return <RoundSummary results={results} onNext={startNewRound} />;
 
   return (
     <>
@@ -118,15 +113,4 @@ const styles = themed(() => ({
   bar: { flex: 1 },
   progressText: { color: colors.muted, fontSize: 13, fontWeight: "500" },
   ratingSlot: { height: 76 },
-  finished: { flex: 1, alignItems: "center", justifyContent: "center", gap: 12 },
-  finishedTitle: { fontSize: 28, fontWeight: "700", color: colors.text },
-  finishedText: { fontSize: 16, color: colors.muted, textAlign: "center" },
-  startButton: {
-    marginTop: 12,
-    backgroundColor: colors.accent,
-    borderRadius: 18,
-    paddingVertical: 14,
-    paddingHorizontal: 32,
-  },
-  startButtonText: { color: colors.onAccent, fontSize: 16, fontWeight: "600" },
 }));

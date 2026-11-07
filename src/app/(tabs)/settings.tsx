@@ -5,6 +5,7 @@ import {
   Languages,
   CalendarClock,
   ChevronDown,
+  SlidersVertical,
   ChevronUp,
   Layers,
   Minus,
@@ -25,6 +26,7 @@ import {
 } from "lucide-react-native";
 import { ReactNode, useState } from "react";
 import { Alert, Pressable, View } from "react-native";
+import { DifficultyMixer } from "../../components/DifficultyMixer";
 import { PressableScale } from "../../components/PressableScale";
 import { ProgressRing } from "../../components/ProgressRing";
 import { Screen } from "../../components/Screen";
@@ -147,10 +149,14 @@ export default function SettingsScreen() {
             <Step n={4} title="Was in eine Runde kommt">
               Zuerst bis zu {LEARNING_SLOTS} Karten, die du gerade lernst (die schwächsten zuerst), dann neue Karten, danach weitere
               Lernkarten. Sind alle gelernt, gibt es eine Auffrischung mit zufälligen Karten. Karten, die noch „Pause“ haben, werden
-              übersprungen.
+              übersprungen. Mit dem Schwierigkeits-Mix wählst du zusätzlich, wie viele leichte, mittlere und schwere Wörter dabei sind.
             </Step>
             <Step n={5} title="Richtung wechselt">
               Bereits bekannte Karten werden in etwa der Hälfte der Fälle umgekehrt gefragt: Deutsch zeigen, die Lernsprache erraten.
+            </Step>
+            <Step n={6} title="Rückblick nach jeder Runde">
+              Am Ende siehst du alle Karten der Runde mit deiner Bewertung. Tippe eine an, um Bedeutung, Beispiele und den neuen
+              Punktestand zu sehen.
             </Step>
           </View>
         )}
@@ -166,6 +172,11 @@ export default function SettingsScreen() {
           value={sessionSize}
           onChange={setSessionSize}
         />
+      </Section>
+
+      {/* Schwierigkeits-Mix */}
+      <Section icon={<SlidersVertical color={colors.accent} size={20} />} title="Schwierigkeits-Mix">
+        <DifficultyMixer />
       </Section>
 
       {/* Design */}

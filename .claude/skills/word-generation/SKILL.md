@@ -9,7 +9,7 @@ Du erweiterst die Lern-Stammdaten (werden beim Start in die SQLite-Datenbank gel
 
 | Sprache | Datei | Zielgruppe der Wörter | ID-Präfix |
 | --- | --- | --- | --- |
-| Englisch (`en`) | `src/data/words/data.json` | schwierige Wörter, B2–C2 | keins |
+| Englisch (`en`) | `src/data/words/data.json` | A2–C2, Schwerpunkt B2–C2 | keins |
 | Spanisch (`es`) | `src/data/words/es.json` | häufige Wörter, A1–B1 (bei Bedarf bis C2) | `es-` |
 
 Zusätzlich gibt es `src/data/words/es-sentences.json`: Satzkarten aus dem Anki-Deck als Array von `[spanischer Satz, deutsche Übersetzung, Fokuswort?]`. Diese Datei wird nicht vom Skill erzeugt; sie braucht keine weiteren Felder und wird von `npm run validate:words` mitgeprüft.
@@ -30,7 +30,7 @@ Bestehende Einträge stehen in der Datei der Sprache; prüfe dort, ob ein Wort s
 ## Regeln (für beide Sprachen)
 
 1. Eine Karte pro Lemma, Wortart und Bedeutung. Hat ein Wort mehrere wichtige Bedeutungen, mache mehrere Einträge (`-1`, `-2` oder sprechender Suffix, z. B. `embrace-verb-hug`, `embrace-verb-accept`).
-2. Korrigiere Tippfehler der Eingabe und nutze die Grundform (Lemma). Entferne Satzfragmente, Duplikate, Eigennamen und Funktionswörter (Artikel, Präpositionen, Pronomen), außerdem Wörter, die für die Zielstufe zu einfach sind (Englisch: unter B2).
+2. Korrigiere Tippfehler der Eingabe und nutze die Grundform (Lemma). Entferne Satzfragmente, Duplikate, Eigennamen und Funktionswörter (Artikel, Präpositionen, Pronomen), außerdem Wörter, die für die Zielstufe zu einfach sind (Englisch: unter A2; A2–B1 nur, wenn ausdrücklich einfachere Wörter gewünscht sind).
 3. Genau 3 Beispielsätze:
    - 1: einfacher, klarer Kernsatz
    - 2: typische Verwendung (Collocation oder anderer Kontext)
@@ -53,7 +53,7 @@ Bestehende Einträge stehen in der Datei der Sprache; prüfe dort, ob ein Wort s
 ## Sprachspezifisch
 
 ### Englisch
-- Schwierige Wörter (B2–C2) und Wörter, die mit ihnen zusammenhängen.
+- Schwierige Wörter (B2–C2) und Wörter, die mit ihnen zusammenhängen; auf Wunsch auch einfachere (A2–B1), damit der Schwierigkeits-Mix in der App alle Stufen bedienen kann.
 - IPA im amerikanischen Englisch, in Schrägstrichen.
 
 ### Spanisch
