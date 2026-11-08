@@ -5,7 +5,9 @@
 //   npm run screenshots:compose                 alle Modi
 //   npm run screenshots:compose -- --modes dark
 //
-// Ergebnis: store-screenshots/<modus>/<nr>-<szene>.png (1320 × 2868, App Store «6,9 Zoll»).
+// Ergebnis (App Store Connect nimmt pro Grössen-Slot nur genau diese Masse an):
+//   store-screenshots/6.9/<modus>/<nr>-<szene>.png   1320 × 2868, Slot «iPhone 6,9 Zoll»
+//   store-screenshots/6.3/<modus>/<nr>-<szene>.png   1206 × 2622, Slot «iPhone 6,1 / 6,3 Zoll» (verkleinert, macOS sips)
 // Gerendert wird mit dem installierten Google Chrome (headless), es braucht keine zusätzlichen Pakete.
 import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from "node:fs";
@@ -22,6 +24,8 @@ const CHROME = process.env.CHROME_PATH ?? "/Applications/Google Chrome.app/Conte
 
 const WIDTH = 1320;
 const HEIGHT = 2868;
+// Zweite Ausgabe für den Slot «6,1 / 6,3 Zoll» (1206 × 2622).
+const SMALL = { width: 1206, height: 2622 };
 
 // Farben aus src/theme/colors.ts
 const THEMES = {
@@ -76,9 +80,12 @@ for (const mode of modesArg) {
     console.error(`Keine Rohaufnahmen für "${mode}" (${dir}). Zuerst: npm run screenshots:capture`);
     process.exit(1);
   }
-  const outDir = join(OUT, mode);
-  rmSync(outDir, { recursive: true, force: true });
-  mkdirSync(outDir, { recursive: true });
+  const outDir = join(OUT, "6.9", mode);
+  const smallDir = join(OUT, "6.3", mode);
+  for (const d of [outDir, smallDir]) {
+    rmSync(d, { recursive: true, force: true });
+    mkdirSync(d, { recursive: true });
+  }
 
   for (const file of readdirSync(dir).filter((f) => f.endsWith(".png")).sort()) {
     const id = file.replace(/^\d+-/, "").replace(/\.png$/, "");
@@ -96,6 +103,9 @@ for (const mode of modesArg) {
       ],
       { stdio: "ignore" },
     );
+    execFileSync("sips", ["-z", String(SMALL.height), String(SMALL.width), out, "--out", join(smallDir, file)], {
+      stdio: "ignore",
+    });
     console.log(`${mode}/${file}`);
   }
 }

@@ -1,8 +1,30 @@
 # App Store Connect: Angaben für onivoca 1.0.0
 
-Alles, was du in [App Store Connect](https://appstoreconnect.apple.com) für den ersten Release ausfüllen musst, mit Vorschlägen zum Kopieren. Gilt für den Stand **mit Werbung** (AdMob-Anzeigenblock in [src/lib/ads.native.ts](../src/lib/ads.native.ts) eingetragen) und dem In-App-Kauf «Werbung entfernen». Die Schritte in AdMob und der Kauf stehen in [werbung-live-schalten.md](werbung-live-schalten.md).
+Alles, was du in [App Store Connect](https://appstoreconnect.apple.com) für den ersten Release ausfüllen musst, mit Vorschlägen zum Kopieren und dem genauen Ort jedes Felds. Gilt für den Stand **mit Werbung** (AdMob-Anzeigenblock in [src/lib/ads.native.ts](../src/lib/ads.native.ts) eingetragen) und dem In-App-Kauf «Werbung entfernen». Die Schritte in AdMob stehen in [werbung-live-schalten.md](werbung-live-schalten.md).
 
-Felder mit **⚠ Entscheid** brauchen eine Entscheidung von dir. Alle anderen Werte sind fertig vorgeschlagen.
+Felder mit **⚠ Entscheid** brauchen eine Entscheidung von dir. Alle anderen Werte sind fertig vorgeschlagen. Die Menünamen sind die deutschen Namen der Oberfläche; Apple benennt gelegentlich um, dann hilft die Suche im Browser (`⌘F`).
+
+## Wo finde ich was? (Orientierung)
+
+Alles zur App beginnt hier: [appstoreconnect.apple.com](https://appstoreconnect.apple.com) → **Apps** → **onivoca**. Links erscheint die Seitenleiste. Es gibt vier Orte, an denen du Angaben machst:
+
+| Ort | So kommst du hin | Hier steht |
+|---|---|---|
+| **A. Version** | Seitenleiste → **iOS-App** → **1.0 Release vorbereiten** | Screenshots, Werbetext, Beschreibung, Schlüsselwörter, Support-/Marketing-URL, Copyright, Build, In-App-Käufe der Version, App-Review-Informationen, Release-Art |
+| **B. App-Informationen** | Seitenleiste → **Allgemein** → **App-Informationen** | Name, Untertitel, Kategorien, Inhaltsrechte, Altersfreigabe, Bundle-ID, SKU |
+| **C. Preise und Verfügbarkeit** | Seitenleiste → **Allgemein** → **Preise und Verfügbarkeit** | Preis, Länder |
+| **D. App-Datenschutz** | Seitenleiste → **Allgemein** → **App-Datenschutz** | Datenschutz-Angaben und -URL |
+
+Dazu kommen Orte ausserhalb der App-Seite:
+
+| Ort | So kommst du hin |
+|---|---|
+| **In-App-Käufe** | Seitenleiste → **Monetarisierung** → **In-App-Käufe** |
+| **Verträge** | Startseite von App Store Connect → **Verträge** (bei neuerer Oberfläche: **Business**) |
+| **Sandbox-Tester** | Startseite → **Benutzer und Zugriff** → Reiter **Sandbox** |
+| **TestFlight** | Oben in der App-Seite → Reiter **TestFlight** |
+
+Wichtig: Jede Seite hat oben rechts den Knopf **Sichern**. Ohne Sichern gehen Änderungen verloren.
 
 ## Was schon feststeht
 
@@ -21,28 +43,30 @@ Felder mit **⚠ Entscheid** brauchen eine Entscheidung von dir. Alle anderen We
 
 ## 1. Vor dem Ausfüllen
 
-- [ ] **Datenschutzerklärung veröffentlichen.** `docs/privacy.html` ist lokal geändert, aber noch nicht gepusht. Apple prüft die URL, sie muss erreichbar sein. Nach dem Push unter «Settings → Pages» kontrollieren, dass die URL oben lädt.
+- [ ] **Datenschutzerklärung veröffentlichen.** `docs/privacy.html` ist lokal geändert, aber noch nicht gepusht. Apple prüft die URL, sie muss erreichbar sein. Nach dem Push auf GitHub unter *Settings → Pages* kontrollieren, dass die URL oben lädt.
 - [ ] **Support-Seite veröffentlichen.** `docs/index.html` (Kontakt und Link zur Datenschutzerklärung) mit pushen. Sie erscheint dann unter `https://onivue.github.io/onivoca-app/`.
 - [ ] **app-ads.txt:** Siehe [werbung-live-schalten.md](werbung-live-schalten.md), Schritt 6. Unter dem Unterpfad von GitHub Pages findet AdMob die Datei nicht. Ohne eigene Domain läuft die Werbung trotzdem, aber mit weniger Einnahmen.
-- [ ] **Apple Developer Programm** aktiv und Vertrag «Free Apps» in App Store Connect unter *Verträge* akzeptiert. Der Vertrag «Paid Apps» ist erst für In-App-Käufe nötig.
+- [ ] **Verträge:** Auf der Startseite von App Store Connect unter **Verträge** (bzw. **Business**) den Vertrag **Kostenlose Apps** akzeptieren. Für den In-App-Kauf zusätzlich **Kostenpflichtige Apps** akzeptieren und Bankverbindung sowie Steuerformulare ausfüllen (siehe Abschnitt 10a).
 - [ ] **Build hochgeladen** (siehe Abschnitt 12).
 - [ ] **Screenshots erstellt** (siehe Abschnitt 5).
 
 ---
 
-## 2. App-Informationen (links: *App-Informationen*)
+## 2. App-Informationen
 
-| Feld | Eingabe |
-|---|---|
-| **Name** (max. 30 Zeichen) | `onivoca` |
-| **Untertitel** (max. 30 Zeichen) | `Englisch & Spanisch lernen` (26 Zeichen) |
-| **Primäre Sprache** | Deutsch |
-| **Bundle-ID** | `ch.onivoca.app` (bereits gewählt) |
-| **SKU** | Interne Kennung, nur für dich sichtbar. Beim App-Eintrag schon vergeben. Falls leer: `onivoca-ios` |
-| **Kategorie primär** | Bildung |
-| **Kategorie sekundär** | Nachschlagewerke (optional) |
-| **Inhaltsrechte** | «Nein», die App enthält oder nutzt keine Inhalte von Dritten. Die Lernkarten sind eigene Inhalte. |
-| **Altersfreigabe** | siehe Abschnitt 7 |
+**Wo:** Seitenleiste → **Allgemein** → **App-Informationen** (Ort B). Rechts oben **Sichern**.
+
+| Feld | Eingabe | Wo auf der Seite |
+|---|---|---|
+| **Name** (max. 30 Zeichen) | `onivoca` | Abschnitt «Lokalisierbare Informationen» (Sprache Deutsch) |
+| **Untertitel** (max. 30 Zeichen) | `Englisch & Spanisch lernen` (26 Zeichen) | ebenda |
+| **Primäre Sprache** | Deutsch | Abschnitt «Allgemeine Informationen» |
+| **Bundle-ID** | `ch.onivoca.app` (bereits gewählt, nicht änderbar) | ebenda |
+| **SKU** | Interne Kennung, nur für dich sichtbar, beim App-Eintrag schon vergeben. Falls leer: `onivoca-ios` | ebenda |
+| **Kategorie primär** | Bildung | Abschnitt «Kategorie» |
+| **Kategorie sekundär** | Nachschlagewerke (optional) | ebenda |
+| **Inhaltsrechte** | «Nein», die App enthält oder nutzt keine Inhalte von Dritten. Die Lernkarten sind eigene Inhalte. | Abschnitt «Inhaltsrechte», Knopf **Einrichten** |
+| **Altersfreigabe** | siehe Abschnitt 7 | Abschnitt «Altersfreigabe», Knopf **Bearbeiten** |
 
 Andere Untertitel zur Auswahl:
 
@@ -51,28 +75,34 @@ Andere Untertitel zur Auswahl:
 
 ---
 
-## 3. Preise und Verfügbarkeit (links: *Preise und Verfügbarkeit*)
+## 3. Preise und Verfügbarkeit
 
-| Feld | Eingabe |
-|---|---|
-| **Preis** | CHF 0 (Stufe «Kostenlos») |
-| **Verfügbarkeit** | **⚠ Entscheid:** Die Oberfläche ist komplett deutsch. Sinnvoll sind Schweiz, Deutschland, Österreich, Liechtenstein, Luxemburg. Alle Länder sind aber auch möglich. |
-| **Vorbestellung** | Aus |
-| **Apple Silicon Macs / Vision Pro** | Wähle für beides «Nicht verfügbar machen», wenn du die App dort nicht testen willst. Sonst erscheint sie automatisch dort. |
+**Wo:** Seitenleiste → **Allgemein** → **Preise und Verfügbarkeit** (Ort C).
+
+| Feld | Eingabe | Wo auf der Seite |
+|---|---|---|
+| **Preis** | CHF 0 (Stufe «Kostenlos») | Abschnitt «Preisplan» → **Preis hinzufügen** bzw. Basisland Schweiz mit Preis 0 wählen |
+| **Verfügbarkeit** | **⚠ Entscheid:** Die Oberfläche ist komplett deutsch. Sinnvoll sind Schweiz, Deutschland, Österreich, Liechtenstein, Luxemburg. Alle Länder sind aber auch möglich. | Abschnitt «Verfügbarkeit» → **Länder oder Regionen bearbeiten** |
+| **Vorbestellung** | Aus | Abschnitt «Vorbestellungen» (Standard) |
+| **Apple Silicon Macs / Vision Pro** | Für beides «Nicht verfügbar machen», wenn du die App dort nicht testen willst. Sonst erscheint sie automatisch dort. | Abschnitt «Verfügbarkeit auf Apple Silicon Macs und Apple Vision Pro» |
 
 ---
 
-## 4. Version 1.0 (links: *iOS-App → 1.0 Release vorbereiten*)
+## 4. Version 1.0
+
+**Wo:** Seitenleiste → **iOS-App** → **1.0 Release vorbereiten** (Ort A). Alle Felder dieses Abschnitts stehen auf dieser einen Seite, von oben nach unten: Screenshots → Werbetext → Beschreibung → Schlüsselwörter → Support-/Marketing-URL → Version → Copyright → Build → App-Review-Informationen → Release-Art. Oben rechts **Sichern**.
+
+Falls es die Sprache Deutsch noch nicht gibt, oben bei der Sprachauswahl **Deutsch** als Sprache anlegen. Die Texte unten gehören in diese Sprache.
 
 ### Texte (Deutsch)
 
-**Werbetext** (max. 170 Zeichen, jederzeit änderbar, ohne neue Version):
+**Werbetext** (Feld «Werbetext», max. 170 Zeichen, jederzeit änderbar, ohne neue Version):
 
 ```
 Englisch und Spanisch lernen, ganz ohne Konto: Karteikarten, Aussprache und ein Lernstand, der auf deinem iPhone bleibt.
 ```
 
-**Beschreibung** (max. 4000 Zeichen):
+**Beschreibung** (Feld «Beschreibung», max. 4000 Zeichen):
 
 ```
 onivoca ist eine ruhige Lernkarten-App für Englisch und Spanisch. Du lernst in kurzen Runden, ohne Termine, ohne Konto und ohne Druck.
@@ -91,14 +121,14 @@ DAS STECKT DRIN
 • Helles und dunkles Erscheinungsbild
 
 PRIVAT
-Dein Lernstand bleibt auf deinem Gerät. Du brauchst kein Konto, onivoca sammelt keine Daten und verwendet keine Analysedienste.
+Dein Lernstand bleibt auf deinem Gerät. Du brauchst kein Konto und onivoca verwendet keine Analysedienste. Die kostenlose Version zeigt Werbung, die du mit einem einmaligen Kauf entfernen kannst.
 
 Fragen oder Wünsche? Schreib an onivue@gmail.com.
 ```
 
 Vor dem Einfügen kurz gegen die App prüfen: Die Zahlen stammen aus `src/data/words/` (608 englische Wörter, 160 spanische Wörter, 5976 spanische Sätze). Wenn du Wörter ergänzt, die Zahlen anpassen.
 
-**Schlüsselwörter** (max. 100 Zeichen, durch Komma, ohne Leerzeichen):
+**Schlüsselwörter** (Feld «Schlüsselwörter», max. 100 Zeichen, durch Komma, ohne Leerzeichen):
 
 ```
 Vokabeln,Karteikarten,Wortschatz,Vokabeltrainer,Lernkarten,Aussprache,Sätze,Sprachen,Wörter
@@ -106,9 +136,11 @@ Vokabeln,Karteikarten,Wortschatz,Vokabeltrainer,Lernkarten,Aussprache,Sätze,Spr
 
 91 Zeichen. «Englisch», «Spanisch», «lernen» und «Bildung» stehen schon in Name, Untertitel und Kategorie und werden von Apple automatisch mitgesucht, deshalb fehlen sie hier.
 
-**Was ist neu in dieser Version:** Bei der ersten Version nicht nötig. Für spätere Updates z. B. «Verbesserungen und Fehlerbehebungen».
+**Was ist neu in dieser Version** (Feld «Neuerungen»): Bei der ersten Version nicht nötig, das Feld erscheint erst bei Updates. Dann z. B. «Verbesserungen und Fehlerbehebungen».
 
 ### Links und Rechtliches
+
+Alle drei Felder stehen weiter unten auf derselben Versionsseite, im Block «Version-Informationen».
 
 | Feld | Eingabe |
 |---|---|
@@ -118,15 +150,17 @@ Vokabeln,Karteikarten,Wortschatz,Vokabeltrainer,Lernkarten,Aussprache,Sätze,Spr
 
 ### Build
 
-Unter *Build → Build hinzufügen* den von EAS hochgeladenen Build auswählen. Er erscheint erst nach der Verarbeitung durch Apple (meist 10 bis 30 Minuten). Falls die Exportvorschriften-Frage erscheint: Sie ist durch `ITSAppUsesNonExemptEncryption = false` bereits beantwortet.
+**Wo:** Versionsseite, Abschnitt **Build** → **Build hinzufügen** (blauer Plus-Knopf). Der von EAS hochgeladene Build erscheint erst nach der Verarbeitung durch Apple (meist 10 bis 30 Minuten) in der Liste. Wähle den neuesten. Falls die Exportvorschriften-Frage erscheint: Sie ist durch `ITSAppUsesNonExemptEncryption = false` bereits beantwortet.
 
 ### Release-Art
 
+**Wo:** Versionsseite ganz unten, Abschnitt **Version veröffentlichen**.
+
 | Option | Wann |
 |---|---|
-| **Manuell veröffentlichen** | **Empfohlen für 1.0.** Nach der Freigabe drückst du selbst auf «Veröffentlichen». |
-| Automatisch | Geht sofort nach der Freigabe live. |
-| Zeitpunkt | Fixes Datum. |
+| **Diese Version manuell veröffentlichen** | **Empfohlen für 1.0.** Nach der Freigabe drückst du selbst auf «Diese Version veröffentlichen». |
+| Automatisch nach Freigabe | Geht sofort nach der Freigabe live. |
+| Automatisch ab einem Datum | Fixes Datum. |
 
 «Phased Release» (schrittweise Auslieferung) gilt nur für Updates, nicht für 1.0.
 
@@ -134,15 +168,20 @@ Unter *Build → Build hinzufügen* den von EAS hochgeladenen Build auswählen. 
 
 ## 5. Screenshots und Vorschau
 
+**Wo:** Versionsseite (Ort A), ganz oben im Block «Vorschauen und Screenshots» (Reiter **iPhone**). Dateien per Drag & Drop in das 6.9"-Feld ziehen.
+
 Die App läuft nur auf dem iPhone, daher **keine iPad-Screenshots**.
 
-| Gerät | Grösse | Anzahl |
-|---|---|---|
-| **iPhone 6.9"** (Pflicht) | 1320 × 2868 px (Hochformat) | 3 bis 10 |
+App Store Connect hat pro Grössen-Slot nur genau bestimmte Masse. Sind sie falsch, kommt «File dimensions are invalid». Das Skript erzeugt deshalb beide Grössen:
 
-Apple skaliert die Screenshots für kleinere iPhone-Grössen automatisch herunter. Falls App Store Connect zusätzlich 6.5" verlangt: 1284 × 2778 px.
+| Slot in App Store Connect | Grösse | Ordner | Anzahl |
+|---|---|---|---|
+| **iPhone 6.9"** | 1320 × 2868 px | `store-screenshots/6.9/dark` bzw. `light` | 3 bis 10 |
+| **iPhone 6.1" / 6.3"** | 1206 × 2622 px | `store-screenshots/6.3/dark` bzw. `light` | 3 bis 10 |
 
-Vorschlag für 5 Motive (Reihenfolge = Reihenfolge im Store):
+Es genügt **ein** Slot, den Apple verlangt (derzeit der grösste, 6.9"); Apple skaliert für die anderen iPhones. Hat die Seite nur den 6.1"/6.3"-Slot, nimm den Ordner `6.3`. Nicht Hochformat-Bilder in Querformat-Slots (Vision Pro, Mac) ziehen. Neu erzeugen: `npm run screenshots:compose`.
+
+Vorschlag für 5 Motive (Reihenfolge = Reihenfolge im Store, per Drag & Drop änderbar):
 
 1. Lernen: Karteikarte, Vorderseite
 2. Lernen: aufgedeckte Rückseite mit Bedeutung und Beispiel
@@ -158,7 +197,9 @@ Aufnehmen: Simulator **iPhone 17 Pro Max** (bzw. grösstes verfügbares Modell),
 
 ---
 
-## 6. App-Datenschutz (links: *App-Datenschutz*)
+## 6. App-Datenschutz
+
+**Wo:** Seitenleiste → **Allgemein** → **App-Datenschutz** (Ort D). Dort ganz oben «Datenschutzrichtlinie» → **Bearbeiten**, weiter unten «Datenschutzangaben» → **Los geht's** bzw. **Bearbeiten**. Am Ende **Veröffentlichen** drücken, sonst sieht Apple die Angaben nicht.
 
 Mit Werbung (AdMob) und IDFA-Abfrage:
 
@@ -168,6 +209,8 @@ Mit Werbung (AdMob) und IDFA-Abfrage:
 | **Datenerfassung** | «Ja, wir erfassen Daten von dieser App» und die Tabelle unten ausfüllen |
 | **Datenschutz-Optionen-URL** | leer |
 
+Im Assistenten wählst du die Datentypen links aus und beantwortest dann je Typ die drei Fragen (Zweck, mit Nutzer verknüpft, für Tracking):
+
 | Datentyp | Zweck | Mit Nutzer verknüpft | Für Tracking |
 |---|---|---|---|
 | Kennungen → Geräte-ID | Werbung von Drittanbietern | Nein | Ja |
@@ -176,15 +219,17 @@ Mit Werbung (AdMob) und IDFA-Abfrage:
 | Diagnose → Absturzdaten, Leistungsdaten | Analyse | Nein | Nein |
 | Käufe → Kaufverlauf | App-Funktionalität | Nein | Nein |
 
-Beim Einreichen fragt App Store Connect nach der Werbe-ID (IDFA): **Ja**, Zweck «Werbung in der App schalten». Die Optionen zur Zuordnung von Installationen oder Aktionen bleiben leer, die App misst keine Installationen.
+**IDFA-Frage:** Beim Absenden zur Prüfung (Abschnitt 11, «Zur Prüfung hinzufügen») erscheint ein Dialog «Verwendet diese App die Werbe-ID (IDFA)?». Antwort **Ja**, Zweck «Werbung in der App schalten». Die Optionen zur Zuordnung von Installationen oder Aktionen bleiben leer, die App misst keine Installationen.
 
 Die Datenschutzerklärung deckt Werbung und Kauf bereits ab.
 
 ---
 
-## 7. Altersfreigabe (*App-Informationen → Altersfreigabe → Bearbeiten*)
+## 7. Altersfreigabe
 
-Der Fragebogen fragt Merkmale ab. Vorschlag für onivoca:
+**Wo:** Seitenleiste → **Allgemein** → **App-Informationen** (Ort B), Abschnitt «Altersfreigabe» → **Bearbeiten**. Es öffnet sich ein Fragebogen. Am Ende zeigt Apple das Ergebnis und du bestätigst mit **Sichern**.
+
+Vorschlag für onivoca:
 
 | Frage | Antwort |
 |---|---|
@@ -206,89 +251,97 @@ Erwartetes Ergebnis: 4+ (mit Werbung kann die Einstufung höher ausfallen, Apple
 
 ---
 
-## 8. Compliance-Angaben (*App-Informationen* und beim Einreichen)
+## 8. Compliance-Angaben
 
-| Thema | Eingabe |
-|---|---|
-| **Exportvorschriften / Verschlüsselung** | Schon im Build gesetzt, keine Frage mehr. Falls sie doch kommt: Nutzt nur Standard-Verschlüsselung (HTTPS/Betriebssystem), ausgenommen. |
-| **Digital Services Act (EU): Händlerstatus** | **⚠ Entscheid:** In der EU musst du erklären, ob du «Händler» (Trader) bist. Planst du Werbung und In-App-Kauf, giltst du in der Regel als Händler. Dann zeigt Apple deinen **Namen, deine Adresse, Telefonnummer und E-Mail öffentlich** in der Produktseite. Wenn dir das nicht passt, eine Geschäftsadresse oder Postfach-Dienst hinterlegen. Ohne diese Erklärung ist die App in der EU nicht erhältlich. |
-| **Inhalte Dritter** | Nein (siehe Abschnitt 2). |
-| **Tracking (ATT)** | Die App zeigt den ATT-Dialog nach dem Einwilligungsdialog. Der Text steht in `app.json` beim Plugin `expo-tracking-transparency`. |
+Diese Angaben stehen an drei verschiedenen Orten:
+
+| Thema | Wo | Eingabe |
+|---|---|---|
+| **Exportvorschriften / Verschlüsselung** | Beim Build (Versionsseite → Abschnitt Build) | Schon im Build gesetzt, keine Frage mehr. Falls sie doch kommt: Nutzt nur Standard-Verschlüsselung (HTTPS/Betriebssystem), ausgenommen. |
+| **Digital Services Act (EU): Händlerstatus** | Startseite von App Store Connect → **Verträge** (bzw. **Business**) → **Compliance** → **Digital Services Act**. Sonst zeigt die App-Seite oben ein gelbes Banner mit Link. | **⚠ Entscheid:** In der EU musst du erklären, ob du «Händler» (Trader) bist. Mit Werbung und In-App-Kauf giltst du in der Regel als Händler. Dann zeigt Apple deinen **Namen, deine Adresse, Telefonnummer und E-Mail öffentlich** auf der Produktseite. Wenn dir das nicht passt, eine Geschäftsadresse oder einen Postfach-Dienst hinterlegen. Ohne diese Erklärung ist die App in der EU nicht erhältlich. |
+| **Inhalte Dritter** | Seitenleiste → **App-Informationen** → «Inhaltsrechte» | Nein (siehe Abschnitt 2). |
+| **Tracking (ATT)** | kein Feld in App Store Connect | Die App zeigt den ATT-Dialog nach dem Einwilligungsdialog. Der Text steht in `app.json` beim Plugin `expo-tracking-transparency`. |
 
 ---
 
-## 9. App-Review-Informationen (*Version → App-Review-Informationen*)
+## 9. App-Review-Informationen
+
+**Wo:** Versionsseite (Ort A), weiter unten im Block **App-Review-Informationen**. Oben rechts **Sichern**.
 
 | Feld | Eingabe |
 |---|---|
-| **Anmeldung erforderlich** | Nein (kein Konto in der App) |
+| **Anmeldung erforderlich** | Haken **nicht** setzen (kein Konto in der App) |
 | **Vorname / Nachname** | Albin / Hoti |
 | **Telefonnummer** | **⚠ Entscheid:** deine Nummer mit Landesvorwahl (+41 …). Pflichtfeld, nur für Apple sichtbar. |
 | **E-Mail** | onivue@gmail.com |
-| **Notizen** | siehe unten |
+| **Hinweise** | siehe unten |
 | **Anhang** | nicht nötig |
 
-Vorschlag für die Notizen:
+Text für das Feld **Hinweise** (inklusive Werbung und Kauf, damit Apple alles findet):
 
 ```
-onivoca ist eine Lernkarten-App für Englisch und Spanisch. Es gibt kein Benutzerkonto, keine Anmeldung und keine Server-Verbindung. Alle Lerninhalte sind in der App enthalten und funktionieren offline. Karte antippen dreht sie um, das Lautsprecher-Symbol spielt die Aussprache mit der iOS-Sprachausgabe ab. Die Sprache (Englisch/Spanisch) lässt sich im Tab «Lernen» wechseln.
+onivoca ist eine Lernkarten-App für Englisch und Spanisch. Es gibt kein Benutzerkonto, keine Anmeldung und keinen eigenen Server. Alle Lerninhalte sind in der App enthalten und funktionieren offline. Karte antippen dreht sie um, das Lautsprecher-Symbol spielt die Aussprache mit der iOS-Sprachausgabe ab. Die Sprache (Englisch/Spanisch) lässt sich im Tab «Lernen» wechseln.
+
+Die App zeigt nach jeder abgeschlossenen Lernrunde eine Vollbild-Werbung (Google AdMob). Der In-App-Kauf «Werbung entfernen» und «Käufe wiederherstellen» befinden sich unter Einstellungen. Beim ersten Start erscheint zuerst der Einwilligungsdialog von Google, danach der Apple-Tracking-Dialog.
 ```
 
 ---
 
 ## 10. Weitere Felder, die du überspringen kannst
 
-- **TestFlight → Testinformationen:** nur nötig für externe Tester.
-- **In-App-Käufe:** Nicht überspringen, siehe Abschnitt 10a.
+- **TestFlight → Testinformationen:** nur nötig für externe Tester (Reiter **TestFlight**).
 - **App Clips, Game Center, Sticker, Apple Pay:** nicht verwendet.
-- **Lokalisierungen:** nur Deutsch nötig. Optional Englisch (Schweiz/Welt) ergänzen, dann denselben Aufbau mit englischen Texten.
-- **Tarif / Steuern / Bank:** erst für bezahlte Apps und In-App-Käufe nötig.
+- **Lokalisierungen:** nur Deutsch nötig. Optional Englisch (Schweiz/Welt) ergänzen: Versionsseite → Sprachauswahl oben → **Sprache hinzufügen**, dann denselben Aufbau mit englischen Texten.
+- **In-App-Käufe:** Nicht überspringen, siehe Abschnitt 10a.
 
 ---
 
 ## 10a. In-App-Kauf «Werbung entfernen»
 
-Muss **vor** dem Einreichen angelegt und der Version hinzugefügt werden. Vorher *Verträge, Steuern und Bankverbindung → Paid Apps* akzeptieren und Bank/Steuern ausfüllen, sonst lädt die App keinen Preis.
+Muss **vor** dem Einreichen angelegt und der Version hinzugefügt werden.
 
-*Monetarisierung → In-App-Käufe → +*
+**Schritt 1: Vertrag und Bank.** Startseite von App Store Connect → **Verträge** (bzw. **Business**) → Vertrag **Kostenpflichtige Apps** akzeptieren, Bankverbindung und Steuerformulare ausfüllen. Ohne ihn lädt die App keinen Preis.
+
+**Schritt 2: Kauf anlegen.** Seitenleiste → **Monetarisierung** → **In-App-Käufe** → blauer **+**-Knopf.
 
 | Feld | Eingabe |
 |---|---|
 | Typ | Nicht-verbrauchbar |
-| Referenzname | Werbung entfernen |
-| Produkt-ID | `ch.onivoca.app.remove_ads` (exakt so) |
-| Preis | **⚠ Entscheid**, z. B. CHF 3.00 |
-| Anzeigename (Deutsch) | Werbung entfernen |
+| Referenzname | Werbung entfernen (nur für dich sichtbar) |
+| Produkt-ID | `ch.onivoca.app.remove_ads` (exakt so, später nicht änderbar) |
+| Preis | **⚠ Entscheid**, z. B. CHF 3.00. Eintragen unter **Preisplan** des Kaufs. |
+| Verfügbarkeit | Dieselben Länder wie die App |
+| Anzeigename (Deutsch) | Werbung entfernen (unter **Lokalisierung der App Store-Informationen**) |
 | Beschreibung (Deutsch) | Entfernt die Werbung in onivoca dauerhaft. Einmal kaufen, für immer werbefrei. |
-| Screenshot für die Prüfung | Einstellungen mit dem Bereich «Werbung» und dem Kaufknopf |
-| Prüfungsnotiz | Siehe unten |
+| Screenshot für die Prüfung | Einstellungen mit dem Bereich «Werbung» und dem Kaufknopf (unter **Informationen zur Überprüfung**) |
+| Hinweise zur Prüfung | z. B. «Kauf unter Einstellungen → Werbung» |
 
-Danach in der Version unter *In-App-Käufe und Abonnements* das Produkt hinzufügen. Zum Testen unter *Benutzer und Zugriff → Sandbox* einen Sandbox-Tester anlegen.
+Der Status muss auf **Bereit zum Senden** stehen.
 
-Zusätzlich in die **Review-Notizen** (Abschnitt 9) anfügen:
+**Schritt 3: Der Version hinzufügen.** Versionsseite (Ort A) → Block **In-App-Käufe und Abonnements** → **+** → «Werbung entfernen» auswählen. Der erste In-App-Kauf wird nur zusammen mit einer App-Version geprüft.
 
-```
-Die App zeigt nach jeder abgeschlossenen Lernrunde eine Vollbild-Werbung (Google AdMob). Der In-App-Kauf «Werbung entfernen» und «Käufe wiederherstellen» befinden sich unter Einstellungen. Beim ersten Start erscheint zuerst der Einwilligungsdialog von Google, danach der Apple-Tracking-Dialog.
-```
+**Schritt 4: Testen.** Startseite → **Benutzer und Zugriff** → Reiter **Sandbox** → Sandbox-Tester anlegen. Auf dem iPhone unter Einstellungen → App Store (ganz unten, «Sandbox-Konto») mit ihm anmelden.
+
+Die Hinweise für die Prüfung stehen schon im Text von Abschnitt 9.
 
 ---
 
 ## 11. Checkliste vor «Zur Prüfung hinzufügen»
 
+**Wo:** Versionsseite (Ort A), oben rechts **Zur Prüfung hinzufügen**. Fehlt etwas, zeigt App Store Connect die Felder rot an.
+
 - [ ] Datenschutz-URL und Support-URL laden im Browser
-- [ ] AdMob: Einwilligungsmitteilung veröffentlicht, App mit dem Store verknüpft (nach Livegang)
-- [ ] In-App-Kauf angelegt und der Version hinzugefügt
-- [ ] Name, Untertitel, Beschreibung, Schlüsselwörter, Werbetext eingetragen
-- [ ] Kategorie Bildung gewählt
-- [ ] Mindestens 3 Screenshots (6.9") hochgeladen
-- [ ] Build ausgewählt
-- [ ] Preis CHF 0 und Länder gesetzt
-- [ ] App-Datenschutz mit Werbedaten veröffentlicht
-- [ ] Altersfreigabe ausgefüllt
-- [ ] DSA-Händlerstatus erklärt
-- [ ] Review-Kontakt mit Telefonnummer ausgefüllt
+- [ ] AdMob: Einwilligungsmitteilung veröffentlicht (Ort: AdMob, nicht App Store Connect), App nach Livegang mit dem Store verknüpft
+- [ ] In-App-Kauf angelegt, Status «Bereit zum Senden», der Version hinzugefügt (Abschnitt 10a)
+- [ ] Name, Untertitel, Kategorie, Altersfreigabe in **App-Informationen** (Abschnitte 2 und 7)
+- [ ] Preis CHF 0 und Länder in **Preise und Verfügbarkeit** (Abschnitt 3)
+- [ ] Werbetext, Beschreibung, Schlüsselwörter, Support-URL, Copyright, Build auf der **Versionsseite** (Abschnitt 4)
+- [ ] Mindestens 3 Screenshots (6.9") hochgeladen (Abschnitt 5)
+- [ ] **App-Datenschutz** mit Werbedaten veröffentlicht (Abschnitt 6)
+- [ ] DSA-Händlerstatus erklärt (Abschnitt 8)
+- [ ] Review-Kontakt mit Telefonnummer und Hinweisen ausgefüllt (Abschnitt 9)
 - [ ] Release-Art gewählt (empfohlen: manuell)
-- [ ] Auf TestFlight einmal durchgespielt: Lernrunde, Sprachwechsel, Aussprache, Einstellungen, Dunkelmodus
+- [ ] Auf TestFlight einmal durchgespielt: Lernrunde, Sprachwechsel, Aussprache, Einstellungen, Dunkelmodus, Werbung, Kauf
 
 ---
 
@@ -307,6 +360,6 @@ npx eas-cli@latest build --platform ios --profile production
 npx eas-cli@latest submit --platform ios --profile production --latest
 ```
 
-Danach: Build in App Store Connect abwarten → bei der Version auswählen → *Zur Prüfung hinzufügen* → *An App Review senden*. Die Prüfung dauert meist 24 bis 48 Stunden. Bei einer Ablehnung steht der Grund im *Resolution Center*; antworte dort direkt.
+Danach: Build in App Store Connect abwarten (Reiter **TestFlight** zeigt «Wird verarbeitet») → auf der Versionsseite bei **Build** auswählen → **Zur Prüfung hinzufügen** → **An App Review senden**. Die Prüfung dauert meist 24 bis 48 Stunden. Bei einer Ablehnung steht der Grund im **Resolution Center** (Seitenleiste der App-Seite); antworte dort direkt.
 
 Werbung und Kauf brauchen einen neuen nativen Build, ein OTA-Update reicht nicht.
