@@ -2,6 +2,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { ReactNode, createContext, useCallback, useContext, useEffect, useState } from "react";
 import { Alert } from "react-native";
 import { ADS_ENABLED, startAds } from "../lib/ads";
+import { SCREENSHOT_MODE } from "../lib/screenshot";
 import { STORE_SUPPORTED, buyRemoveAds, connectStore, restoreRemoveAds } from "../lib/store";
 
 // Merkt sich lokal, ob «Werbung entfernen» gekauft wurde, damit beim Start keine Werbung aufblitzt.
@@ -70,7 +71,7 @@ export function PremiumProvider({ children }: { children: ReactNode }) {
 
   // Werbung (samt Einwilligungsdialog) erst starten, wenn feststeht, dass sie nicht gekauft wurde.
   useEffect(() => {
-    if (loaded && !adsRemoved) startAds();
+    if (loaded && !adsRemoved && !SCREENSHOT_MODE) startAds(); // Screenshot-Build: keine Einwilligungsdialoge im Bild
   }, [loaded, adsRemoved]);
 
   async function buy() {

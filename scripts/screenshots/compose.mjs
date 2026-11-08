@@ -90,7 +90,7 @@ for (const mode of modesArg) {
   for (const file of readdirSync(dir).filter((f) => f.endsWith(".png")).sort()) {
     const id = file.replace(/^\d+-/, "").replace(/\.png$/, "");
     const scene = SCENES.find((s) => s.id === id);
-    if (!scene) continue;
+    if (!scene || scene.storeImage === false) continue;
     const htmlFile = join(HTML, `${mode}-${file}.html`);
     writeFileSync(htmlFile, page(scene, join(dir, file), THEMES[mode]));
     const out = join(outDir, file);

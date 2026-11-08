@@ -61,6 +61,8 @@ export const SCENES = [
     title: "Englisch *und Spanisch*",
     sub: "Wechsle die Sprache jederzeit, jede mit eigenem Lernstand.",
   },
+  // Nur für App Store Connect (Prüfbild des In-App-Kaufs), kein Store-Bild: Einstellungen mit dem Bereich «Werbung».
+  { id: "iap-review", path: "/settings", storeImage: false },
 ];
 
 // Hell und dunkel; dunkel ist der bevorzugte Look (steht zuerst).
