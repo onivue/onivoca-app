@@ -48,7 +48,22 @@
       ],
       "expo-sqlite",
       "expo-font",
-      "expo-asset"
+      "expo-asset",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511",
+          "delayAppMeasurementInit": true
+        }
+      ],
+      "expo-iap",
+      [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "Damit kann onivoca dir Werbung zeigen, die besser zu dir passt. Ohne Erlaubnis siehst du trotzdem Werbung, nur weniger passende."
+        }
+      ]
     ],
     "extra": {
       "router": {

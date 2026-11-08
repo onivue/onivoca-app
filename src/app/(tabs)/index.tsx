@@ -7,11 +7,13 @@ import { RatingButtons } from "../../components/RatingButtons";
 import { RoundResult, RoundSummary } from "../../components/RoundSummary";
 import { Screen } from "../../components/Screen";
 import { Text } from "../../components/Text";
+import { showAdAfterRound } from "../../lib/ads";
 import { resolveWeights } from "../../lib/difficulty";
 import { Rating, buildSession } from "../../lib/srs";
 import { useCards, useSentences } from "../../state/cards";
 import { LANGUAGES, Lang } from "../../data/cards";
 import { Deck, useLanguage } from "../../state/language";
+import { usePremium } from "../../state/premium";
 import { useProgress } from "../../state/progress";
 import { colors } from "../../theme/colors";
 import { themed, useTheme } from "../../theme/theme";
@@ -43,6 +45,7 @@ function LanguageBadge({ lang }: { lang: Lang }) {
 function StudySession({ deck }: { deck: Deck }) {
   useTheme();
   const { progress, round, sessionSize, mix, rate, advanceRound } = useProgress();
+  const { adsRemoved } = usePremium();
   const words = useCards();
   const sentences = useSentences();
   const cards = deck === "sentences" ? sentences : words;
@@ -70,6 +73,8 @@ function StudySession({ deck }: { deck: Deck }) {
   }
 
   function startNewRound() {
+    // Vollbild-Werbung legt sich über die neue Runde; nach dem Schliessen geht es direkt weiter.
+    if (!adsRemoved) showAdAfterRound();
     const nextRound = round + 1;
     advanceRound();
     const next = buildSession(cards, progress, nextRound, sessionSize, resolveWeights(mix, cards, progress));

@@ -11,6 +11,7 @@ import { CardsProvider } from "../state/cards";
 import { OnboardingGuide } from "../components/OnboardingGuide";
 import { LanguageProvider } from "../state/language";
 import { OnboardingProvider } from "../state/onboarding";
+import { PremiumProvider } from "../state/premium";
 import { ProgressProvider } from "../state/progress";
 import { colors } from "../theme/colors";
 import { ThemeProvider, useTheme } from "../theme/theme";
@@ -28,16 +29,18 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider>
-      <LanguageProvider>
-        <CardsProvider>
-          <ProgressProvider>
-            <OnboardingProvider>
-              <AppStack />
-              <OnboardingGuide />
-            </OnboardingProvider>
-          </ProgressProvider>
-        </CardsProvider>
-      </LanguageProvider>
+      <PremiumProvider>
+        <LanguageProvider>
+          <CardsProvider>
+            <ProgressProvider>
+              <OnboardingProvider>
+                <AppStack />
+                <OnboardingGuide />
+              </OnboardingProvider>
+            </ProgressProvider>
+          </CardsProvider>
+        </LanguageProvider>
+      </PremiumProvider>
     </ThemeProvider>
   );
 }

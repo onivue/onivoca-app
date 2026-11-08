@@ -18,6 +18,9 @@ import { Text } from "./Text";
 import { LevelBar } from "./LevelBar";
 import { WordMeta } from "./WordMeta";
 
+// Mindestbreite einer Bewertungskachel, bevor die Kacheln untereinander rutschen.
+const TILE_MIN_WIDTH = 96;
+
 // Eine Antwort der Runde: welche Karte, wie gefragt, was gewählt wurde und der Lernstand davor/danach.
 export type RoundResult = { item: SessionItem; rating: Rating; before?: CardProgress; after: CardProgress; round: number };
 
@@ -26,6 +29,8 @@ export function RoundSummary({ results, onNext }: { results: RoundResult[]; onNe
   useTheme();
   const [filter, setFilter] = useState<Rating | null>(null);
   const [open, setOpen] = useState<Set<string>>(() => new Set());
+  // Reicht die Breite nicht für drei gleich breite Kacheln (z. B. grosse Schrift), stehen sie untereinander.
+  const [stacked, setStacked] = useState(false);
 
   const counts = { again: 0, good: 0, easy: 0 };
   for (const r of results) counts[r.rating] += 1;
@@ -66,23 +71,30 @@ export function RoundSummary({ results, onNext }: { results: RoundResult[]; onNe
         {results.length > 0 && (
           <>
             {/* Bewertungen, zugleich Filter für die Liste */}
-            <View style={styles.tiles}>
+            <View
+              style={[styles.tiles, stacked && styles.tilesStacked]}
+              onLayout={(e) => setStacked(e.nativeEvent.layout.width < TILE_MIN_WIDTH * RATING_ORDER.length)}
+            >
               {RATING_ORDER.map((rating) => {
                 const { label, color, textColor, Icon } = RATINGS[rating];
                 const active = filter === rating;
                 return (
-                  <PressableScale
-                    key={rating}
-                    style={[styles.tile, { backgroundColor: color }, filter && !active && styles.tileDimmed]}
-                    onPress={() => toggleFilter(rating)}
-                    accessibilityRole="button"
-                    accessibilityState={{ selected: active }}
-                    accessibilityLabel={`${label}: ${counts[rating]} Karten, Liste filtern`}
-                  >
-                    <Icon color={textColor} size={18} />
-                    <Text style={[styles.tileValue, { color: textColor }]}>{counts[rating]}</Text>
-                    <Text style={[styles.tileLabel, { color: textColor }]}>{label}</Text>
-                  </PressableScale>
+                  // PressableScale legt den Style auf die innere View, darum sorgt die Zelle für die gleiche Breite.
+                  <View key={rating} style={stacked ? undefined : styles.tileCell}>
+                    <PressableScale
+                      style={[styles.tile, stacked && styles.tileStacked, { backgroundColor: color }, filter && !active && styles.tileDimmed]}
+                      onPress={() => toggleFilter(rating)}
+                      accessibilityRole="button"
+                      accessibilityState={{ selected: active }}
+                      accessibilityLabel={`${label}: ${counts[rating]} Karten, Liste filtern`}
+                    >
+                      <Icon color={textColor} size={18} />
+                      <Text style={[styles.tileValue, { color: textColor }]}>{counts[rating]}</Text>
+                      <Text style={[styles.tileLabel, { color: textColor }]} numberOfLines={1}>
+                        {label}
+                      </Text>
+                    </PressableScale>
+                  </View>
                 );
               })}
             </View>
@@ -238,7 +250,10 @@ const styles = themed(() => ({
   title: { fontSize: 28, fontWeight: "700", color: colors.text },
   subtitle: { fontSize: 15, color: colors.muted, textAlign: "center" },
   tiles: { flexDirection: "row", gap: 10 },
-  tile: { flex: 1, borderRadius: 18, paddingVertical: 12, alignItems: "center", gap: 2 },
+  tilesStacked: { flexDirection: "column", gap: 8 },
+  tileCell: { flex: 1 },
+  tile: { borderRadius: 18, paddingVertical: 12, paddingHorizontal: 8, alignItems: "center", gap: 2 },
+  tileStacked: { flexDirection: "row", justifyContent: "center", gap: 8 },
   tileDimmed: { opacity: 0.4 },
   tileValue: { fontSize: 24, fontWeight: "800" },
   tileLabel: { fontSize: 12, fontWeight: "600" },

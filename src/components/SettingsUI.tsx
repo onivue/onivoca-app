@@ -64,16 +64,17 @@ export function SettingsRow({
   tint?: Tint;
   label: string;
   value?: string;
-  onPress: () => void;
+  onPress?: () => void; // ohne onPress ist die Zeile reine Anzeige (kein Pfeil)
   destructive?: boolean;
   accessory?: ReactNode;
 }) {
   useTheme();
   return (
     <Pressable
-      style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}
+      style={({ pressed }) => [styles.row, pressed && onPress && styles.rowPressed]}
       onPress={onPress}
-      accessibilityRole="button"
+      disabled={!onPress}
+      accessibilityRole={onPress ? "button" : "text"}
       accessibilityLabel={value ? `${label}: ${value}` : label}
     >
       <IconBadge Icon={Icon} tint={tint} />
@@ -84,7 +85,7 @@ export function SettingsRow({
           {value}
         </Text>
       )}
-      {!destructive && <ChevronRight color={colors.muted} size={18} />}
+      {!destructive && onPress && <ChevronRight color={colors.muted} size={18} />}
     </Pressable>
   );
 }

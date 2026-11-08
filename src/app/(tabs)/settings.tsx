@@ -1,5 +1,6 @@
 import { useRouter } from "expo-router";
 import {
+  BadgeCheck,
   ChevronRight,
   CircleHelp,
   FileText,
@@ -10,20 +11,26 @@ import {
   Moon,
   Palette,
   Repeat,
+  RotateCcw,
   ShieldCheck,
+  SlidersHorizontal,
+  Sparkles,
   Sun,
 } from "lucide-react-native";
-import { Pressable, View } from "react-native";
+import { useEffect, useState } from "react";
+import { Alert, Pressable, View } from "react-native";
 import { useMixLabel } from "../../components/DifficultyMixer";
 import { ProgressRing } from "../../components/ProgressRing";
 import { Screen } from "../../components/Screen";
 import { Segmented, SettingsField, SettingsGroup, SettingsRow } from "../../components/SettingsUI";
 import { Text } from "../../components/Text";
 import { LANGUAGES, LANG_ORDER } from "../../data/cards";
+import { adPrivacyOptionsRequired, openAdPrivacyOptions } from "../../lib/ads";
 import { summarize } from "../../lib/srs";
 import { useCards, useSentences } from "../../state/cards";
 import { useLanguage } from "../../state/language";
 import { useOnboarding } from "../../state/onboarding";
+import { usePremium } from "../../state/premium";
 import { useProgress } from "../../state/progress";
 import { colors } from "../../theme/colors";
 import { themed, useTheme } from "../../theme/theme";
@@ -80,6 +87,8 @@ export default function SettingsScreen() {
         </SettingsField>
       </SettingsGroup>
 
+      <AdsGroup />
+
       <SettingsGroup title="Hilfe">
         <SettingsRow Icon={CircleHelp} tint="success" label="Anleitung ansehen" onPress={openGuide} />
         <SettingsRow
@@ -98,10 +107,76 @@ export default function SettingsScreen() {
   );
 }
 
+// Werbung entfernen (einmaliger Kauf), Käufe wiederherstellen und Datenschutz-Optionen für Werbung.
+function AdsGroup() {
+  const { supported, adsRemoved, price, busy, buy, restore } = usePremium();
+  const [privacyRequired, setPrivacyRequired] = useState(false);
+
+  useEffect(() => {
+    if (!adsRemoved) adPrivacyOptionsRequired().then(setPrivacyRequired);
+  }, [adsRemoved]);
+
+  if (!supported) return null;
+
+  function onBuy() {
+    if (busy) return;
+    if (!price) {
+      Alert.alert("Store nicht erreichbar", "Prüfe deine Internetverbindung und versuche es später noch einmal.");
+      return;
+    }
+    buy();
+  }
+
+  async function onRestore() {
+    if (busy) return;
+    try {
+      const found = await restore();
+      Alert.alert(
+        found ? "Kauf wiederhergestellt" : "Kein Kauf gefunden",
+        found ? "Die Werbung ist entfernt. Danke!" : "Mit diesem Konto wurde «Werbung entfernen» noch nicht gekauft.",
+      );
+    } catch {
+      Alert.alert("Wiederherstellen fehlgeschlagen", "Bitte versuche es später noch einmal.");
+    }
+  }
+
+  if (adsRemoved) {
+    return (
+      <SettingsGroup title="Werbung" footer="Danke für deine Unterstützung!">
+        <SettingsRow Icon={BadgeCheck} tint="success" label="Werbefrei" value="Gekauft" />
+      </SettingsGroup>
+    );
+  }
+
+  return (
+    <SettingsGroup
+      title="Werbung"
+      footer="Einmaliger Kauf, kein Abo. Gilt auf allen Geräten mit derselben Apple-ID."
+    >
+      <SettingsRow
+        Icon={Sparkles}
+        tint="warning"
+        label="Werbung entfernen"
+        value={busy ? "…" : price}
+        onPress={onBuy}
+      />
+      <SettingsRow Icon={RotateCcw} tint="sky" label="Käufe wiederherstellen" onPress={onRestore} />
+      {privacyRequired && (
+        <SettingsRow
+          Icon={SlidersHorizontal}
+          tint="accent"
+          label="Datenschutz-Optionen"
+          onPress={() => openAdPrivacyOptions()}
+        />
+      )}
+    </SettingsGroup>
+  );
+}
+
 // Kompakter Fortschritt oben; öffnet die Seite mit allen Zahlen.
 function ProgressCard({ onPress }: { onPress: () => void }) {
   useTheme();
-  const { progress, round } = useProgress();
+  const { progress } = useProgress();
   const { deck } = useLanguage();
   const words = useCards();
   const sentences = useSentences();
@@ -127,9 +202,17 @@ function ProgressCard({ onPress }: { onPress: () => void }) {
           <View style={[styles.stackPart, { flex: summary.learning, backgroundColor: "#F59E0B" }]} />
           <View style={[styles.stackPart, { flex: summary.new, backgroundColor: colors.overlay }]} />
         </View>
-        <Text style={styles.progressMeta}>
-          Runde {round + 1} · {summary.learning} am Lernen
-        </Text>
+        {/* Legende zum Balken: Orange = angefangen, hell = noch nie gesehen */}
+        <View style={styles.legend}>
+          <View style={styles.legendItem}>
+            <View style={[styles.legendDot, { backgroundColor: "#F59E0B" }]} />
+            <Text style={styles.progressMeta}>{summary.learning} angefangen</Text>
+          </View>
+          <View style={styles.legendItem}>
+            <View style={[styles.legendDot, { backgroundColor: colors.overlay }]} />
+            <Text style={styles.progressMeta}>{summary.new} neu</Text>
+          </View>
+        </View>
       </View>
       <ChevronRight color={colors.onPrimary} size={20} />
     </Pressable>
@@ -151,5 +234,8 @@ const styles = themed(() => ({
   progressText: { fontSize: 16, fontWeight: "600", color: colors.text },
   stack: { flexDirection: "row", height: 8, borderRadius: 4, overflow: "hidden" },
   stackPart: { height: "100%" },
+  legend: { flexDirection: "row", flexWrap: "wrap", columnGap: 14, rowGap: 2 },
+  legendItem: { flexDirection: "row", alignItems: "center", gap: 6 },
+  legendDot: { width: 8, height: 8, borderRadius: 4 },
   progressMeta: { fontSize: 13, color: colors.onPrimary },
 }));
