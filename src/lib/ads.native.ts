@@ -18,7 +18,7 @@ import mobileAds, {
 // Echte Unit-IDs aus AdMob (Apps → Anzeigenblöcke) hier eintragen.
 // Solange ein Feld leer ist, zeigt der Release-Build auf dieser Plattform keine Werbung
 // (auch keinen Einwilligungs- oder Tracking-Dialog). In der Entwicklung läuft immer Test-Werbung.
-const INTERSTITIAL_UNIT_IDS = { ios: "", android: "" };
+const INTERSTITIAL_UNIT_IDS = { ios: "ca-app-pub-9858913080166192/1164340527", android: "" };
 
 const unitId = __DEV__ ? TestIds.INTERSTITIAL : Platform.select(INTERSTITIAL_UNIT_IDS);
 

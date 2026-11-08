@@ -13,6 +13,7 @@ import { LanguageProvider } from "../state/language";
 import { OnboardingProvider } from "../state/onboarding";
 import { PremiumProvider } from "../state/premium";
 import { ProgressProvider } from "../state/progress";
+import { useScreenshotNavigation } from "../lib/screenshot";
 import { colors } from "../theme/colors";
 import { ThemeProvider, useTheme } from "../theme/theme";
 
@@ -48,6 +49,7 @@ export default function RootLayout() {
 // Navigation; liegt unter dem ThemeProvider, damit Statusleiste und Header dem Design folgen.
 function AppStack() {
   const { scheme } = useTheme();
+  useScreenshotNavigation();
   const headerOptions = {
     headerShown: true,
     title: "",

@@ -42,7 +42,10 @@
     "ios": "expo run:ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "validate:words": "node scripts/validate-words.mjs"
+    "validate:words": "node scripts/validate-words.mjs",
+    "screenshots:capture": "node scripts/screenshots/capture.mjs",
+    "screenshots:compose": "node scripts/screenshots/compose.mjs",
+    "screenshots": "node scripts/screenshots/capture.mjs && node scripts/screenshots/compose.mjs"
   },
   "private": true
 }

@@ -8,6 +8,7 @@ import { RoundResult, RoundSummary } from "../../components/RoundSummary";
 import { Screen } from "../../components/Screen";
 import { Text } from "../../components/Text";
 import { showAdAfterRound } from "../../lib/ads";
+import { Scene, applyScene, useScreenshotScene } from "../../lib/screenshot";
 import { resolveWeights } from "../../lib/difficulty";
 import { Rating, buildSession } from "../../lib/srs";
 import { useCards, useSentences } from "../../state/cards";
@@ -23,11 +24,12 @@ export default function StudyScreen() {
   const { lang, deck } = useLanguage();
   const hasSentences = useSentences().length > 0;
   const activeDeck = hasSentences ? deck : "words";
+  const scene = useScreenshotScene();
   return (
     <Screen title="Lernen" titleAccessory={<LanguageBadge lang={lang} />} scroll={false}>
       {hasSentences && <DeckSwitch />}
       {/* Beim Wechsel von Sprache oder Kartenart startet die Runde neu. */}
-      <StudySession key={`${lang}-${activeDeck}`} deck={activeDeck} />
+      <StudySession key={`${lang}-${activeDeck}-${JSON.stringify(scene)}`} deck={activeDeck} scene={scene} />
     </Screen>
   );
 }
@@ -42,7 +44,7 @@ function LanguageBadge({ lang }: { lang: Lang }) {
   );
 }
 
-function StudySession({ deck }: { deck: Deck }) {
+function StudySession({ deck, scene }: { deck: Deck; scene: Scene | null }) {
   useTheme();
   const { progress, round, sessionSize, mix, rate, advanceRound } = useProgress();
   const { adsRemoved } = usePremium();
@@ -50,15 +52,21 @@ function StudySession({ deck }: { deck: Deck }) {
   const sentences = useSentences();
   const cards = deck === "sentences" ? sentences : words;
 
+  // Für Store-Screenshots (nur mit EXPO_PUBLIC_SCREENSHOT_MODE): feste Karten statt zufälliger Runde.
+  const [start] = useState(() => {
+    const session = buildSession(cards, progress, round, sessionSize, resolveWeights(mix, cards, progress));
+    return scene
+      ? applyScene(scene, cards, session, round)
+      : { queue: session, results: [] as RoundResult[], flipped: false };
+  });
+
   // Die Warteschlange bleibt bis zum Rundenende stabil.
-  const [queue, setQueue] = useState(() =>
-    buildSession(cards, progress, round, sessionSize, resolveWeights(mix, cards, progress)),
-  );
-  const [results, setResults] = useState<RoundResult[]>([]); // für die Übersicht am Rundenende
+  const [queue, setQueue] = useState(start.queue);
+  const [results, setResults] = useState<RoundResult[]>(start.results); // für die Übersicht am Rundenende
   const [total, setTotal] = useState(queue.length);
   const [done, setDone] = useState(0);
   const [step, setStep] = useState(0); // sorgt dafür, dass jede Karte neu einfliegt
-  const [flipped, setFlipped] = useState(false);
+  const [flipped, setFlipped] = useState(start.flipped);
 
   const current = queue[0];
 

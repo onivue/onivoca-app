@@ -4,7 +4,11 @@ Was noch fehlt, damit in onivoca echte Werbung läuft und «Werbung entfernen» 
 
 Der Code ist fertig: Vollbild-Werbung am Ende jeder Runde, Einwilligungsdialog (UMP), App Tracking Transparency, In-App-Kauf mit Wiederherstellen und die Datenschutzerklärung. Es fehlen nur noch das AdMob-Konto, die echten IDs und die Angaben in App Store Connect.
 
-## Aktueller Stand: Release ohne Werbung
+## Stand: Werbung ist eingetragen
+
+Publisher-ID, iOS-App-ID und Interstitial-ID sind in `app.json` bzw. `src/lib/ads.native.ts` gesetzt, die SKAdNetwork-IDs ebenfalls, und `docs/app-ads.txt` ist angelegt. Offen sind noch: Einwilligungsmitteilung (3), eigene Domain für app-ads.txt (6), In-App-Kauf (7) und die Angaben in App Store Connect (8, siehe [app-store-connect.md](app-store-connect.md)). Der folgende Abschnitt beschreibt das Verhalten ohne ID.
+
+## Release ohne Werbung (nur wenn die ID leer ist)
 
 Solange die iOS-Anzeigenblock-ID in [src/lib/ads.native.ts](../src/lib/ads.native.ts) leer ist, zeigt der Release-Build:
 
