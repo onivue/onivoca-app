@@ -26,19 +26,30 @@ const unitId = __DEV__ ? TestIds.INTERSTITIAL : Platform.select(INTERSTITIAL_UNI
 export const ADS_ENABLED = !!unitId;
 
 let starting: Promise<boolean> | null = null;
+
+// Erfüllt, sobald Einwilligungsformular und Tracking-Dialog beantwortet (oder gar nicht nötig) sind.
+// iOS zeigt nur einen Dialog auf einmal: Öffnet die App währenddessen ein eigenes Modal, scheitert
+// dessen Anzeige und eine unsichtbare Ebene blockiert alle Berührungen. Eigene Modals warten deshalb hierauf.
+let markDialogsDone: () => void = () => {};
+const dialogsDone = new Promise<void>((resolve) => (markDialogsDone = resolve));
+export const waitForConsentDialogs = () => dialogsDone;
 let interstitial: InterstitialAd | null = null;
 
 // Fragt die Einwilligung ab (EU/CH/UK, auf iOS zusätzlich App Tracking Transparency)
 // und lädt danach die erste Werbung. Mehrfache Aufrufe starten nur einmal.
 export function startAds(): Promise<boolean> {
   starting ??= (async () => {
-    if (!unitId) return false; // noch keine echte Unit-ID: Werbung aus
+    if (!unitId) {
+      markDialogsDone();
+      return false; // noch keine echte Unit-ID: Werbung aus
+    }
     try {
       const { canRequestAds } = await AdsConsent.gatherConsent();
       if (Platform.OS === "ios") {
         const { status } = await getTrackingPermissionsAsync();
         if (status === PermissionStatus.UNDETERMINED) await requestTrackingPermissionsAsync();
       }
+      markDialogsDone();
       if (!canRequestAds) return false;
 
       await mobileAds().initialize();
@@ -48,6 +59,7 @@ export function startAds(): Promise<boolean> {
       interstitial.load();
       return true;
     } catch {
+      markDialogsDone();
       starting = null; // beim nächsten Start erneut versuchen
       return false;
     }

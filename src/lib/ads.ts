@@ -7,6 +7,8 @@ export async function startAds(): Promise<boolean> {
   return false;
 }
 
+export async function waitForConsentDialogs(): Promise<void> {}
+
 export function showAdAfterRound() {}
 
 export async function adPrivacyOptionsRequired(): Promise<boolean> {

@@ -1,7 +1,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { ReactNode, createContext, useCallback, useContext, useEffect, useState } from "react";
 import { Alert } from "react-native";
-import { ADS_ENABLED, startAds } from "../lib/ads";
+import { ADS_ENABLED, startAds, waitForConsentDialogs } from "../lib/ads";
 import { SCREENSHOT_MODE } from "../lib/screenshot";
 import { STORE_SUPPORTED, buyRemoveAds, connectStore, restoreRemoveAds } from "../lib/store";
 
@@ -14,6 +14,8 @@ type PremiumValue = {
   adsRemoved: boolean;
   price?: string; // vom Store, z. B. «CHF 3.00»; fehlt, solange der Store nicht erreichbar ist
   busy: boolean;
+  // Einwilligungs- und Tracking-Dialog beim Start sind erledigt; erst danach darf die App eigene Modals öffnen.
+  startupDialogsDone: boolean;
   buy: () => Promise<void>;
   restore: () => Promise<boolean>;
 };
@@ -22,6 +24,7 @@ const PremiumContext = createContext<PremiumValue>({
   supported: false,
   adsRemoved: false,
   busy: false,
+  startupDialogsDone: true,
   buy: async () => {},
   restore: async () => false,
 });
@@ -31,6 +34,7 @@ export function PremiumProvider({ children }: { children: ReactNode }) {
   const [adsRemoved, setAdsRemoved] = useState(false);
   const [price, setPrice] = useState<string>();
   const [busy, setBusy] = useState(false);
+  const [consentDone, setConsentDone] = useState(false);
 
   const grant = useCallback(() => {
     setAdsRemoved(true);
@@ -71,8 +75,11 @@ export function PremiumProvider({ children }: { children: ReactNode }) {
 
   // Werbung (samt Einwilligungsdialog) erst starten, wenn feststeht, dass sie nicht gekauft wurde.
   useEffect(() => {
-    if (loaded && !adsRemoved && !SCREENSHOT_MODE) startAds(); // Screenshot-Build: keine Einwilligungsdialoge im Bild
+    if (!loaded || adsRemoved || SCREENSHOT_MODE) return; // Screenshot-Build: keine Einwilligungsdialoge im Bild
+    startAds();
+    waitForConsentDialogs().then(() => setConsentDone(true));
   }, [loaded, adsRemoved]);
+  const startupDialogsDone = loaded && (adsRemoved || SCREENSHOT_MODE || consentDone);
 
   async function buy() {
     setBusy(true);
@@ -98,7 +105,7 @@ export function PremiumProvider({ children }: { children: ReactNode }) {
 
   return (
     <PremiumContext.Provider
-      value={{ supported: STORE_SUPPORTED && ADS_ENABLED, adsRemoved, price, busy, buy, restore }}
+      value={{ supported: STORE_SUPPORTED && ADS_ENABLED, adsRemoved, price, busy, startupDialogsDone, buy, restore }}
     >
       {children}
     </PremiumContext.Provider>
