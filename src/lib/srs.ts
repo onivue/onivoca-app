@@ -75,6 +75,26 @@ function shuffle<T>(items: T[]) {
   return [...items].sort(() => Math.random() - 0.5);
 }
 
+// Karten ohne die deaktivierten; nur diese kommen in Runden und zählen im Fortschritt.
+export function activeCards(cards: WordEntry[], disabled: ReadonlySet<string>) {
+  return disabled.size > 0 ? cards.filter((c) => !disabled.has(c.id)) : cards;
+}
+
+// Fester Zufallswert pro Karte und Mischung (FNV-1a), damit die Reihenfolge über Runden stabil bleibt.
+function hash(text: string) {
+  let h = 2166136261;
+  for (let i = 0; i < text.length; i++) h = Math.imul(h ^ text.charCodeAt(i), 16777619);
+  return h >>> 0;
+}
+
+// Reihenfolge, in der neue Karten drankommen: ohne Mischung wie in den Stammdaten,
+// nach "Karten neu mischen" zufällig (aber bis zur nächsten Mischung gleichbleibend).
+export function orderBySeed(cards: WordEntry[], seed: number) {
+  if (!seed) return cards;
+  const keys = new Map(cards.map((c) => [c.id, hash(`${seed}:${c.id}`)]));
+  return [...cards].sort((a, b) => keys.get(a.id)! - keys.get(b.id)!);
+}
+
 // Eine Runde: ein paar Karten, die noch wackeln, dann neue Karten.
 // Sind alle gelernt, gibt es eine Auffrischung mit zufälligen Karten.
 // Mit Schwierigkeits-Mix (weights) wird aus dieser Reihenfolge pro Stufe ausgewählt.

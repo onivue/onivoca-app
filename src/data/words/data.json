@@ -39412,5 +39412,6988 @@
       "linking-words"
     ],
     "source": "generated"
+  },
+  {
+    "id": "lazy",
+    "lemma": "lazy",
+    "pos": "adj",
+    "ipa": "/ˈleɪzi/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "faul",
+    "deAlt": [
+      "träge",
+      "bequem"
+    ],
+    "definitionEn": "not willing to work or make an effort",
+    "examples": [
+      {
+        "en": "My brother is too lazy to clean his room.",
+        "de": "Mein Bruder ist zu faul, sein Zimmer aufzuräumen.",
+        "hit": "lazy"
+      },
+      {
+        "en": "We had a lazy Sunday morning in bed.",
+        "de": "Wir hatten einen gemütlichen Sonntagmorgen im Bett.",
+        "hit": "lazy"
+      },
+      {
+        "en": "Calling the report lazy journalism seems unfair to me.",
+        "de": "Den Bericht als schlampigen Journalismus zu bezeichnen, finde ich unfair.",
+        "hit": "lazy"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "lazy afternoon",
+        "too lazy to",
+        "lazy Sunday"
+      ],
+      "grammar": "Adjektiv; Steigerung lazier, laziest",
+      "tip": "Bei Zeitangaben (a lazy Sunday) ist es positiv gemeint: entspannt, gemütlich."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "hard-working",
+        "noteDe": "fleißig"
+      },
+      {
+        "type": "family",
+        "word": "laziness",
+        "noteDe": "Faulheit"
+      },
+      {
+        "type": "synonym",
+        "word": "idle",
+        "noteDe": "untätig, eher gehoben"
+      },
+      {
+        "type": "related",
+        "word": "effort",
+        "ref": "effort",
+        "noteDe": "Anstrengung"
+      }
+    ],
+    "topics": [
+      "daily",
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "noisy",
+    "lemma": "noisy",
+    "pos": "adj",
+    "ipa": "/ˈnɔɪzi/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "laut",
+    "deAlt": [
+      "lärmend"
+    ],
+    "definitionEn": "making a lot of loud or unpleasant sound",
+    "examples": [
+      {
+        "en": "The street outside our hotel was very noisy.",
+        "de": "Die Straße vor unserem Hotel war sehr laut.",
+        "hit": "noisy"
+      },
+      {
+        "en": "Our noisy neighbors had a party until three.",
+        "de": "Unsere lauten Nachbarn feierten bis drei Uhr.",
+        "hit": "noisy"
+      },
+      {
+        "en": "The data was too noisy to draw clear conclusions.",
+        "de": "Die Daten waren zu verrauscht, um klare Schlüsse zu ziehen.",
+        "hit": "noisy"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "noisy neighbors",
+        "noisy street",
+        "noisy children"
+      ],
+      "grammar": "Adjektiv; Steigerung noisier, noisiest",
+      "tip": "'loud' beschreibt die Lautstärke an sich, 'noisy' eher störenden Lärm von Orten oder Menschen."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "quiet",
+        "noteDe": "leise, ruhig"
+      },
+      {
+        "type": "family",
+        "word": "noise",
+        "noteDe": "Lärm, Geräusch"
+      },
+      {
+        "type": "confusable",
+        "word": "loud",
+        "noteDe": "loud = laut (Lautstärke), noisy = lärmig, störend"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "home-and-household",
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "empty",
+    "lemma": "empty",
+    "pos": "adj",
+    "ipa": "/ˈɛmpti/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "leer",
+    "deAlt": [
+      "unbewohnt",
+      "inhaltslos"
+    ],
+    "definitionEn": "with nothing or nobody inside",
+    "examples": [
+      {
+        "en": "The fridge is completely empty again.",
+        "de": "Der Kühlschrank ist schon wieder komplett leer.",
+        "hit": "empty"
+      },
+      {
+        "en": "Please don't drink on an empty stomach.",
+        "de": "Bitte trink nicht auf leeren Magen.",
+        "hit": "empty"
+      },
+      {
+        "en": "His promises turned out to be empty words.",
+        "de": "Seine Versprechen erwiesen sich als leere Worte.",
+        "hit": "empty"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "empty room",
+        "on an empty stomach",
+        "empty promises",
+        "half empty"
+      ],
+      "grammar": "Adjektiv; auch Verb: to empty the bin",
+      "tip": "'empty' heißt auch 'ausleeren' als Verb: 'Can you empty the dishwasher?'"
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "full",
+        "noteDe": "voll"
+      },
+      {
+        "type": "synonym",
+        "word": "vacant",
+        "noteDe": "frei, unbesetzt (Sitz, Stelle)"
+      },
+      {
+        "type": "family",
+        "word": "emptiness",
+        "noteDe": "Leere"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "home-and-household",
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "careful",
+    "lemma": "careful",
+    "pos": "adj",
+    "ipa": "/ˈkɛrfəl/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "vorsichtig",
+    "deAlt": [
+      "sorgfältig"
+    ],
+    "definitionEn": "giving attention to avoid danger, damage or mistakes",
+    "examples": [
+      {
+        "en": "Be careful, the plates are hot.",
+        "de": "Sei vorsichtig, die Teller sind heiß.",
+        "hit": "careful"
+      },
+      {
+        "en": "She is a careful driver and never speeds.",
+        "de": "Sie ist eine vorsichtige Fahrerin und rast nie.",
+        "hit": "careful"
+      },
+      {
+        "en": "After careful consideration, we decided to decline the offer.",
+        "de": "Nach sorgfältiger Überlegung lehnten wir das Angebot ab.",
+        "hit": "careful"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "be careful",
+        "careful with",
+        "careful consideration",
+        "careful driver"
+      ],
+      "grammar": "Adjektiv; Adverb carefully",
+      "tip": "'Be careful with the glass' (mit etwas), 'be careful of the dog' (vor etwas)."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "careless",
+        "noteDe": "unvorsichtig, nachlässig"
+      },
+      {
+        "type": "synonym",
+        "word": "cautious",
+        "ref": "cautious",
+        "noteDe": "vorsichtig, zurückhaltend"
+      },
+      {
+        "type": "family",
+        "word": "care",
+        "noteDe": "Sorgfalt, Fürsorge"
+      },
+      {
+        "type": "antonym",
+        "word": "reckless",
+        "ref": "reckless",
+        "noteDe": "rücksichtslos"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "bored",
+    "lemma": "bored",
+    "pos": "adj",
+    "ipa": "/bɔrd/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "gelangweilt",
+    "definitionEn": "tired and unhappy because nothing interesting is happening",
+    "examples": [
+      {
+        "en": "The kids got bored on the long drive.",
+        "de": "Den Kindern wurde auf der langen Fahrt langweilig.",
+        "hit": "bored"
+      },
+      {
+        "en": "I'm bored of eating pasta every day.",
+        "de": "Ich habe es satt, jeden Tag Nudeln zu essen.",
+        "hit": "bored"
+      },
+      {
+        "en": "He looked bored to death during the meeting.",
+        "de": "Er sah während des Meetings zu Tode gelangweilt aus.",
+        "hit": "bored"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "get bored",
+        "bored with",
+        "bored to death",
+        "bored stiff"
+      ],
+      "grammar": "Adjektiv (Partizip); 'bored' = Gefühl, 'boring' = Ursache",
+      "tip": "Klassischer Fehler: 'I am boring' heißt 'Ich bin langweilig'. Gemeint ist meist 'I am bored'."
+    },
+    "mnemonic": "-ed = so fühle ich mich, -ing = so wirkt etwas.",
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "boring",
+        "noteDe": "boring = langweilig (Sache), bored = gelangweilt (Person)"
+      },
+      {
+        "type": "family",
+        "word": "boredom",
+        "noteDe": "Langeweile"
+      },
+      {
+        "type": "antonym",
+        "word": "interested",
+        "noteDe": "interessiert"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "thirsty",
+    "lemma": "thirsty",
+    "pos": "adj",
+    "ipa": "/ˈθɜrsti/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "durstig",
+    "deAlt": [
+      "begierig"
+    ],
+    "definitionEn": "needing or wanting something to drink",
+    "examples": [
+      {
+        "en": "I'm really thirsty after that run.",
+        "de": "Ich habe nach dem Lauf richtig Durst.",
+        "hit": "thirsty"
+      },
+      {
+        "en": "Salty food always makes me thirsty.",
+        "de": "Salziges Essen macht mich immer durstig.",
+        "hit": "thirsty"
+      },
+      {
+        "en": "The young team was thirsty for success.",
+        "de": "Das junge Team war hungrig nach Erfolg.",
+        "hit": "thirsty"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "feel thirsty",
+        "make someone thirsty",
+        "thirsty for"
+      ],
+      "grammar": "Adjektiv; 'I am thirsty', nicht 'I have thirst'",
+      "tip": "Deutsch 'Durst haben' wird im Englischen zu 'be thirsty'. 'I have thirst' ist falsch."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "thirst",
+        "noteDe": "Durst"
+      },
+      {
+        "type": "related",
+        "word": "hungry",
+        "noteDe": "hungrig"
+      },
+      {
+        "type": "collocate",
+        "word": "quench",
+        "noteDe": "to quench your thirst = den Durst löschen"
+      }
+    ],
+    "topics": [
+      "body",
+      "daily"
+    ],
+    "clusters": [
+      "health-and-body"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "polite",
+    "lemma": "polite",
+    "pos": "adj",
+    "ipa": "/pəˈlaɪt/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "höflich",
+    "deAlt": [
+      "anständig"
+    ],
+    "definitionEn": "behaving in a way that shows respect for other people",
+    "examples": [
+      {
+        "en": "It's polite to say thank you.",
+        "de": "Es ist höflich, danke zu sagen.",
+        "hit": "polite"
+      },
+      {
+        "en": "She gave a polite smile and left.",
+        "de": "Sie lächelte höflich und ging.",
+        "hit": "polite"
+      },
+      {
+        "en": "His reply was polite but clearly not friendly.",
+        "de": "Seine Antwort war höflich, aber eindeutig nicht freundlich.",
+        "hit": "polite"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "polite request",
+        "polite smile",
+        "it's polite to",
+        "polite society"
+      ],
+      "grammar": "Adjektiv; Adverb politely",
+      "tip": "'polite' ist eher formell-korrekt; 'nice' oder 'kind' beschreiben echte Freundlichkeit."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "rude",
+        "ref": "rude",
+        "noteDe": "unhöflich"
+      },
+      {
+        "type": "antonym",
+        "word": "impolite",
+        "noteDe": "unhöflich"
+      },
+      {
+        "type": "synonym",
+        "word": "courteous",
+        "noteDe": "zuvorkommend, gehoben"
+      },
+      {
+        "type": "family",
+        "word": "politeness",
+        "noteDe": "Höflichkeit"
+      }
+    ],
+    "topics": [
+      "daily",
+      "society"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "invite",
+    "lemma": "invite",
+    "pos": "verb",
+    "ipa": "/ɪnˈvaɪt/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "einladen",
+    "deAlt": [
+      "auffordern"
+    ],
+    "definitionEn": "to ask someone to come to an event or place",
+    "examples": [
+      {
+        "en": "We invited all our friends to the wedding.",
+        "de": "Wir haben alle unsere Freunde zur Hochzeit eingeladen.",
+        "hit": "invited"
+      },
+      {
+        "en": "Thanks for inviting me over for dinner.",
+        "de": "Danke, dass du mich zum Abendessen eingeladen hast.",
+        "hit": "inviting"
+      },
+      {
+        "en": "Readers are invited to send their comments by email.",
+        "de": "Leser werden gebeten, ihre Kommentare per E-Mail zu senden.",
+        "hit": "invited"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "invite someone to",
+        "invite someone over",
+        "invite questions"
+      ],
+      "grammar": "transitiv: invite someone to something / to do something",
+      "tip": "'invite' heißt nicht 'bezahlen'. 'I'll pay' oder 'It's on me' = 'Ich lade dich ein' im Restaurant."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "invitation",
+        "noteDe": "Einladung"
+      },
+      {
+        "type": "related",
+        "word": "host",
+        "noteDe": "Gastgeber"
+      },
+      {
+        "type": "family",
+        "word": "inviting",
+        "noteDe": "einladend, verlockend"
+      }
+    ],
+    "topics": [
+      "daily",
+      "society"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "explain",
+    "lemma": "explain",
+    "pos": "verb",
+    "ipa": "/ɪkˈspleɪn/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "erklären",
+    "deAlt": [
+      "begründen"
+    ],
+    "definitionEn": "to make something clear or easy to understand",
+    "examples": [
+      {
+        "en": "Can you explain this word to me?",
+        "de": "Kannst du mir dieses Wort erklären?",
+        "hit": "explain"
+      },
+      {
+        "en": "He explained why he was late.",
+        "de": "Er erklärte, warum er zu spät kam.",
+        "hit": "explained"
+      },
+      {
+        "en": "The sudden drop in sales is difficult to explain.",
+        "de": "Der plötzliche Umsatzrückgang ist schwer zu erklären.",
+        "hit": "explain"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "explain something to someone",
+        "explain why",
+        "hard to explain"
+      ],
+      "grammar": "transitiv; 'explain something to someone', nicht 'explain someone something'",
+      "tip": "Typischer Fehler: 'Explain me the rule' ist falsch. Richtig: 'Explain the rule to me'."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "explanation",
+        "noteDe": "Erklärung"
+      },
+      {
+        "type": "synonym",
+        "word": "clarify",
+        "noteDe": "klarstellen"
+      },
+      {
+        "type": "related",
+        "word": "describe",
+        "noteDe": "beschreiben"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "dangerous",
+    "lemma": "dangerous",
+    "pos": "adj",
+    "ipa": "/ˈdeɪndʒərəs/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "gefährlich",
+    "definitionEn": "able or likely to cause harm or injury",
+    "examples": [
+      {
+        "en": "Swimming here is dangerous because of the currents.",
+        "de": "Hier zu schwimmen ist wegen der Strömungen gefährlich.",
+        "hit": "dangerous"
+      },
+      {
+        "en": "The police said the man is armed and dangerous.",
+        "de": "Die Polizei sagte, der Mann sei bewaffnet und gefährlich.",
+        "hit": "dangerous"
+      },
+      {
+        "en": "It would be dangerous to ignore these warning signs.",
+        "de": "Es wäre gefährlich, diese Warnzeichen zu ignorieren.",
+        "hit": "dangerous"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "dangerous situation",
+        "armed and dangerous",
+        "dangerous to"
+      ],
+      "grammar": "Adjektiv; Steigerung more/most dangerous",
+      "tip": "Bei Menschen und Situationen gleich verwendbar; für Stoffe oft 'hazardous' (formell)."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "danger",
+        "noteDe": "Gefahr"
+      },
+      {
+        "type": "antonym",
+        "word": "safe",
+        "noteDe": "sicher"
+      },
+      {
+        "type": "synonym",
+        "word": "hazardous",
+        "noteDe": "gefährlich (formell, Stoffe)"
+      },
+      {
+        "type": "related",
+        "word": "threat",
+        "ref": "threat",
+        "noteDe": "Bedrohung"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "healthy",
+    "lemma": "healthy",
+    "pos": "adj",
+    "ipa": "/ˈhɛlθi/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "gesund",
+    "deAlt": [
+      "gesundheitsfördernd"
+    ],
+    "definitionEn": "in good physical condition, or good for your body",
+    "examples": [
+      {
+        "en": "She eats healthy food and exercises every day.",
+        "de": "Sie isst gesund und treibt jeden Tag Sport.",
+        "hit": "healthy"
+      },
+      {
+        "en": "The baby was born strong and healthy.",
+        "de": "Das Baby kam kräftig und gesund zur Welt.",
+        "hit": "healthy"
+      },
+      {
+        "en": "A healthy amount of doubt can protect you from scams.",
+        "de": "Eine gesunde Portion Zweifel kann dich vor Betrug schützen.",
+        "hit": "healthy"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "healthy diet",
+        "healthy lifestyle",
+        "stay healthy",
+        "healthy relationship"
+      ],
+      "grammar": "Adjektiv; Steigerung healthier, healthiest",
+      "tip": "'healthy' beschreibt Menschen und Essen; 'healthful' ist selten. 'Gesund werden' = 'get well' oder 'recover'."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "unhealthy",
+        "noteDe": "ungesund"
+      },
+      {
+        "type": "family",
+        "word": "health",
+        "noteDe": "Gesundheit"
+      },
+      {
+        "type": "related",
+        "word": "recover",
+        "ref": "recover",
+        "noteDe": "sich erholen"
+      }
+    ],
+    "topics": [
+      "body",
+      "daily"
+    ],
+    "clusters": [
+      "health-and-body"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "lucky",
+    "lemma": "lucky",
+    "pos": "adj",
+    "ipa": "/ˈlʌki/",
+    "level": "A2",
+    "register": "neutral",
+    "de": "glücklich",
+    "deAlt": [
+      "Glücks-"
+    ],
+    "definitionEn": "having good things happen by chance",
+    "examples": [
+      {
+        "en": "You were lucky to find a parking spot.",
+        "de": "Du hattest Glück, einen Parkplatz zu finden.",
+        "hit": "lucky"
+      },
+      {
+        "en": "Seven has always been my lucky number.",
+        "de": "Die Sieben war schon immer meine Glückszahl.",
+        "hit": "lucky"
+      },
+      {
+        "en": "Lucky for us, the storm passed before the wedding.",
+        "de": "Zum Glück für uns zog der Sturm vor der Hochzeit vorbei.",
+        "hit": "Lucky"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "be lucky",
+        "lucky number",
+        "lucky charm",
+        "get lucky"
+      ],
+      "grammar": "Adjektiv; 'be lucky' = Glück haben",
+      "tip": "'happy' = glücklich (Gefühl), 'lucky' = Glück haben (Zufall). 'I was happy' ist nicht 'Ich hatte Glück'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "happy",
+        "noteDe": "happy = froh, glücklich (Gefühl), lucky = Glück haben (Zufall)"
+      },
+      {
+        "type": "family",
+        "word": "luck",
+        "noteDe": "Glück, Zufall"
+      },
+      {
+        "type": "antonym",
+        "word": "unlucky",
+        "noteDe": "Pech haben"
+      },
+      {
+        "type": "related",
+        "word": "fortune",
+        "ref": "fortune",
+        "noteDe": "Glück, Vermögen"
+      }
+    ],
+    "topics": [
+      "daily",
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "encourage",
+    "lemma": "encourage",
+    "pos": "verb",
+    "ipa": "/ɪnˈkɜrɪdʒ/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "ermutigen",
+    "deAlt": [
+      "fördern",
+      "anregen"
+    ],
+    "definitionEn": "to give someone support or confidence to do something",
+    "examples": [
+      {
+        "en": "My teacher encouraged me to apply.",
+        "de": "Meine Lehrerin ermutigte mich, mich zu bewerben.",
+        "hit": "encouraged"
+      },
+      {
+        "en": "We encourage staff to take regular breaks.",
+        "de": "Wir ermutigen das Personal, regelmäßig Pausen zu machen.",
+        "hit": "encourage"
+      },
+      {
+        "en": "Low prices may encourage people to buy more than they need.",
+        "de": "Niedrige Preise können Leute dazu verleiten, mehr zu kaufen, als sie brauchen.",
+        "hit": "encourage"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "encourage someone to do",
+        "strongly encourage",
+        "encourage growth"
+      ],
+      "grammar": "transitiv: encourage someone to do something",
+      "tip": "Mit Infinitiv mit 'to': 'encourage him to try', nicht 'encourage him trying'."
+    },
+    "mnemonic": "en-COURAGE: jemandem Mut (courage) hineingeben.",
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "discourage",
+        "noteDe": "entmutigen, abraten"
+      },
+      {
+        "type": "family",
+        "word": "encouragement",
+        "noteDe": "Ermutigung"
+      },
+      {
+        "type": "family",
+        "word": "courage",
+        "noteDe": "Mut"
+      },
+      {
+        "type": "synonym",
+        "word": "motivate",
+        "noteDe": "motivieren"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "work"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "reduce",
+    "lemma": "reduce",
+    "pos": "verb",
+    "ipa": "/rɪˈdus/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "reduzieren",
+    "deAlt": [
+      "verringern",
+      "senken"
+    ],
+    "definitionEn": "to make something smaller in size, amount or degree",
+    "examples": [
+      {
+        "en": "We need to reduce our costs.",
+        "de": "Wir müssen unsere Kosten senken.",
+        "hit": "reduce"
+      },
+      {
+        "en": "The shirt was reduced from fifty to twenty dollars.",
+        "de": "Das Hemd wurde von fünfzig auf zwanzig Dollar reduziert.",
+        "hit": "reduced"
+      },
+      {
+        "en": "Regular exercise can significantly reduce the risk of heart disease.",
+        "de": "Regelmäßige Bewegung kann das Risiko für Herzkrankheiten deutlich senken.",
+        "hit": "reduce"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "reduce costs",
+        "reduce the risk",
+        "reduce waste",
+        "reduced price"
+      ],
+      "grammar": "transitiv; reduce something by/to",
+      "tip": "'by 10%' = um 10 %, 'to 10%' = auf 10 %. Verwechslung ist ein häufiger Fehler."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "increase",
+        "noteDe": "erhöhen"
+      },
+      {
+        "type": "family",
+        "word": "reduction",
+        "noteDe": "Verringerung"
+      },
+      {
+        "type": "synonym",
+        "word": "decrease",
+        "noteDe": "abnehmen, verringern"
+      },
+      {
+        "type": "synonym",
+        "word": "cut",
+        "noteDe": "kürzen (umgangssprachlicher)"
+      }
+    ],
+    "topics": [
+      "work",
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs",
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "ignore",
+    "lemma": "ignore",
+    "pos": "verb",
+    "ipa": "/ɪɡˈnɔr/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "ignorieren",
+    "deAlt": [
+      "nicht beachten"
+    ],
+    "definitionEn": "to pay no attention to someone or something on purpose",
+    "examples": [
+      {
+        "en": "She ignored my message all day.",
+        "de": "Sie hat meine Nachricht den ganzen Tag ignoriert.",
+        "hit": "ignored"
+      },
+      {
+        "en": "Just ignore him, he's trying to annoy you.",
+        "de": "Ignorier ihn einfach, er will dich nur ärgern.",
+        "hit": "ignore"
+      },
+      {
+        "en": "These warnings were ignored for years by the authorities.",
+        "de": "Diese Warnungen wurden jahrelang von den Behörden ignoriert.",
+        "hit": "ignored"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "ignore a warning",
+        "ignore the facts",
+        "completely ignore"
+      ],
+      "grammar": "transitiv",
+      "tip": "Falscher Freund: 'ignore' heißt absichtlich nicht beachten, 'nicht wissen' ist 'be unaware' / 'not know'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "be ignorant of",
+        "noteDe": "nicht wissen, unwissend sein"
+      },
+      {
+        "type": "family",
+        "word": "ignorance",
+        "noteDe": "Unwissenheit"
+      },
+      {
+        "type": "synonym",
+        "word": "disregard",
+        "noteDe": "missachten (formell)"
+      }
+    ],
+    "topics": [
+      "daily",
+      "society"
+    ],
+    "clusters": [
+      "everyday-verbs",
+      "false-friends"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "disappoint",
+    "lemma": "disappoint",
+    "pos": "verb",
+    "ipa": "/ˌdɪsəˈpɔɪnt/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "enttäuschen",
+    "definitionEn": "to make someone sad because something is not as good as hoped",
+    "examples": [
+      {
+        "en": "I don't want to disappoint my parents.",
+        "de": "Ich will meine Eltern nicht enttäuschen.",
+        "hit": "disappoint"
+      },
+      {
+        "en": "The film really disappointed me after all the hype.",
+        "de": "Der Film hat mich nach dem ganzen Hype wirklich enttäuscht.",
+        "hit": "disappointed"
+      },
+      {
+        "en": "Fans were bitterly disappointed when the concert was cancelled.",
+        "de": "Die Fans waren bitter enttäuscht, als das Konzert abgesagt wurde.",
+        "hit": "disappointed"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "bitterly disappointed",
+        "disappointed with/in",
+        "never disappoints"
+      ],
+      "grammar": "transitiv; Adjektive disappointed (Person) / disappointing (Sache)",
+      "tip": "'I'm disappointed in you' (in einer Person), 'disappointed with/by the result' (mit einer Sache)."
+    },
+    "mnemonic": "dis-APPOINT: wer nicht zum Termin (appointment) erscheint, enttäuscht.",
+    "relations": [
+      {
+        "type": "family",
+        "word": "disappointment",
+        "noteDe": "Enttäuschung"
+      },
+      {
+        "type": "family",
+        "word": "disappointing",
+        "noteDe": "enttäuschend"
+      },
+      {
+        "type": "antonym",
+        "word": "impress",
+        "noteDe": "beeindrucken"
+      },
+      {
+        "type": "related",
+        "word": "regret",
+        "ref": "regret",
+        "noteDe": "bereuen"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "forgive",
+    "lemma": "forgive",
+    "pos": "verb",
+    "ipa": "/fərˈɡɪv/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "vergeben",
+    "deAlt": [
+      "verzeihen",
+      "erlassen"
+    ],
+    "definitionEn": "to stop being angry with someone for something they did",
+    "examples": [
+      {
+        "en": "Please forgive me for being so rude.",
+        "de": "Bitte verzeih mir, dass ich so unhöflich war.",
+        "hit": "forgive"
+      },
+      {
+        "en": "She never forgave him for lying.",
+        "de": "Sie hat ihm das Lügen nie verziehen.",
+        "hit": "forgave"
+      },
+      {
+        "en": "Part of the country's debt was forgiven by the bank.",
+        "de": "Ein Teil der Schulden des Landes wurde von der Bank erlassen.",
+        "hit": "forgiven"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "forgive someone for",
+        "forgive and forget",
+        "forgive a debt"
+      ],
+      "grammar": "unregelmäßig: forgive, forgave, forgiven",
+      "tip": "'Forgive me, but…' ist eine höfliche Einleitung für Widerspruch oder eine Frage."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "forgiveness",
+        "noteDe": "Vergebung"
+      },
+      {
+        "type": "synonym",
+        "word": "pardon",
+        "noteDe": "begnadigen, verzeihen (formell)"
+      },
+      {
+        "type": "antonym",
+        "word": "resent",
+        "noteDe": "übelnehmen"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "society"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "surround",
+    "lemma": "surround",
+    "pos": "verb",
+    "ipa": "/səˈraʊnd/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "umgeben",
+    "deAlt": [
+      "umzingeln"
+    ],
+    "definitionEn": "to be all around someone or something",
+    "examples": [
+      {
+        "en": "The house is surrounded by trees.",
+        "de": "Das Haus ist von Bäumen umgeben.",
+        "hit": "surrounded"
+      },
+      {
+        "en": "Police quickly surrounded the building where he was hiding.",
+        "de": "Die Polizei umstellte schnell das Gebäude, in dem er sich versteckte.",
+        "hit": "surrounded"
+      },
+      {
+        "en": "There is still a lot of mystery surrounding his death.",
+        "de": "Um seinen Tod ranken sich noch viele Rätsel.",
+        "hit": "surrounding"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "surrounded by",
+        "surround yourself with",
+        "surrounding area"
+      ],
+      "grammar": "transitiv; oft im Passiv: be surrounded by",
+      "tip": "'surroundings' (Plural) = Umgebung: 'I got used to my new surroundings.'"
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "surroundings",
+        "noteDe": "Umgebung"
+      },
+      {
+        "type": "family",
+        "word": "surrounding",
+        "noteDe": "umliegend"
+      },
+      {
+        "type": "synonym",
+        "word": "encircle",
+        "noteDe": "einkreisen"
+      }
+    ],
+    "topics": [
+      "nature",
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "rescue",
+    "lemma": "rescue",
+    "pos": "verb",
+    "ipa": "/ˈrɛskju/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "retten",
+    "deAlt": [
+      "bergen"
+    ],
+    "definitionEn": "to save someone or something from danger",
+    "examples": [
+      {
+        "en": "Firefighters rescued a cat from the roof.",
+        "de": "Die Feuerwehr rettete eine Katze vom Dach.",
+        "hit": "rescued"
+      },
+      {
+        "en": "Two climbers were rescued after a night on the mountain.",
+        "de": "Zwei Kletterer wurden nach einer Nacht am Berg gerettet.",
+        "hit": "rescued"
+      },
+      {
+        "en": "The government stepped in to rescue the failing bank.",
+        "de": "Die Regierung griff ein, um die angeschlagene Bank zu retten.",
+        "hit": "rescue"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "rescue someone from",
+        "come to the rescue",
+        "rescue team"
+      ],
+      "grammar": "transitiv; auch Nomen: a rescue operation",
+      "tip": "'rescue' betont die Rettung aus akuter Gefahr; 'save' ist allgemeiner (auch Geld sparen, Daten speichern)."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "save",
+        "noteDe": "retten, sparen"
+      },
+      {
+        "type": "family",
+        "word": "rescuer",
+        "noteDe": "Retter"
+      },
+      {
+        "type": "collocate",
+        "word": "rescue dog",
+        "noteDe": "Rettungshund / Hund aus dem Tierheim"
+      }
+    ],
+    "topics": [
+      "daily",
+      "nature"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "ordinary",
+    "lemma": "ordinary",
+    "pos": "adj",
+    "ipa": "/ˈɔrdəˌnɛri/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "gewöhnlich",
+    "deAlt": [
+      "normal",
+      "alltäglich"
+    ],
+    "definitionEn": "normal and not special or unusual",
+    "examples": [
+      {
+        "en": "It was just an ordinary day at work.",
+        "de": "Es war einfach ein gewöhnlicher Arbeitstag.",
+        "hit": "ordinary"
+      },
+      {
+        "en": "Ordinary people can't afford these prices.",
+        "de": "Normale Leute können sich diese Preise nicht leisten.",
+        "hit": "Ordinary"
+      },
+      {
+        "en": "Her talent is far from ordinary.",
+        "de": "Ihr Talent ist alles andere als gewöhnlich.",
+        "hit": "ordinary"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "ordinary people",
+        "out of the ordinary",
+        "perfectly ordinary"
+      ],
+      "grammar": "Adjektiv; 'out of the ordinary' = ungewöhnlich",
+      "tip": "Nicht mit 'ordentlich' verwechseln. 'ordentlich' = 'tidy' oder 'neat'."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "extraordinary",
+        "noteDe": "außergewöhnlich"
+      },
+      {
+        "type": "confusable",
+        "word": "orderly",
+        "noteDe": "orderly = ordentlich, geordnet"
+      },
+      {
+        "type": "synonym",
+        "word": "common",
+        "noteDe": "üblich"
+      },
+      {
+        "type": "related",
+        "word": "mediocre",
+        "ref": "mediocre",
+        "noteDe": "mittelmäßig"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "describing-things",
+      "false-friends"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "suitable",
+    "lemma": "suitable",
+    "pos": "adj",
+    "ipa": "/ˈsutəbəl/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "geeignet",
+    "deAlt": [
+      "passend"
+    ],
+    "definitionEn": "right or acceptable for a particular person, purpose or situation",
+    "examples": [
+      {
+        "en": "This film is not suitable for children.",
+        "de": "Dieser Film ist nicht für Kinder geeignet.",
+        "hit": "suitable"
+      },
+      {
+        "en": "We're still looking for a suitable venue.",
+        "de": "Wir suchen noch nach einem geeigneten Veranstaltungsort.",
+        "hit": "suitable"
+      },
+      {
+        "en": "Applicants without suitable qualifications will not be considered.",
+        "de": "Bewerber ohne geeignete Qualifikationen werden nicht berücksichtigt.",
+        "hit": "suitable"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "suitable for",
+        "suitable candidate",
+        "find something suitable"
+      ],
+      "grammar": "Adjektiv; mit 'for'",
+      "tip": "Immer 'suitable for', nicht 'suitable to' im Alltag. Verb 'suit' = passen, stehen (Kleidung)."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "unsuitable",
+        "noteDe": "ungeeignet"
+      },
+      {
+        "type": "synonym",
+        "word": "appropriate",
+        "ref": "appropriate",
+        "noteDe": "angemessen"
+      },
+      {
+        "type": "family",
+        "word": "suit",
+        "noteDe": "passen, stehen"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work"
+    ],
+    "clusters": [
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "rough",
+    "lemma": "rough",
+    "pos": "adj",
+    "ipa": "/rʌf/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "rau",
+    "deAlt": [
+      "grob",
+      "ungefähr",
+      "hart"
+    ],
+    "definitionEn": "not smooth; also not exact, or difficult and unpleasant",
+    "examples": [
+      {
+        "en": "The wood feels rough, so sand it first.",
+        "de": "Das Holz fühlt sich rau an, also schleif es zuerst ab.",
+        "hit": "rough"
+      },
+      {
+        "en": "Can you give me a rough idea of the price?",
+        "de": "Kannst du mir ungefähr sagen, was es kostet?",
+        "hit": "rough"
+      },
+      {
+        "en": "She's had a rough few months since the divorce.",
+        "de": "Sie hatte seit der Scheidung ein paar harte Monate.",
+        "hit": "rough"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "rough idea",
+        "rough estimate",
+        "rough day",
+        "rough sea"
+      ],
+      "grammar": "Adjektiv; Aussprache wie 'ruff'",
+      "tip": "Drei Hauptbedeutungen: rau (Oberfläche), ungefähr (rough estimate), hart (a rough time)."
+    },
+    "mnemonic": "-ough wie 'enough': /rʌf/.",
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "smooth",
+        "noteDe": "glatt"
+      },
+      {
+        "type": "family",
+        "word": "roughly",
+        "noteDe": "ungefähr"
+      },
+      {
+        "type": "synonym",
+        "word": "tough",
+        "ref": "tough",
+        "noteDe": "hart, schwierig"
+      },
+      {
+        "type": "related",
+        "word": "cough",
+        "ref": "cough",
+        "noteDe": "gleiches -ough-Muster"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "describing-things",
+      "ough-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "prove",
+    "lemma": "prove",
+    "pos": "verb",
+    "ipa": "/pruv/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "beweisen",
+    "deAlt": [
+      "sich erweisen als"
+    ],
+    "definitionEn": "to show that something is true by giving evidence",
+    "examples": [
+      {
+        "en": "Can you prove that you were at home?",
+        "de": "Kannst du beweisen, dass du zu Hause warst?",
+        "hit": "prove"
+      },
+      {
+        "en": "She wanted to prove everyone wrong.",
+        "de": "Sie wollte allen beweisen, dass sie falsch lagen.",
+        "hit": "prove"
+      },
+      {
+        "en": "The new system has proved very successful.",
+        "de": "Das neue System hat sich als sehr erfolgreich erwiesen.",
+        "hit": "proved"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "prove someone wrong",
+        "prove a point",
+        "prove to be",
+        "hard to prove"
+      ],
+      "grammar": "Partizip proved oder proven; 'prove (to be)' + Adjektiv = sich erweisen als",
+      "tip": "'It proved difficult' = Es erwies sich als schwierig (ohne 'itself')."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "proof",
+        "noteDe": "Beweis"
+      },
+      {
+        "type": "antonym",
+        "word": "disprove",
+        "noteDe": "widerlegen"
+      },
+      {
+        "type": "related",
+        "word": "evidence",
+        "noteDe": "Beweismaterial"
+      }
+    ],
+    "topics": [
+      "law",
+      "daily"
+    ],
+    "clusters": [
+      "court-and-justice",
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "pleasant",
+    "lemma": "pleasant",
+    "pos": "adj",
+    "ipa": "/ˈplɛzənt/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "angenehm",
+    "deAlt": [
+      "freundlich"
+    ],
+    "definitionEn": "enjoyable or nice; also friendly and polite",
+    "examples": [
+      {
+        "en": "We had a pleasant evening by the lake.",
+        "de": "Wir hatten einen angenehmen Abend am See.",
+        "hit": "pleasant"
+      },
+      {
+        "en": "The weather was surprisingly pleasant for March.",
+        "de": "Das Wetter war für März überraschend angenehm.",
+        "hit": "pleasant"
+      },
+      {
+        "en": "Not every task in this job will be pleasant.",
+        "de": "Nicht jede Aufgabe in diesem Job wird angenehm sein.",
+        "hit": "pleasant"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "pleasant surprise",
+        "pleasant evening",
+        "pleasant to"
+      ],
+      "grammar": "Adjektiv; Aussprache /ˈplɛz-/, nicht /ˈpliːz-/",
+      "tip": "Aussprache wie 'pleasure' mit kurzem e, obwohl es von 'please' kommt."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "unpleasant",
+        "noteDe": "unangenehm"
+      },
+      {
+        "type": "family",
+        "word": "pleasure",
+        "ref": "pleasure",
+        "noteDe": "Vergnügen"
+      },
+      {
+        "type": "synonym",
+        "word": "enjoyable",
+        "noteDe": "vergnüglich"
+      }
+    ],
+    "topics": [
+      "daily",
+      "emotion"
+    ],
+    "clusters": [
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "attract",
+    "lemma": "attract",
+    "pos": "verb",
+    "ipa": "/əˈtrækt/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "anziehen",
+    "deAlt": [
+      "anlocken"
+    ],
+    "definitionEn": "to make someone or something come to a place or feel interested",
+    "examples": [
+      {
+        "en": "The festival attracts thousands of visitors.",
+        "de": "Das Festival zieht Tausende Besucher an.",
+        "hit": "attracts"
+      },
+      {
+        "en": "Flowers use bright colors to attract bees.",
+        "de": "Blumen locken Bienen mit leuchtenden Farben an.",
+        "hit": "attract"
+      },
+      {
+        "en": "The proposal attracted a lot of criticism from experts.",
+        "de": "Der Vorschlag stieß bei Fachleuten auf viel Kritik.",
+        "hit": "attracted"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "attract attention",
+        "attract visitors",
+        "be attracted to someone"
+      ],
+      "grammar": "transitiv; 'be attracted to someone' = sich zu jemandem hingezogen fühlen",
+      "tip": "Für Kleidung 'anziehen' nimmt man 'put on' oder 'wear', nie 'attract'."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "attractive",
+        "noteDe": "attraktiv"
+      },
+      {
+        "type": "family",
+        "word": "attraction",
+        "noteDe": "Anziehung, Sehenswürdigkeit"
+      },
+      {
+        "type": "antonym",
+        "word": "repel",
+        "noteDe": "abstoßen"
+      }
+    ],
+    "topics": [
+      "daily",
+      "emotion"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "warn",
+    "lemma": "warn",
+    "pos": "verb",
+    "ipa": "/wɔrn/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "warnen",
+    "deAlt": [
+      "verwarnen"
+    ],
+    "definitionEn": "to tell someone about a possible danger or problem",
+    "examples": [
+      {
+        "en": "I warned you that the road was icy.",
+        "de": "Ich habe dich gewarnt, dass die Straße vereist ist.",
+        "hit": "warned"
+      },
+      {
+        "en": "Doctors warn against eating too much sugar.",
+        "de": "Ärzte warnen davor, zu viel Zucker zu essen.",
+        "hit": "warn"
+      },
+      {
+        "en": "Residents have been warned to stay indoors tonight.",
+        "de": "Die Anwohner wurden aufgefordert, heute Nacht drinnen zu bleiben.",
+        "hit": "warned"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "warn someone about",
+        "warn against",
+        "warn someone not to"
+      ],
+      "grammar": "transitiv: warn someone about/of something; warn someone (not) to do",
+      "tip": "Achtung Aussprache: 'warn' klingt wie 'worn' /wɔrn/, nicht wie 'warm'."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "warning",
+        "noteDe": "Warnung"
+      },
+      {
+        "type": "synonym",
+        "word": "alert",
+        "noteDe": "alarmieren, hinweisen"
+      },
+      {
+        "type": "related",
+        "word": "threat",
+        "ref": "threat",
+        "noteDe": "Bedrohung"
+      }
+    ],
+    "topics": [
+      "daily",
+      "society"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "fair",
+    "lemma": "fair",
+    "pos": "adj",
+    "ipa": "/fɛr/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "fair",
+    "deAlt": [
+      "gerecht",
+      "hell (Haut/Haar)",
+      "ziemlich"
+    ],
+    "definitionEn": "treating people equally or in a way that is right and reasonable",
+    "examples": [
+      {
+        "en": "That's not fair, it was my turn!",
+        "de": "Das ist nicht fair, ich war dran!",
+        "hit": "fair"
+      },
+      {
+        "en": "Everyone accused of a crime deserves a fair trial.",
+        "de": "Jeder, der einer Straftat beschuldigt wird, hat ein faires Verfahren verdient.",
+        "hit": "fair"
+      },
+      {
+        "en": "To be fair, he did warn us about the risks.",
+        "de": "Fairerweise muss man sagen, dass er uns vor den Risiken gewarnt hat.",
+        "hit": "fair"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "fair trial",
+        "to be fair",
+        "fair share",
+        "fair enough"
+      ],
+      "grammar": "Adjektiv; Adverb fairly (auch: ziemlich)",
+      "tip": "'Fair enough' = 'Na gut, einverstanden'. 'fairly' heißt oft 'ziemlich': 'fairly easy'."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "unfair",
+        "noteDe": "ungerecht"
+      },
+      {
+        "type": "family",
+        "word": "fairness",
+        "noteDe": "Fairness"
+      },
+      {
+        "type": "family",
+        "word": "fairly",
+        "noteDe": "ziemlich, gerecht"
+      },
+      {
+        "type": "synonym",
+        "word": "just",
+        "noteDe": "gerecht (gehoben)"
+      }
+    ],
+    "topics": [
+      "society",
+      "law"
+    ],
+    "clusters": [
+      "court-and-justice"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "steady",
+    "lemma": "steady",
+    "pos": "adj",
+    "ipa": "/ˈstɛdi/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "stetig",
+    "deAlt": [
+      "fest",
+      "stabil",
+      "gleichmäßig"
+    ],
+    "definitionEn": "developing or happening at a regular, even pace; firmly fixed",
+    "examples": [
+      {
+        "en": "Hold the ladder steady while I climb up.",
+        "de": "Halt die Leiter fest, während ich hochklettere.",
+        "hit": "steady"
+      },
+      {
+        "en": "There has been a steady increase in prices.",
+        "de": "Die Preise sind stetig gestiegen.",
+        "hit": "steady"
+      },
+      {
+        "en": "After years of freelancing, she wanted a steady income.",
+        "de": "Nach Jahren als Freiberuflerin wollte sie ein regelmäßiges Einkommen.",
+        "hit": "steady"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "steady income",
+        "steady growth",
+        "hold something steady",
+        "slow and steady"
+      ],
+      "grammar": "Adjektiv; Adverb steadily",
+      "tip": "'Slow and steady wins the race' = Langsam, aber stetig kommt man ans Ziel."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "unsteady",
+        "noteDe": "wackelig"
+      },
+      {
+        "type": "family",
+        "word": "steadily",
+        "noteDe": "stetig"
+      },
+      {
+        "type": "synonym",
+        "word": "stable",
+        "noteDe": "stabil"
+      },
+      {
+        "type": "related",
+        "word": "gradually",
+        "ref": "gradually",
+        "noteDe": "allmählich"
+      }
+    ],
+    "topics": [
+      "work",
+      "daily"
+    ],
+    "clusters": [
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "struggle",
+    "lemma": "struggle",
+    "pos": "verb",
+    "ipa": "/ˈstrʌɡəl/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "kämpfen",
+    "deAlt": [
+      "sich abmühen",
+      "Schwierigkeiten haben"
+    ],
+    "definitionEn": "to try very hard to do something that is difficult",
+    "examples": [
+      {
+        "en": "I struggled to stay awake during the lecture.",
+        "de": "Ich hatte Mühe, während der Vorlesung wach zu bleiben.",
+        "hit": "struggled"
+      },
+      {
+        "en": "Many families are struggling with rising rents.",
+        "de": "Viele Familien kämpfen mit steigenden Mieten.",
+        "hit": "struggling"
+      },
+      {
+        "en": "The victim struggled with the attacker before escaping.",
+        "de": "Das Opfer rang mit dem Angreifer, bevor es fliehen konnte.",
+        "hit": "struggled"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "struggle to do",
+        "struggle with",
+        "struggle for",
+        "financial struggle"
+      ],
+      "grammar": "intransitiv; struggle to do / with something; auch Nomen: a struggle",
+      "tip": "'I struggle with maths' = Ich tue mich schwer mit Mathe. Sehr häufig und natürlicher als 'I have problems with'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "strive",
+        "noteDe": "streben (gehoben)"
+      },
+      {
+        "type": "related",
+        "word": "cope",
+        "ref": "cope",
+        "noteDe": "zurechtkommen"
+      },
+      {
+        "type": "related",
+        "word": "effort",
+        "ref": "effort",
+        "noteDe": "Anstrengung"
+      },
+      {
+        "type": "related",
+        "word": "obstacle",
+        "ref": "obstacle",
+        "noteDe": "Hindernis"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work",
+      "emotion"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "mood",
+    "lemma": "mood",
+    "pos": "noun",
+    "ipa": "/mud/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Laune",
+    "deAlt": [
+      "Stimmung"
+    ],
+    "definitionEn": "the way you feel at a particular time",
+    "examples": [
+      {
+        "en": "He's in a really good mood today.",
+        "de": "Er hat heute richtig gute Laune.",
+        "hit": "mood"
+      },
+      {
+        "en": "I'm not in the mood for a party.",
+        "de": "Mir ist nicht nach einer Party zumute.",
+        "hit": "mood"
+      },
+      {
+        "en": "The mood in the office changed after the layoffs.",
+        "de": "Die Stimmung im Büro änderte sich nach den Entlassungen.",
+        "hit": "mood"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "in a good/bad mood",
+        "not in the mood for",
+        "mood swings",
+        "lighten the mood"
+      ],
+      "grammar": "Nomen, zählbar",
+      "tip": "'be in the mood for something' = Lust auf etwas haben. 'moody' = launisch, nicht 'stimmungsvoll'."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "moody",
+        "noteDe": "launisch"
+      },
+      {
+        "type": "synonym",
+        "word": "temper",
+        "noteDe": "Gemüt, Laune (oft negativ)"
+      },
+      {
+        "type": "related",
+        "word": "tension",
+        "ref": "tension",
+        "noteDe": "Anspannung"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "lack",
+    "lemma": "lack",
+    "pos": "noun",
+    "ipa": "/læk/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Mangel",
+    "deAlt": [
+      "Fehlen"
+    ],
+    "definitionEn": "the state of not having enough of something",
+    "examples": [
+      {
+        "en": "I'm tired because of a lack of sleep.",
+        "de": "Ich bin müde wegen Schlafmangels.",
+        "hit": "lack"
+      },
+      {
+        "en": "The project failed for lack of money.",
+        "de": "Das Projekt scheiterte aus Geldmangel.",
+        "hit": "lack"
+      },
+      {
+        "en": "Her lack of experience was obvious in the interview.",
+        "de": "Ihre mangelnde Erfahrung war im Vorstellungsgespräch offensichtlich.",
+        "hit": "lack"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "lack of sleep",
+        "for lack of",
+        "lack of confidence",
+        "a complete lack of"
+      ],
+      "grammar": "Nomen, unzählbar; auch Verb: 'He lacks confidence' (ohne 'of')",
+      "tip": "Als Verb ohne 'of': 'She lacks experience'. Als Nomen mit 'of': 'a lack of experience'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "shortage",
+        "noteDe": "Knappheit"
+      },
+      {
+        "type": "antonym",
+        "word": "abundance",
+        "noteDe": "Überfluss"
+      },
+      {
+        "type": "related",
+        "word": "scarce",
+        "ref": "scarce",
+        "noteDe": "knapp"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "shame",
+    "lemma": "shame",
+    "pos": "noun",
+    "ipa": "/ʃeɪm/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "Scham",
+    "deAlt": [
+      "Schande",
+      "schade"
+    ],
+    "definitionEn": "a bad feeling caused by knowing you did something wrong; also a pity",
+    "examples": [
+      {
+        "en": "What a shame you can't come!",
+        "de": "Wie schade, dass du nicht kommen kannst!",
+        "hit": "shame"
+      },
+      {
+        "en": "He felt deep shame about what he had said.",
+        "de": "Er schämte sich zutiefst für das, was er gesagt hatte.",
+        "hit": "shame"
+      },
+      {
+        "en": "There is no shame in asking for help.",
+        "de": "Es ist keine Schande, um Hilfe zu bitten.",
+        "hit": "shame"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "what a shame",
+        "it's a shame that",
+        "no shame in",
+        "feel shame"
+      ],
+      "grammar": "Nomen, unzählbar; 'It's a shame' = Es ist schade",
+      "tip": "'What a shame!' heißt meist nur 'Wie schade!', nicht 'Was für eine Schande!'."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "ashamed",
+        "noteDe": "beschämt"
+      },
+      {
+        "type": "family",
+        "word": "shameful",
+        "noteDe": "schändlich"
+      },
+      {
+        "type": "synonym",
+        "word": "pity",
+        "noteDe": "schade (what a pity)"
+      },
+      {
+        "type": "related",
+        "word": "embarrassing",
+        "ref": "embarrassing",
+        "noteDe": "peinlich"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "rare",
+    "lemma": "rare",
+    "pos": "adj",
+    "ipa": "/rɛr/",
+    "level": "B1",
+    "register": "neutral",
+    "de": "selten",
+    "deAlt": [
+      "rar",
+      "blutig (Steak)"
+    ],
+    "definitionEn": "not happening or found very often",
+    "examples": [
+      {
+        "en": "This bird is very rare in Europe.",
+        "de": "Dieser Vogel ist in Europa sehr selten.",
+        "hit": "rare"
+      },
+      {
+        "en": "I'd like my steak rare, please.",
+        "de": "Ich hätte mein Steak gern blutig, bitte.",
+        "hit": "rare"
+      },
+      {
+        "en": "In a rare moment of honesty, he admitted his mistake.",
+        "de": "In einem seltenen Moment der Ehrlichkeit gab er seinen Fehler zu.",
+        "hit": "rare"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "rare disease",
+        "on rare occasions",
+        "rare steak",
+        "extremely rare"
+      ],
+      "grammar": "Adjektiv; Adverb rarely",
+      "tip": "Beim Steak: rare (blutig), medium, well done (durch)."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "common",
+        "noteDe": "häufig"
+      },
+      {
+        "type": "family",
+        "word": "rarely",
+        "ref": "rarely",
+        "noteDe": "selten"
+      },
+      {
+        "type": "synonym",
+        "word": "scarce",
+        "ref": "scarce",
+        "noteDe": "knapp"
+      }
+    ],
+    "topics": [
+      "daily",
+      "nature"
+    ],
+    "clusters": [
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "reluctant",
+    "lemma": "reluctant",
+    "pos": "adj",
+    "ipa": "/rɪˈlʌktənt/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "widerwillig",
+    "deAlt": [
+      "zögerlich",
+      "abgeneigt"
+    ],
+    "definitionEn": "not willing to do something and therefore slow to do it",
+    "examples": [
+      {
+        "en": "He was reluctant to talk about his past.",
+        "de": "Er sprach nur ungern über seine Vergangenheit.",
+        "hit": "reluctant"
+      },
+      {
+        "en": "She gave a reluctant nod and signed the form.",
+        "de": "Sie nickte widerwillig und unterschrieb das Formular.",
+        "hit": "reluctant"
+      },
+      {
+        "en": "Banks have become increasingly reluctant to lend money.",
+        "de": "Banken sind zunehmend zurückhaltend bei der Kreditvergabe.",
+        "hit": "reluctant"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "reluctant to do",
+        "reluctant agreement",
+        "reluctant hero"
+      ],
+      "grammar": "Adjektiv; meist 'be reluctant to do something'",
+      "tip": "Sehr nützlich für 'ungern tun': 'I'm reluctant to say this, but…'."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "eager",
+        "ref": "eager",
+        "noteDe": "eifrig, begierig"
+      },
+      {
+        "type": "family",
+        "word": "reluctance",
+        "noteDe": "Widerwille"
+      },
+      {
+        "type": "synonym",
+        "word": "unwilling",
+        "noteDe": "nicht bereit"
+      },
+      {
+        "type": "related",
+        "word": "hesitate",
+        "ref": "hesitate",
+        "noteDe": "zögern"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "work"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "vague",
+    "lemma": "vague",
+    "pos": "adj",
+    "ipa": "/veɪɡ/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "vage",
+    "deAlt": [
+      "ungenau",
+      "unklar"
+    ],
+    "definitionEn": "not clear or detailed enough",
+    "examples": [
+      {
+        "en": "He gave me a vague answer.",
+        "de": "Er gab mir eine vage Antwort.",
+        "hit": "vague"
+      },
+      {
+        "en": "I have only a vague memory of that night.",
+        "de": "Ich habe nur eine verschwommene Erinnerung an diese Nacht.",
+        "hit": "vague"
+      },
+      {
+        "en": "The contract is deliberately vague about who pays.",
+        "de": "Der Vertrag ist absichtlich unklar darüber, wer bezahlt.",
+        "hit": "vague"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "vague idea",
+        "vague answer",
+        "vague memory",
+        "deliberately vague"
+      ],
+      "grammar": "Adjektiv; Adverb vaguely",
+      "tip": "'vaguely familiar' = irgendwie bekannt. Aussprache einsilbig: /veɪɡ/."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "precise",
+        "noteDe": "präzise"
+      },
+      {
+        "type": "synonym",
+        "word": "unclear",
+        "noteDe": "unklar"
+      },
+      {
+        "type": "antonym",
+        "word": "concise",
+        "ref": "concise",
+        "noteDe": "knapp, präzise"
+      },
+      {
+        "type": "related",
+        "word": "ambiguous",
+        "ref": "ambiguous",
+        "noteDe": "mehrdeutig"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work"
+    ],
+    "clusters": [
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "cope",
+    "lemma": "cope",
+    "pos": "verb",
+    "ipa": "/koʊp/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "zurechtkommen",
+    "deAlt": [
+      "bewältigen",
+      "fertig werden"
+    ],
+    "definitionEn": "to deal successfully with a difficult situation",
+    "examples": [
+      {
+        "en": "How do you cope with so much stress?",
+        "de": "Wie kommst du mit so viel Stress klar?",
+        "hit": "cope"
+      },
+      {
+        "en": "She's coping well after the operation.",
+        "de": "Sie kommt nach der Operation gut zurecht.",
+        "hit": "coping"
+      },
+      {
+        "en": "Hospitals are struggling to cope with the number of patients.",
+        "de": "Die Krankenhäuser kommen mit der Zahl der Patienten kaum zurecht.",
+        "hit": "cope"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "cope with",
+        "unable to cope",
+        "coping mechanism",
+        "cope well"
+      ],
+      "grammar": "intransitiv; immer 'cope with something'",
+      "tip": "Nicht 'cope something', sondern 'cope with something'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "manage",
+        "ref": "manage",
+        "noteDe": "schaffen, bewältigen"
+      },
+      {
+        "type": "related",
+        "word": "struggle",
+        "ref": "struggle",
+        "noteDe": "sich abmühen"
+      },
+      {
+        "type": "synonym",
+        "word": "handle",
+        "noteDe": "handhaben"
+      },
+      {
+        "type": "related",
+        "word": "endure",
+        "ref": "endure",
+        "noteDe": "ertragen"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "daily"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "thorough",
+    "lemma": "thorough",
+    "pos": "adj",
+    "ipa": "/ˈθɜroʊ/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "gründlich",
+    "deAlt": [
+      "sorgfältig"
+    ],
+    "definitionEn": "careful and complete, paying attention to every detail",
+    "examples": [
+      {
+        "en": "The doctor gave me a thorough examination.",
+        "de": "Der Arzt untersuchte mich gründlich.",
+        "hit": "thorough"
+      },
+      {
+        "en": "She's very thorough in her work.",
+        "de": "Sie arbeitet sehr gründlich.",
+        "hit": "thorough"
+      },
+      {
+        "en": "A thorough investigation found no evidence of fraud.",
+        "de": "Eine gründliche Untersuchung ergab keine Hinweise auf Betrug.",
+        "hit": "thorough"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "thorough check",
+        "thorough investigation",
+        "thorough cleaning"
+      ],
+      "grammar": "Adjektiv; Adverb thoroughly",
+      "tip": "Nicht mit 'through' (durch) oder 'though' (obwohl) verwechseln. Aussprache /ˈθɜroʊ/."
+    },
+    "mnemonic": "THOROUGH hat ein -o mehr als THROUGH: gründlicher geschrieben.",
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "through",
+        "ref": "through",
+        "noteDe": "through = durch"
+      },
+      {
+        "type": "confusable",
+        "word": "though",
+        "ref": "though",
+        "noteDe": "though = obwohl"
+      },
+      {
+        "type": "family",
+        "word": "thoroughly",
+        "noteDe": "gründlich, völlig"
+      },
+      {
+        "type": "antonym",
+        "word": "sloppy",
+        "ref": "sloppy",
+        "noteDe": "schlampig"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "describing-things",
+      "ough-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "blunt",
+    "lemma": "blunt",
+    "pos": "adj",
+    "ipa": "/blʌnt/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "direkt",
+    "deAlt": [
+      "unverblümt",
+      "stumpf"
+    ],
+    "definitionEn": "saying what you think directly without trying to be polite; not sharp",
+    "examples": [
+      {
+        "en": "To be blunt, your plan won't work.",
+        "de": "Um es offen zu sagen: Dein Plan wird nicht funktionieren.",
+        "hit": "blunt"
+      },
+      {
+        "en": "This knife is too blunt to cut tomatoes.",
+        "de": "Dieses Messer ist zu stumpf, um Tomaten zu schneiden.",
+        "hit": "blunt"
+      },
+      {
+        "en": "Her blunt criticism upset several colleagues.",
+        "de": "Ihre unverblümte Kritik verärgerte mehrere Kollegen.",
+        "hit": "blunt"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "to be blunt",
+        "blunt knife",
+        "blunt question",
+        "blunt instrument"
+      ],
+      "grammar": "Adjektiv; Adverb bluntly",
+      "tip": "Bei Menschen leicht negativ (zu direkt). Neutraler: 'direct' oder 'frank'."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "sharp",
+        "noteDe": "scharf"
+      },
+      {
+        "type": "synonym",
+        "word": "frank",
+        "noteDe": "offen"
+      },
+      {
+        "type": "synonym",
+        "word": "candid",
+        "ref": "candid",
+        "noteDe": "offen, ehrlich"
+      },
+      {
+        "type": "antonym",
+        "word": "tactful",
+        "noteDe": "taktvoll"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "society"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "cautious",
+    "lemma": "cautious",
+    "pos": "adj",
+    "ipa": "/ˈkɔʃəs/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "vorsichtig",
+    "deAlt": [
+      "behutsam",
+      "zurückhaltend"
+    ],
+    "definitionEn": "careful to avoid risks or danger",
+    "examples": [
+      {
+        "en": "Be cautious when you open unknown emails.",
+        "de": "Sei vorsichtig, wenn du unbekannte E-Mails öffnest.",
+        "hit": "cautious"
+      },
+      {
+        "en": "She's a cautious investor and avoids big risks.",
+        "de": "Sie ist eine vorsichtige Anlegerin und meidet große Risiken.",
+        "hit": "cautious"
+      },
+      {
+        "en": "Experts remain cautious about the new treatment.",
+        "de": "Experten bleiben bei der neuen Behandlung zurückhaltend.",
+        "hit": "cautious"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "cautious approach",
+        "cautious optimism",
+        "cautious about"
+      ],
+      "grammar": "Adjektiv; Adverb cautiously",
+      "tip": "'cautious' betont die Haltung gegenüber Risiken; 'careful' ist allgemeiner."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "careful",
+        "ref": "careful",
+        "noteDe": "vorsichtig"
+      },
+      {
+        "type": "family",
+        "word": "caution",
+        "noteDe": "Vorsicht"
+      },
+      {
+        "type": "antonym",
+        "word": "reckless",
+        "ref": "reckless",
+        "noteDe": "leichtsinnig"
+      },
+      {
+        "type": "synonym",
+        "word": "wary",
+        "ref": "wary",
+        "noteDe": "misstrauisch, vorsichtig"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "eager",
+    "lemma": "eager",
+    "pos": "adj",
+    "ipa": "/ˈiɡər/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "eifrig",
+    "deAlt": [
+      "begierig",
+      "gespannt"
+    ],
+    "definitionEn": "wanting very much to do or have something",
+    "examples": [
+      {
+        "en": "The kids were eager to open their presents.",
+        "de": "Die Kinder konnten es kaum erwarten, ihre Geschenke zu öffnen.",
+        "hit": "eager"
+      },
+      {
+        "en": "She's an eager student who always asks questions.",
+        "de": "Sie ist eine eifrige Schülerin, die immer Fragen stellt.",
+        "hit": "eager"
+      },
+      {
+        "en": "Investors are eager for signs of economic recovery.",
+        "de": "Anleger warten gespannt auf Anzeichen einer wirtschaftlichen Erholung.",
+        "hit": "eager"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "eager to do",
+        "eager for",
+        "eager to please"
+      ],
+      "grammar": "Adjektiv; eager to do / eager for something",
+      "tip": "'eager to please' = immer bemüht, es allen recht zu machen."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "reluctant",
+        "ref": "reluctant",
+        "noteDe": "widerwillig"
+      },
+      {
+        "type": "synonym",
+        "word": "keen",
+        "ref": "keen",
+        "noteDe": "scharf auf, begeistert"
+      },
+      {
+        "type": "family",
+        "word": "eagerness",
+        "noteDe": "Eifer"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "keen",
+    "lemma": "keen",
+    "pos": "adj",
+    "ipa": "/kin/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "begeistert",
+    "deAlt": [
+      "scharf auf",
+      "eifrig",
+      "scharf (Sinne)"
+    ],
+    "definitionEn": "very interested in or wanting to do something",
+    "examples": [
+      {
+        "en": "I'm not very keen on horror films.",
+        "de": "Ich bin kein großer Fan von Horrorfilmen.",
+        "hit": "keen"
+      },
+      {
+        "en": "He's a keen cyclist and rides every weekend.",
+        "de": "Er ist ein begeisterter Radfahrer und fährt jedes Wochenende.",
+        "hit": "keen"
+      },
+      {
+        "en": "Dogs have a keen sense of smell.",
+        "de": "Hunde haben einen feinen Geruchssinn.",
+        "hit": "keen"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "keen on",
+        "keen to do",
+        "keen interest",
+        "keen eye"
+      ],
+      "grammar": "Adjektiv; keen on something / keen to do",
+      "tip": "'keen on' ist eher britisch; im amerikanischen Englisch oft 'into' oder 'excited about'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "eager",
+        "ref": "eager",
+        "noteDe": "eifrig"
+      },
+      {
+        "type": "synonym",
+        "word": "enthusiastic",
+        "noteDe": "begeistert"
+      },
+      {
+        "type": "antonym",
+        "word": "reluctant",
+        "ref": "reluctant",
+        "noteDe": "widerwillig"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "daily"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "assess",
+    "lemma": "assess",
+    "pos": "verb",
+    "ipa": "/əˈsɛs/",
+    "level": "B2",
+    "register": "formal",
+    "de": "beurteilen",
+    "deAlt": [
+      "einschätzen",
+      "bewerten"
+    ],
+    "definitionEn": "to judge or decide the amount, value, quality or importance of something",
+    "examples": [
+      {
+        "en": "We need to assess the damage first.",
+        "de": "Wir müssen zuerst den Schaden einschätzen.",
+        "hit": "assess"
+      },
+      {
+        "en": "Students are assessed on their written work.",
+        "de": "Die Studierenden werden anhand ihrer schriftlichen Arbeiten bewertet.",
+        "hit": "assessed"
+      },
+      {
+        "en": "It's too early to assess the long-term effects of the policy.",
+        "de": "Es ist zu früh, die langfristigen Folgen der Maßnahme zu beurteilen.",
+        "hit": "assess"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "assess the damage",
+        "assess the risk",
+        "assess the situation"
+      ],
+      "grammar": "transitiv",
+      "tip": "Typisch in Beruf und Schule. Alltagssprachlicher: 'judge' oder 'figure out'."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "assessment",
+        "noteDe": "Beurteilung"
+      },
+      {
+        "type": "synonym",
+        "word": "evaluate",
+        "noteDe": "bewerten"
+      },
+      {
+        "type": "synonym",
+        "word": "determine",
+        "ref": "determine",
+        "noteDe": "bestimmen, feststellen"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "enhance",
+    "lemma": "enhance",
+    "pos": "verb",
+    "ipa": "/ɪnˈhæns/",
+    "level": "B2",
+    "register": "formal",
+    "de": "verbessern",
+    "deAlt": [
+      "steigern",
+      "aufwerten"
+    ],
+    "definitionEn": "to improve the quality, value or strength of something",
+    "examples": [
+      {
+        "en": "Good lighting can enhance a photo.",
+        "de": "Gutes Licht kann ein Foto aufwerten.",
+        "hit": "enhance"
+      },
+      {
+        "en": "The course is designed to enhance your writing skills.",
+        "de": "Der Kurs soll deine Schreibfähigkeiten verbessern.",
+        "hit": "enhance"
+      },
+      {
+        "en": "Her reputation was greatly enhanced by the award.",
+        "de": "Ihr Ansehen wurde durch die Auszeichnung stark gesteigert.",
+        "hit": "enhanced"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "enhance performance",
+        "enhance quality",
+        "enhanced security"
+      ],
+      "grammar": "transitiv; eher formell",
+      "tip": "Wird für etwas bereits Gutes verwendet, das noch besser wird. Für Fehler beheben eher 'improve' oder 'fix'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "improve",
+        "ref": "improve",
+        "noteDe": "verbessern"
+      },
+      {
+        "type": "family",
+        "word": "enhancement",
+        "noteDe": "Verbesserung"
+      },
+      {
+        "type": "antonym",
+        "word": "diminish",
+        "noteDe": "verringern"
+      },
+      {
+        "type": "antonym",
+        "word": "undermine",
+        "ref": "undermine",
+        "noteDe": "untergraben"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "overwhelm",
+    "lemma": "overwhelm",
+    "pos": "verb",
+    "ipa": "/ˌoʊvərˈwɛlm/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "überwältigen",
+    "deAlt": [
+      "überfordern"
+    ],
+    "definitionEn": "to have such a strong effect on someone that they cannot cope",
+    "examples": [
+      {
+        "en": "All these emails on Monday morning overwhelm me.",
+        "de": "All diese E-Mails am Montagmorgen überfordern mich.",
+        "hit": "overwhelm"
+      },
+      {
+        "en": "She was overwhelmed by everyone's kindness.",
+        "de": "Sie war überwältigt von der Freundlichkeit aller.",
+        "hit": "overwhelmed"
+      },
+      {
+        "en": "The defenders were quickly overwhelmed by the larger army.",
+        "de": "Die Verteidiger wurden schnell von der größeren Armee überrannt.",
+        "hit": "overwhelmed"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "feel overwhelmed",
+        "overwhelmed by",
+        "overwhelming majority"
+      ],
+      "grammar": "transitiv; häufig als Adjektiv overwhelmed / overwhelming",
+      "tip": "'an overwhelming majority' = eine überwältigende Mehrheit. 'I'm overwhelmed' = Mir wächst alles über den Kopf."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "overwhelming",
+        "noteDe": "überwältigend"
+      },
+      {
+        "type": "related",
+        "word": "exhausted",
+        "ref": "exhausted",
+        "noteDe": "erschöpft"
+      },
+      {
+        "type": "synonym",
+        "word": "swamp",
+        "noteDe": "überschwemmen (mit Arbeit)"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "work"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "outcome",
+    "lemma": "outcome",
+    "pos": "noun",
+    "ipa": "/ˈaʊtˌkʌm/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Ergebnis",
+    "deAlt": [
+      "Ausgang"
+    ],
+    "definitionEn": "the final result of an action, process or event",
+    "examples": [
+      {
+        "en": "We're waiting for the outcome of the vote.",
+        "de": "Wir warten auf das Ergebnis der Abstimmung.",
+        "hit": "outcome"
+      },
+      {
+        "en": "Nobody could predict the outcome of the match.",
+        "de": "Niemand konnte den Ausgang des Spiels vorhersagen.",
+        "hit": "outcome"
+      },
+      {
+        "en": "Patients with early treatment generally have better outcomes.",
+        "de": "Patienten mit früher Behandlung haben im Allgemeinen bessere Ergebnisse.",
+        "hit": "outcomes"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "the outcome of",
+        "possible outcome",
+        "positive outcome",
+        "affect the outcome"
+      ],
+      "grammar": "Nomen, zählbar",
+      "tip": "'outcome' betont den Ausgang eines Prozesses; 'result' ist allgemeiner, 'income' ist Einkommen."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "result",
+        "noteDe": "Ergebnis"
+      },
+      {
+        "type": "synonym",
+        "word": "consequence",
+        "noteDe": "Folge"
+      },
+      {
+        "type": "confusable",
+        "word": "income",
+        "noteDe": "income = Einkommen"
+      }
+    ],
+    "topics": [
+      "work",
+      "society"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "burden",
+    "lemma": "burden",
+    "pos": "noun",
+    "ipa": "/ˈbɜrdən/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Last",
+    "deAlt": [
+      "Belastung",
+      "Bürde"
+    ],
+    "definitionEn": "something difficult or worrying that you are responsible for",
+    "examples": [
+      {
+        "en": "I don't want to be a burden to my kids.",
+        "de": "Ich will meinen Kindern nicht zur Last fallen.",
+        "hit": "burden"
+      },
+      {
+        "en": "Rising taxes are a heavy burden on families.",
+        "de": "Steigende Steuern sind eine schwere Belastung für Familien.",
+        "hit": "burden"
+      },
+      {
+        "en": "In court, the burden of proof lies with the prosecution.",
+        "de": "Vor Gericht liegt die Beweislast bei der Anklage.",
+        "hit": "burden"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "heavy burden",
+        "burden of proof",
+        "be a burden to",
+        "financial burden"
+      ],
+      "grammar": "Nomen, zählbar; auch Verb: burden someone with",
+      "tip": "'burden of proof' ist der feste juristische Begriff für 'Beweislast'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "load",
+        "noteDe": "Last"
+      },
+      {
+        "type": "related",
+        "word": "responsibility",
+        "ref": "responsibility",
+        "noteDe": "Verantwortung"
+      },
+      {
+        "type": "family",
+        "word": "burdensome",
+        "noteDe": "belastend"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "law",
+      "work"
+    ],
+    "clusters": [
+      "court-and-justice",
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "grief",
+    "lemma": "grief",
+    "pos": "noun",
+    "ipa": "/ɡrif/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Trauer",
+    "deAlt": [
+      "Kummer"
+    ],
+    "definitionEn": "great sadness, especially after someone dies",
+    "examples": [
+      {
+        "en": "Grief can take a long time to heal.",
+        "de": "Trauer kann lange brauchen, bis sie heilt.",
+        "hit": "Grief"
+      },
+      {
+        "en": "She was overcome with grief after her father died.",
+        "de": "Nach dem Tod ihres Vaters war sie von Trauer überwältigt.",
+        "hit": "grief"
+      },
+      {
+        "en": "Stop giving me grief about being late!",
+        "de": "Hör auf, mir wegen der Verspätung Ärger zu machen!",
+        "hit": "grief"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "overcome with grief",
+        "deal with grief",
+        "give someone grief",
+        "good grief"
+      ],
+      "grammar": "Nomen, unzählbar; Verb grieve",
+      "tip": "'Good grief!' = 'Ach du meine Güte!'. 'give someone grief' = jemandem Ärger machen (umgangssprachlich)."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "grieve",
+        "noteDe": "trauern"
+      },
+      {
+        "type": "synonym",
+        "word": "sorrow",
+        "ref": "sorrow",
+        "noteDe": "Kummer"
+      },
+      {
+        "type": "related",
+        "word": "bereavement",
+        "ref": "bereavement",
+        "noteDe": "Trauerfall"
+      },
+      {
+        "type": "confusable",
+        "word": "greed",
+        "ref": "greed",
+        "noteDe": "greed = Gier"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "scarce",
+    "lemma": "scarce",
+    "pos": "adj",
+    "ipa": "/skɛrs/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "knapp",
+    "deAlt": [
+      "rar"
+    ],
+    "definitionEn": "existing only in small amounts, not enough for what is needed",
+    "examples": [
+      {
+        "en": "Water is scarce in the desert.",
+        "de": "Wasser ist in der Wüste knapp.",
+        "hit": "scarce"
+      },
+      {
+        "en": "Good jobs are scarce in this region.",
+        "de": "Gute Jobs sind in dieser Gegend rar.",
+        "hit": "scarce"
+      },
+      {
+        "en": "The government must decide how to use its scarce resources.",
+        "de": "Die Regierung muss entscheiden, wie sie ihre knappen Mittel einsetzt.",
+        "hit": "scarce"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "scarce resources",
+        "become scarce",
+        "make yourself scarce"
+      ],
+      "grammar": "Adjektiv; Adverb scarcely = kaum",
+      "tip": "'scarcely' heißt 'kaum' (wie 'barely'), nicht 'knapp'. 'make yourself scarce' = verschwinden."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "scarcity",
+        "noteDe": "Knappheit"
+      },
+      {
+        "type": "synonym",
+        "word": "rare",
+        "ref": "rare",
+        "noteDe": "selten"
+      },
+      {
+        "type": "antonym",
+        "word": "plentiful",
+        "noteDe": "reichlich"
+      },
+      {
+        "type": "related",
+        "word": "lack",
+        "ref": "lack",
+        "noteDe": "Mangel"
+      }
+    ],
+    "topics": [
+      "nature",
+      "work"
+    ],
+    "clusters": [
+      "work-and-money",
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "inevitable",
+    "lemma": "inevitable",
+    "pos": "adj",
+    "ipa": "/ɪˈnɛvɪtəbəl/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "unvermeidlich",
+    "deAlt": [
+      "zwangsläufig"
+    ],
+    "definitionEn": "certain to happen and impossible to avoid",
+    "examples": [
+      {
+        "en": "Some mistakes are inevitable when you learn.",
+        "de": "Beim Lernen sind manche Fehler unvermeidlich.",
+        "hit": "inevitable"
+      },
+      {
+        "en": "Change is inevitable, so we should prepare for it.",
+        "de": "Veränderung ist unvermeidlich, also sollten wir uns darauf vorbereiten.",
+        "hit": "inevitable"
+      },
+      {
+        "en": "The scandal led to his inevitable resignation.",
+        "de": "Der Skandal führte zu seinem unvermeidlichen Rücktritt.",
+        "hit": "inevitable"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "seem inevitable",
+        "inevitable consequence",
+        "almost inevitable",
+        "accept the inevitable"
+      ],
+      "grammar": "Adjektiv; Adverb inevitably",
+      "tip": "Betonung auf der zweiten Silbe: in-EV-itable."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "unavoidable",
+        "noteDe": "unvermeidbar"
+      },
+      {
+        "type": "family",
+        "word": "inevitably",
+        "noteDe": "zwangsläufig"
+      },
+      {
+        "type": "related",
+        "word": "fate",
+        "ref": "fate",
+        "noteDe": "Schicksal"
+      },
+      {
+        "type": "related",
+        "word": "avoid",
+        "ref": "avoid",
+        "noteDe": "vermeiden"
+      }
+    ],
+    "topics": [
+      "society",
+      "daily"
+    ],
+    "clusters": [
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "tremendous",
+    "lemma": "tremendous",
+    "pos": "adj",
+    "ipa": "/trəˈmɛndəs/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "enorm",
+    "deAlt": [
+      "gewaltig",
+      "großartig"
+    ],
+    "definitionEn": "very great in amount or level; also extremely good",
+    "examples": [
+      {
+        "en": "She has a tremendous amount of energy.",
+        "de": "Sie hat enorm viel Energie.",
+        "hit": "tremendous"
+      },
+      {
+        "en": "The show was a tremendous success.",
+        "de": "Die Show war ein riesiger Erfolg.",
+        "hit": "tremendous"
+      },
+      {
+        "en": "The pandemic put tremendous pressure on health workers.",
+        "de": "Die Pandemie setzte das Gesundheitspersonal enorm unter Druck.",
+        "hit": "tremendous"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "tremendous amount",
+        "tremendous success",
+        "tremendous pressure"
+      ],
+      "grammar": "Adjektiv; Adverb tremendously",
+      "tip": "Fast immer positiv oder verstärkend, nicht 'tremendous' im Sinn von 'schrecklich' (das wäre 'terrible')."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "enormous",
+        "noteDe": "enorm"
+      },
+      {
+        "type": "synonym",
+        "word": "huge",
+        "noteDe": "riesig"
+      },
+      {
+        "type": "confusable",
+        "word": "terrible",
+        "noteDe": "terrible = schrecklich"
+      },
+      {
+        "type": "related",
+        "word": "terrific",
+        "ref": "terrific",
+        "noteDe": "großartig"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "cherish",
+    "lemma": "cherish",
+    "pos": "verb",
+    "ipa": "/ˈtʃɛrɪʃ/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "schätzen",
+    "deAlt": [
+      "in Ehren halten",
+      "hegen"
+    ],
+    "definitionEn": "to love, protect and care about something or someone very much",
+    "examples": [
+      {
+        "en": "I cherish every moment with my grandparents.",
+        "de": "Ich schätze jeden Moment mit meinen Großeltern.",
+        "hit": "cherish"
+      },
+      {
+        "en": "She still cherishes the letters he wrote her.",
+        "de": "Sie hütet die Briefe, die er ihr schrieb, noch immer wie einen Schatz.",
+        "hit": "cherishes"
+      },
+      {
+        "en": "Freedom of speech is a right that must be cherished.",
+        "de": "Meinungsfreiheit ist ein Recht, das bewahrt werden muss.",
+        "hit": "cherished"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "cherish memories",
+        "cherish a moment",
+        "cherished possession",
+        "cherish a hope"
+      ],
+      "grammar": "transitiv",
+      "tip": "Stärker und emotionaler als 'appreciate'. Typisch für Erinnerungen, Menschen, Werte."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "treasure",
+        "noteDe": "wie einen Schatz hüten"
+      },
+      {
+        "type": "synonym",
+        "word": "appreciate",
+        "ref": "appreciate",
+        "noteDe": "schätzen"
+      },
+      {
+        "type": "antonym",
+        "word": "neglect",
+        "noteDe": "vernachlässigen"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "reckless",
+    "lemma": "reckless",
+    "pos": "adj",
+    "ipa": "/ˈrɛkləs/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "leichtsinnig",
+    "deAlt": [
+      "rücksichtslos",
+      "fahrlässig"
+    ],
+    "definitionEn": "doing something dangerous without caring about the risks",
+    "examples": [
+      {
+        "en": "He was fined for reckless driving.",
+        "de": "Er bekam eine Strafe wegen rücksichtslosen Fahrens.",
+        "hit": "reckless"
+      },
+      {
+        "en": "It was reckless to go hiking without water.",
+        "de": "Es war leichtsinnig, ohne Wasser wandern zu gehen.",
+        "hit": "reckless"
+      },
+      {
+        "en": "The bank was accused of reckless lending before the crisis.",
+        "de": "Der Bank wurde vor der Krise leichtfertige Kreditvergabe vorgeworfen.",
+        "hit": "reckless"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "reckless driving",
+        "reckless behavior",
+        "reckless disregard"
+      ],
+      "grammar": "Adjektiv; Adverb recklessly",
+      "tip": "'reckless driving' ist auch ein juristischer Begriff (Verkehrsgefährdung)."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "cautious",
+        "ref": "cautious",
+        "noteDe": "vorsichtig"
+      },
+      {
+        "type": "antonym",
+        "word": "careful",
+        "ref": "careful",
+        "noteDe": "vorsichtig"
+      },
+      {
+        "type": "synonym",
+        "word": "careless",
+        "noteDe": "unvorsichtig"
+      },
+      {
+        "type": "family",
+        "word": "recklessness",
+        "noteDe": "Leichtsinn"
+      }
+    ],
+    "topics": [
+      "law",
+      "daily"
+    ],
+    "clusters": [
+      "feelings-and-character",
+      "court-and-justice"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "dread",
+    "lemma": "dread",
+    "pos": "verb",
+    "ipa": "/drɛd/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "fürchten",
+    "deAlt": [
+      "sich graulen vor",
+      "grauen vor"
+    ],
+    "definitionEn": "to feel very worried about something that is going to happen",
+    "examples": [
+      {
+        "en": "I dread going to the dentist.",
+        "de": "Mir graut davor, zum Zahnarzt zu gehen.",
+        "hit": "dread"
+      },
+      {
+        "en": "She was dreading the meeting with her boss.",
+        "de": "Sie fürchtete sich vor dem Gespräch mit ihrer Chefin.",
+        "hit": "dreading"
+      },
+      {
+        "en": "Many workers dread the thought of another round of layoffs.",
+        "de": "Viele Beschäftigte fürchten eine weitere Entlassungswelle.",
+        "hit": "dread"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "dread doing",
+        "dread the thought of",
+        "dread the moment"
+      ],
+      "grammar": "transitiv; dread + -ing oder Nomen; auch Nomen: a sense of dread",
+      "tip": "'I dread to think' = Ich mag gar nicht daran denken. 'dreadful' = schrecklich."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "dreadful",
+        "noteDe": "schrecklich"
+      },
+      {
+        "type": "synonym",
+        "word": "fear",
+        "noteDe": "fürchten"
+      },
+      {
+        "type": "related",
+        "word": "anxiety",
+        "ref": "anxiety",
+        "noteDe": "Angst"
+      },
+      {
+        "type": "related",
+        "word": "doom",
+        "ref": "doom",
+        "noteDe": "Verhängnis"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "nuisance",
+    "lemma": "nuisance",
+    "pos": "noun",
+    "ipa": "/ˈnusəns/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "Ärgernis",
+    "deAlt": [
+      "Plage",
+      "Nervensäge"
+    ],
+    "definitionEn": "a person, thing or situation that annoys you or causes problems",
+    "examples": [
+      {
+        "en": "These flies are a real nuisance.",
+        "de": "Diese Fliegen sind eine echte Plage.",
+        "hit": "nuisance"
+      },
+      {
+        "en": "Sorry to be a nuisance, but could you help me?",
+        "de": "Tut mir leid, dass ich störe, aber könntest du mir helfen?",
+        "hit": "nuisance"
+      },
+      {
+        "en": "The bar was fined for causing a public nuisance.",
+        "de": "Die Bar erhielt eine Strafe wegen Erregung öffentlichen Ärgernisses.",
+        "hit": "nuisance"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a real nuisance",
+        "make a nuisance of yourself",
+        "public nuisance"
+      ],
+      "grammar": "Nomen, zählbar",
+      "tip": "Aussprache /ˈnusəns/, das 'i' ist stumm."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "annoyance",
+        "noteDe": "Ärger"
+      },
+      {
+        "type": "synonym",
+        "word": "hassle",
+        "ref": "hassle",
+        "noteDe": "Umstand, Ärger"
+      },
+      {
+        "type": "related",
+        "word": "annoyed",
+        "ref": "annoyed",
+        "noteDe": "genervt"
+      },
+      {
+        "type": "synonym",
+        "word": "pain",
+        "noteDe": "Nervensäge (a pain)"
+      }
+    ],
+    "topics": [
+      "daily",
+      "law"
+    ],
+    "clusters": [
+      "home-and-household"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "hassle",
+    "lemma": "hassle",
+    "pos": "noun",
+    "ipa": "/ˈhæsəl/",
+    "level": "B2",
+    "register": "informal",
+    "de": "Aufwand",
+    "deAlt": [
+      "Ärger",
+      "Stress"
+    ],
+    "definitionEn": "something annoying because it takes time or effort",
+    "examples": [
+      {
+        "en": "Moving house is such a hassle.",
+        "de": "Ein Umzug ist so ein Aufwand.",
+        "hit": "hassle"
+      },
+      {
+        "en": "Ordering online saves you a lot of hassle.",
+        "de": "Online zu bestellen erspart dir viel Ärger.",
+        "hit": "hassle"
+      },
+      {
+        "en": "It's not worth the hassle of complaining to the landlord.",
+        "de": "Es lohnt sich nicht, sich beim Vermieter zu beschweren.",
+        "hit": "hassle"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "a real hassle",
+        "not worth the hassle",
+        "hassle-free",
+        "save hassle"
+      ],
+      "grammar": "Nomen; auch Verb: stop hassling me = hör auf, mich zu nerven",
+      "tip": "'hassle-free' = unkompliziert, sehr häufig in Werbung."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "nuisance",
+        "ref": "nuisance",
+        "noteDe": "Ärgernis"
+      },
+      {
+        "type": "synonym",
+        "word": "bother",
+        "ref": "bother",
+        "noteDe": "Mühe"
+      },
+      {
+        "type": "related",
+        "word": "chore",
+        "ref": "chore",
+        "noteDe": "lästige Pflicht"
+      }
+    ],
+    "topics": [
+      "daily"
+    ],
+    "clusters": [
+      "home-and-household"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "fragile",
+    "lemma": "fragile",
+    "pos": "adj",
+    "ipa": "/ˈfrædʒəl/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "zerbrechlich",
+    "deAlt": [
+      "empfindlich",
+      "labil"
+    ],
+    "definitionEn": "easily broken or damaged",
+    "examples": [
+      {
+        "en": "Be careful, the vase is fragile.",
+        "de": "Vorsicht, die Vase ist zerbrechlich.",
+        "hit": "fragile"
+      },
+      {
+        "en": "The package was labeled 'Fragile, handle with care'.",
+        "de": "Das Paket war mit 'Zerbrechlich, vorsichtig behandeln' beschriftet.",
+        "hit": "Fragile"
+      },
+      {
+        "en": "The peace between the two countries remains fragile.",
+        "de": "Der Frieden zwischen den beiden Ländern bleibt brüchig.",
+        "hit": "fragile"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "fragile state",
+        "fragile economy",
+        "fragile peace",
+        "emotionally fragile"
+      ],
+      "grammar": "Adjektiv; amerikanisch /ˈfrædʒəl/, britisch /ˈfrædʒaɪl/",
+      "tip": "Auch übertragen: wirtschaftlich oder emotional instabil."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "delicate",
+        "noteDe": "zart, empfindlich"
+      },
+      {
+        "type": "antonym",
+        "word": "sturdy",
+        "noteDe": "robust"
+      },
+      {
+        "type": "family",
+        "word": "fragility",
+        "noteDe": "Zerbrechlichkeit"
+      },
+      {
+        "type": "antonym",
+        "word": "resilient",
+        "ref": "resilient",
+        "noteDe": "widerstandsfähig"
+      }
+    ],
+    "topics": [
+      "daily",
+      "emotion"
+    ],
+    "clusters": [
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "awkward",
+    "lemma": "awkward",
+    "pos": "adj",
+    "ipa": "/ˈɔkwərd/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "peinlich",
+    "deAlt": [
+      "unbeholfen",
+      "unangenehm",
+      "ungünstig"
+    ],
+    "definitionEn": "causing embarrassment or difficulty; not relaxed",
+    "examples": [
+      {
+        "en": "There was an awkward silence after his joke.",
+        "de": "Nach seinem Witz herrschte peinliche Stille.",
+        "hit": "awkward"
+      },
+      {
+        "en": "I always feel awkward at big parties.",
+        "de": "Auf großen Partys fühle ich mich immer unbeholfen.",
+        "hit": "awkward"
+      },
+      {
+        "en": "Friday is an awkward time for a meeting.",
+        "de": "Freitag ist ein ungünstiger Zeitpunkt für ein Meeting.",
+        "hit": "awkward"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "awkward silence",
+        "awkward situation",
+        "feel awkward",
+        "awkward question"
+      ],
+      "grammar": "Adjektiv; Adverb awkwardly",
+      "tip": "'awkward' beschreibt Situationen und Menschen; 'embarrassing' meist Situationen, die einem peinlich sind."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "embarrassing",
+        "ref": "embarrassing",
+        "noteDe": "peinlich"
+      },
+      {
+        "type": "family",
+        "word": "awkwardness",
+        "noteDe": "Verlegenheit"
+      },
+      {
+        "type": "related",
+        "word": "shy",
+        "ref": "shy",
+        "noteDe": "schüchtern"
+      },
+      {
+        "type": "synonym",
+        "word": "clumsy",
+        "noteDe": "ungeschickt"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "society"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "rely",
+    "lemma": "rely",
+    "pos": "verb",
+    "ipa": "/rɪˈlaɪ/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "sich verlassen",
+    "deAlt": [
+      "angewiesen sein"
+    ],
+    "definitionEn": "to need or trust someone or something",
+    "examples": [
+      {
+        "en": "You can always rely on me.",
+        "de": "Du kannst dich immer auf mich verlassen.",
+        "hit": "rely"
+      },
+      {
+        "en": "Many farmers rely on rain for their crops.",
+        "de": "Viele Bauern sind für ihre Ernte auf Regen angewiesen.",
+        "hit": "rely"
+      },
+      {
+        "en": "The company relies heavily on foreign investment.",
+        "de": "Das Unternehmen ist stark auf ausländische Investitionen angewiesen.",
+        "hit": "relies"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "rely on",
+        "rely heavily on",
+        "can rely on someone"
+      ],
+      "grammar": "intransitiv; immer 'rely on/upon something'",
+      "tip": "Immer mit 'on': 'rely on someone'. Adjektiv 'reliable' = zuverlässig."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "reliable",
+        "ref": "reliable",
+        "noteDe": "zuverlässig"
+      },
+      {
+        "type": "family",
+        "word": "reliance",
+        "noteDe": "Abhängigkeit"
+      },
+      {
+        "type": "synonym",
+        "word": "depend on",
+        "noteDe": "abhängen von"
+      },
+      {
+        "type": "family",
+        "word": "reliability",
+        "ref": "reliability",
+        "noteDe": "Zuverlässigkeit"
+      }
+    ],
+    "topics": [
+      "daily",
+      "work"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "gloomy",
+    "lemma": "gloomy",
+    "pos": "adj",
+    "ipa": "/ˈɡlumi/",
+    "level": "B2",
+    "register": "neutral",
+    "de": "düster",
+    "deAlt": [
+      "trübsinnig",
+      "pessimistisch"
+    ],
+    "definitionEn": "dark in a sad way; also sad and without hope",
+    "examples": [
+      {
+        "en": "It was a gloomy, rainy afternoon.",
+        "de": "Es war ein düsterer, verregneter Nachmittag.",
+        "hit": "gloomy"
+      },
+      {
+        "en": "Why are you looking so gloomy today?",
+        "de": "Warum guckst du heute so trübsinnig?",
+        "hit": "gloomy"
+      },
+      {
+        "en": "Economists painted a gloomy picture of the coming year.",
+        "de": "Ökonomen zeichneten ein düsteres Bild vom kommenden Jahr.",
+        "hit": "gloomy"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "gloomy weather",
+        "gloomy outlook",
+        "paint a gloomy picture"
+      ],
+      "grammar": "Adjektiv; Nomen gloom",
+      "tip": "Passt zu Wetter, Stimmung und Prognosen gleichermaßen."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "gloom",
+        "noteDe": "Düsternis, Schwermut"
+      },
+      {
+        "type": "antonym",
+        "word": "cheerful",
+        "noteDe": "fröhlich"
+      },
+      {
+        "type": "synonym",
+        "word": "bleak",
+        "noteDe": "trostlos"
+      },
+      {
+        "type": "related",
+        "word": "doom",
+        "ref": "doom",
+        "noteDe": "Verhängnis (doom and gloom)"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "nature"
+    ],
+    "clusters": [
+      "feelings-and-character",
+      "weather-and-environment"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "tedious",
+    "lemma": "tedious",
+    "pos": "adj",
+    "ipa": "/ˈtidiəs/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "mühsam",
+    "deAlt": [
+      "langwierig",
+      "ermüdend"
+    ],
+    "definitionEn": "boring because it continues for too long or is repetitive",
+    "examples": [
+      {
+        "en": "Filling in these forms is so tedious.",
+        "de": "Diese Formulare auszufüllen ist so mühsam.",
+        "hit": "tedious"
+      },
+      {
+        "en": "The film had a long, tedious middle section.",
+        "de": "Der Film hatte einen langen, ermüdenden Mittelteil.",
+        "hit": "tedious"
+      },
+      {
+        "en": "Checking every invoice by hand is a tedious but necessary task.",
+        "de": "Jede Rechnung von Hand zu prüfen, ist mühsam, aber notwendig.",
+        "hit": "tedious"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "tedious task",
+        "tedious process",
+        "tedious work"
+      ],
+      "grammar": "Adjektiv; Nomen tedium",
+      "tip": "Stärker als 'boring': etwas ist langweilig UND anstrengend."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "boring",
+        "noteDe": "langweilig"
+      },
+      {
+        "type": "synonym",
+        "word": "monotonous",
+        "noteDe": "eintönig"
+      },
+      {
+        "type": "related",
+        "word": "bored",
+        "ref": "bored",
+        "noteDe": "gelangweilt"
+      },
+      {
+        "type": "related",
+        "word": "chore",
+        "ref": "chore",
+        "noteDe": "lästige Aufgabe"
+      }
+    ],
+    "topics": [
+      "work",
+      "daily"
+    ],
+    "clusters": [
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "obscure",
+    "lemma": "obscure",
+    "pos": "adj",
+    "ipa": "/əbˈskjʊr/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "unbekannt",
+    "deAlt": [
+      "obskur",
+      "unklar"
+    ],
+    "definitionEn": "not well known, or difficult to understand",
+    "examples": [
+      {
+        "en": "He likes to listen to obscure bands.",
+        "de": "Er hört gerne unbekannte Bands.",
+        "hit": "obscure"
+      },
+      {
+        "en": "The rule exists for some obscure reason.",
+        "de": "Die Regel gibt es aus irgendeinem undurchsichtigen Grund.",
+        "hit": "obscure"
+      },
+      {
+        "en": "The meaning of the poem remains obscure even to experts.",
+        "de": "Die Bedeutung des Gedichts bleibt selbst für Fachleute unklar.",
+        "hit": "obscure"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "obscure reason",
+        "relatively obscure",
+        "obscure reference"
+      ],
+      "grammar": "Adjektiv; auch Verb: to obscure = verdecken, verschleiern",
+      "tip": "Im Deutschen klingt 'obskur' oft zwielichtig; im Englischen heißt es meist nur 'wenig bekannt' oder 'schwer verständlich'."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "well-known",
+        "noteDe": "bekannt"
+      },
+      {
+        "type": "family",
+        "word": "obscurity",
+        "noteDe": "Vergessenheit"
+      },
+      {
+        "type": "synonym",
+        "word": "vague",
+        "ref": "vague",
+        "noteDe": "vage"
+      },
+      {
+        "type": "related",
+        "word": "obfuscate",
+        "ref": "obfuscate",
+        "noteDe": "verschleiern"
+      }
+    ],
+    "topics": [
+      "society"
+    ],
+    "clusters": [
+      "academic-words",
+      "false-friends"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "versatile",
+    "lemma": "versatile",
+    "pos": "adj",
+    "ipa": "/ˈvɜrsətəl/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "vielseitig",
+    "deAlt": [
+      "flexibel einsetzbar"
+    ],
+    "definitionEn": "able to do many different things or be used in many ways",
+    "examples": [
+      {
+        "en": "Eggs are a very versatile ingredient.",
+        "de": "Eier sind eine sehr vielseitige Zutat.",
+        "hit": "versatile"
+      },
+      {
+        "en": "She's a versatile actress who plays comedy and drama.",
+        "de": "Sie ist eine vielseitige Schauspielerin, die Komödie und Drama spielt.",
+        "hit": "versatile"
+      },
+      {
+        "en": "This versatile tool can be used for cutting, drilling and sanding.",
+        "de": "Dieses vielseitige Werkzeug kann zum Schneiden, Bohren und Schleifen verwendet werden.",
+        "hit": "versatile"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "versatile player",
+        "highly versatile",
+        "versatile material"
+      ],
+      "grammar": "Adjektiv; Nomen versatility",
+      "tip": "Für Menschen und Dinge. Nicht 'variable' (veränderlich) verwenden."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "versatility",
+        "noteDe": "Vielseitigkeit"
+      },
+      {
+        "type": "synonym",
+        "word": "adaptable",
+        "noteDe": "anpassungsfähig"
+      },
+      {
+        "type": "synonym",
+        "word": "all-round",
+        "noteDe": "vielseitig (Person)"
+      }
+    ],
+    "topics": [
+      "work",
+      "daily"
+    ],
+    "clusters": [
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "feasible",
+    "lemma": "feasible",
+    "pos": "adj",
+    "ipa": "/ˈfizəbəl/",
+    "level": "C1",
+    "register": "formal",
+    "de": "machbar",
+    "deAlt": [
+      "durchführbar"
+    ],
+    "definitionEn": "possible to do or achieve",
+    "examples": [
+      {
+        "en": "Is it feasible to finish by Friday?",
+        "de": "Ist es machbar, bis Freitag fertig zu werden?",
+        "hit": "feasible"
+      },
+      {
+        "en": "We're looking for a feasible solution.",
+        "de": "Wir suchen nach einer praktikablen Lösung.",
+        "hit": "feasible"
+      },
+      {
+        "en": "A detailed study will show whether the project is financially feasible.",
+        "de": "Eine detaillierte Studie wird zeigen, ob das Projekt finanziell machbar ist.",
+        "hit": "feasible"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "technically feasible",
+        "feasible option",
+        "feasibility study"
+      ],
+      "grammar": "Adjektiv; Nomen feasibility",
+      "tip": "'feasibility study' = Machbarkeitsstudie, sehr häufig im Berufsleben."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "viable",
+        "noteDe": "realisierbar"
+      },
+      {
+        "type": "synonym",
+        "word": "possible",
+        "noteDe": "möglich"
+      },
+      {
+        "type": "family",
+        "word": "feasibility",
+        "noteDe": "Machbarkeit"
+      },
+      {
+        "type": "related",
+        "word": "plausible",
+        "ref": "plausible",
+        "noteDe": "plausibel"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money",
+      "academic-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "resilient",
+    "lemma": "resilient",
+    "pos": "adj",
+    "ipa": "/rɪˈzɪliənt/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "widerstandsfähig",
+    "deAlt": [
+      "belastbar",
+      "robust"
+    ],
+    "definitionEn": "able to recover quickly from difficulties or damage",
+    "examples": [
+      {
+        "en": "Children are often more resilient than we think.",
+        "de": "Kinder sind oft widerstandsfähiger, als wir denken.",
+        "hit": "resilient"
+      },
+      {
+        "en": "We need a more resilient supply chain.",
+        "de": "Wir brauchen eine robustere Lieferkette.",
+        "hit": "resilient"
+      },
+      {
+        "en": "The local economy proved surprisingly resilient during the crisis.",
+        "de": "Die lokale Wirtschaft erwies sich in der Krise als überraschend widerstandsfähig.",
+        "hit": "resilient"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "remarkably resilient",
+        "resilient economy",
+        "emotionally resilient"
+      ],
+      "grammar": "Adjektiv; Nomen resilience",
+      "tip": "'resilience' wird auch im Deutschen als 'Resilienz' verwendet."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "resilience",
+        "noteDe": "Widerstandsfähigkeit"
+      },
+      {
+        "type": "antonym",
+        "word": "fragile",
+        "ref": "fragile",
+        "noteDe": "zerbrechlich"
+      },
+      {
+        "type": "synonym",
+        "word": "tough",
+        "ref": "tough",
+        "noteDe": "zäh"
+      },
+      {
+        "type": "related",
+        "word": "recover",
+        "ref": "recover",
+        "noteDe": "sich erholen"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "society"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "undermine",
+    "lemma": "undermine",
+    "pos": "verb",
+    "ipa": "/ˌʌndərˈmaɪn/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "untergraben",
+    "deAlt": [
+      "schwächen"
+    ],
+    "definitionEn": "to make something weaker gradually, often in a hidden way",
+    "examples": [
+      {
+        "en": "Constant criticism can undermine your confidence.",
+        "de": "Ständige Kritik kann dein Selbstvertrauen untergraben.",
+        "hit": "undermine"
+      },
+      {
+        "en": "He felt his boss was undermining him in front of the team.",
+        "de": "Er hatte das Gefühl, sein Chef untergrabe vor dem Team seine Autorität.",
+        "hit": "undermining"
+      },
+      {
+        "en": "The scandal has undermined public trust in the government.",
+        "de": "Der Skandal hat das Vertrauen der Öffentlichkeit in die Regierung erschüttert.",
+        "hit": "undermined"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "undermine confidence",
+        "undermine trust",
+        "undermine someone's authority"
+      ],
+      "grammar": "transitiv",
+      "tip": "Bildlich: unter etwas (under) einen Tunnel graben (mine), bis es einstürzt."
+    },
+    "mnemonic": "UNDER + MINE: einen Stollen unter die Mauer graben.",
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "strengthen",
+        "noteDe": "stärken"
+      },
+      {
+        "type": "synonym",
+        "word": "weaken",
+        "noteDe": "schwächen"
+      },
+      {
+        "type": "antonym",
+        "word": "enhance",
+        "ref": "enhance",
+        "noteDe": "verbessern"
+      },
+      {
+        "type": "synonym",
+        "word": "sabotage",
+        "noteDe": "sabotieren"
+      }
+    ],
+    "topics": [
+      "society",
+      "work"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "linger",
+    "lemma": "linger",
+    "pos": "verb",
+    "ipa": "/ˈlɪŋɡər/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "verweilen",
+    "deAlt": [
+      "nachklingen",
+      "sich halten"
+    ],
+    "definitionEn": "to stay somewhere longer than necessary or continue to exist",
+    "examples": [
+      {
+        "en": "We lingered over coffee after dinner.",
+        "de": "Nach dem Essen saßen wir noch lange beim Kaffee.",
+        "hit": "lingered"
+      },
+      {
+        "en": "The smell of smoke lingered in the room.",
+        "de": "Der Rauchgeruch hing noch im Zimmer.",
+        "hit": "lingered"
+      },
+      {
+        "en": "Doubts about his honesty continue to linger.",
+        "de": "Zweifel an seiner Ehrlichkeit halten sich weiterhin.",
+        "hit": "linger"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "linger over",
+        "linger on",
+        "lingering doubt",
+        "lingering smell"
+      ],
+      "grammar": "intransitiv; Adjektiv lingering",
+      "tip": "'lingering doubts' = anhaltende Zweifel. Sehr bildhafte, eher gehobene Alltagssprache."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "remain",
+        "noteDe": "bleiben"
+      },
+      {
+        "type": "synonym",
+        "word": "persist",
+        "noteDe": "fortbestehen"
+      },
+      {
+        "type": "family",
+        "word": "lingering",
+        "noteDe": "anhaltend"
+      },
+      {
+        "type": "related",
+        "word": "persistent",
+        "ref": "persistent",
+        "noteDe": "hartnäckig"
+      }
+    ],
+    "topics": [
+      "daily",
+      "emotion"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "wary",
+    "lemma": "wary",
+    "pos": "adj",
+    "ipa": "/ˈwɛri/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "misstrauisch",
+    "deAlt": [
+      "vorsichtig",
+      "argwöhnisch"
+    ],
+    "definitionEn": "careful because you think something might be dangerous or dishonest",
+    "examples": [
+      {
+        "en": "Be wary of strangers offering free gifts.",
+        "de": "Sei vorsichtig bei Fremden, die Gratisgeschenke anbieten.",
+        "hit": "wary"
+      },
+      {
+        "en": "Cats are often wary of new people.",
+        "de": "Katzen sind gegenüber neuen Menschen oft misstrauisch.",
+        "hit": "wary"
+      },
+      {
+        "en": "Investors remain wary after last year's losses.",
+        "de": "Anleger bleiben nach den Verlusten des letzten Jahres vorsichtig.",
+        "hit": "wary"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "wary of",
+        "keep a wary eye on",
+        "remain wary"
+      ],
+      "grammar": "Adjektiv; meist 'wary of something'",
+      "tip": "Nicht mit 'weary' (müde, erschöpft) verwechseln."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "weary",
+        "noteDe": "weary = müde, erschöpft"
+      },
+      {
+        "type": "synonym",
+        "word": "cautious",
+        "ref": "cautious",
+        "noteDe": "vorsichtig"
+      },
+      {
+        "type": "synonym",
+        "word": "suspicious",
+        "ref": "suspicious",
+        "noteDe": "misstrauisch"
+      },
+      {
+        "type": "antonym",
+        "word": "trusting",
+        "noteDe": "vertrauensvoll"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "meticulous",
+    "lemma": "meticulous",
+    "pos": "adj",
+    "ipa": "/məˈtɪkjələs/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "akribisch",
+    "deAlt": [
+      "peinlich genau"
+    ],
+    "definitionEn": "very careful and paying great attention to every detail",
+    "examples": [
+      {
+        "en": "She keeps meticulous notes of every meeting.",
+        "de": "Sie führt akribische Notizen zu jedem Meeting.",
+        "hit": "meticulous"
+      },
+      {
+        "en": "The house had been restored with meticulous care.",
+        "de": "Das Haus war mit größter Sorgfalt restauriert worden.",
+        "hit": "meticulous"
+      },
+      {
+        "en": "His meticulous research uncovered errors no one else had noticed.",
+        "de": "Seine akribische Recherche deckte Fehler auf, die niemand sonst bemerkt hatte.",
+        "hit": "meticulous"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "meticulous attention to detail",
+        "meticulous planning",
+        "meticulous care"
+      ],
+      "grammar": "Adjektiv; Adverb meticulously",
+      "tip": "Positiv; stärker als 'thorough'. Negativ (zu pingelig) wäre 'pedantic' oder 'fussy'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "thorough",
+        "ref": "thorough",
+        "noteDe": "gründlich"
+      },
+      {
+        "type": "synonym",
+        "word": "painstaking",
+        "noteDe": "sorgfältig"
+      },
+      {
+        "type": "antonym",
+        "word": "sloppy",
+        "ref": "sloppy",
+        "noteDe": "schlampig"
+      },
+      {
+        "type": "related",
+        "word": "pedantic",
+        "noteDe": "pedantisch"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "scrutiny",
+    "lemma": "scrutiny",
+    "pos": "noun",
+    "ipa": "/ˈskrutəni/",
+    "level": "C1",
+    "register": "formal",
+    "de": "genaue Prüfung",
+    "deAlt": [
+      "kritische Betrachtung"
+    ],
+    "definitionEn": "careful and detailed examination of something",
+    "examples": [
+      {
+        "en": "The plan won't survive close scrutiny.",
+        "de": "Der Plan hält einer genauen Prüfung nicht stand.",
+        "hit": "scrutiny"
+      },
+      {
+        "en": "Politicians are under constant public scrutiny.",
+        "de": "Politiker stehen unter ständiger öffentlicher Beobachtung.",
+        "hit": "scrutiny"
+      },
+      {
+        "en": "The company's accounts came under scrutiny after the scandal.",
+        "de": "Die Bücher des Unternehmens wurden nach dem Skandal genau unter die Lupe genommen.",
+        "hit": "scrutiny"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "under scrutiny",
+        "close scrutiny",
+        "public scrutiny",
+        "come under scrutiny"
+      ],
+      "grammar": "Nomen, unzählbar; Verb scrutinize",
+      "tip": "'come under scrutiny' = ins Visier geraten, genau geprüft werden."
+    },
+    "relations": [
+      {
+        "type": "family",
+        "word": "scrutinize",
+        "noteDe": "genau prüfen"
+      },
+      {
+        "type": "synonym",
+        "word": "examination",
+        "noteDe": "Prüfung"
+      },
+      {
+        "type": "related",
+        "word": "investigator",
+        "ref": "investigator",
+        "noteDe": "Ermittler"
+      },
+      {
+        "type": "related",
+        "word": "surveillance",
+        "ref": "surveillance",
+        "noteDe": "Überwachung"
+      }
+    ],
+    "topics": [
+      "law",
+      "society"
+    ],
+    "clusters": [
+      "court-and-justice",
+      "academic-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "compelling",
+    "lemma": "compelling",
+    "pos": "adj",
+    "ipa": "/kəmˈpɛlɪŋ/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "überzeugend",
+    "deAlt": [
+      "fesselnd",
+      "zwingend"
+    ],
+    "definitionEn": "very interesting or convincing, so that you pay attention or agree",
+    "examples": [
+      {
+        "en": "She made a compelling argument for working from home.",
+        "de": "Sie brachte ein überzeugendes Argument für Homeoffice vor.",
+        "hit": "compelling"
+      },
+      {
+        "en": "The book tells a compelling story.",
+        "de": "Das Buch erzählt eine fesselnde Geschichte.",
+        "hit": "compelling"
+      },
+      {
+        "en": "There is no compelling evidence that the drug works.",
+        "de": "Es gibt keine stichhaltigen Beweise, dass das Medikament wirkt.",
+        "hit": "compelling"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "compelling argument",
+        "compelling evidence",
+        "compelling reason",
+        "compelling story"
+      ],
+      "grammar": "Adjektiv; Verb compel = zwingen",
+      "tip": "Kein 'zwingend' im Sinne von Pflicht; eher 'so überzeugend, dass man nicht anders kann'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "convincing",
+        "noteDe": "überzeugend"
+      },
+      {
+        "type": "family",
+        "word": "compel",
+        "noteDe": "zwingen"
+      },
+      {
+        "type": "synonym",
+        "word": "persuasive",
+        "noteDe": "überzeugend"
+      },
+      {
+        "type": "related",
+        "word": "convince",
+        "ref": "convince",
+        "noteDe": "überzeugen"
+      }
+    ],
+    "topics": [
+      "society",
+      "work"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "ambiguous",
+    "lemma": "ambiguous",
+    "pos": "adj",
+    "ipa": "/æmˈbɪɡjuəs/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "mehrdeutig",
+    "deAlt": [
+      "zweideutig",
+      "unklar"
+    ],
+    "definitionEn": "having more than one possible meaning",
+    "examples": [
+      {
+        "en": "When I asked about the money, his answer was ambiguous.",
+        "de": "Als ich nach dem Geld fragte, war seine Antwort zweideutig.",
+        "hit": "ambiguous"
+      },
+      {
+        "en": "The wording of the rule is ambiguous.",
+        "de": "Der Wortlaut der Regel ist mehrdeutig.",
+        "hit": "ambiguous"
+      },
+      {
+        "en": "Her feelings toward him remained ambiguous for years.",
+        "de": "Ihre Gefühle ihm gegenüber blieben jahrelang zwiespältig.",
+        "hit": "ambiguous"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "deliberately ambiguous",
+        "highly ambiguous",
+        "ambiguous wording"
+      ],
+      "grammar": "Adjektiv; Nomen ambiguity",
+      "tip": "'ambiguous' = mehrdeutig; 'ambivalent' = innerlich zwiegespalten (Gefühle)."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "clear",
+        "noteDe": "eindeutig"
+      },
+      {
+        "type": "confusable",
+        "word": "ambivalent",
+        "noteDe": "ambivalent = zwiespältig in den Gefühlen"
+      },
+      {
+        "type": "family",
+        "word": "ambiguity",
+        "noteDe": "Mehrdeutigkeit"
+      },
+      {
+        "type": "synonym",
+        "word": "vague",
+        "ref": "vague",
+        "noteDe": "vage"
+      }
+    ],
+    "topics": [
+      "society",
+      "work"
+    ],
+    "clusters": [
+      "academic-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "profound",
+    "lemma": "profound",
+    "pos": "adj",
+    "ipa": "/prəˈfaʊnd/",
+    "level": "C1",
+    "register": "formal",
+    "de": "tiefgreifend",
+    "deAlt": [
+      "tief",
+      "tiefgründig"
+    ],
+    "definitionEn": "very great or intense; also showing deep understanding",
+    "examples": [
+      {
+        "en": "The news had a profound effect on her.",
+        "de": "Die Nachricht hatte eine tiefgreifende Wirkung auf sie.",
+        "hit": "profound"
+      },
+      {
+        "en": "For a ten-year-old, he said something surprisingly profound.",
+        "de": "Für einen Zehnjährigen sagte er etwas überraschend Tiefgründiges.",
+        "hit": "profound"
+      },
+      {
+        "en": "The internet brought about profound changes in society.",
+        "de": "Das Internet hat tiefgreifende gesellschaftliche Veränderungen bewirkt.",
+        "hit": "profound"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "profound effect",
+        "profound impact",
+        "profound change",
+        "profound sadness"
+      ],
+      "grammar": "Adjektiv; Adverb profoundly",
+      "tip": "Gehobener als 'deep'; typisch in Texten über Wirkung oder Gefühle."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "deep",
+        "noteDe": "tief"
+      },
+      {
+        "type": "antonym",
+        "word": "superficial",
+        "noteDe": "oberflächlich"
+      },
+      {
+        "type": "antonym",
+        "word": "shallow",
+        "ref": "shallow",
+        "noteDe": "seicht"
+      },
+      {
+        "type": "family",
+        "word": "profoundly",
+        "noteDe": "zutiefst"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "society"
+    ],
+    "clusters": [
+      "academic-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "cumbersome",
+    "lemma": "cumbersome",
+    "pos": "adj",
+    "ipa": "/ˈkʌmbərsəm/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "umständlich",
+    "deAlt": [
+      "sperrig",
+      "schwerfällig"
+    ],
+    "definitionEn": "large and heavy, or slow and complicated",
+    "examples": [
+      {
+        "en": "The old printer is big and cumbersome.",
+        "de": "Der alte Drucker ist groß und sperrig.",
+        "hit": "cumbersome"
+      },
+      {
+        "en": "The application process is extremely cumbersome.",
+        "de": "Das Bewerbungsverfahren ist extrem umständlich.",
+        "hit": "cumbersome"
+      },
+      {
+        "en": "Cumbersome regulations discourage small businesses from expanding.",
+        "de": "Schwerfällige Vorschriften halten kleine Firmen davon ab zu wachsen.",
+        "hit": "Cumbersome"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "cumbersome process",
+        "cumbersome equipment",
+        "cumbersome procedure"
+      ],
+      "grammar": "Adjektiv",
+      "tip": "Für Dinge (sperrig) und Abläufe (umständlich). Alltagssprachlich: 'clunky'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "awkward",
+        "ref": "awkward",
+        "noteDe": "unhandlich"
+      },
+      {
+        "type": "synonym",
+        "word": "clunky",
+        "noteDe": "klobig, umständlich"
+      },
+      {
+        "type": "antonym",
+        "word": "convenient",
+        "ref": "convenient",
+        "noteDe": "bequem, praktisch"
+      },
+      {
+        "type": "related",
+        "word": "hassle",
+        "ref": "hassle",
+        "noteDe": "Aufwand"
+      }
+    ],
+    "topics": [
+      "work",
+      "daily"
+    ],
+    "clusters": [
+      "describing-things"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "deteriorate",
+    "lemma": "deteriorate",
+    "pos": "verb",
+    "ipa": "/dɪˈtɪriəˌreɪt/",
+    "level": "C1",
+    "register": "formal",
+    "de": "sich verschlechtern",
+    "deAlt": [
+      "verfallen"
+    ],
+    "definitionEn": "to become worse over time",
+    "examples": [
+      {
+        "en": "His health deteriorated quickly last winter.",
+        "de": "Sein Gesundheitszustand verschlechterte sich letzten Winter schnell.",
+        "hit": "deteriorated"
+      },
+      {
+        "en": "Relations between the neighbors have deteriorated.",
+        "de": "Das Verhältnis zwischen den Nachbarn hat sich verschlechtert.",
+        "hit": "deteriorated"
+      },
+      {
+        "en": "Without maintenance, the bridge will continue to deteriorate.",
+        "de": "Ohne Wartung wird die Brücke weiter verfallen.",
+        "hit": "deteriorate"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "rapidly deteriorate",
+        "deteriorating health",
+        "deteriorate into"
+      ],
+      "grammar": "intransitiv; Nomen deterioration",
+      "tip": "Gehobener als 'get worse'. 'deteriorate into chaos' = ins Chaos abgleiten."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "worsen",
+        "noteDe": "sich verschlimmern"
+      },
+      {
+        "type": "antonym",
+        "word": "improve",
+        "ref": "improve",
+        "noteDe": "sich verbessern"
+      },
+      {
+        "type": "family",
+        "word": "deterioration",
+        "noteDe": "Verschlechterung"
+      },
+      {
+        "type": "synonym",
+        "word": "decline",
+        "noteDe": "abnehmen, verfallen"
+      }
+    ],
+    "topics": [
+      "body",
+      "society"
+    ],
+    "clusters": [
+      "health-and-body"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "alleviate",
+    "lemma": "alleviate",
+    "pos": "verb",
+    "ipa": "/əˈliviˌeɪt/",
+    "level": "C1",
+    "register": "formal",
+    "de": "lindern",
+    "deAlt": [
+      "mildern",
+      "verringern"
+    ],
+    "definitionEn": "to make pain or a problem less severe",
+    "examples": [
+      {
+        "en": "This cream helps alleviate the itching.",
+        "de": "Diese Creme hilft, den Juckreiz zu lindern.",
+        "hit": "alleviate"
+      },
+      {
+        "en": "The new road should alleviate traffic in the center.",
+        "de": "Die neue Straße soll den Verkehr im Zentrum entlasten.",
+        "hit": "alleviate"
+      },
+      {
+        "en": "Measures to alleviate poverty have had mixed results.",
+        "de": "Maßnahmen zur Linderung der Armut hatten unterschiedlichen Erfolg.",
+        "hit": "alleviate"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "alleviate pain",
+        "alleviate symptoms",
+        "alleviate poverty",
+        "alleviate concerns"
+      ],
+      "grammar": "transitiv",
+      "tip": "Nimmt das Problem nicht weg, sondern macht es kleiner. Alltagssprachlich: 'ease' oder 'relieve'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "relieve",
+        "noteDe": "lindern"
+      },
+      {
+        "type": "synonym",
+        "word": "ease",
+        "ref": "ease",
+        "noteDe": "erleichtern"
+      },
+      {
+        "type": "antonym",
+        "word": "aggravate",
+        "noteDe": "verschlimmern"
+      },
+      {
+        "type": "related",
+        "word": "relief",
+        "ref": "relief",
+        "noteDe": "Erleichterung"
+      }
+    ],
+    "topics": [
+      "body",
+      "society"
+    ],
+    "clusters": [
+      "health-and-body"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "hinder",
+    "lemma": "hinder",
+    "pos": "verb",
+    "ipa": "/ˈhɪndər/",
+    "level": "C1",
+    "register": "formal",
+    "de": "behindern",
+    "deAlt": [
+      "hemmen",
+      "erschweren"
+    ],
+    "definitionEn": "to make it difficult for someone to do something or for something to develop",
+    "examples": [
+      {
+        "en": "Heavy snow hindered the rescue efforts.",
+        "de": "Starker Schneefall behinderte die Rettungsarbeiten.",
+        "hit": "hindered"
+      },
+      {
+        "en": "Lack of money is hindering our progress.",
+        "de": "Geldmangel bremst unseren Fortschritt.",
+        "hit": "hindering"
+      },
+      {
+        "en": "Strict rules may hinder rather than help innovation.",
+        "de": "Strenge Regeln können Innovation eher hemmen als fördern.",
+        "hit": "hinder"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "hinder progress",
+        "hinder growth",
+        "help or hinder"
+      ],
+      "grammar": "transitiv; Nomen hindrance",
+      "tip": "Falscher Freund: 'hinder' heißt nur 'erschweren', nicht 'verhindern' (das ist 'prevent')."
+    },
+    "mnemonic": "hinder ≠ verhindern: es bremst nur.",
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "prevent",
+        "noteDe": "prevent = verhindern"
+      },
+      {
+        "type": "family",
+        "word": "hindrance",
+        "noteDe": "Hindernis"
+      },
+      {
+        "type": "synonym",
+        "word": "hamper",
+        "noteDe": "behindern"
+      },
+      {
+        "type": "related",
+        "word": "obstacle",
+        "ref": "obstacle",
+        "noteDe": "Hindernis"
+      }
+    ],
+    "topics": [
+      "work",
+      "society"
+    ],
+    "clusters": [
+      "false-friends",
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "diligent",
+    "lemma": "diligent",
+    "pos": "adj",
+    "ipa": "/ˈdɪlɪdʒənt/",
+    "level": "C1",
+    "register": "formal",
+    "de": "fleißig",
+    "deAlt": [
+      "gewissenhaft",
+      "sorgfältig"
+    ],
+    "definitionEn": "working hard with care and effort",
+    "examples": [
+      {
+        "en": "She's a diligent student who never misses class.",
+        "de": "Sie ist eine fleißige Studentin, die nie eine Vorlesung verpasst.",
+        "hit": "diligent"
+      },
+      {
+        "en": "After diligent searching, we found the missing file.",
+        "de": "Nach gründlicher Suche fanden wir die fehlende Datei.",
+        "hit": "diligent"
+      },
+      {
+        "en": "Investors are expected to carry out diligent checks before signing.",
+        "de": "Von Investoren wird erwartet, vor der Unterschrift gewissenhafte Prüfungen durchzuführen.",
+        "hit": "diligent"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "diligent worker",
+        "diligent research",
+        "due diligence"
+      ],
+      "grammar": "Adjektiv; Nomen diligence",
+      "tip": "'due diligence' = Sorgfaltsprüfung vor einem Kauf oder Vertrag (Wirtschaftsenglisch)."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "hard-working",
+        "noteDe": "fleißig"
+      },
+      {
+        "type": "antonym",
+        "word": "lazy",
+        "ref": "lazy",
+        "noteDe": "faul"
+      },
+      {
+        "type": "family",
+        "word": "diligence",
+        "noteDe": "Fleiß, Sorgfalt"
+      },
+      {
+        "type": "synonym",
+        "word": "meticulous",
+        "ref": "meticulous",
+        "noteDe": "akribisch"
+      }
+    ],
+    "topics": [
+      "work"
+    ],
+    "clusters": [
+      "work-and-money",
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "plausible",
+    "lemma": "plausible",
+    "pos": "adj",
+    "ipa": "/ˈplɔzəbəl/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "plausibel",
+    "deAlt": [
+      "glaubhaft"
+    ],
+    "definitionEn": "seeming likely to be true or reasonable",
+    "examples": [
+      {
+        "en": "That sounds like a plausible explanation.",
+        "de": "Das klingt nach einer plausiblen Erklärung.",
+        "hit": "plausible"
+      },
+      {
+        "en": "Her excuse for missing the meeting was barely plausible.",
+        "de": "Ihre Ausrede für das verpasste Meeting war kaum glaubhaft.",
+        "hit": "plausible"
+      },
+      {
+        "en": "Scientists have proposed several plausible theories for the phenomenon.",
+        "de": "Wissenschaftler haben mehrere plausible Theorien für das Phänomen vorgeschlagen.",
+        "hit": "plausible"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "plausible explanation",
+        "plausible excuse",
+        "entirely plausible"
+      ],
+      "grammar": "Adjektiv; Nomen plausibility",
+      "tip": "Kann auch abwertend sein: 'a plausible liar' = ein überzeugend wirkender Lügner."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "implausible",
+        "noteDe": "unglaubwürdig"
+      },
+      {
+        "type": "synonym",
+        "word": "credible",
+        "noteDe": "glaubwürdig"
+      },
+      {
+        "type": "synonym",
+        "word": "feasible",
+        "ref": "feasible",
+        "noteDe": "machbar"
+      },
+      {
+        "type": "related",
+        "word": "compelling",
+        "ref": "compelling",
+        "noteDe": "überzeugend"
+      }
+    ],
+    "topics": [
+      "society",
+      "work"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "adamant",
+    "lemma": "adamant",
+    "pos": "adj",
+    "ipa": "/ˈædəmənt/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "unnachgiebig",
+    "deAlt": [
+      "fest entschlossen",
+      "beharrlich"
+    ],
+    "definitionEn": "refusing to change your opinion or decision",
+    "examples": [
+      {
+        "en": "She was adamant that she had locked the door.",
+        "de": "Sie bestand felsenfest darauf, die Tür abgeschlossen zu haben.",
+        "hit": "adamant"
+      },
+      {
+        "en": "He's adamant about not moving abroad.",
+        "de": "Er ist fest entschlossen, nicht ins Ausland zu ziehen.",
+        "hit": "adamant"
+      },
+      {
+        "en": "The minister remained adamant despite the protests.",
+        "de": "Der Minister blieb trotz der Proteste unnachgiebig.",
+        "hit": "adamant"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "adamant that",
+        "remain adamant",
+        "adamant about",
+        "adamant refusal"
+      ],
+      "grammar": "Adjektiv; meist prädikativ: be adamant that…",
+      "tip": "Typisch: 'be adamant that + Satz' = fest darauf bestehen, dass…"
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "stubborn",
+        "ref": "stubborn",
+        "noteDe": "stur"
+      },
+      {
+        "type": "synonym",
+        "word": "determined",
+        "noteDe": "entschlossen"
+      },
+      {
+        "type": "synonym",
+        "word": "insistent",
+        "noteDe": "beharrlich"
+      },
+      {
+        "type": "related",
+        "word": "insisting",
+        "ref": "insisting",
+        "noteDe": "bestehen auf"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "society"
+    ],
+    "clusters": [
+      "feelings-and-character",
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "notorious",
+    "lemma": "notorious",
+    "pos": "adj",
+    "ipa": "/noʊˈtɔriəs/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "berüchtigt",
+    "deAlt": [
+      "notorisch"
+    ],
+    "definitionEn": "famous for something bad",
+    "examples": [
+      {
+        "en": "This road is notorious for accidents.",
+        "de": "Diese Straße ist für Unfälle berüchtigt.",
+        "hit": "notorious"
+      },
+      {
+        "en": "Everyone in the village knew he was a notorious liar.",
+        "de": "Jeder im Dorf wusste, dass er ein notorischer Lügner war.",
+        "hit": "notorious"
+      },
+      {
+        "en": "The prison became notorious for its brutal conditions.",
+        "de": "Das Gefängnis wurde für seine brutalen Zustände berüchtigt.",
+        "hit": "notorious"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "notorious for",
+        "notorious criminal",
+        "notoriously difficult"
+      ],
+      "grammar": "Adjektiv; Adverb notoriously",
+      "tip": "Immer negativ. Positiv berühmt = 'famous' oder 'renowned'."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "famous",
+        "noteDe": "famous = berühmt (neutral/positiv)"
+      },
+      {
+        "type": "synonym",
+        "word": "infamous",
+        "noteDe": "berüchtigt"
+      },
+      {
+        "type": "family",
+        "word": "notoriety",
+        "noteDe": "traurige Berühmtheit"
+      }
+    ],
+    "topics": [
+      "society",
+      "law"
+    ],
+    "clusters": [
+      "court-and-justice"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "frugal",
+    "lemma": "frugal",
+    "pos": "adj",
+    "ipa": "/ˈfruɡəl/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "sparsam",
+    "deAlt": [
+      "genügsam",
+      "karg"
+    ],
+    "definitionEn": "careful to spend very little money; simple and cheap",
+    "examples": [
+      {
+        "en": "My grandparents lived a frugal life.",
+        "de": "Meine Großeltern lebten sehr sparsam.",
+        "hit": "frugal"
+      },
+      {
+        "en": "We had a frugal meal of bread and soup.",
+        "de": "Wir hatten ein karges Essen aus Brot und Suppe.",
+        "hit": "frugal"
+      },
+      {
+        "en": "Being frugal now will allow you to retire earlier.",
+        "de": "Wer jetzt sparsam lebt, kann früher in Rente gehen.",
+        "hit": "frugal"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "frugal lifestyle",
+        "frugal meal",
+        "live a frugal life"
+      ],
+      "grammar": "Adjektiv; Nomen frugality",
+      "tip": "Positiv oder neutral; abwertend (geizig) wären 'stingy' oder 'cheap'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "thrifty",
+        "noteDe": "sparsam"
+      },
+      {
+        "type": "antonym",
+        "word": "extravagant",
+        "noteDe": "verschwenderisch"
+      },
+      {
+        "type": "confusable",
+        "word": "stingy",
+        "noteDe": "stingy = geizig (negativ)"
+      },
+      {
+        "type": "antonym",
+        "word": "generous",
+        "ref": "generous",
+        "noteDe": "großzügig"
+      }
+    ],
+    "topics": [
+      "work",
+      "daily"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "conceal",
+    "lemma": "conceal",
+    "pos": "verb",
+    "ipa": "/kənˈsil/",
+    "level": "C1",
+    "register": "formal",
+    "de": "verbergen",
+    "deAlt": [
+      "verheimlichen",
+      "verstecken"
+    ],
+    "definitionEn": "to hide something or keep it secret",
+    "examples": [
+      {
+        "en": "He couldn't conceal his disappointment when he heard the news.",
+        "de": "Er konnte seine Enttäuschung nicht verbergen, als er die Nachricht hörte.",
+        "hit": "conceal"
+      },
+      {
+        "en": "The camera was concealed inside a smoke detector.",
+        "de": "Die Kamera war in einem Rauchmelder versteckt.",
+        "hit": "concealed"
+      },
+      {
+        "en": "The company was accused of concealing evidence from investigators.",
+        "de": "Dem Unternehmen wurde vorgeworfen, Beweise vor den Ermittlern verheimlicht zu haben.",
+        "hit": "concealing"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "conceal evidence",
+        "conceal the truth",
+        "barely conceal",
+        "concealed weapon"
+      ],
+      "grammar": "transitiv; formeller als 'hide'",
+      "tip": "'concealed weapon' = verdeckt getragene Waffe (juristisch)."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "hide",
+        "noteDe": "verstecken"
+      },
+      {
+        "type": "antonym",
+        "word": "reveal",
+        "noteDe": "enthüllen"
+      },
+      {
+        "type": "family",
+        "word": "concealment",
+        "noteDe": "Verheimlichung"
+      },
+      {
+        "type": "antonym",
+        "word": "disclose",
+        "noteDe": "offenlegen"
+      }
+    ],
+    "topics": [
+      "law",
+      "daily"
+    ],
+    "clusters": [
+      "court-and-justice"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "dwindle",
+    "lemma": "dwindle",
+    "pos": "verb",
+    "ipa": "/ˈdwɪndəl/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "schwinden",
+    "deAlt": [
+      "abnehmen",
+      "zusammenschrumpfen"
+    ],
+    "definitionEn": "to become gradually smaller or fewer",
+    "examples": [
+      {
+        "en": "Our savings dwindled over the winter.",
+        "de": "Unsere Ersparnisse schrumpften über den Winter.",
+        "hit": "dwindled"
+      },
+      {
+        "en": "The number of visitors has dwindled to almost nothing.",
+        "de": "Die Zahl der Besucher ist fast auf null geschrumpft.",
+        "hit": "dwindled"
+      },
+      {
+        "en": "With supplies dwindling, the expedition had to turn back.",
+        "de": "Da die Vorräte zur Neige gingen, musste die Expedition umkehren.",
+        "hit": "dwindling"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "dwindle away",
+        "dwindle to",
+        "dwindling numbers",
+        "dwindling resources"
+      ],
+      "grammar": "intransitiv; häufig als Adjektiv dwindling",
+      "tip": "Betont ein langsames, stetiges Kleinerwerden. Neutraler: 'decrease'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "shrink",
+        "noteDe": "schrumpfen"
+      },
+      {
+        "type": "synonym",
+        "word": "decline",
+        "noteDe": "abnehmen"
+      },
+      {
+        "type": "antonym",
+        "word": "grow",
+        "noteDe": "wachsen"
+      },
+      {
+        "type": "related",
+        "word": "scarce",
+        "ref": "scarce",
+        "noteDe": "knapp"
+      }
+    ],
+    "topics": [
+      "nature",
+      "work"
+    ],
+    "clusters": [
+      "work-and-money"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "candid",
+    "lemma": "candid",
+    "pos": "adj",
+    "ipa": "/ˈkændɪd/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "offen",
+    "deAlt": [
+      "aufrichtig",
+      "ungestellt (Foto)"
+    ],
+    "definitionEn": "honest and direct, even when the truth is unpleasant",
+    "examples": [
+      {
+        "en": "Thank you for being so candid with me.",
+        "de": "Danke, dass du so offen zu mir bist.",
+        "hit": "candid"
+      },
+      {
+        "en": "The book is a candid account of her illness.",
+        "de": "Das Buch ist ein schonungsloser Bericht über ihre Krankheit.",
+        "hit": "candid"
+      },
+      {
+        "en": "The best wedding photos are often candid shots.",
+        "de": "Die besten Hochzeitsfotos sind oft Schnappschüsse.",
+        "hit": "candid"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "candid interview",
+        "candid conversation",
+        "candid photo",
+        "to be candid"
+      ],
+      "grammar": "Adjektiv; Adverb candidly; Nomen candor",
+      "tip": "Positiver als 'blunt': ehrlich, aber nicht unhöflich. Nichts mit 'Kandidat' zu tun."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "frank",
+        "noteDe": "offen"
+      },
+      {
+        "type": "synonym",
+        "word": "blunt",
+        "ref": "blunt",
+        "noteDe": "unverblümt"
+      },
+      {
+        "type": "synonym",
+        "word": "honest",
+        "ref": "honest",
+        "noteDe": "ehrlich"
+      },
+      {
+        "type": "confusable",
+        "word": "candidate",
+        "noteDe": "candidate = Kandidat"
+      }
+    ],
+    "topics": [
+      "society",
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "pragmatic",
+    "lemma": "pragmatic",
+    "pos": "adj",
+    "ipa": "/præɡˈmætɪk/",
+    "level": "C1",
+    "register": "neutral",
+    "de": "pragmatisch",
+    "deAlt": [
+      "sachlich",
+      "praxisorientiert"
+    ],
+    "definitionEn": "dealing with problems in a sensible, practical way",
+    "examples": [
+      {
+        "en": "We need a pragmatic solution, not a perfect one.",
+        "de": "Wir brauchen eine pragmatische Lösung, keine perfekte.",
+        "hit": "pragmatic"
+      },
+      {
+        "en": "She takes a pragmatic approach to parenting.",
+        "de": "Sie geht die Erziehung pragmatisch an.",
+        "hit": "pragmatic"
+      },
+      {
+        "en": "The decision was pragmatic rather than ideological.",
+        "de": "Die Entscheidung war eher pragmatisch als ideologisch.",
+        "hit": "pragmatic"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "pragmatic approach",
+        "pragmatic solution",
+        "deeply pragmatic"
+      ],
+      "grammar": "Adjektiv; Nomen pragmatism",
+      "tip": "Wie im Deutschen positiv bis neutral: realistisch statt idealistisch."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "practical",
+        "noteDe": "praktisch"
+      },
+      {
+        "type": "synonym",
+        "word": "sensible",
+        "ref": "sensible",
+        "noteDe": "vernünftig"
+      },
+      {
+        "type": "antonym",
+        "word": "idealistic",
+        "noteDe": "idealistisch"
+      },
+      {
+        "type": "family",
+        "word": "pragmatism",
+        "noteDe": "Pragmatismus"
+      }
+    ],
+    "topics": [
+      "work",
+      "society"
+    ],
+    "clusters": [
+      "discussion-phrases"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "ubiquitous",
+    "lemma": "ubiquitous",
+    "pos": "adj",
+    "ipa": "/juˈbɪkwɪtəs/",
+    "level": "C2",
+    "register": "formal",
+    "de": "allgegenwärtig",
+    "deAlt": [
+      "überall verbreitet"
+    ],
+    "definitionEn": "seeming to be everywhere at the same time",
+    "examples": [
+      {
+        "en": "Smartphones have become ubiquitous in just a few years.",
+        "de": "Smartphones sind in nur wenigen Jahren allgegenwärtig geworden.",
+        "hit": "ubiquitous"
+      },
+      {
+        "en": "Coffee shops are ubiquitous in this city.",
+        "de": "Cafés gibt es in dieser Stadt an jeder Ecke.",
+        "hit": "ubiquitous"
+      },
+      {
+        "en": "Plastic is now so ubiquitous that it is found even in deep oceans.",
+        "de": "Plastik ist inzwischen so allgegenwärtig, dass man es sogar in der Tiefsee findet.",
+        "hit": "ubiquitous"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "become ubiquitous",
+        "almost ubiquitous",
+        "ubiquitous presence"
+      ],
+      "grammar": "Adjektiv; Nomen ubiquity",
+      "tip": "Gehobenes Wort; im Alltag reicht 'everywhere': 'They're everywhere'."
+    },
+    "mnemonic": "Lateinisch 'ubique' = überall.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "omnipresent",
+        "noteDe": "allgegenwärtig"
+      },
+      {
+        "type": "synonym",
+        "word": "widespread",
+        "noteDe": "weit verbreitet"
+      },
+      {
+        "type": "antonym",
+        "word": "rare",
+        "ref": "rare",
+        "noteDe": "selten"
+      },
+      {
+        "type": "family",
+        "word": "ubiquity",
+        "noteDe": "Allgegenwart"
+      }
+    ],
+    "topics": [
+      "society"
+    ],
+    "clusters": [
+      "academic-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "ephemeral",
+    "lemma": "ephemeral",
+    "pos": "adj",
+    "ipa": "/ɪˈfɛmərəl/",
+    "level": "C2",
+    "register": "literary",
+    "de": "vergänglich",
+    "deAlt": [
+      "kurzlebig",
+      "flüchtig"
+    ],
+    "definitionEn": "lasting for only a very short time",
+    "examples": [
+      {
+        "en": "Most fashion trends are ephemeral and disappear within a year.",
+        "de": "Die meisten Modetrends sind kurzlebig und verschwinden innerhalb eines Jahres.",
+        "hit": "ephemeral"
+      },
+      {
+        "en": "Fame on social media can be very ephemeral.",
+        "de": "Ruhm in den sozialen Medien kann sehr flüchtig sein.",
+        "hit": "ephemeral"
+      },
+      {
+        "en": "The artist works with ephemeral materials such as ice and sand.",
+        "de": "Die Künstlerin arbeitet mit vergänglichen Materialien wie Eis und Sand.",
+        "hit": "ephemeral"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "ephemeral nature",
+        "ephemeral beauty",
+        "ephemeral pleasure"
+      ],
+      "grammar": "Adjektiv",
+      "tip": "Gehoben/literarisch. Alltagssprachlich: 'short-lived' oder 'fleeting'."
+    },
+    "mnemonic": "Griechisch 'ephemeros' = nur einen Tag dauernd (wie die Eintagsfliege).",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "fleeting",
+        "noteDe": "flüchtig"
+      },
+      {
+        "type": "synonym",
+        "word": "short-lived",
+        "noteDe": "kurzlebig"
+      },
+      {
+        "type": "antonym",
+        "word": "permanent",
+        "noteDe": "dauerhaft"
+      },
+      {
+        "type": "antonym",
+        "word": "immortal",
+        "ref": "immortal",
+        "noteDe": "unsterblich"
+      }
+    ],
+    "topics": [
+      "nature",
+      "society"
+    ],
+    "clusters": [
+      "academic-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "ostensibly",
+    "lemma": "ostensibly",
+    "pos": "adv",
+    "ipa": "/ɑˈstɛnsəbli/",
+    "level": "C2",
+    "register": "formal",
+    "de": "angeblich",
+    "deAlt": [
+      "vorgeblich",
+      "dem Anschein nach"
+    ],
+    "definitionEn": "in a way that seems true but may not really be true",
+    "examples": [
+      {
+        "en": "He came by, ostensibly to return a book.",
+        "de": "Er kam vorbei, angeblich um ein Buch zurückzugeben.",
+        "hit": "ostensibly"
+      },
+      {
+        "en": "The trip was ostensibly for business.",
+        "de": "Die Reise war dem Anschein nach geschäftlich.",
+        "hit": "ostensibly"
+      },
+      {
+        "en": "The law was ostensibly designed to protect consumers.",
+        "de": "Das Gesetz sollte vorgeblich die Verbraucher schützen.",
+        "hit": "ostensibly"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "ostensibly to",
+        "ostensibly for",
+        "ostensibly because"
+      ],
+      "grammar": "Adverb; Adjektiv ostensible",
+      "tip": "Unterstellt oft einen anderen, verborgenen Grund. Ähnlich wie 'supposedly'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "supposedly",
+        "noteDe": "angeblich"
+      },
+      {
+        "type": "synonym",
+        "word": "apparently",
+        "ref": "apparently",
+        "noteDe": "anscheinend"
+      },
+      {
+        "type": "synonym",
+        "word": "allegedly",
+        "ref": "allegedly",
+        "noteDe": "mutmaßlich"
+      },
+      {
+        "type": "family",
+        "word": "ostensible",
+        "noteDe": "vorgeblich"
+      }
+    ],
+    "topics": [
+      "society"
+    ],
+    "clusters": [
+      "academic-words",
+      "linking-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "cajole",
+    "lemma": "cajole",
+    "pos": "verb",
+    "ipa": "/kəˈdʒoʊl/",
+    "level": "C2",
+    "register": "neutral",
+    "de": "beschwatzen",
+    "deAlt": [
+      "überreden",
+      "umgarnen"
+    ],
+    "definitionEn": "to persuade someone gently by flattering them or making promises",
+    "examples": [
+      {
+        "en": "She cajoled her dad into buying her a puppy.",
+        "de": "Sie beschwatzte ihren Vater, ihr einen Welpen zu kaufen.",
+        "hit": "cajoled"
+      },
+      {
+        "en": "He tried to cajole the guard into letting him in.",
+        "de": "Er versuchte, den Wachmann zu überreden, ihn hineinzulassen.",
+        "hit": "cajole"
+      },
+      {
+        "en": "Voters cannot simply be cajoled with empty promises.",
+        "de": "Wähler lassen sich nicht einfach mit leeren Versprechen umgarnen.",
+        "hit": "cajoled"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "cajole someone into",
+        "cajole and threaten",
+        "cajole someone out of"
+      ],
+      "grammar": "transitiv: cajole someone into doing something",
+      "tip": "Sanfter als 'pressure': mit Schmeicheln und Bitten, nicht mit Druck."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "coax",
+        "noteDe": "gut zureden"
+      },
+      {
+        "type": "synonym",
+        "word": "persuade",
+        "noteDe": "überreden"
+      },
+      {
+        "type": "synonym",
+        "word": "sweet-talk",
+        "noteDe": "einwickeln (umgangssprachlich)"
+      },
+      {
+        "type": "related",
+        "word": "convince",
+        "ref": "convince",
+        "noteDe": "überzeugen"
+      }
+    ],
+    "topics": [
+      "society",
+      "emotion"
+    ],
+    "clusters": [
+      "everyday-verbs"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "quandary",
+    "lemma": "quandary",
+    "pos": "noun",
+    "ipa": "/ˈkwɑndəri/",
+    "level": "C2",
+    "register": "formal",
+    "de": "Zwickmühle",
+    "deAlt": [
+      "Dilemma"
+    ],
+    "definitionEn": "a state of not being able to decide what to do",
+    "examples": [
+      {
+        "en": "I'm in a quandary about which job to take.",
+        "de": "Ich stecke in einer Zwickmühle, welchen Job ich annehmen soll.",
+        "hit": "quandary"
+      },
+      {
+        "en": "The offer put her in a real quandary.",
+        "de": "Das Angebot brachte sie in ein echtes Dilemma.",
+        "hit": "quandary"
+      },
+      {
+        "en": "The court faced a legal quandary with no clear precedent.",
+        "de": "Das Gericht stand vor einem rechtlichen Dilemma ohne klaren Präzedenzfall.",
+        "hit": "quandary"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "in a quandary",
+        "moral quandary",
+        "face a quandary"
+      ],
+      "grammar": "Nomen, zählbar",
+      "tip": "Gehoben; im Alltag sagt man 'I'm in two minds' oder 'I'm torn'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "dilemma",
+        "noteDe": "Dilemma"
+      },
+      {
+        "type": "synonym",
+        "word": "predicament",
+        "noteDe": "Zwangslage"
+      },
+      {
+        "type": "related",
+        "word": "doubt",
+        "ref": "doubt",
+        "noteDe": "Zweifel"
+      },
+      {
+        "type": "related",
+        "word": "hesitation",
+        "ref": "hesitation",
+        "noteDe": "Zögern"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "society"
+    ],
+    "clusters": [
+      "academic-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "serendipity",
+    "lemma": "serendipity",
+    "pos": "noun",
+    "ipa": "/ˌsɛrənˈdɪpəti/",
+    "level": "C2",
+    "register": "literary",
+    "de": "glücklicher Zufall",
+    "deAlt": [
+      "Serendipität"
+    ],
+    "definitionEn": "the luck of finding something good without looking for it",
+    "examples": [
+      {
+        "en": "We met by pure serendipity on a delayed train.",
+        "de": "Wir haben uns durch reinen Zufall in einem verspäteten Zug kennengelernt.",
+        "hit": "serendipity"
+      },
+      {
+        "en": "Many great discoveries were the result of serendipity.",
+        "de": "Viele große Entdeckungen waren das Ergebnis glücklicher Zufälle.",
+        "hit": "serendipity"
+      },
+      {
+        "en": "It was serendipity, not careful planning, that saved the project.",
+        "de": "Ein glücklicher Zufall, nicht sorgfältige Planung, rettete das Projekt.",
+        "hit": "serendipity"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "pure serendipity",
+        "a stroke of serendipity",
+        "by serendipity"
+      ],
+      "grammar": "Nomen, unzählbar; Adjektiv serendipitous",
+      "tip": "Positiv: ein angenehmer Zufall. Ein neutraler Zufall ist 'coincidence'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "fluke",
+        "noteDe": "Glückstreffer (umgangssprachlich)"
+      },
+      {
+        "type": "related",
+        "word": "coincidence",
+        "ref": "coincidence",
+        "noteDe": "Zufall"
+      },
+      {
+        "type": "family",
+        "word": "serendipitous",
+        "noteDe": "zufällig, glücklich"
+      },
+      {
+        "type": "related",
+        "word": "lucky",
+        "ref": "lucky",
+        "noteDe": "Glück haben"
+      }
+    ],
+    "topics": [
+      "daily",
+      "emotion"
+    ],
+    "clusters": [
+      "academic-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "obfuscate",
+    "lemma": "obfuscate",
+    "pos": "verb",
+    "ipa": "/ˈɑbfəˌskeɪt/",
+    "level": "C2",
+    "register": "formal",
+    "de": "verschleiern",
+    "deAlt": [
+      "vernebeln",
+      "unklar machen"
+    ],
+    "definitionEn": "to make something deliberately unclear or difficult to understand",
+    "examples": [
+      {
+        "en": "Don't obfuscate the issue with technical terms.",
+        "de": "Verschleiere das Problem nicht mit Fachbegriffen.",
+        "hit": "obfuscate"
+      },
+      {
+        "en": "The report seemed designed to obfuscate the real costs.",
+        "de": "Der Bericht schien darauf angelegt, die wahren Kosten zu verschleiern.",
+        "hit": "obfuscate"
+      },
+      {
+        "en": "The code was obfuscated to prevent others from copying it.",
+        "de": "Der Code wurde verschleiert, damit andere ihn nicht kopieren können.",
+        "hit": "obfuscated"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "obfuscate the truth",
+        "obfuscate the issue",
+        "deliberately obfuscate"
+      ],
+      "grammar": "transitiv; Nomen obfuscation",
+      "tip": "In der IT: Code absichtlich unlesbar machen (obfuscation)."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "obscure",
+        "ref": "obscure",
+        "noteDe": "verdecken, verschleiern"
+      },
+      {
+        "type": "antonym",
+        "word": "clarify",
+        "noteDe": "klarstellen"
+      },
+      {
+        "type": "family",
+        "word": "obfuscation",
+        "noteDe": "Verschleierung"
+      },
+      {
+        "type": "related",
+        "word": "conceal",
+        "ref": "conceal",
+        "noteDe": "verbergen"
+      }
+    ],
+    "topics": [
+      "society",
+      "work"
+    ],
+    "clusters": [
+      "academic-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "recalcitrant",
+    "lemma": "recalcitrant",
+    "pos": "adj",
+    "ipa": "/rɪˈkælsɪtrənt/",
+    "level": "C2",
+    "register": "formal",
+    "de": "widerspenstig",
+    "deAlt": [
+      "aufsässig",
+      "renitent"
+    ],
+    "definitionEn": "refusing to obey or cooperate",
+    "examples": [
+      {
+        "en": "The teacher struggled with a few recalcitrant pupils.",
+        "de": "Die Lehrerin hatte mit ein paar widerspenstigen Schülern zu kämpfen.",
+        "hit": "recalcitrant"
+      },
+      {
+        "en": "Recalcitrant members of the party voted against the bill.",
+        "de": "Aufmüpfige Parteimitglieder stimmten gegen den Gesetzentwurf.",
+        "hit": "Recalcitrant"
+      },
+      {
+        "en": "Even the most recalcitrant stains came out in the wash.",
+        "de": "Selbst die hartnäckigsten Flecken gingen in der Wäsche raus.",
+        "hit": "recalcitrant"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "recalcitrant child",
+        "recalcitrant member",
+        "remain recalcitrant"
+      ],
+      "grammar": "Adjektiv; Nomen recalcitrance",
+      "tip": "Sehr gehoben; im Alltag 'stubborn' oder 'uncooperative'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "stubborn",
+        "ref": "stubborn",
+        "noteDe": "stur"
+      },
+      {
+        "type": "synonym",
+        "word": "defiant",
+        "noteDe": "trotzig"
+      },
+      {
+        "type": "antonym",
+        "word": "obedient",
+        "noteDe": "gehorsam"
+      },
+      {
+        "type": "related",
+        "word": "obey",
+        "ref": "obey",
+        "noteDe": "gehorchen"
+      }
+    ],
+    "topics": [
+      "society",
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character",
+      "academic-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "sycophant",
+    "lemma": "sycophant",
+    "pos": "noun",
+    "ipa": "/ˈsɪkəfənt/",
+    "level": "C2",
+    "register": "formal",
+    "de": "Schleimer",
+    "deAlt": [
+      "Speichellecker",
+      "Kriecher"
+    ],
+    "definitionEn": "a person who praises powerful people too much to gain advantage",
+    "examples": [
+      {
+        "en": "The boss is surrounded by sycophants.",
+        "de": "Der Chef ist von Schleimern umgeben.",
+        "hit": "sycophants"
+      },
+      {
+        "en": "He's a sycophant who agrees with everything she says.",
+        "de": "Er ist ein Speichellecker, der allem zustimmt, was sie sagt.",
+        "hit": "sycophant"
+      },
+      {
+        "en": "Leaders who listen only to sycophants often make poor decisions.",
+        "de": "Führungskräfte, die nur auf Ja-Sager hören, treffen oft schlechte Entscheidungen.",
+        "hit": "sycophants"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "surrounded by sycophants",
+        "political sycophant"
+      ],
+      "grammar": "Nomen, zählbar; Adjektiv sycophantic",
+      "tip": "Abwertend. Umgangssprachlich: 'suck-up', britisch 'creep' oder 'yes-man'."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "yes-man",
+        "noteDe": "Ja-Sager"
+      },
+      {
+        "type": "synonym",
+        "word": "flatterer",
+        "noteDe": "Schmeichler"
+      },
+      {
+        "type": "family",
+        "word": "sycophantic",
+        "noteDe": "kriecherisch"
+      },
+      {
+        "type": "related",
+        "word": "patronize",
+        "ref": "patronize",
+        "noteDe": "herablassend behandeln"
+      }
+    ],
+    "topics": [
+      "society",
+      "work"
+    ],
+    "clusters": [
+      "feelings-and-character",
+      "academic-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "perfunctory",
+    "lemma": "perfunctory",
+    "pos": "adj",
+    "ipa": "/pərˈfʌŋktəri/",
+    "level": "C2",
+    "register": "formal",
+    "de": "oberflächlich",
+    "deAlt": [
+      "flüchtig",
+      "pflichtschuldig"
+    ],
+    "definitionEn": "done quickly and without real interest or care, only because you must",
+    "examples": [
+      {
+        "en": "He gave me a perfunctory nod.",
+        "de": "Er nickte mir flüchtig zu.",
+        "hit": "perfunctory"
+      },
+      {
+        "en": "The doctor made only a perfunctory examination.",
+        "de": "Der Arzt nahm nur eine oberflächliche Untersuchung vor.",
+        "hit": "perfunctory"
+      },
+      {
+        "en": "After a perfunctory apology, the minister changed the subject.",
+        "de": "Nach einer pflichtschuldigen Entschuldigung wechselte der Minister das Thema.",
+        "hit": "perfunctory"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "perfunctory nod",
+        "perfunctory glance",
+        "perfunctory apology",
+        "perfunctory check"
+      ],
+      "grammar": "Adjektiv; Adverb perfunctorily",
+      "tip": "Etwas wird nur pro forma erledigt. Gegenteil: 'thorough'."
+    },
+    "relations": [
+      {
+        "type": "antonym",
+        "word": "thorough",
+        "ref": "thorough",
+        "noteDe": "gründlich"
+      },
+      {
+        "type": "synonym",
+        "word": "cursory",
+        "noteDe": "flüchtig"
+      },
+      {
+        "type": "synonym",
+        "word": "half-hearted",
+        "noteDe": "halbherzig"
+      },
+      {
+        "type": "antonym",
+        "word": "meticulous",
+        "ref": "meticulous",
+        "noteDe": "akribisch"
+      }
+    ],
+    "topics": [
+      "work",
+      "society"
+    ],
+    "clusters": [
+      "describing-things",
+      "academic-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "esoteric",
+    "lemma": "esoteric",
+    "pos": "adj",
+    "ipa": "/ˌɛsəˈtɛrɪk/",
+    "level": "C2",
+    "register": "formal",
+    "de": "nur für Eingeweihte",
+    "deAlt": [
+      "speziell",
+      "abgehoben"
+    ],
+    "definitionEn": "understood or enjoyed by only a small number of people with special knowledge",
+    "examples": [
+      {
+        "en": "The lecture was too esoteric for most students.",
+        "de": "Die Vorlesung war für die meisten Studenten zu abgehoben.",
+        "hit": "esoteric"
+      },
+      {
+        "en": "He has some rather esoteric hobbies.",
+        "de": "Er hat ein paar ziemlich ausgefallene Hobbys.",
+        "hit": "esoteric"
+      },
+      {
+        "en": "The debate soon turned to esoteric questions of legal theory.",
+        "de": "Die Debatte wandte sich bald speziellen Fragen der Rechtstheorie zu.",
+        "hit": "esoteric"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "esoteric knowledge",
+        "esoteric subject",
+        "rather esoteric"
+      ],
+      "grammar": "Adjektiv",
+      "tip": "Falscher Freund: im Englischen meist 'nur für Fachleute verständlich', selten 'esoterisch' im Sinne von Spiritualität."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "obscure",
+        "ref": "obscure",
+        "noteDe": "wenig bekannt"
+      },
+      {
+        "type": "antonym",
+        "word": "mainstream",
+        "noteDe": "allgemein verbreitet"
+      },
+      {
+        "type": "synonym",
+        "word": "arcane",
+        "noteDe": "geheimnisvoll, nur für Eingeweihte"
+      }
+    ],
+    "topics": [
+      "society"
+    ],
+    "clusters": [
+      "academic-words",
+      "false-friends"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "capricious",
+    "lemma": "capricious",
+    "pos": "adj",
+    "ipa": "/kəˈprɪʃəs/",
+    "level": "C2",
+    "register": "literary",
+    "de": "launisch",
+    "deAlt": [
+      "unberechenbar",
+      "kapriziös"
+    ],
+    "definitionEn": "changing mood or behavior suddenly and without reason",
+    "examples": [
+      {
+        "en": "The weather in the mountains is capricious.",
+        "de": "Das Wetter in den Bergen ist launisch.",
+        "hit": "capricious"
+      },
+      {
+        "en": "She worked for a capricious and demanding boss.",
+        "de": "Sie arbeitete für einen launischen und anspruchsvollen Chef.",
+        "hit": "capricious"
+      },
+      {
+        "en": "The court ruled that the decision was arbitrary and capricious.",
+        "de": "Das Gericht urteilte, die Entscheidung sei willkürlich und unberechenbar.",
+        "hit": "capricious"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "capricious weather",
+        "arbitrary and capricious",
+        "capricious nature"
+      ],
+      "grammar": "Adjektiv; Nomen caprice",
+      "tip": "'arbitrary and capricious' ist eine feste juristische Formel (US-Recht) für willkürliche Behördenentscheidungen."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "unpredictable",
+        "noteDe": "unberechenbar"
+      },
+      {
+        "type": "synonym",
+        "word": "fickle",
+        "noteDe": "wankelmütig"
+      },
+      {
+        "type": "antonym",
+        "word": "steady",
+        "ref": "steady",
+        "noteDe": "beständig"
+      },
+      {
+        "type": "related",
+        "word": "mood",
+        "ref": "mood",
+        "noteDe": "Laune"
+      }
+    ],
+    "topics": [
+      "emotion",
+      "nature"
+    ],
+    "clusters": [
+      "feelings-and-character",
+      "academic-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "insidious",
+    "lemma": "insidious",
+    "pos": "adj",
+    "ipa": "/ɪnˈsɪdiəs/",
+    "level": "C2",
+    "register": "formal",
+    "de": "heimtückisch",
+    "deAlt": [
+      "schleichend"
+    ],
+    "definitionEn": "spreading or developing gradually and harmfully without being noticed",
+    "examples": [
+      {
+        "en": "Stress can have an insidious effect on your health.",
+        "de": "Stress kann sich schleichend auf die Gesundheit auswirken.",
+        "hit": "insidious"
+      },
+      {
+        "en": "High blood pressure is an insidious condition.",
+        "de": "Bluthochdruck ist eine heimtückische Erkrankung.",
+        "hit": "insidious"
+      },
+      {
+        "en": "Corruption had become an insidious part of the system.",
+        "de": "Korruption war zu einem schleichenden Bestandteil des Systems geworden.",
+        "hit": "insidious"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "insidious effect",
+        "insidious disease",
+        "insidious influence"
+      ],
+      "grammar": "Adjektiv; Adverb insidiously",
+      "tip": "Betont das Unbemerkte und Allmähliche, nicht offene Bosheit."
+    },
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "subtle",
+        "noteDe": "subtil"
+      },
+      {
+        "type": "synonym",
+        "word": "treacherous",
+        "noteDe": "tückisch"
+      },
+      {
+        "type": "related",
+        "word": "gradually",
+        "ref": "gradually",
+        "noteDe": "allmählich"
+      },
+      {
+        "type": "related",
+        "word": "lethal",
+        "ref": "lethal",
+        "noteDe": "tödlich"
+      }
+    ],
+    "topics": [
+      "body",
+      "society"
+    ],
+    "clusters": [
+      "health-and-body",
+      "academic-words"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "vindicate",
+    "lemma": "vindicate",
+    "pos": "verb",
+    "ipa": "/ˈvɪndɪˌkeɪt/",
+    "level": "C2",
+    "register": "formal",
+    "de": "rechtfertigen",
+    "deAlt": [
+      "rehabilitieren",
+      "bestätigen"
+    ],
+    "definitionEn": "to prove that someone was right or not guilty after doubts",
+    "examples": [
+      {
+        "en": "The strong sales figures vindicated her risky decision.",
+        "de": "Die starken Verkaufszahlen gaben ihrer riskanten Entscheidung recht.",
+        "hit": "vindicated"
+      },
+      {
+        "en": "He felt vindicated when the truth came out.",
+        "de": "Er fühlte sich bestätigt, als die Wahrheit ans Licht kam.",
+        "hit": "vindicated"
+      },
+      {
+        "en": "The new evidence fully vindicated the accused man.",
+        "de": "Die neuen Beweise rehabilitierten den Angeklagten vollständig.",
+        "hit": "vindicated"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "feel vindicated",
+        "be vindicated by",
+        "fully vindicate"
+      ],
+      "grammar": "transitiv; Nomen vindication",
+      "tip": "Nicht mit 'vindictive' (rachsüchtig) verwechseln."
+    },
+    "relations": [
+      {
+        "type": "confusable",
+        "word": "vindictive",
+        "noteDe": "vindictive = rachsüchtig"
+      },
+      {
+        "type": "synonym",
+        "word": "justify",
+        "noteDe": "rechtfertigen"
+      },
+      {
+        "type": "family",
+        "word": "vindication",
+        "noteDe": "Rehabilitierung"
+      },
+      {
+        "type": "antonym",
+        "word": "condemn",
+        "ref": "condemn",
+        "noteDe": "verurteilen"
+      }
+    ],
+    "topics": [
+      "law",
+      "society"
+    ],
+    "clusters": [
+      "court-and-justice"
+    ],
+    "source": "generated"
+  },
+  {
+    "id": "equanimity",
+    "lemma": "equanimity",
+    "pos": "noun",
+    "ipa": "/ˌikwəˈnɪməti/",
+    "level": "C2",
+    "register": "formal",
+    "de": "Gelassenheit",
+    "deAlt": [
+      "Gleichmut"
+    ],
+    "definitionEn": "a calm state of mind, especially in a difficult situation",
+    "examples": [
+      {
+        "en": "She accepted the bad news with equanimity.",
+        "de": "Sie nahm die schlechte Nachricht mit Gelassenheit auf.",
+        "hit": "equanimity"
+      },
+      {
+        "en": "Meditation helps him keep his equanimity.",
+        "de": "Meditation hilft ihm, seinen Gleichmut zu bewahren.",
+        "hit": "equanimity"
+      },
+      {
+        "en": "Few leaders can face a crisis with such equanimity.",
+        "de": "Nur wenige Führungskräfte begegnen einer Krise mit solcher Gelassenheit.",
+        "hit": "equanimity"
+      }
+    ],
+    "usage": {
+      "collocations": [
+        "with equanimity",
+        "maintain equanimity",
+        "calm equanimity"
+      ],
+      "grammar": "Nomen, unzählbar",
+      "tip": "Gehoben; im Alltag 'calmness' oder 'keep your cool'."
+    },
+    "mnemonic": "equ- (gleich) + animus (Geist): der Geist bleibt im Gleichgewicht.",
+    "relations": [
+      {
+        "type": "synonym",
+        "word": "composure",
+        "noteDe": "Fassung"
+      },
+      {
+        "type": "synonym",
+        "word": "calmness",
+        "noteDe": "Ruhe"
+      },
+      {
+        "type": "antonym",
+        "word": "anxiety",
+        "ref": "anxiety",
+        "noteDe": "Angst"
+      },
+      {
+        "type": "related",
+        "word": "calming",
+        "ref": "calming",
+        "noteDe": "beruhigend"
+      }
+    ],
+    "topics": [
+      "emotion"
+    ],
+    "clusters": [
+      "feelings-and-character",
+      "academic-words"
+    ],
+    "source": "generated"
   }
 ]

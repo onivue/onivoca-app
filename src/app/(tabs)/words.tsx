@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { Check, ChevronRight, Search, SlidersHorizontal, Volume2, X } from "lucide-react-native";
+import { Check, ChevronRight, EyeOff, Search, SlidersHorizontal, Volume2, X } from "lucide-react-native";
 import { memo, useDeferredValue, useMemo, useState } from "react";
 import { Animated, Easing, Modal, Pressable, ScrollView, StyleSheet, TextInput, View } from "react-native";
 import { Screen } from "../../components/Screen";
@@ -17,7 +17,7 @@ import { themed, useTheme } from "../../theme/theme";
 
 type Filter = "word" | "sentence";
 type SortMode = "asc" | "desc";
-type StatusFilter = Status | "all";
+type StatusFilter = Status | "disabled" | "all";
 type Option<T extends string> = { id: T | "all"; label: string };
 
 // Auswahl als Chips; "all" hebt den Filter auf.
@@ -50,6 +50,7 @@ const STATUS_FILTERS: { id: StatusFilter; label: string }[] = [
   { id: "new", label: "Neu" },
   { id: "learning", label: "Am Lernen" },
   { id: "mastered", label: "Gelernt" },
+  { id: "disabled", label: "Deaktiviert" },
 ];
 const PAGE_SIZE = 100; // Sätze gibt es tausende, daher schrittweise anzeigen
 const FILTERS: { id: Filter; label: string }[] = [
@@ -58,13 +59,13 @@ const FILTERS: { id: Filter; label: string }[] = [
 ];
 
 // Memoisiert, damit unveränderte Zeilen beim Filtern nicht neu rendern.
-const WordRow = memo(function WordRow({ card, status }: { card: WordEntry; status: Status }) {
+const WordRow = memo(function WordRow({ card, status, disabled }: { card: WordEntry; status: Status; disabled: boolean }) {
   useTheme();
   const router = useRouter();
   return (
     <Pressable style={styles.row} onPress={() => router.push(`/word/${card.id}`)}>
       <View style={[styles.dot, { backgroundColor: TOPICS[card.topics[0] ?? "daily"].color }]} />
-      <View style={styles.texts}>
+      <View style={[styles.texts, disabled && styles.textsDisabled]}>
         <Text style={styles.front}>{card.lemma}</Text>
         <Text style={styles.back}>{card.de}</Text>
       </View>
@@ -73,7 +74,7 @@ const WordRow = memo(function WordRow({ card, status }: { card: WordEntry; statu
           <Text style={styles.levelText}>{card.level}</Text>
         </View>
       )}
-      <StatusPill status={status} />
+      {disabled ? <EyeOff color={colors.muted} size={18} /> : <StatusPill status={status} />}
       <Pressable onPress={() => speak(card.lemma)} hitSlop={10}>
         <Volume2 color={colors.muted} size={20} />
       </Pressable>
@@ -91,7 +92,7 @@ export default function WordsScreen() {
 
 function WordsList() {
   useTheme();
-  const { progress } = useProgress();
+  const { progress, disabled } = useProgress();
   const wordCards = useCards();
   const sentenceCards = useSentences();
   const [limit, setLimit] = useState(PAGE_SIZE);
@@ -158,10 +159,16 @@ function WordsList() {
       .filter((c) => deferred.levelFilter === "all" || c.level === deferred.levelFilter)
       .filter((c) => deferred.topicFilter === "all" || c.topics.includes(deferred.topicFilter))
       .filter((c) => deferred.clusterFilter === "all" || c.clusters.includes(deferred.clusterFilter))
-      .filter((c) => deferred.statusFilter === "all" || getStatus(progress[c.id]) === deferred.statusFilter);
+      .filter((c) =>
+        deferred.statusFilter === "all"
+          ? true
+          : deferred.statusFilter === "disabled"
+            ? disabled.has(c.id)
+            : !disabled.has(c.id) && getStatus(progress[c.id]) === deferred.statusFilter,
+      );
     const dir = deferred.sortMode === "asc" ? 1 : -1;
     return result.sort((a, b) => a.lemma.localeCompare(b.lemma, LANGUAGES[lang].sort) * dir);
-  }, [wordCards, sentenceCards, progress, deferred, lang]);
+  }, [wordCards, sentenceCards, progress, disabled, deferred, lang]);
 
   return (
     <Screen title="Wörter">
@@ -278,7 +285,12 @@ function WordsList() {
       ) : (
         <View style={styles.list}>
           {cards.slice(0, limit).map((card) => (
-            <WordRow key={card.id} card={card} status={getStatus(progress[card.id])} />
+            <WordRow
+              key={card.id}
+              card={card}
+              status={getStatus(progress[card.id])}
+              disabled={disabled.has(card.id)}
+            />
           ))}
           {cards.length > limit && (
             <Pressable style={styles.more} onPress={() => setLimit(limit + PAGE_SIZE)}>
@@ -350,6 +362,7 @@ const styles = themed(() => ({
   },
   dot: { width: 12, height: 12, borderRadius: 6 },
   texts: { flex: 1 },
+  textsDisabled: { opacity: 0.45 },
   front: { fontSize: 17, fontWeight: "600", color: colors.text },
   back: { fontSize: 14, color: colors.muted },
 }));

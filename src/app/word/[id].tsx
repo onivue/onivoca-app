@@ -1,6 +1,6 @@
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { Volume2 } from "lucide-react-native";
-import { Pressable, View } from "react-native";
+import { Eye, EyeOff, Volume2 } from "lucide-react-native";
+import { Pressable, StyleSheet, View } from "react-native";
 import { ExampleList } from "../../components/ExampleList";
 import { ProgressBar } from "../../components/ProgressBar";
 import { RelationList } from "../../components/RelationList";
@@ -22,7 +22,7 @@ import { themed, useTheme } from "../../theme/theme";
 export default function WordDetailScreen() {
   useTheme();
   const { id } = useLocalSearchParams<{ id: string }>();
-  const { progress } = useProgress();
+  const { progress, disabled, setCardDisabled } = useProgress();
   const router = useRouter();
 
   const words = useCards();
@@ -34,10 +34,18 @@ export default function WordDetailScreen() {
 
   const category = TOPICS[card.topics[0] ?? "daily"];
   const p = progress[card.id];
+  const isDisabled = disabled.has(card.id);
   const clusterMates = cards.filter((c) => c.id !== card.id && c.clusters.some((cl) => card.clusters.includes(cl)));
 
   return (
     <Screen title={card.lemma}>
+      {isDisabled && (
+        <View style={styles.disabledBanner}>
+          <EyeOff color={colors.text} size={18} />
+          <Text style={styles.disabledText}>Deaktiviert – diese Karte kommt nicht in deinen Runden vor.</Text>
+        </View>
+      )}
+
       <View style={[styles.hero, { backgroundColor: category.color }]}>
         <View style={styles.heroTexts}>
           {card.ipa && <Text style={styles.phonetic}>{card.ipa}</Text>}
@@ -133,6 +141,17 @@ export default function WordDetailScreen() {
           </View>
         )}
       </View>
+
+      <Pressable
+        style={({ pressed }) => [styles.toggle, isDisabled && styles.toggleActive, pressed && styles.togglePressed]}
+        onPress={() => setCardDisabled(card.id, !isDisabled)}
+        accessibilityRole="button"
+      >
+        {isDisabled ? <Eye color={colors.onAccent} size={18} /> : <EyeOff color={colors.muted} size={18} />}
+        <Text style={[styles.toggleText, isDisabled && styles.toggleTextActive]}>
+          {isDisabled ? "Karte wieder aktivieren" : "Karte deaktivieren"}
+        </Text>
+      </Pressable>
     </Screen>
   );
 }
@@ -166,4 +185,21 @@ const styles = themed(() => ({
   historyRow: { flexDirection: "row", flexWrap: "wrap", gap: 6 },
   historyDot: { width: 28, height: 28, borderRadius: 14, alignItems: "center", justifyContent: "center" },
   historyHint: { fontSize: 12, color: colors.muted },
+  disabledBanner: { flexDirection: "row", alignItems: "center", gap: 10, backgroundColor: colors.danger, borderRadius: 16, padding: 14 },
+  disabledText: { flex: 1, fontSize: 14, fontWeight: "500", color: colors.text },
+  toggle: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 8,
+    paddingVertical: 16,
+    borderRadius: 16,
+    backgroundColor: colors.card,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.border,
+  },
+  toggleActive: { backgroundColor: colors.accent, borderColor: colors.accent },
+  togglePressed: { opacity: 0.7 },
+  toggleText: { fontSize: 16, fontWeight: "500", color: colors.muted },
+  toggleTextActive: { color: colors.onAccent },
 }));

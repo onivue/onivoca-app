@@ -2,7 +2,7 @@
   "expo": {
     "name": "onivoca",
     "slug": "onivoca",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "scheme": "onivoca",
     "icon": "./assets/icon.png",

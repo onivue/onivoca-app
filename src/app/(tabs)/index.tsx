@@ -10,7 +10,7 @@ import { Text } from "../../components/Text";
 import { showAdAfterRound } from "../../lib/ads";
 import { Scene, applyScene, useScreenshotScene } from "../../lib/screenshot";
 import { resolveWeights } from "../../lib/difficulty";
-import { Rating, buildSession } from "../../lib/srs";
+import { Rating, activeCards, buildSession, orderBySeed } from "../../lib/srs";
 import { useCards, useSentences } from "../../state/cards";
 import { LANGUAGES, Lang } from "../../data/cards";
 import { Deck, useLanguage } from "../../state/language";
@@ -25,11 +25,12 @@ export default function StudyScreen() {
   const hasSentences = useSentences().length > 0;
   const activeDeck = hasSentences ? deck : "words";
   const scene = useScreenshotScene();
+  const { seed } = useProgress();
   return (
     <Screen title="Lernen" titleAccessory={<LanguageBadge lang={lang} />} scroll={false}>
       {hasSentences && <DeckSwitch />}
-      {/* Beim Wechsel von Sprache oder Kartenart startet die Runde neu. */}
-      <StudySession key={`${lang}-${activeDeck}-${JSON.stringify(scene)}`} deck={activeDeck} scene={scene} />
+      {/* Beim Wechsel von Sprache, Kartenart oder nach neuem Mischen startet die Runde neu. */}
+      <StudySession key={`${lang}-${activeDeck}-${seed}-${JSON.stringify(scene)}`} deck={activeDeck} scene={scene} />
     </Screen>
   );
 }
@@ -46,15 +47,21 @@ function LanguageBadge({ lang }: { lang: Lang }) {
 
 function StudySession({ deck, scene }: { deck: Deck; scene: Scene | null }) {
   useTheme();
-  const { progress, round, sessionSize, mix, rate, advanceRound } = useProgress();
+  const { progress, round, sessionSize, mix, seed, disabled, rate, advanceRound, setCardDisabled } = useProgress();
   const { adsRemoved } = usePremium();
   const words = useCards();
   const sentences = useSentences();
   const cards = deck === "sentences" ? sentences : words;
 
+  // Deaktivierte Karten fallen raus; neue Karten kommen in der (ggf. gemischten) Reihenfolge.
+  function nextSession(forRound: number) {
+    const pool = orderBySeed(activeCards(cards, disabled), seed);
+    return buildSession(pool, progress, forRound, sessionSize, resolveWeights(mix, pool, progress));
+  }
+
   // Für Store-Screenshots (nur mit EXPO_PUBLIC_SCREENSHOT_MODE): feste Karten statt zufälliger Runde.
   const [start] = useState(() => {
-    const session = buildSession(cards, progress, round, sessionSize, resolveWeights(mix, cards, progress));
+    const session = nextSession(round);
     return scene
       ? applyScene(scene, cards, session, round)
       : { queue: session, results: [] as RoundResult[], flipped: false };
@@ -63,21 +70,33 @@ function StudySession({ deck, scene }: { deck: Deck; scene: Scene | null }) {
   // Die Warteschlange bleibt bis zum Rundenende stabil.
   const [queue, setQueue] = useState(start.queue);
   const [results, setResults] = useState<RoundResult[]>(start.results); // für die Übersicht am Rundenende
-  const [total, setTotal] = useState(queue.length);
   const [done, setDone] = useState(0);
   const [step, setStep] = useState(0); // sorgt dafür, dass jede Karte neu einfliegt
   const [flipped, setFlipped] = useState(start.flipped);
 
-  const current = queue[0];
+  // Auch Karten, die während der Runde (z. B. über das Wortnetz) deaktiviert wurden, fallen sofort raus.
+  const remaining = queue.filter((item) => !disabled.has(item.card.id));
+  const current = remaining[0];
+  const total = done + remaining.length;
+
+  function next() {
+    setFlipped(false);
+    setStep(step + 1);
+    setQueue(remaining.slice(1));
+  }
 
   function answer(rating: Rating) {
     const before = progress[current.card.id];
     const after = rate(current.card.id, rating);
     setResults([...results, { item: current, rating, before, after, round }]);
-    setFlipped(false);
-    setStep(step + 1);
-    setQueue(queue.slice(1));
     setDone(done + 1);
+    next();
+  }
+
+  // Karte ohne Bewertung aus der Runde nehmen; sie kommt erst nach manuellem Aktivieren wieder.
+  function disableCurrent() {
+    setCardDisabled(current.card.id, true);
+    next();
   }
 
   function startNewRound() {
@@ -85,9 +104,7 @@ function StudySession({ deck, scene }: { deck: Deck; scene: Scene | null }) {
     if (!adsRemoved) showAdAfterRound();
     const nextRound = round + 1;
     advanceRound();
-    const next = buildSession(cards, progress, nextRound, sessionSize, resolveWeights(mix, cards, progress));
-    setQueue(next);
-    setTotal(next.length);
+    setQueue(nextSession(nextRound));
     setDone(0);
     setResults([]);
   }
@@ -111,6 +128,7 @@ function StudySession({ deck, scene }: { deck: Deck; scene: Scene | null }) {
         reverse={current.reverse}
         flipped={flipped}
         onFlip={() => setFlipped(true)}
+        onDisable={disableCurrent}
       />
 
       {/* Platz bleibt reserviert, damit nichts springt, wenn die Buttons erscheinen. */}

@@ -13,6 +13,7 @@ import {
   Repeat,
   RotateCcw,
   ShieldCheck,
+  Shuffle,
   SlidersHorizontal,
   Sparkles,
   Sun,
@@ -26,7 +27,7 @@ import { Segmented, SettingsField, SettingsGroup, SettingsRow } from "../../comp
 import { Text } from "../../components/Text";
 import { LANGUAGES, LANG_ORDER } from "../../data/cards";
 import { adPrivacyOptionsRequired, openAdPrivacyOptions } from "../../lib/ads";
-import { summarize } from "../../lib/srs";
+import { activeCards, summarize } from "../../lib/srs";
 import { useCards, useSentences } from "../../state/cards";
 import { useLanguage } from "../../state/language";
 import { useOnboarding } from "../../state/onboarding";
@@ -39,7 +40,7 @@ import { themed, useTheme } from "../../theme/theme";
 export default function SettingsScreen() {
   useTheme();
   const router = useRouter();
-  const { sessionSize } = useProgress();
+  const { sessionSize, reshuffle } = useProgress();
   const { pref, setPref } = useTheme();
   const { lang, setLang } = useLanguage();
   const { open: openGuide } = useOnboarding();
@@ -48,6 +49,10 @@ export default function SettingsScreen() {
   return (
     <Screen title="Einstellungen">
       <ProgressCard onPress={() => router.push("/settings/progress")} />
+
+      <SettingsGroup>
+        <SettingsRow Icon={Shuffle} tint="success" label="Karten neu mischen" onPress={() => confirmShuffle(reshuffle)} />
+      </SettingsGroup>
 
       <SettingsGroup title="Lernen" footer="Der Lernstand wird pro Sprache getrennt gespeichert.">
         <SettingsField Icon={Languages} tint="sky" label="Sprache">
@@ -104,6 +109,18 @@ export default function SettingsScreen() {
         <SettingsRow Icon={FileText} tint="accent" label="Drittanbieter-Lizenzen" onPress={() => router.push("/licenses")} />
       </SettingsGroup>
     </Screen>
+  );
+}
+
+// Anders als Zurücksetzen bleiben Lernstand und Statistiken; nur die Reihenfolge neuer Karten wird neu ausgelost.
+function confirmShuffle(reshuffle: () => void) {
+  Alert.alert(
+    "Karten neu mischen?",
+    "Neue Karten kommen ab jetzt in zufälliger Reihenfolge dran. Dein Lernstand und alle Statistiken bleiben erhalten. Die aktuelle Runde startet neu.",
+    [
+      { text: "Abbrechen", style: "cancel" },
+      { text: "Neu mischen", onPress: reshuffle },
+    ],
   );
 }
 
@@ -176,12 +193,12 @@ function AdsGroup() {
 // Kompakter Fortschritt oben; öffnet die Seite mit allen Zahlen.
 function ProgressCard({ onPress }: { onPress: () => void }) {
   useTheme();
-  const { progress } = useProgress();
+  const { progress, disabled } = useProgress();
   const { deck } = useLanguage();
   const words = useCards();
   const sentences = useSentences();
   const showSentences = deck === "sentences" && sentences.length > 0;
-  const summary = summarize(showSentences ? sentences : words, progress);
+  const summary = summarize(activeCards(showSentences ? sentences : words, disabled), progress);
   const total = Math.max(summary.total, 1);
 
   return (

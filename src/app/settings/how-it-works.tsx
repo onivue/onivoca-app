@@ -59,6 +59,10 @@ export default function HowItWorksScreen() {
           Am Ende siehst du alle Karten der Runde mit deiner Bewertung. Tippe eine an, um Bedeutung, Beispiele und den neuen Punktestand zu
           sehen.
         </Step>
+        <Step n={8} title="Mischen und aussortieren">
+          In den Einstellungen kannst du die Karten neu mischen: Neue Karten kommen dann in zufälliger Reihenfolge, dein Lernstand bleibt.
+          Eine Karte, die du nicht mehr sehen willst, deaktivierst du ganz unten auf ihrer Rückseite. In der Wortliste holst du sie zurück.
+        </Step>
       </View>
     </Screen>
   );

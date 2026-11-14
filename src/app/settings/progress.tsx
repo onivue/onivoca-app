@@ -5,7 +5,7 @@ import { PressableScale } from "../../components/PressableScale";
 import { ProgressRing } from "../../components/ProgressRing";
 import { Screen } from "../../components/Screen";
 import { Text } from "../../components/Text";
-import { summarize } from "../../lib/srs";
+import { activeCards, summarize } from "../../lib/srs";
 import { useCards, useSentences } from "../../state/cards";
 import { useLanguage } from "../../state/language";
 import { useProgress } from "../../state/progress";
@@ -15,12 +15,14 @@ import { themed, useTheme } from "../../theme/theme";
 // Unterseite: alle Zahlen zum Lernstand und Zurücksetzen.
 export default function ProgressScreen() {
   useTheme();
-  const { progress, round, reset } = useProgress();
+  const { progress, round, disabled, reset } = useProgress();
   const { deck } = useLanguage();
   const words = useCards();
   const sentences = useSentences();
   const showSentences = deck === "sentences" && sentences.length > 0;
-  const summary = summarize(showSentences ? sentences : words, progress);
+  const deckCards = showSentences ? sentences : words;
+  const summary = summarize(activeCards(deckCards, disabled), progress);
+  const disabledCount = deckCards.length - summary.total;
   const total = Math.max(summary.total, 1);
 
   const reviews = Object.values(progress).reduce(
@@ -67,6 +69,13 @@ export default function ProgressScreen() {
         <Tile icon={<Layers color={colors.onPink} size={20} />} label="Runde" value={round + 1} color={colors.pink} fg={colors.onPink} />
       </View>
 
+      {disabledCount > 0 && (
+        <Text style={styles.note}>
+          {disabledCount} {disabledCount === 1 ? "Karte ist" : "Karten sind"} deaktiviert und zählen hier nicht mit. In der
+          Wortliste (Filter „Deaktiviert“) kannst du sie wieder aktivieren.
+        </Text>
+      )}
+
       <PressableScale style={styles.reset} onPress={confirmReset} accessibilityRole="button">
         <Text style={styles.resetText}>Fortschritt zurücksetzen</Text>
       </PressableScale>
@@ -110,6 +119,7 @@ const styles = themed(() => ({
   tile: { flex: 1, borderRadius: 20, padding: 14, gap: 4 },
   tileValue: { fontSize: 28, fontWeight: "800" },
   tileLabel: { fontSize: 12, fontWeight: "600" },
+  note: { fontSize: 13, lineHeight: 19, color: colors.muted, textAlign: "center" },
   reset: { alignItems: "center", backgroundColor: colors.card, borderRadius: 16, paddingVertical: 16, paddingHorizontal: 20, marginTop: 8 },
   resetText: { color: "#E11D48", fontSize: 16, lineHeight: 22, fontWeight: "500" },
 }));

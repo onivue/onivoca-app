@@ -1,6 +1,6 @@
-import { BookOpen, Languages, MessageSquareQuote, Network, RotateCw, Volume2 } from "lucide-react-native";
+import { BookOpen, EyeOff, Languages, MessageSquareQuote, Network, RotateCw, Volume2 } from "lucide-react-native";
 import { useEffect } from "react";
-import { Animated, Pressable, ScrollView, StyleSheet, View, useAnimatedValue } from "react-native";
+import { Alert, Animated, Pressable, ScrollView, StyleSheet, View, useAnimatedValue } from "react-native";
 import { LANGUAGES, POS_LABELS, TOPICS, WordEntry, isPhraseEntry } from "../data/cards";
 import { speak } from "../lib/speak";
 import { useLanguage } from "../state/language";
@@ -17,6 +17,7 @@ type Props = {
   reverse: boolean; // true: Deutsch wird gezeigt, Zielsprache muss erraten werden
   flipped: boolean;
   onFlip: () => void;
+  onDisable: () => void; // Karte aus allen künftigen Runden nehmen
 };
 
 // Hebt das Fokuswort eines Satzes hervor.
@@ -32,7 +33,7 @@ function highlight(text: string, focus: string, accent: string) {
 }
 
 // Karteikarte mit Vorder- und Rückseite. Tippen dreht sie um.
-export function Flashcard({ card, reverse, flipped, onFlip }: Props) {
+export function Flashcard({ card, reverse, flipped, onFlip, onDisable }: Props) {
   useTheme();
   const { lang } = useLanguage();
   const langLabel = LANGUAGES[lang].label;
@@ -180,9 +181,30 @@ export function Flashcard({ card, reverse, flipped, onFlip }: Props) {
                 <RelationList relations={card.relations} accent={category.accent} interactive />
               </View>
             )}
+
+            {/* Ganz unten, damit niemand die Karte aus Versehen deaktiviert. */}
+            <Pressable
+              style={({ pressed }) => [styles.disable, pressed && styles.disablePressed]}
+              onPress={() => confirmDisable(card, onDisable)}
+              accessibilityRole="button"
+            >
+              <EyeOff color={colors.muted} size={18} />
+              <Text style={styles.disableText}>Karte deaktivieren</Text>
+            </Pressable>
           </ScrollView>
       </Animated.View>
     </Animated.View>
+  );
+}
+
+function confirmDisable(card: WordEntry, onDisable: () => void) {
+  Alert.alert(
+    "Karte deaktivieren?",
+    `„${card.lemma}“ kommt nicht mehr in deinen Runden vor. In der Wortliste kannst du die Karte jederzeit wieder aktivieren.`,
+    [
+      { text: "Abbrechen", style: "cancel" },
+      { text: "Deaktivieren", style: "destructive", onPress: onDisable },
+    ],
   );
 }
 
@@ -242,4 +264,17 @@ const styles = themed(() => ({
   },
   alt: { fontSize: 15, color: colors.muted },
   definition: { fontSize: 16, lineHeight: 23, fontStyle: "italic", color: colors.text },
+  disable: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 8,
+    marginTop: "auto",
+    paddingVertical: 14,
+    borderRadius: 16,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.border,
+  },
+  disablePressed: { opacity: 0.6 },
+  disableText: { color: colors.muted, fontSize: 15, fontWeight: "500" },
 }));

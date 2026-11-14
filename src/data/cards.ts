@@ -116,6 +116,10 @@ export const CLUSTER_LABELS: Record<string, string> = {
   "weather-and-environment": "Wetter & Umwelt",
   "everyday-verbs": "Alltagsverben",
   "linking-words": "Satzverbinder",
+  "describing-things": "Eigenschaften beschreiben",
+  "academic-words": "Gehobener Wortschatz",
+  "discussion-phrases": "Diskutieren & Argumentieren",
+  "idioms-and-proverbs": "Redewendungen & Sprichwörter",
   // Spanisch
   time: "Zeit & Kalender",
   "life-and-death": "Leben & Tod",
